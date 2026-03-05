@@ -1,0 +1,66 @@
+name: Watch Odoo URLs
+
+on:
+  schedule:
+    - cron: "0 7 * * *"  # Every day at 7:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch URL content
+        run: python3 watch.py
+
+      - name: Check for changes
+        id: check
+        run: |
+          git add data/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create branch and commit
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          BRANCH="auto-update/$(date -u +%Y-%m-%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -m "chore: update watched content"
+          git push origin "$BRANCH"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+
+      - name: Create PR
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DIFF=$(git diff origin/main..HEAD --stat)
+          gh pr create \
+            --title "chore: update watched content $(date -u +%Y-%m-%d)" \
+            --body "Automated update of watched Odoo URLs.
+
+          ## Changed files
+          \`\`\`
+          $DIFF
+          \`\`\`" \
+            --head "$BRANCH" \
+            --base main
+
+      - name: Auto-merge PR
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge --merge "$BRANCH"
