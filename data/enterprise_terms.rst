@@ -668,5 +668,3 @@ objectives.
     Date:
 
     Signature:
-
-TEST CHANGE - SAFE TO REMOVE (workflow verification)
