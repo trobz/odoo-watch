@@ -20,3 +20,10 @@ A GitHub Actions workflow runs every day at 7:00 UTC. It fetches the watched URL
 4. Auto-merges the pull request
 
 You can also trigger it manually via **Actions > Watch Odoo URLs > Run workflow**.
+
+## Getting notified
+
+To receive notifications when content changes, **watch this repository** on GitHub:
+
+1. Click the **Watch** button at the top of this page
+2. Select **All Activity** (or **Custom > Pull requests**) to be notified when a change PR is opened
