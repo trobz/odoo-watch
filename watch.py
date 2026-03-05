@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Fetch watched URLs and save their content to files for change tracking."""
 
+import sys
+
 import requests
 from pathlib import Path
 
@@ -21,14 +23,25 @@ HEADERS = {"User-Agent": "odoo-watch/1.0 (https://github.com/trobz/odoo-watch)"}
 
 def main():
     Path("data").mkdir(exist_ok=True)
+    errors = []
     for watch in WATCHES:
         url = watch["url"]
         path = Path(watch["path"])
         print(f"Fetching {url} ...")
-        response = requests.get(url, timeout=30, headers=HEADERS)
-        response.raise_for_status()
-        path.write_text(response.text, encoding="utf-8")
-        print(f"  -> saved to {path}")
+        try:
+            response = requests.get(url, timeout=30, headers=HEADERS)
+            response.raise_for_status()
+            path.write_text(response.text, encoding="utf-8")
+            print(f"  -> saved to {path}")
+        except requests.RequestException as e:
+            print(f"  -> ERROR: {e}", file=sys.stderr)
+            errors.append(url)
+
+    if errors:
+        print(f"\nFailed to fetch {len(errors)} URL(s):", file=sys.stderr)
+        for url in errors:
+            print(f"  - {url}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -15,8 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Install dependencies
-        run: pip install requests
+        run: pip install -r requirements.txt
 
       - name: Fetch URL content
         run: python3 watch.py
@@ -37,8 +41,9 @@ jobs:
           BRANCH="auto-update/$(date -u +%Y-%m-%d-%H%M%S)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          CHANGED=$(git diff --cached --name-only | tr '\n' ' ')
           git checkout -b "$BRANCH"
-          git commit -m "chore: update watched content"
+          git commit -m "chore: update watched content ($CHANGED)"
           git push origin "$BRANCH"
           echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
 
@@ -47,7 +52,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          DIFF=$(git show --stat HEAD)
+          DIFF=$(git show --stat --format="" HEAD)
           gh pr create \
             --title "chore: update watched content $(date -u +%Y-%m-%d)" \
             --body "Automated update of watched Odoo URLs.
@@ -63,4 +68,4 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr merge --merge "$BRANCH"
+        run: gh pr merge --merge --auto "$BRANCH"
