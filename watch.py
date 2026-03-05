@@ -16,6 +16,10 @@ WATCHES = [
         "path": "data/enterprise_terms.rst",
         "url": "https://raw.githubusercontent.com/odoo/documentation/master/content/legal/terms/enterprise.rst",
     },
+    {
+        "path": "data/odoo_partners_vietnam.html",
+        "url": "https://www.odoo.com/partners/country/vietnam-232",
+    },
 ]
 
 HEADERS = {"User-Agent": "odoo-watch/1.0 (https://github.com/trobz/odoo-watch)"}

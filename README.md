@@ -8,6 +8,7 @@ Monitors Odoo-related URLs for changes and opens a pull request automatically wh
 |------|-----|
 | `data/odoo_sh_faq.html` | https://www.odoo.sh/faq |
 | `data/enterprise_terms.rst` | https://raw.githubusercontent.com/odoo/documentation/master/content/legal/terms/enterprise.rst |
+| `data/odoo_partners_vietnam.html` | https://www.odoo.com/partners/country/vietnam-232 |
 
 ## How it works
 
