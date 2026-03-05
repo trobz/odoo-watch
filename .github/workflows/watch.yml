@@ -47,7 +47,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          DIFF=$(git diff origin/main..HEAD --stat)
+          DIFF=$(git show --stat HEAD)
           gh pr create \
             --title "chore: update watched content $(date -u +%Y-%m-%d)" \
             --body "Automated update of watched Odoo URLs.
