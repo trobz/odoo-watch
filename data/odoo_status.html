@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<title>Odoo Status</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --odoo-purple: #714B67;
+    --odoo-purple-dark: #5B3A53;
+    --odoo-purple-light: #8F6B85;
+    --odoo-purple-wash: #F4EFF3;
+    --odoo-purple-wash-2: #EBE3E9;
+
+    --status-ok: #21B352;
+    --status-ok-bg: #E8F8EE;
+    --status-ok-border: #B8EACA;
+
+    --status-degraded: #F0AD4E;
+    --status-degraded-bg: #FFF6E8;
+    --status-degraded-border: #FCE0A8;
+
+    --status-major: #E24C3F;
+    --status-major-bg: #FDECEB;
+    --status-major-border: #F5C2BE;
+
+    --status-maintenance: #3B82F6;
+    --status-maintenance-bg: #EBF2FE;
+    --status-maintenance-border: #B8D4FE;
+
+    --text-primary: #1E1E1E;
+    --text-secondary: #5C5C5C;
+    --text-muted: #8E8E8E;
+    --bg-page: #FAFAFA;
+    --bg-card: #FFFFFF;
+    --border-light: #E8E8E8;
+    --border-medium: #D4D4D4;
+
+    --radius: 8px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-lg: 0 4px 16px rgba(0,0,0,0.08);
+    --transition: 0.2s ease;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--odoo-purple); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .header {
+    background: var(--odoo-purple);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-logo img { height: 28px; }
+
+  .header-logo span {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    letter-spacing: 0.02em;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding-left: 12px;
+    margin-left: 2px;
+  }
+
+  .header-links { display: flex; gap: 20px; }
+
+  .header-links a {
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    font-weight: 500;
+    transition: color var(--transition);
+  }
+  .header-links a:hover { color: #fff; text-decoration: none; }
+
+  /* ============================================================
+     LAYOUT
+     ============================================================ */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+
+  .global-status {
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-md);
+    animation: fadeSlideIn 0.5s ease;
+  }
+
+  /* --- TEMPLATE: All Systems Operational --- */
+  .global-status--ok {
+    background: var(--status-ok);
+    color: #fff;
+  }
+
+  /* --- TEMPLATE: Active Incident --- */
+  .global-status--degraded {
+    background: var(--status-degraded);
+    color: #fff;
+  }
+
+  .global-status--major {
+    background: var(--status-major);
+    color: #fff;
+  }
+
+  .global-status--maintenance {
+    background: var(--status-maintenance);
+    color: #fff;
+  }
+
+  .global-status-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+  }
+
+  .global-status-icon svg { width: 22px; height: 22px; }
+
+  .global-status-text h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .global-status-text p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 2px;
+  }
+
+  /* ============================================================
+     COMPONENT LIST
+     ============================================================ */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .component-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    margin-bottom: 32px;
+    animation: fadeSlideIn 0.5s ease backwards;
+  }
+
+  .component-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border-light);
+    transition: background var(--transition);
+  }
+  .component-row:last-child { border-bottom: none; }
+  .component-row:hover { background: #FCFCFC; }
+
+  .component-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .component-group-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 12px 20px 10px;
+    background: #F8F8F8;
+    border-bottom: 1px solid var(--border-light);
+    letter-spacing: 0.01em;
+  }
+
+  /* Status badges */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .status-badge--ok {
+    color: var(--status-ok);
+    background: var(--status-ok-bg);
+  }
+
+  .status-badge--degraded {
+    color: #B87A14;
+    background: var(--status-degraded-bg);
+  }
+
+  .status-badge--major {
+    color: var(--status-major);
+    background: var(--status-major-bg);
+  }
+
+  .status-badge--maintenance {
+    color: var(--status-maintenance);
+    background: var(--status-maintenance-bg);
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .status-dot--ok { background: var(--status-ok); }
+  .status-dot--degraded { background: var(--status-degraded); }
+  .status-dot--major { background: var(--status-major); }
+  .status-dot--maintenance { background: var(--status-maintenance); }
+
+  /* Pulsing dot for active incidents */
+  .status-dot--pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+
+  /* ============================================================
+     UPTIME BAR (90-day)
+     ============================================================ */
+  .uptime-section { margin-bottom: 32px; }
+
+  .uptime-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+
+  .uptime-header h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .uptime-pct {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--status-ok);
+  }
+
+  .uptime-bar {
+    display: flex;
+    gap: 2px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+
+  .uptime-day {
+    flex: 1;
+    border-radius: 2px;
+    background: var(--status-ok);
+    opacity: 0.85;
+    transition: opacity var(--transition), transform var(--transition);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .uptime-day:hover {
+    opacity: 1;
+    transform: scaleY(1.12);
+  }
+
+  .uptime-day--degraded { background: var(--status-degraded); }
+  .uptime-day--major { background: var(--status-major); }
+  .uptime-day--maintenance { background: var(--status-maintenance); }
+
+  .uptime-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  /* Tooltip */
+  .uptime-day .tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--text-primary);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .uptime-day .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--text-primary);
+  }
+
+  .uptime-day:hover .tooltip { display: block; }
+
+  /* ============================================================
+     INCIDENTS / INCIDENT HISTORY
+     ============================================================ */
+  .incidents-section { margin-bottom: 40px; }
+
+  .d-none { display: none }
+
+  .incidents-section h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-light);
+  }
+
+  /* --- TEMPLATE BLOCK: Active Incident --- */
+  .incident-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    animation: fadeSlideIn 0.4s ease backwards;
+  }
+
+  .incident-card--active {
+    border-left: 4px solid var(--status-degraded);
+  }
+
+  .incident-card--active-major {
+    border-left: 4px solid var(--status-major);
+  }
+
+  .incident-card--resolved {
+    border-left: 4px solid var(--status-ok);
+  }
+
+  .incident-card--maintenance {
+    border-left: 4px solid var(--status-maintenance);
+  }
+
+  .incident-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .incident-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .incident-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  .incident-affected {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .affected-tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--odoo-purple-wash);
+    color: var(--odoo-purple);
+  }
+
+  /* Incident timeline */
+  .incident-timeline { position: relative; }
+
+  .incident-update {
+    position: relative;
+    padding: 0 0 16px 24px;
+    border-left: 2px solid var(--border-light);
+    margin-left: 4px;
+  }
+  .incident-update:last-child { padding-bottom: 0; border-left-color: transparent; }
+
+  .incident-update::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--border-medium);
+    background: var(--bg-card);
+  }
+
+  .incident-update--investigating::before { border-color: var(--status-major); background: var(--status-major-bg); }
+  .incident-update--identified::before { border-color: var(--status-degraded); background: var(--status-degraded-bg); }
+  .incident-update--monitoring::before { border-color: var(--status-maintenance); background: var(--status-maintenance-bg); }
+  .incident-update--resolved::before { border-color: var(--status-ok); background: var(--status-ok-bg); }
+
+  .update-status {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+  }
+
+  .update-status--investigating { color: var(--status-major); }
+  .update-status--identified { color: var(--status-degraded); }
+  .update-status--monitoring { color: var(--status-maintenance); }
+  .update-status--resolved { color: var(--status-ok); }
+
+  .update-body {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+  }
+
+  .update-time {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  /* Day separator in incident history */
+  .incident-day {
+    margin-bottom: 24px;
+  }
+
+  .incident-day-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .no-incidents {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 4px 0;
+  }
+
+  /* ============================================================
+     SCHEDULED MAINTENANCE
+     ============================================================ */
+  .maintenance-card {
+    background: var(--status-maintenance-bg);
+    border: 1px solid var(--status-maintenance-border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  .maintenance-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--status-maintenance);
+    margin-bottom: 4px;
+  }
+
+  .maintenance-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .maintenance-time {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  .footer {
+    border-top: 1px solid var(--border-light);
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .footer-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .footer a { font-weight: 500; }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  /* ============================================================
+     SUBSCRIBE BAR
+     ============================================================ */
+  .subscribe-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--odoo-purple-wash);
+    border: 1px solid var(--odoo-purple-wash-2);
+    border-radius: var(--radius);
+    padding: 14px 20px;
+    margin-bottom: 32px;
+  }
+
+  .subscribe-bar p {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  .subscribe-btn {
+    background: var(--odoo-purple);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+    white-space: nowrap;
+  }
+
+  .subscribe-btn:hover {
+    background: var(--odoo-purple-dark);
+    transform: translateY(-1px);
+  }
+
+  /* ============================================================
+     ANIMATIONS
+     ============================================================ */
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .component-card:nth-child(2) { animation-delay: 0.05s; }
+  .component-card:nth-child(3) { animation-delay: 0.1s; }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 600px) {
+    .container { padding: 20px 16px 48px; }
+    .global-status { padding: 20px; flex-direction: column; text-align: center; }
+    .component-row { padding: 12px 14px; flex-direction: column; align-items: flex-start; gap: 6px; }
+    .subscribe-bar { flex-direction: column; gap: 10px; text-align: center; }
+    .incident-header { flex-direction: column; }
+    .header-links { display: none; }
+    .uptime-bar { height: 24px; }
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main.container {
+    flex: 1;
+  }
+
+</style>
+</head>
+<body>
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header">
+<div class="header-inner">
+<div class="header-logo">
+<img class="header-logo" src="https://download.odoocdn.com/assets/logo_oe_white_t.png"/>
+</div>
+<nav class="header-links">
+<a href="https://www.odoo.com/help">Support</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<!-- ============================================================
+       TEMPLATE BLOCK: GLOBAL STATUS — ALL OK
+       ============================================================ -->
+<!-- ===== VARIANT A: All Systems Operational ===== -->
+<div class="global-status global-status--ok">
+<div class="global-status-icon">
+<svg fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</div>
+<div class="global-status-text">
+<h1>All Systems Operational</h1>
+<p>Everything is running smoothly.</p>
+</div>
+</div>
+<!-- ===== VARIANT B: Active Incident  ===== -->
+<!--
+  <div class="global-status global-status--degraded">
+    <div class="global-status-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <div class="global-status-text">
+      <h1>Degraded Performance</h1>
+      <p>Some services are experiencing issues. We're actively investigating.</p>
+    </div>
+  </div>
+  -->
+<!-- ===== VARIANT C: Major Outage (uncomment to use) ===== -->
+<!--
+  <div class="global-status global-status--major">
+    <div class="global-status-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="15" y1="9" x2="9" y2="15"/>
+        <line x1="9" y1="9" x2="15" y2="15"/>
+      </svg>
+    </div>
+    <div class="global-status-text">
+      <h1>Major Service Outage</h1>
+      <p>We are experiencing a significant disruption. Our team is working on a fix.</p>
+    </div>
+  </div>
+  -->
+<!-- ===== VARIANT D: Scheduled Maintenance In Progress (uncomment to use) ===== -->
+<!--
+  <div class="global-status global-status--maintenance">
+    <div class="global-status-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+      </svg>
+    </div>
+    <div class="global-status-text">
+      <h1>Scheduled Maintenance In Progress</h1>
+      <p>We are currently performing planned maintenance. Some services may be temporarily unavailable.</p>
+    </div>
+  </div>
+  -->
+<!-- ============================================================
+       SUBSCRIBE BAR
+       ============================================================ -->
+<!--
+  <div class="subscribe-bar">
+    <p>Get notified when we create, update, or resolve an incident.</p>
+    <button class="subscribe-btn" onclick="document.getElementById('subscribeModal').style.display='flex'">Subscribe to Updates</button>
+  </div>
+  -->
+<!-- ============================================================
+       CURRENT STATUS PER COMPONENT
+       ============================================================ -->
+<div class="section-label">Current Status</div>
+<div class="component-card">
+<div class="component-group-label">Odoo Online (SaaS)</div>
+<div class="component-row">
+<span class="component-name">Odoo.com Website</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+<!--<span class="status-badge status-badge--maintenance"><span class="status-dot status-dot--maintenance status-dot--pulse"></span> Maintenance</span>-->
+<!--<span class="status-badge status-badge--degraded"><span class="status-dot status-dot--degraded status-dot--pulse"></span> Degraded</span>-->
+<!--<span class="status-badge status-badge--major"><span class="status-dot status-dot--major status-dot--pulse"></span> Incident</span>-->
+</div>
+<div class="component-row">
+<span class="component-name">Odoo Online Databases</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+<!--<span class="status-badge status-badge--degraded"><span class="status-dot status-dot--degraded status-dot--pulse"></span> Degraded</span>-->
+</div>
+<!--
+    <div class="component-row">
+      <span class="component-name">Email Gateway</span>
+      <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+    </div>
+    -->
+<div class="component-row">
+<span class="component-name">IAP Services</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+</div>
+</div>
+<div class="component-card">
+<div class="component-group-label">Odoo.sh (PaaS)</div>
+<div class="component-row">
+<span class="component-name">Production Servers</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+</div>
+<div class="component-row">
+<span class="component-name">Build System &amp; Git Integration</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+</div>
+<div class="component-row">
+<span class="component-name">Staging &amp; Development Servers</span>
+<span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+</div>
+<!--
+    <div class="component-row">
+      <span class="component-name">Backup &amp; Restore</span>
+      <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+    </div>
+    -->
+</div>
+<!--
+  <div class="component-card">
+    <div class="component-group-label">Integrations &amp; APIs</div>
+
+    <div class="component-row">
+      <span class="component-name">REST / JSON-RPC API</span>
+      <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+    </div>
+    <div class="component-row">
+      <span class="component-name">Payment Providers (Stripe, Adyen, PayPal)</span>
+      <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+    </div>
+    <div class="component-row">
+      <span class="component-name">Shipping Connectors</span>
+      <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
+    </div>
+  </div>
+  -->
+<!-- ============================================================
+       UPTIME — 90 DAY BAR
+       ============================================================ -->
+<!--
+  <div class="uptime-section">
+    <div class="uptime-header">
+      <h3>Uptime — Last 90 Days</h3>
+      <span class="uptime-pct">99.95%</span>
+    </div>
+    <div class="uptime-bar" id="uptimeBar">
+    </div>
+    <div class="uptime-labels">
+      <span>90 days ago</span>
+      <span>Today</span>
+    </div>
+  </div>
+  -->
+<!-- ============================================================
+       TEMPLATE BLOCK: ACTIVE INCIDENT
+       For template engines:
+         {% for incident in active_incidents %}
+           … render card …
+         {% endfor %}
+       ============================================================ -->
+<section class="incidents-section d-none">
+<h2>Active Incidents</h2>
+<!-- ~~~ BEGIN INCIDENT CARD (Active) ~~~ -->
+<div class="incident-card incident-card--active">
+<div class="incident-header">
+<div>
+<div class="incident-title">Intermittent slowness on Odoo Online databases</div>
+<div class="incident-affected">
+<span class="affected-tag">Odoo Online Databases</span>
+</div>
+</div>
+<div class="incident-meta">Started Mar 3, 09:14 UTC</div>
+</div>
+<div class="incident-timeline">
+<!-- Most recent update first -->
+<div class="incident-update incident-update--identified">
+<div class="update-status update-status--identified">Identified</div>
+<div class="update-body">
+            The root cause has been identified as elevated I/O latency on the EU-West database cluster. A mitigation plan is being deployed. Some users may still experience slower page loads and occasional timeouts.
+          </div>
+<div class="update-time">Mar 3, 10:02 UTC</div>
+</div>
+<div class="incident-update incident-update--investigating">
+<div class="update-status update-status--investigating">Investigating</div>
+<div class="update-body">
+            We are investigating reports of degraded performance on Odoo Online. Affected users may see slower response times when accessing their databases. Our infrastructure team is actively looking into this.
+          </div>
+<div class="update-time">Mar 3, 09:14 UTC</div>
+</div>
+</div>
+</div>
+<!-- ~~~ END INCIDENT CARD ~~~ -->
+</section>
+<!-- ============================================================
+       TEMPLATE BLOCK: SCHEDULED MAINTENANCE
+       ============================================================ -->
+<section class="incidents-section">
+<h2>Scheduled Maintenance</h2>
+<p class="no-incidents">No upcoming maintenance scheduled.</p>
+<div class="maintenance-card d-none">
+<h4>Odoo.com Upgrade — Global</h4>
+<p>
+        Odoo.com will be unavailable for a planned upgrade on March 3, 12:00–14:00 CET (11:00–13:00 UTC).<br/>
+<strong>Affected:</strong> website, free trial creation, forum, apps store, "My Databases" panel, and "My Subscription" page.<br/>
+<strong>Not affected:</strong> existing customer databases. If you're already connected or have your database URL bookmarked, you can keep working as usual.<br/>
+<em>Tip: bookmark your database link in advance or find it in your activation email.</em>
+</p>
+<div class="maintenance-time">Scheduled: Mar 3, 2026 · 11:00 – 13:00 UTC</div>
+</div>
+</section>
+<!-- ============================================================
+       TEMPLATE BLOCK: INCIDENT HISTORY
+         {% for day in past_days %}
+           <div class="incident-day">
+             <div class="incident-day-label">{{ day.date }}</div>
+             {% for inc in day.incidents %}
+               … render resolved incident card …
+             {% else %}
+               <p class="no-incidents">No incidents reported.</p>
+             {% endfor %}
+           </div>
+         {% endfor %}
+       ============================================================ -->
+<section class="incidents-section">
+<h2>Past Incidents</h2>
+<div class="incident-day">
+<div class="incident-day-label">March 3, 2026</div>
+<div class="incident-card incident-card--maintenance">
+<div class="incident-header">
+<div>
+<div class="incident-title">Odoo.com Upgrade — Global</div>
+<div class="incident-affected">
+<span class="affected-tag">Odoo.com Website</span>
+</div>
+</div>
+<div class="incident-meta">Duration: 2h · Completed</div>
+</div>
+<div class="incident-timeline">
+<div class="incident-update incident-update--resolved">
+<div class="update-status update-status--resolved">Completed</div>
+<div class="update-body">The upgrade has been completed successfully. All services are back to normal.</div>
+<div class="update-time">Mar 3, 13:06 UTC</div>
+</div>
+<div class="incident-update incident-update--monitoring">
+<div class="update-status update-status--monitoring">In Progress</div>
+<div class="update-body">Scheduled maintenance has started. Affected services are temporarily unavailable.</div>
+<div class="update-time">Mar 3, 11:00 UTC</div>
+</div>
+</div>
+</div>
+</div>
+<div class="incident-day d-none">
+<div class="incident-day-label">March 1, 2026</div>
+<!-- ~~~ BEGIN INCIDENT CARD (Resolved) ~~~ -->
+<div class="incident-card incident-card--resolved">
+<div class="incident-header">
+<div>
+<div class="incident-title">SMS delivery delays via IAP</div>
+<div class="incident-affected">
+<span class="affected-tag">IAP Services</span>
+</div>
+</div>
+<div class="incident-meta">Duration: 47 min</div>
+</div>
+<div class="incident-timeline">
+<div class="incident-update incident-update--resolved">
+<div class="update-status update-status--resolved">Resolved</div>
+<div class="update-body">Lorem Ipsum</div>
+<div class="update-time">Mar 1, 16:02 UTC</div>
+</div>
+<div class="incident-update incident-update--monitoring">
+<div class="update-status update-status--monitoring">Monitoring</div>
+<div class="update-body">Lorem Ipsum</div>
+<div class="update-time">Mar 1, 15:41 UTC</div>
+</div>
+<div class="incident-update incident-update--investigating">
+<div class="update-status update-status--investigating">Investigating</div>
+<div class="update-body">Lorem Ipsum</div>
+<div class="update-time">Mar 1, 15:15 UTC</div>
+</div>
+</div>
+</div>
+<!-- ~~~ END INCIDENT CARD ~~~ -->
+</div>
+<div class="incident-day d-none">
+<div class="incident-day-label">February 27, 2026</div>
+<p class="no-incidents">No incidents reported.</p>
+</div>
+</section>
+</main>
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-links">
+<a href="https://www.odoo.com">Odoo.com</a>
+<a href="https://www.odoo.com/help">Support</a>
+<a href="https://www.odoo.com/privacy">Privacy Policy</a>
+<a href="https://www.odoo.com/security">Security</a>
+</div>
+<p>© 2026 Odoo S.A. · Times displayed in UTC unless indicated otherwise.</p>
+</div>
+</footer>
+<!-- ============================================================
+     SUBSCRIBE MODAL
+     ============================================================ -->
+<!--
+<div id="subscribeModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:200; align-items:center; justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff; border-radius:12px; padding:32px; max-width:400px; width:90%; box-shadow:0 12px 40px rgba(0,0,0,0.15);">
+    <h3 style="font-size:16px; font-weight:700; margin-bottom:4px;">Subscribe to Updates</h3>
+    <p style="font-size:13px; color:var(--text-secondary); margin-bottom:18px;">Receive email notifications when incidents are created, updated, or resolved.</p>
+    <input type="email" placeholder="you@company.com" style="width:100%; padding:10px 12px; border:1px solid var(--border-medium); border-radius:6px; font-size:14px; font-family:inherit; margin-bottom:12px; outline:none; transition:border var(--transition);" onfocus="this.style.borderColor='var(--odoo-purple)'" onblur="this.style.borderColor='var(--border-medium)'">
+    <button class="subscribe-btn" style="width:100%; padding:10px;" onclick="alert('Subscribed! (demo)'); document.getElementById('subscribeModal').style.display='none';">Subscribe</button>
+    <p style="font-size:11px; color:var(--text-muted); margin-top:10px; text-align:center;">You can unsubscribe at any time.</p>
+  </div>
+</div>
+-->
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function() {
+  // -------------------------------------------------------
+  // Generate 90-day uptime bar with realistic sample data
+  // -------------------------------------------------------
+  const bar = document.getElementById('uptimeBar');
+  const statuses = ['ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','degraded','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','maintenance','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','ok','major','degraded'];
+
+  const today = new Date();
+  statuses.forEach((status, i) => {
+    const day = document.createElement('div');
+    day.classList.add('uptime-day');
+    if (status !== 'ok') day.classList.add('uptime-day--' + status);
+
+    const d = new Date(today);
+    d.setDate(d.getDate() - (89 - i));
+    const label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+    const messages = {
+      ok: 'No incidents reported',
+      degraded: 'Degraded performance',
+      major: 'Major outage',
+      maintenance: 'Scheduled maintenance'
+    };
+
+    const tooltip = document.createElement('span');
+    tooltip.className = 'tooltip';
+    tooltip.textContent = label + ' — ' + messages[status];
+    day.appendChild(tooltip);
+
+    bar.appendChild(day);
+  });
+})();
+</script>
+</body>
+</html>
