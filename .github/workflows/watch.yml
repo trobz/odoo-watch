@@ -47,20 +47,20 @@ jobs:
           git push origin "$BRANCH"
           echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
 
+      - name: Generate PR description
+        if: steps.check.outputs.changed == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 describe_changes.py > pr_body.md
+
       - name: Create PR
         if: steps.check.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          DIFF=$(git show --stat --format="" HEAD)
           gh pr create \
             --title "chore: update watched content $(date -u +%Y-%m-%d)" \
-            --body "Automated update of watched Odoo URLs.
-
-          ## Changed files
-          \`\`\`
-          $DIFF
-          \`\`\`" \
+            --body-file pr_body.md \
             --head "$BRANCH" \
             --base main
 
