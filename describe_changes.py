@@ -7,9 +7,9 @@ import sys
 from openai import OpenAI
 
 SYSTEM_PROMPT = """You are a technical writer summarizing changes to watched Odoo web pages and documents.
-Given a git diff, write a concise PR description in Markdown that explains what changed in plain English.
+Given a git diff, write a brief PR description in Markdown that explains what changed in plain English.
 Focus on the meaning of the changes (e.g. new FAQ entries, updated terms, added/removed partners),
-not the raw diff syntax. Group changes by file. Be specific but brief."""
+not the raw diff syntax. Group changes by file. Be specific and concise — bullet points only, no closing summary sentence."""
 
 MAX_DIFF_CHARS = 12_000
 
