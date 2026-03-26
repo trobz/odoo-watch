@@ -3,6 +3,7 @@ PORT CITIES VIETNAM COMPANY LIMITED [Gold] /partners/port-cities-vietnam-company
 Trobz [Silver] /partners/trobz-16709?country_id=232
 Extreme Vietnam [Silver] /partners/extreme-vietnam-8920420?country_id=232
 Magenest ., JSC [Ready] /partners/magenest-jsc-1716168?country_id=232
+ORIS SOLUTIONS JOINT STOCK COMPANY [Ready] /partners/oris-solutions-joint-stock-company-11452881?country_id=232
 ICSC Corporation [Ready] /partners/icsc-corporation-6095361?country_id=232
 Falinwa Vietnam [Ready] /partners/falinwa-vietnam-8545047?country_id=232
 Leonix Vietnam [Ready] /partners/leonix-vietnam-5229856?country_id=232
@@ -17,4 +18,3 @@ CÔNG TY CỔ PHẦN GIẢI PHÁP PHẦN MỀM TRỰC TUYẾN VIỆT NAM [Ready]
 CÔNG TY TNHH CÁNH CAM SOLUTIONS [Ready] /partners/cong-ty-tnhh-canh-cam-solutions-24516730?country_id=232
 CÔNG TY TNHH MERCURY STUDIO [Ready] /partners/cong-ty-tnhh-mercury-studio-23328758?country_id=232
 Công ty TNHH Phần Mềm MICAD [Ready] /partners/cong-ty-tnhh-phan-mem-micad-16603183?country_id=232
-Công ty TNHH Thinking ERP [Ready] /partners/cong-ty-tnhh-thinking-erp-18212411?country_id=232
