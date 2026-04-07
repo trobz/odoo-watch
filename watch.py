@@ -3,6 +3,7 @@
 
 import re
 import sys
+import time
 from pathlib import Path
 
 import requests
@@ -23,7 +24,7 @@ WATCHES = [
     },
     {
         "path": "data/odoo_partners_vietnam.txt",
-        "url": "https://www.odoo.com/partners/country/vietnam-232",
+        "url": "https://www.odoo.com/partners/country/viet-nam-232",
         "extract": "partners",
     },
     {
@@ -91,6 +92,20 @@ def extract_partners(html: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> requests.Response:
+    """Fetch URL with retry on 5xx errors."""
+    for attempt in range(retries):
+        response = requests.get(url, timeout=30, headers=HEADERS)
+        if response.status_code < 500 or attempt == retries - 1:
+            response.raise_for_status()
+            return response
+        wait = backoff * (2**attempt)
+        print(f"  -> HTTP {response.status_code}, retrying in {wait:.0f}s (attempt {attempt + 1}/{retries})...")
+        time.sleep(wait)
+    response.raise_for_status()
+    return response
+
+
 def main():
     Path("data").mkdir(exist_ok=True)
     errors = []
@@ -99,8 +114,7 @@ def main():
         path = Path(watch["path"])
         print(f"Fetching {url} ...")
         try:
-            response = requests.get(url, timeout=30, headers=HEADERS)
-            response.raise_for_status()
+            response = fetch_with_retry(url)
             html = response.content.decode("utf-8")
             if watch.get("raw"):
                 content = html
