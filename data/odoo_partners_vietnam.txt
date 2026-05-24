@@ -5,7 +5,6 @@ Trobz [Ready] /partners/trobz-16709?country_id=232
 ICSC Corporation [Ready] /partners/icsc-corporation-6095361?country_id=232
 Leonix Vietnam [Ready] /partners/leonix-vietnam-5229856?country_id=232
 Falinwa Vietnam [Ready] /partners/falinwa-vietnam-8545047?country_id=232
-CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ PARACEL [Ready] /partners/cong-ty-tnhh-giai-phap-cong-nghe-paracel-11564346?country_id=232
 Connecta Solutions Ltd. [Ready] /partners/connecta-solutions-ltd-10653657?country_id=232
 Công ty TNHH HIPTECH [Ready] /partners/cong-ty-tnhh-hiptech-22480372?country_id=232
 VDX DIGITAL TRANSFORMATION SOLUTIONS COMPANY LIMITED [Ready] /partners/vdx-digital-transformation-solutions-company-limited-15194346?country_id=232
@@ -18,3 +17,4 @@ CÔNG TY TNHH MERCURY STUDIO [Ready] /partners/cong-ty-tnhh-mercury-studio-23328
 CÔNG TY CỔ PHẦN GIẢI PHÁP PHẦN MỀM TRỰC TUYẾN VIỆT NAM [Ready] /partners/cong-ty-co-phan-giai-phap-phan-mem-truc-tuyen-viet-nam-1801290?country_id=232
 CÔNG TY TNHH CÁNH CAM SOLUTIONS [Ready] /partners/cong-ty-tnhh-canh-cam-solutions-24516730?country_id=232
 Công ty TNHH Phần Mềm MICAD [Ready] /partners/cong-ty-tnhh-phan-mem-micad-16603183?country_id=232
+Leap Software Solutions Vietnam [Ready] /partners/leap-software-solutions-vietnam-12363489?country_id=232
