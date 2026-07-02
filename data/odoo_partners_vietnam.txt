@@ -3,6 +3,8 @@ Portcities Vietnam [Gold] /partners/portcities-vietnam-1613121?country_id=232
 ORIS SOLUTIONS JOINT STOCK COMPANY [Silver] /partners/oris-solutions-joint-stock-company-11452881?country_id=232
 VTI Joint Stock Company [Silver] /partners/vti-joint-stock-company-5391928?country_id=232
 Trobz [Ready] /partners/trobz-16709?country_id=232
+NOS ERP CONSULTING [Ready] /partners/nos-erp-consulting-10343780?country_id=232
+Magenest ., JSC [Ready] /partners/magenest-jsc-1716168?country_id=232
 ICSC Corporation [Ready] /partners/icsc-corporation-6095361?country_id=232
 Leonix Vietnam [Ready] /partners/leonix-vietnam-5229856?country_id=232
 Falinwa Vietnam [Ready] /partners/falinwa-vietnam-8545047?country_id=232
@@ -16,5 +18,3 @@ FPT Software Company Limited [Ready] /partners/fpt-software-company-limited-4091
 CÔNG TY TNHH CÁNH CAM SOLUTIONS [Ready] /partners/cong-ty-tnhh-canh-cam-solutions-24516730?country_id=232
 CÔNG TY TNHH MERCURY STUDIO [Ready] /partners/cong-ty-tnhh-mercury-studio-23328758?country_id=232
 Công ty TNHH Phần Mềm MICAD [Ready] /partners/cong-ty-tnhh-phan-mem-micad-16603183?country_id=232
-Leap Software Solutions Vietnam [Ready] /partners/leap-software-solutions-vietnam-12363489?country_id=232
-VIETNAMOBILE TELECOMMUNICATIONS JOINT STOCK COMPANY [Ready] /partners/vietnamobile-telecommunications-joint-stock-company-29906382?country_id=232
