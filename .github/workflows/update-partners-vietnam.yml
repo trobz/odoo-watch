@@ -1,0 +1,76 @@
+name: Update Odoo Partners Vietnam
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch partners list
+        run: python3 watch.py --only data/odoo_partners_vietnam.txt
+
+      - name: Check for changes
+        id: check
+        run: |
+          git add data/odoo_partners_vietnam.txt
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          BRANCH="auto-update/partners-vietnam-$(date -u +%Y-%m-%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -m "chore: update odoo_partners_vietnam.txt"
+          git push origin "$BRANCH"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+
+      - name: Generate PR description
+        if: steps.check.outputs.changed == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 describe_changes.py > pr_body.md || echo "chore: update odoo_partners_vietnam.txt" > pr_body.md
+
+      - name: Create PR
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "chore: update odoo_partners_vietnam.txt $(date -u +%Y-%m-%d)" \
+            --body-file pr_body.md \
+            --head "$BRANCH" \
+            --base main
+
+      - name: Auto-merge PR
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge --merge "$BRANCH"
+
+      - name: Delete branch
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push origin --delete "$BRANCH"
