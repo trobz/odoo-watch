@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch watched URLs and save their content to files for change tracking."""
 
+import argparse
 import re
 import sys
 import time
@@ -26,6 +27,7 @@ WATCHES = [
         "path": "data/odoo_partners_vietnam.txt",
         "url": "https://www.odoo.com/partners/country/viet-nam-232",
         "extract": "partners",
+        "paginate": True,
     },
     {
         "path": "data/odoo_status.html",
@@ -95,7 +97,7 @@ def extract_partners(html: str) -> str:
 def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> requests.Response:
     """Fetch URL with retry on 5xx errors."""
     for attempt in range(retries):
-        response = requests.get(url, timeout=30, headers=HEADERS)
+        response = requests.get(url, timeout=(10, 30), headers=HEADERS)
         if response.status_code < 500 or attempt == retries - 1:
             response.raise_for_status()
             return response
@@ -107,9 +109,18 @@ def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> reque
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--only", metavar="PATH", help="Run only the watch matching this file path")
+    args = parser.parse_args()
+
+    watches = [w for w in WATCHES if not args.only or w["path"] == args.only]
+    if args.only and not watches:
+        print(f"ERROR: no watch found for path {args.only!r}", file=sys.stderr)
+        sys.exit(1)
+
     Path("data").mkdir(exist_ok=True)
     errors = []
-    for watch in WATCHES:
+    for watch in watches:
         url = watch["url"]
         path = Path(watch["path"])
         print(f"Fetching {url} ...")
@@ -120,6 +131,28 @@ def main():
                 content = html
             elif watch.get("extract") == "partners":
                 content = extract_partners(html)
+                if watch.get("paginate"):
+                    seen_lines = set(content.strip().splitlines())
+                    page = 2
+                    max_pages = watch.get("max_pages", 20)
+                    while page <= max_pages:
+                        paged_url = f"{url}/page/{page}"
+                        print(f"  -> fetching page {page}/{max_pages} ...")
+                        resp = fetch_with_retry(paged_url)
+                        more = extract_partners(resp.content.decode("utf-8"))
+                        if not more.strip():
+                            print(f"  -> no more results at page {page}, stopping.")
+                            break
+                        new_lines = [l for l in more.strip().splitlines() if l not in seen_lines]
+                        if not new_lines:
+                            print(f"  -> page {page} returned duplicate data, stopping.")
+                            break
+                        seen_lines.update(new_lines)
+                        content = content.rstrip("\n") + "\n" + "\n".join(new_lines) + "\n"
+                        page += 1
+                        time.sleep(1)  # be polite between page fetches
+                    else:
+                        print(f"  -> reached max_pages={max_pages}, stopping.")
             elif watch.get("extract") == "selector":
                 content = extract_selector(html, watch["selector"])
             else:
