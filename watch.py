@@ -25,7 +25,9 @@ WATCHES = [
     },
     {
         "path": "data/odoo_partners_vietnam.txt",
-        "url": "https://www.odoo.com/partners/country/viet-nam-232",
+        # odoo.com returns 403 on any /partners/<subpath> URL; only the
+        # query-param form of the listing is served.
+        "url": "https://www.odoo.com/partners?country_id=232",
         "extract": "partners",
         "paginate": True,
     },
@@ -136,7 +138,8 @@ def main():
                     page = 2
                     max_pages = watch.get("max_pages", 20)
                     while page <= max_pages:
-                        paged_url = f"{url}/page/{page}"
+                        sep = "&" if "?" in url else "?"
+                        paged_url = f"{url}{sep}page={page}"
                         print(f"  -> fetching page {page}/{max_pages} ...")
                         resp = fetch_with_retry(paged_url)
                         more = extract_partners(resp.content.decode("utf-8"))
