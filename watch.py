@@ -94,11 +94,21 @@ def extract_partners(html: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+def is_retryable(status_code: int) -> bool:
+    """Whether a status is worth retrying.
+
+    Besides 5xx, odoo.com's edge intermittently answers 403 ("Request forbidden
+    by administrative rules") for requests it serves normally moments later, so
+    treat 403 as transient too. 429 is retried for the obvious reason.
+    """
+    return status_code >= 500 or status_code in (403, 429)
+
+
 def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> requests.Response:
-    """Fetch URL with retry on 5xx errors."""
+    """Fetch URL with retry on transient errors."""
     for attempt in range(retries):
         response = requests.get(url, timeout=(10, 30), headers=HEADERS)
-        if response.status_code < 500 or attempt == retries - 1:
+        if not is_retryable(response.status_code) or attempt == retries - 1:
             response.raise_for_status()
             return response
         wait = backoff * (2**attempt)
