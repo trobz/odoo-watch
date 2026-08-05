@@ -722,19 +722,17 @@
   </div>
   -->
 <!-- ===== VARIANT D: Scheduled Maintenance In Progress (uncomment to use) ===== -->
-<!--
-  <div class="global-status global-status--maintenance">
-    <div class="global-status-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-      </svg>
-    </div>
-    <div class="global-status-text">
-      <h1>Scheduled Maintenance In Progress</h1>
-      <p>We are currently performing planned maintenance. Some services may be temporarily unavailable.</p>
-    </div>
-  </div>
-  -->
+<div class="global-status global-status--maintenance d-none">
+<div class="global-status-icon">
+<svg fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path>
+</svg>
+</div>
+<div class="global-status-text">
+<h1>Scheduled Maintenance In Progress</h1>
+<p>We are currently performing planned maintenance. Some services may be temporarily unavailable.</p>
+</div>
+</div>
 <!-- ============================================================
        SUBSCRIBE BAR
        ============================================================ -->
@@ -753,7 +751,7 @@
 <div class="component-row">
 <span class="component-name">Odoo.com Website</span>
 <span class="status-badge status-badge--ok"><span class="status-dot status-dot--ok"></span> Operational</span>
-<!--<span class="status-badge status-badge--maintenance"><span class="status-dot status-dot--maintenance status-dot--pulse"></span> Maintenance</span>-->
+<!-- <span class="status-badge status-badge--maintenance"><span class="status-dot status-dot--maintenance status-dot--pulse"></span> Maintenance</span>-->
 <!--<span class="status-badge status-badge--degraded"><span class="status-dot status-dot--degraded status-dot--pulse"></span> Degraded</span>-->
 <!--<span class="status-badge status-badge--major"><span class="status-dot status-dot--major status-dot--pulse"></span> Incident</span>-->
 </div>
@@ -872,18 +870,18 @@
 <!-- ============================================================
        TEMPLATE BLOCK: SCHEDULED MAINTENANCE
        ============================================================ -->
-<section class="incidents-section">
+<section class="incidents-section d-none">
 <h2>Scheduled Maintenance</h2>
-<p class="no-incidents">No upcoming maintenance scheduled.</p>
-<div class="maintenance-card d-none">
+<p class="no-incidents d-none">No upcoming maintenance scheduled.</p>
+<div class="maintenance-card">
 <h4>Odoo.com Upgrade — Global</h4>
 <p>
-        Odoo.com will be unavailable for a planned upgrade on April 14, 12:00–14:00 CEST (10:00–12:00 UTC).<br/>
+        Odoo.com will be unavailable for a planned upgrade on August 4, 12:00–14:30 CEST (10:00–12:30 UTC).<br/>
 <strong>Affected:</strong> website, free trial creation, forum, apps store, "My Databases" panel, and "My Subscription" page.<br/>
 <strong>Not affected:</strong> existing customer databases. If you're already connected or have your database URL bookmarked, you can keep working as usual.<br/>
 <em>Tip: bookmark your database link in advance or find it in your activation email.</em>
 </p>
-<div class="maintenance-time">Scheduled: Apr 14, 2026 · 10:00 – 12:00 UTC</div>
+<div class="maintenance-time">Scheduled: Aug 4, 2026 · 10:00 – 12:30 UTC</div>
 </div>
 </section>
 <!-- ============================================================
@@ -902,7 +900,7 @@
 <section class="incidents-section">
 <h2>Past Incidents</h2>
 <div class="incident-day">
-<div class="incident-day-label">Apr 14, 2026</div>
+<div class="incident-day-label">Aug 4, 2026</div>
 <div class="incident-card incident-card--maintenance">
 <div class="incident-header">
 <div>
@@ -911,18 +909,18 @@
 <span class="affected-tag">Odoo.com Website</span>
 </div>
 </div>
-<div class="incident-meta">Duration: 2h · Completed</div>
+<div class="incident-meta">Duration: 2.5h · Completed</div>
 </div>
 <div class="incident-timeline">
 <div class="incident-update incident-update--resolved">
 <div class="update-status update-status--resolved">Completed</div>
 <div class="update-body">The upgrade has been completed successfully. All services are back to normal.</div>
-<div class="update-time">Apr 14, 12:00 UTC</div>
+<div class="update-time">Aug 4, 12:34 UTC</div>
 </div>
 <div class="incident-update incident-update--monitoring">
 <div class="update-status update-status--monitoring">In Progress</div>
 <div class="update-body">Scheduled maintenance has started. Affected services are temporarily unavailable.</div>
-<div class="update-time">Apr 14, 10:00 UTC</div>
+<div class="update-time">Aug 4, 10:02 UTC</div>
 </div>
 </div>
 </div>
