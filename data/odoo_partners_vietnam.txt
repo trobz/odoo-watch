@@ -13,6 +13,7 @@ Công ty TNHH HIPTECH [Ready] /partners/cong-ty-tnhh-hiptech-22480372?country_id
 VDX DIGITAL TRANSFORMATION SOLUTIONS COMPANY LIMITED [Ready] /partners/vdx-digital-transformation-solutions-company-limited-15194346?country_id=232
 CÔNG TY TNHH HUB2S VIỆT NAM [Ready] /partners/cong-ty-tnhh-hub2s-viet-nam-24783586?country_id=232
 Extreme Vietnam [Ready] /partners/extreme-vietnam-8920420?country_id=232
+GLOBAL PSM COMPANY LIMITED [Ready] /partners/global-psm-company-limited-13912953?country_id=232
 CÔNG TY TNHH CÁNH CAM SOLUTIONS [Ready] /partners/cong-ty-tnhh-canh-cam-solutions-24516730?country_id=232
 CÔNG TY TNHH MERCURY STUDIO [Ready] /partners/cong-ty-tnhh-mercury-studio-23328758?country_id=232
 Công ty TNHH Phần Mềm MICAD [Ready] /partners/cong-ty-tnhh-phan-mem-micad-16603183?country_id=232
@@ -24,6 +25,7 @@ VIETNAMOBILE TELECOMMUNICATIONS JOINT STOCK COMPANY [Ready] /partners/vietnamobi
 ATT Vietnam [Ready] /partners/att-vietnam-23646330?country_id=232
 Bac Ha Software Limited Company (BHSoft) [Ready] /partners/bac-ha-software-limited-company-bhsoft-7348147?country_id=232
 CLOUDMEDIA COMPANY LIMITED [Ready] /partners/cloudmedia-company-limited-5231438?country_id=232
+CÔNG TY CỔ PHẦN CÔNG NGHỆ INMOTION [Ready] /partners/cong-ty-co-phan-cong-nghe-inmotion-34383148?country_id=232
 CÔNG TY TNHH AI COFFEE ACADEMY [Ready] /partners/cong-ty-tnhh-ai-coffee-academy-1757519?country_id=232
 CÔNG TY TNHH GAUDIUM [Ready] /partners/cong-ty-tnhh-gaudium-22517751?country_id=232
 Công ty Cổ phần Đầu tư và Công nghệ THG [Ready] /partners/cong-ty-co-phan-đau-tu-va-cong-nghe-thg-32223995?country_id=232
