@@ -14,6 +14,7 @@ Công ty TNHH HIPTECH [Ready] /partners/cong-ty-tnhh-hiptech-22480372?country_id
 VDX DIGITAL TRANSFORMATION SOLUTIONS COMPANY LIMITED [Ready] /partners/vdx-digital-transformation-solutions-company-limited-15194346?country_id=232
 CÔNG TY TNHH HUB2S VIỆT NAM [Ready] /partners/cong-ty-tnhh-hub2s-viet-nam-24783586?country_id=232
 Extreme Vietnam [Ready] /partners/extreme-vietnam-8920420?country_id=232
+SGH Asia Ltd [Ready] /partners/sgh-asia-ltd-7991493?country_id=232
 CÔNG TY TNHH CÁNH CAM SOLUTIONS [Ready] /partners/cong-ty-tnhh-canh-cam-solutions-24516730?country_id=232
 CÔNG TY TNHH MERCURY STUDIO [Ready] /partners/cong-ty-tnhh-mercury-studio-23328758?country_id=232
 Công ty TNHH Phần Mềm MICAD [Ready] /partners/cong-ty-tnhh-phan-mem-micad-16603183?country_id=232
@@ -22,7 +23,6 @@ HA NOI BRANCH MOR SOFTWARE JSC [Ready] /partners/ha-noi-branch-mor-software-jsc-
 Leap Software Solutions Vietnam [Ready] /partners/leap-software-solutions-vietnam-12363489?country_id=232
 PAK ENTITY CO LIMITED [Ready] /partners/pak-entity-co-limited-34649033?country_id=232
 SAOBACDAU TECHNOLOGIES CORPORATION [Ready] /partners/saobacdau-technologies-corporation-4022063?country_id=232
-SGH Asia Ltd [Ready] /partners/sgh-asia-ltd-7991493?country_id=232
 VIETNAMOBILE TELECOMMUNICATIONS JOINT STOCK COMPANY [Ready] /partners/vietnamobile-telecommunications-joint-stock-company-29906382?country_id=232
 ATT Vietnam [Ready] /partners/att-vietnam-23646330?country_id=232
 Bac Ha Software Limited Company (BHSoft) [Ready] /partners/bac-ha-software-limited-company-bhsoft-7348147?country_id=232
