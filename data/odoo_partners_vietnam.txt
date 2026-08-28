@@ -3,7 +3,6 @@ Portcities Vietnam [Silver] /partners/portcities-vietnam-1613121?country_id=232
 Magenest ., JSC [Silver] /partners/magenest-jsc-1716168?country_id=232
 ORIS SOLUTIONS JOINT STOCK COMPANY [Silver] /partners/oris-solutions-joint-stock-company-11452881?country_id=232
 VTI Joint Stock Company [Silver] /partners/vti-joint-stock-company-5391928?country_id=232
-GLOBAL PSM COMPANY LIMITED [Silver] /partners/global-psm-company-limited-13912953?country_id=232
 Trobz [Ready] /partners/trobz-16709?country_id=232
 NOS ERP CONSULTING [Ready] /partners/nos-erp-consulting-10343780?country_id=232
 ICSC Corporation [Ready] /partners/icsc-corporation-6095361?country_id=232
