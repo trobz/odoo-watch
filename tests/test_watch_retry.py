@@ -55,10 +55,9 @@ def test_does_not_retry_permanent_status(monkeypatch):
     assert len(calls) == 1
 
 
-def test_with_page_sets_query_param():
-    # f"{url}/page/2" would produce "...?country_id=232/page/2" -> 0 results
-    assert (
-        watch.with_page("https://www.odoo.com/partners?country_id=232", 2)
-        == "https://www.odoo.com/partners?country_id=232&page=2"
-    )
-    assert watch.with_page("https://x/p?page=2", 3) == "https://x/p?page=3"
+def test_check_expected_rejects_other_country():
+    # odoo.com falls back to geo-IP defaults for some URL forms; a US listing
+    # must not be saved as the Vietnam one.
+    watch.check_expected("A [Gold] /partners/a-1?country_id=232\n", "country_id=232")
+    with pytest.raises(ValueError, match="country_id=232"):
+        watch.check_expected("B [Ready] /partners/b-2?country_id=224\n", "country_id=232")

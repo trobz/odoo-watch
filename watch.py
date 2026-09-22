@@ -8,7 +8,6 @@ import sys
 import tempfile
 import time
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from bs4 import BeautifulSoup
 
@@ -27,11 +26,14 @@ WATCHES = [
     },
     {
         "path": "data/odoo_partners_vietnam.txt",
-        # /partners/country/<slug> is 403/tarpitted by odoo.com's edge since
-        # 2026-09-17; the country_id query form serves the same listing.
-        "url": "https://www.odoo.com/partners?country_id=232",
+        "url": "https://www.odoo.com/partners/country/viet-nam-232",
         "extract": "partners",
         "paginate": True,
+        # Every listed partner's link carries the active country filter. If
+        # odoo.com ever falls back to geo-IP defaults (it does for the
+        # ?country_id= form), this catches it instead of silently saving
+        # another country's partners.
+        "expect": "country_id=232",
     },
     {
         "path": "data/odoo_status.html",
@@ -96,20 +98,20 @@ def extract_partners(html: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def with_page(url: str, page: int) -> str:
-    """Return url with its `page` query parameter set to page."""
-    parts = urlparse(url)
-    query = [(k, v) for k, v in parse_qsl(parts.query) if k != "page"]
-    query.append(("page", str(page)))
-    return urlunparse(parts._replace(query=urlencode(query)))
-
-
 class FetchError(Exception):
     """A URL could not be fetched."""
 
     def __init__(self, url: str, reason: str):
         super().__init__(f"{reason} for {url}")
         self.reason = reason
+
+
+def check_expected(content: str, expect: str) -> None:
+    """Raise unless every line of content contains expect."""
+    bad = [line for line in content.strip().splitlines() if expect not in line]
+    if bad:
+        msg = f"{len(bad)} line(s) missing {expect!r}, first: {bad[0]!r}"
+        raise ValueError(msg)
 
 
 def is_retryable(status_code: int) -> bool:
@@ -212,7 +214,7 @@ def main():
                     page = 2
                     max_pages = watch.get("max_pages", 20)
                     while page <= max_pages:
-                        paged_url = with_page(url, page)
+                        paged_url = f"{url}/page/{page}"
                         print(f"  -> fetching page {page}/{max_pages} ...")
                         more = extract_partners(fetch_with_retry(paged_url).decode("utf-8"))
                         if not more.strip():
@@ -232,6 +234,8 @@ def main():
                 content = extract_selector(html, watch["selector"])
             else:
                 content = clean_html(html)
+            if watch.get("expect"):
+                check_expected(content, watch["expect"])
             path.write_text(content, encoding="utf-8")
             print(f"  -> saved to {path}")
         except (FetchError, ValueError) as e:
