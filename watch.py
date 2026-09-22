@@ -3,11 +3,13 @@
 
 import argparse
 import re
+import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
-import requests
 from bs4 import BeautifulSoup
 
 WATCHES = [
@@ -25,7 +27,9 @@ WATCHES = [
     },
     {
         "path": "data/odoo_partners_vietnam.txt",
-        "url": "https://www.odoo.com/partners/country/viet-nam-232",
+        # /partners/country/<slug> is 403/tarpitted by odoo.com's edge since
+        # 2026-09-17; the country_id query form serves the same listing.
+        "url": "https://www.odoo.com/partners?country_id=232",
         "extract": "partners",
         "paginate": True,
     },
@@ -51,9 +55,7 @@ def clean_html(html: str) -> str:
     # Blank out csrf_token values in inline scripts
     for tag in soup.find_all("script"):
         if tag.string and "csrf_token" in tag.string:
-            tag.string.replace_with(
-                re.sub(r'csrf_token:\s*"[^"]*"', 'csrf_token: ""', tag.string)
-            )
+            tag.string.replace_with(re.sub(r'csrf_token:\s*"[^"]*"', 'csrf_token: ""', tag.string))
 
     # Strip ?unique=... from href/src/content/action attributes
     for tag in soup.find_all(True):
@@ -94,6 +96,22 @@ def extract_partners(html: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+def with_page(url: str, page: int) -> str:
+    """Return url with its `page` query parameter set to page."""
+    parts = urlparse(url)
+    query = [(k, v) for k, v in parse_qsl(parts.query) if k != "page"]
+    query.append(("page", str(page)))
+    return urlunparse(parts._replace(query=urlencode(query)))
+
+
+class FetchError(Exception):
+    """A URL could not be fetched."""
+
+    def __init__(self, url: str, reason: str):
+        super().__init__(f"{reason} for {url}")
+        self.reason = reason
+
+
 def is_retryable(status_code: int) -> bool:
     """Whether a status is worth retrying.
 
@@ -104,18 +122,67 @@ def is_retryable(status_code: int) -> bool:
     return status_code >= 500 or status_code in (403, 429)
 
 
-def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> requests.Response:
-    """Fetch URL with retry on transient errors."""
+def curl_get(url: str, timeout: int = 60) -> tuple[int, bytes]:
+    """GET url via curl, returning (status_code, body).
+
+    curl rather than requests: since 2026-09-17 odoo.com's edge black-holes
+    requests carrying urllib3's TLS fingerprint (connection accepted, response
+    never sent -> read timeout), while curl to the same URL from the same host
+    and User-Agent is served normally.
+    """
+    with tempfile.NamedTemporaryFile() as body:
+        # fixed argv, no shell; curl resolved from PATH (present on CI runners)
+        proc = subprocess.run(  # noqa: S603
+            [  # noqa: S607
+                "curl",
+                "--silent",
+                "--show-error",
+                "--location",
+                "--compressed",
+                "--max-time",
+                str(timeout),
+                "--user-agent",
+                HEADERS["User-Agent"],
+                "--output",
+                body.name,
+                "--write-out",
+                "%{http_code}",
+                url,
+            ],
+            capture_output=True,
+            text=True,
+        )
+        if proc.returncode != 0:
+            raise FetchError(url, f"curl exit {proc.returncode}: {proc.stderr.strip()}")
+        try:
+            status = int(proc.stdout.strip())
+        except ValueError:
+            raise FetchError(url, "curl returned no status") from None
+        return status, Path(body.name).read_bytes()
+
+
+def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> bytes:
+    """Fetch URL with retry on transient errors (bad status or network failure)."""
     for attempt in range(retries):
-        response = requests.get(url, timeout=(10, 30), headers=HEADERS)
-        if not is_retryable(response.status_code) or attempt == retries - 1:
-            response.raise_for_status()
-            return response
+        last = attempt == retries - 1
+        try:
+            status, body = curl_get(url)
+        except FetchError as e:
+            if last:
+                raise
+            reason = str(e)
+        else:
+            reason = f"HTTP {status}"
+            if not is_retryable(status):
+                if status >= 400:
+                    raise FetchError(url, reason)
+                return body
+            if last:
+                raise FetchError(url, reason)
         wait = backoff * (2**attempt)
-        print(f"  -> HTTP {response.status_code}, retrying in {wait:.0f}s (attempt {attempt + 1}/{retries})...")
+        print(f"  -> {reason}, retrying in {wait:.0f}s (attempt {attempt + 1}/{retries})...")
         time.sleep(wait)
-    response.raise_for_status()
-    return response
+    raise AssertionError("unreachable")
 
 
 def main():
@@ -135,8 +202,7 @@ def main():
         path = Path(watch["path"])
         print(f"Fetching {url} ...")
         try:
-            response = fetch_with_retry(url)
-            html = response.content.decode("utf-8")
+            html = fetch_with_retry(url).decode("utf-8")
             if watch.get("raw"):
                 content = html
             elif watch.get("extract") == "partners":
@@ -146,10 +212,9 @@ def main():
                     page = 2
                     max_pages = watch.get("max_pages", 20)
                     while page <= max_pages:
-                        paged_url = f"{url}/page/{page}"
+                        paged_url = with_page(url, page)
                         print(f"  -> fetching page {page}/{max_pages} ...")
-                        resp = fetch_with_retry(paged_url)
-                        more = extract_partners(resp.content.decode("utf-8"))
+                        more = extract_partners(fetch_with_retry(paged_url).decode("utf-8"))
                         if not more.strip():
                             print(f"  -> no more results at page {page}, stopping.")
                             break
@@ -169,7 +234,7 @@ def main():
                 content = clean_html(html)
             path.write_text(content, encoding="utf-8")
             print(f"  -> saved to {path}")
-        except (requests.RequestException, ValueError) as e:
+        except (FetchError, ValueError) as e:
             print(f"  -> ERROR: {e}", file=sys.stderr)
             errors.append(url)
 
