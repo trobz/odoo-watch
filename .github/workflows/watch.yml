@@ -22,8 +22,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # continue-on-error: a single watch failing (e.g. an unmapped upstream
+      # release-notes page) must not block the other watches' commits below --
+      # see the final "Fail the run if any watch errored" step, which still
+      # surfaces the failure after everything that succeeded has been committed.
       - name: Fetch URL content
+        id: fetch
+        continue-on-error: true
+        env:
+          ODOO_WATCH_DEBUG_DIR: /tmp/odoo-watch-debug
         run: python3 watch.py
+
+      # Debug aid for the failure above: watch.py dumps the HTML it fetched
+      # right before a parse error to ODOO_WATCH_DEBUG_DIR (see watch.py's
+      # dump_debug_html); upload it here so the exact page markup that broke
+      # parsing is attached to the run instead of only living in CI logs.
+      - name: Upload fetched HTML on failure
+        if: steps.fetch.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: odoo-watch-debug-html
+          path: /tmp/odoo-watch-debug
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Check for changes
         id: check
@@ -31,8 +52,14 @@ jobs:
           git add data/
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "analyzer=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            if git diff --cached --name-only | grep -qE '^data/(release-notes|orm-changelog)/'; then
+              echo "analyzer=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "analyzer=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Create branch and commit
@@ -70,8 +97,29 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge --merge "$BRANCH"
 
+      - name: Dispatch to analyzer
+        if: steps.check.outputs.analyzer == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANALYZER_TOKEN: ${{ secrets.ANALYZER_DISPATCH_TOKEN }}
+        run: |
+          STATE=$(gh pr view "$BRANCH" --json state --jq .state)
+          if [[ "$STATE" != "MERGED" ]]; then
+            echo "ERROR: PR $BRANCH is not merged (state=$STATE)" >&2
+            exit 1
+          fi
+          GH_TOKEN="$ANALYZER_TOKEN" gh api repos/trobz/odoo-changes-analyzor/dispatches \
+            -f event_type=odoo_watch_updated
+
       - name: Delete branch
         if: steps.check.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git push origin --delete "$BRANCH"
+
+      - name: Fail the run if any watch errored
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "One or more watches failed to fetch -- see the 'Fetch URL content' step above." >&2
+          echo "Watches that succeeded were still committed/merged above; this failure is only to surface the error." >&2
+          exit 1
