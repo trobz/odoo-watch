@@ -1,0 +1,32 @@
+{
+  "version": "17.0",
+  "source_url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+  "apps": [
+    {
+      "app": "ORM API",
+      "slug": "orm-api",
+      "file": "orm-api.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "17.0-orm-api-introduce-an-sql-orm-html-odoo-tools-sql-wrapper-object-to-make-sql-composition-easier-and-safer-with-respect-to-sql-injections",
+          "title": "Introduce an [`SQL`](../orm.html#odoo.tools.SQL) wrapper object to make SQL composition easier and safer with respect to SQL injections"
+        },
+        {
+          "id": "17.0-orm-api-method-name-get-has-been-deprecated-with-122085-https-github-com-odoo-odoo-pull-122085",
+          "title": "Method `name_get()` has been deprecated with [#122085](https://github.com/odoo/odoo/pull/122085)"
+        },
+        {
+          "id": "17.0-orm-api-method-read-group-orm-html-odoo-models-model-read-group-has-a-new-signature-with-110737-https-github-com-odoo-odoo-pull-110737",
+          "title": "Method [`_read_group()`](../orm.html#odoo.models.Model._read_group) has a new signature with [#110737](https://github.com/odoo/odoo/pull/110737)"
+        },
+        {
+          "id": "17.0-orm-api-refactor-the-implementation-of-searching-and-reading-methods-to-be-able-to-combine-both-in-a-minimal-number-of-sql-queries",
+          "title": "Refactor the implementation of searching and reading methods to be able to combine both in a minimal number of SQL queries"
+        }
+      ]
+    }
+  ],
+  "item_count": 4
+}

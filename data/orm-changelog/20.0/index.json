@@ -1,0 +1,100 @@
+{
+  "version": "20.0",
+  "source_url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+  "apps": [
+    {
+      "app": "ORM API",
+      "slug": "orm-api",
+      "file": "orm-api.md",
+      "anchor": "",
+      "item_count": 21,
+      "notes": [
+        {
+          "id": "20.0-orm-api-adding-binaryvalue-filename-and-updating-the-rpc-format-for-binary-fields",
+          "title": "Adding `BinaryValue.filename` and updating the RPC format for binary fields"
+        },
+        {
+          "id": "20.0-orm-api-removing-model-table-query-in-281202-https-github-com-odoo-odoo-pull-281202",
+          "title": "Removing `Model._table_query` in [#281202](https://github.com/odoo/odoo/pull/281202)"
+        },
+        {
+          "id": "20.0-orm-api-simplifying-translation-manipulation",
+          "title": "Simplifying translation manipulation"
+        },
+        {
+          "id": "20.0-orm-api-new-populate-script-to-generate-fake-data-for-testing",
+          "title": "New `populate` script to generate fake data for testing"
+        },
+        {
+          "id": "20.0-orm-api-storing-manifest-terms-in-modules-own-translation-files-instead-of-base",
+          "title": "Storing manifest terms in modules’ own translation files instead of `base`"
+        },
+        {
+          "id": "20.0-orm-api-ir-access-that-merges-acls-and-record-rules",
+          "title": "`ir.access` that merges ACLs and record rules"
+        },
+        {
+          "id": "20.0-orm-api-field-updates-and-inverse-execution-are-now-consistently-ordered-by-field-write-sequence-field-index-in-both-create-and-write",
+          "title": "Field updates and inverse execution are now consistently ordered by `(field.write_sequence, field_index)` in both `create()` and `write()`"
+        },
+        {
+          "id": "20.0-orm-api-new-http-server-based-on-h11",
+          "title": "New HTTP server based on h11"
+        },
+        {
+          "id": "20.0-orm-api-removing-request-from-the-code-of-models-and-adding-env-website",
+          "title": "Removing `request` from the code of models and adding `env.website`"
+        },
+        {
+          "id": "20.0-orm-api-thread-safe-ormcache-and-automatic-signaling",
+          "title": "Thread-safe ormcache and automatic signaling"
+        },
+        {
+          "id": "20.0-orm-api-modularize-reporting-engines-and-prepare-paper-muncher",
+          "title": "Modularize reporting engines and prepare paper-muncher"
+        },
+        {
+          "id": "20.0-orm-api-the-type-of-binary-fields-is-now-a-binaryvalue",
+          "title": "The type of Binary fields is now a BinaryValue"
+        },
+        {
+          "id": "20.0-orm-api-fixing-cache-pollution-for-x2many-fields",
+          "title": "Fixing cache pollution for x2many fields"
+        },
+        {
+          "id": "20.0-orm-api-custom-access-permissions-implemented-using-domains",
+          "title": "Custom access permissions implemented using domains"
+        },
+        {
+          "id": "20.0-orm-api-simpler-model-concat-and-model-union-api",
+          "title": "Simpler `Model.concat` and `Model.union` API"
+        },
+        {
+          "id": "20.0-orm-api-write-multiple-translations-in-one-write",
+          "title": "Write multiple translations in one write"
+        },
+        {
+          "id": "20.0-orm-api-binary-fields-store-only-binary-data-in-raw-format",
+          "title": "Binary fields store only binary data in raw format"
+        },
+        {
+          "id": "20.0-orm-api-various-qweb-improvements",
+          "title": "Various qweb improvements"
+        },
+        {
+          "id": "20.0-orm-api-new-api-for-ir-config-parameter",
+          "title": "New API for ir.config_parameter"
+        },
+        {
+          "id": "20.0-orm-api-new-api-to-build-sql",
+          "title": "New API to build SQL"
+        },
+        {
+          "id": "20.0-orm-api-field-compute-sql-allows-to-define-a-way-to-produce-sql-for-computed-fields",
+          "title": "`Field.compute_sql` allows to define a way to produce SQL for computed fields"
+        }
+      ]
+    }
+  ],
+  "item_count": 21
+}
