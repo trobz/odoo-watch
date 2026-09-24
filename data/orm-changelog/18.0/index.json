@@ -1,0 +1,48 @@
+{
+  "version": "18.0",
+  "source_url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+  "apps": [
+    {
+      "app": "ORM API",
+      "slug": "orm-api",
+      "file": "orm-api.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "18.0-orm-api-searching-by-name-is-now-implemented-as-search-display-name-like-all-other-fields",
+          "title": "Searching by name is now implemented as `_search_display_name` like all other fields"
+        },
+        {
+          "id": "18.0-orm-api-new-methods-to-check-access-rights-and-rules-now-combine-both-access-rights-and-rules-check-access-has-access-and-filtered-access",
+          "title": "New methods to check access rights and rules now combine both access rights and rules: `check_access`, `has_access` and `_filtered_access`"
+        },
+        {
+          "id": "18.0-orm-api-translations-are-made-available-from-the-environment-with-174844-https-github-com-odoo-odoo-pull-174844",
+          "title": "Translations are made available from the `Environment` with [#174844](https://github.com/odoo/odoo/pull/174844)"
+        },
+        {
+          "id": "18.0-orm-api-the-internal-operator-inselect-is-removed",
+          "title": "The internal operator `inselect` is removed"
+        },
+        {
+          "id": "18.0-orm-api-we-can-now-group-by-date-parts-numbers-in-read-group-read-group-and-domains-with-159528-https-github-com-odoo-odoo-pull-159528",
+          "title": "We can now group by date parts numbers in `read_group`, `_read_group` and domains with [#159528](https://github.com/odoo/odoo/pull/159528)"
+        },
+        {
+          "id": "18.0-orm-api-the-group-operator-attribute-of-field-orm-html-odoo-fields-field-is-renamed-into-aggregator-with-127353-https-github-com-odoo-odoo-pull-127353",
+          "title": "The `group_operator` attribute of [`Field`](../orm.html#odoo.fields.Field) is renamed into `aggregator` with [#127353](https://github.com/odoo/odoo/pull/127353)"
+        },
+        {
+          "id": "18.0-orm-api-we-can-now-group-aggregate-order-by-related-no-store-field-with-127353-https-github-com-odoo-odoo-pull-127353",
+          "title": "We can now group/aggregate/order by related no-store field with [#127353](https://github.com/odoo/odoo/pull/127353)"
+        },
+        {
+          "id": "18.0-orm-api-method-flush-search-has-been-deprecated-with-144747-https-github-com-odoo-odoo-pull-144747",
+          "title": "Method `_flush_search()` has been deprecated with [#144747](https://github.com/odoo/odoo/pull/144747)"
+        }
+      ]
+    }
+  ],
+  "item_count": 8
+}

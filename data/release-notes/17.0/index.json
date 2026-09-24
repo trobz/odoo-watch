@@ -1,0 +1,2651 @@
+{
+  "version": "17.0",
+  "source_url": "https://www.odoo.com/odoo-17-release-notes",
+  "apps": [
+    {
+      "app": "General",
+      "slug": "general",
+      "file": "general.md",
+      "anchor": "table_of_content_heading_1707731490324_62",
+      "item_count": 47,
+      "notes": [
+        {
+          "id": "17.0-general-new-ui-design",
+          "title": "New UI design"
+        },
+        {
+          "id": "17.0-general-search-more-becomes-view-all",
+          "title": "\"Search more\" becomes \"View all\""
+        },
+        {
+          "id": "17.0-general-advanced-search",
+          "title": "Advanced search"
+        },
+        {
+          "id": "17.0-general-avatar-card-preview",
+          "title": "Avatar card preview"
+        },
+        {
+          "id": "17.0-general-map-sidebar",
+          "title": "Map sidebar"
+        },
+        {
+          "id": "17.0-general-chatter-message-and-note-translations",
+          "title": "Chatter: message and note translations"
+        },
+        {
+          "id": "17.0-general-confirm-and-cancel-shortcuts",
+          "title": "Confirm and cancel shortcuts"
+        },
+        {
+          "id": "17.0-general-date-formatting-on-import",
+          "title": "Date formatting on import"
+        },
+        {
+          "id": "17.0-general-dialog-validation-shortcut",
+          "title": "Dialog validation shortcut"
+        },
+        {
+          "id": "17.0-general-disable-opening-of-form-view-modal",
+          "title": "Disable opening of form view modal"
+        },
+        {
+          "id": "17.0-general-disable-spell-checks",
+          "title": "Disable spell checks"
+        },
+        {
+          "id": "17.0-general-domain-editor-folding",
+          "title": "Domain editor folding"
+        },
+        {
+          "id": "17.0-general-domain-selector",
+          "title": "Domain selector"
+        },
+        {
+          "id": "17.0-general-duration-tracking-stage",
+          "title": "Duration tracking / stage"
+        },
+        {
+          "id": "17.0-general-editor-integrate-chatgpt-in-powerbox",
+          "title": "Editor: integrate ChatGPT in powerbox"
+        },
+        {
+          "id": "17.0-general-email-aliases-feedback",
+          "title": "Email aliases feedback"
+        },
+        {
+          "id": "17.0-general-email-bounce-feedback",
+          "title": "Email bounce feedback"
+        },
+        {
+          "id": "17.0-general-email-template-management",
+          "title": "Email template management"
+        },
+        {
+          "id": "17.0-general-freeze-headers",
+          "title": "Freeze headers"
+        },
+        {
+          "id": "17.0-general-gamification-track-karma",
+          "title": "Gamification: track karma"
+        },
+        {
+          "id": "17.0-general-group-by-properties",
+          "title": "Group by properties"
+        },
+        {
+          "id": "17.0-general-human-readable-numeric-fields",
+          "title": "Human-readable numeric fields"
+        },
+        {
+          "id": "17.0-general-kanban-quick-record-creation",
+          "title": "Kanban: quick record creation"
+        },
+        {
+          "id": "17.0-general-list-view-mass-duplicate-records",
+          "title": "List view: mass-duplicate records"
+        },
+        {
+          "id": "17.0-general-mixed-stacked-bar-line-chart",
+          "title": "Mixed stacked bar / line chart"
+        },
+        {
+          "id": "17.0-general-mobile-app-shortcuts",
+          "title": "Mobile app shortcuts"
+        },
+        {
+          "id": "17.0-general-moveable-dialog-windows",
+          "title": "Moveable dialog windows"
+        },
+        {
+          "id": "17.0-general-multi-domain-aliases",
+          "title": "Multi-domain aliases"
+        },
+        {
+          "id": "17.0-general-new-partner-autocomplete-provider-dun-bradstreet",
+          "title": "New partner autocomplete provider: Dun & Bradstreet"
+        },
+        {
+          "id": "17.0-general-odoo-pwa",
+          "title": "Odoo PWA"
+        },
+        {
+          "id": "17.0-general-owl-grid-view",
+          "title": "OWL grid view"
+        },
+        {
+          "id": "17.0-general-partner-autocomplete",
+          "title": "Partner autocomplete"
+        },
+        {
+          "id": "17.0-general-properties-support-in-domain-selector",
+          "title": "Properties support in domain selector"
+        },
+        {
+          "id": "17.0-general-property-fields",
+          "title": "Property fields"
+        },
+        {
+          "id": "17.0-general-property-fields-in-list-views",
+          "title": "Property fields in list views"
+        },
+        {
+          "id": "17.0-general-quick-user-assign",
+          "title": "Quick user assign"
+        },
+        {
+          "id": "17.0-general-range-selection-shortcut",
+          "title": "Range selection shortcut"
+        },
+        {
+          "id": "17.0-general-ratings-on-email-templates",
+          "title": "Ratings on email templates"
+        },
+        {
+          "id": "17.0-general-re-order-apps",
+          "title": "Re-order apps"
+        },
+        {
+          "id": "17.0-general-responsible-fields",
+          "title": "Responsible fields"
+        },
+        {
+          "id": "17.0-general-search-property-fields",
+          "title": "Search property fields"
+        },
+        {
+          "id": "17.0-general-separator-field-type",
+          "title": "Separator field type"
+        },
+        {
+          "id": "17.0-general-sms-status",
+          "title": "SMS status"
+        },
+        {
+          "id": "17.0-general-stacked-bar-charts",
+          "title": "Stacked bar charts"
+        },
+        {
+          "id": "17.0-general-text-editor-font-size-input",
+          "title": "Text editor: font size input"
+        },
+        {
+          "id": "17.0-general-unfollow-from-inbox",
+          "title": "Unfollow from inbox"
+        },
+        {
+          "id": "17.0-general-unselect-all-records",
+          "title": "Unselect all records"
+        }
+      ]
+    },
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "table_of_content_heading_1707731490324_63",
+      "item_count": 59,
+      "notes": [
+        {
+          "id": "17.0-accounting-accounting-reports",
+          "title": "Accounting reports"
+        },
+        {
+          "id": "17.0-accounting-allocation-of-invoice-discounts",
+          "title": "Allocation of invoice discounts"
+        },
+        {
+          "id": "17.0-accounting-assets-usability",
+          "title": "Assets usability"
+        },
+        {
+          "id": "17.0-accounting-auto-extract-pdfs-only",
+          "title": "Auto extract PDFs only"
+        },
+        {
+          "id": "17.0-accounting-auto-reconcile-feature",
+          "title": "Auto-reconcile feature"
+        },
+        {
+          "id": "17.0-accounting-avalara-geolocalization-and-sales-tax",
+          "title": "Avalara geolocalization and sales tax"
+        },
+        {
+          "id": "17.0-accounting-avatax-use-warehouse-address-in-ship-from-information",
+          "title": "AvaTax: use warehouse address in ship from information"
+        },
+        {
+          "id": "17.0-accounting-bank-reconciliation-layout",
+          "title": "Bank reconciliation layout"
+        },
+        {
+          "id": "17.0-accounting-bank-statement-pdf-report-layout",
+          "title": "Bank statement PDF report layout"
+        },
+        {
+          "id": "17.0-accounting-bills-artificial-intelligence",
+          "title": "Bills artificial intelligence"
+        },
+        {
+          "id": "17.0-accounting-branches-management",
+          "title": "Branches management"
+        },
+        {
+          "id": "17.0-accounting-credit-and-debit-note-buttons",
+          "title": "Credit and debit note buttons"
+        },
+        {
+          "id": "17.0-accounting-cross-analytic",
+          "title": "Cross analytic"
+        },
+        {
+          "id": "17.0-accounting-credit-limit-improvement",
+          "title": "Credit limit improvement"
+        },
+        {
+          "id": "17.0-accounting-deferred-expense-revenue-report",
+          "title": "Deferred expense/revenue report"
+        },
+        {
+          "id": "17.0-accounting-deferred-management",
+          "title": "Deferred management"
+        },
+        {
+          "id": "17.0-accounting-delivery-date",
+          "title": "Delivery date"
+        },
+        {
+          "id": "17.0-accounting-down-payment-and-pos",
+          "title": "Down payment and POS"
+        },
+        {
+          "id": "17.0-accounting-down-payments-tax-breakdown",
+          "title": "Down payments tax breakdown"
+        },
+        {
+          "id": "17.0-accounting-early-discount",
+          "title": "Early discount"
+        },
+        {
+          "id": "17.0-accounting-edi-format",
+          "title": "EDI format"
+        },
+        {
+          "id": "17.0-accounting-expense-receipts-in-journal-entry-attachments",
+          "title": "Expense receipts in journal entry attachments"
+        },
+        {
+          "id": "17.0-accounting-express-vat-in-local-currency-on-invoices",
+          "title": "Express VAT in local currency on invoices"
+        },
+        {
+          "id": "17.0-accounting-filter-blank-lines",
+          "title": "Filter blank lines"
+        },
+        {
+          "id": "17.0-accounting-fleet-impact-vehicle-without-a-bill",
+          "title": "Fleet: impact vehicle without a bill"
+        },
+        {
+          "id": "17.0-accounting-follow-up-reports-missing-contact-info",
+          "title": "Follow-up reports: missing contact info"
+        },
+        {
+          "id": "17.0-accounting-import-matching-number",
+          "title": "Import matching number"
+        },
+        {
+          "id": "17.0-accounting-improve-settings-for-tax-calculation-display-on-invoices",
+          "title": "Improve settings for tax calculation display on invoices"
+        },
+        {
+          "id": "17.0-accounting-improved-printed-reports",
+          "title": "Improved printed reports"
+        },
+        {
+          "id": "17.0-accounting-inter-company-transactions-attach-a-copy-of-the-invoice-pdf-to-the-vendor-bill",
+          "title": "Inter-company transactions - Attach a copy of the invoice PDF to the vendor bill"
+        },
+        {
+          "id": "17.0-accounting-invoice-date-visibility",
+          "title": "Invoice date visibility"
+        },
+        {
+          "id": "17.0-accounting-invoice-layout-overhaul",
+          "title": "Invoice layout overhaul"
+        },
+        {
+          "id": "17.0-accounting-invoice-upload-harmonization",
+          "title": "Invoice upload harmonization"
+        },
+        {
+          "id": "17.0-accounting-manual-matching-partner-creation",
+          "title": "Manual matching: partner creation"
+        },
+        {
+          "id": "17.0-accounting-manual-reconciliation",
+          "title": "Manual reconciliation"
+        },
+        {
+          "id": "17.0-accounting-mass-download-documents",
+          "title": "Mass download documents"
+        },
+        {
+          "id": "17.0-accounting-mass-send-and-print-invoice-banners",
+          "title": "Mass 'send and print': invoice banners"
+        },
+        {
+          "id": "17.0-accounting-matching-numbers-rework",
+          "title": "Matching numbers rework"
+        },
+        {
+          "id": "17.0-accounting-miscellaneous-operations-on-bank-journals",
+          "title": "Miscellaneous operations on bank journals"
+        },
+        {
+          "id": "17.0-accounting-ocr-usability-improvements",
+          "title": "OCR usability improvements"
+        },
+        {
+          "id": "17.0-accounting-ocr-credit-notes-and-refunds",
+          "title": "OCR: credit notes and refunds"
+        },
+        {
+          "id": "17.0-accounting-payment-scamming-protection",
+          "title": "Payment scamming protection"
+        },
+        {
+          "id": "17.0-accounting-peppol-global-location-identifiers",
+          "title": "Peppol global location identifiers"
+        },
+        {
+          "id": "17.0-accounting-peppol-onboarding",
+          "title": "Peppol onboarding"
+        },
+        {
+          "id": "17.0-accounting-ponto-onboarding",
+          "title": "Ponto onboarding"
+        },
+        {
+          "id": "17.0-accounting-report-loading-speed",
+          "title": "Report loading speed"
+        },
+        {
+          "id": "17.0-accounting-report-sections",
+          "title": "Report sections"
+        },
+        {
+          "id": "17.0-accounting-reports-rebirth",
+          "title": "Reports rebirth"
+        },
+        {
+          "id": "17.0-accounting-revamped-send-and-print-wizard",
+          "title": "Revamped send and print wizard"
+        },
+        {
+          "id": "17.0-accounting-saf-t-remove-blocking-errors",
+          "title": "SAF-T: remove blocking errors"
+        },
+        {
+          "id": "17.0-accounting-sepa-direct-debit-pain-008-001-08",
+          "title": "SEPA Direct Debit (pain.008.001.08)"
+        },
+        {
+          "id": "17.0-accounting-sepa-non-latin-characters",
+          "title": "SEPA non-latin characters"
+        },
+        {
+          "id": "17.0-accounting-tax-taxonomy",
+          "title": "Tax taxonomy"
+        },
+        {
+          "id": "17.0-accounting-taxes-modification-restriction-and-logging",
+          "title": "Taxes: modification restriction and logging"
+        },
+        {
+          "id": "17.0-accounting-ubl-cii-handle-payment-terms",
+          "title": "UBL/CII: handle payment terms"
+        },
+        {
+          "id": "17.0-accounting-user-portal-invoices",
+          "title": "User portal: invoices"
+        },
+        {
+          "id": "17.0-accounting-user-friendly-bank-synchronization",
+          "title": "User-friendly bank synchronization"
+        },
+        {
+          "id": "17.0-accounting-vendor-bills-import-and-purchase-orders-matching",
+          "title": "Vendor bills import and purchase orders matching"
+        },
+        {
+          "id": "17.0-accounting-vies-check",
+          "title": "VIES check"
+        }
+      ]
+    },
+    {
+      "app": "Localizations",
+      "slug": "localizations",
+      "file": "localizations.md",
+      "anchor": "table_of_content_heading_1707731490324_64",
+      "item_count": 46,
+      "notes": [
+        {
+          "id": "17.0-localizations-algeria",
+          "title": "Algeria"
+        },
+        {
+          "id": "17.0-localizations-argentina",
+          "title": "Argentina"
+        },
+        {
+          "id": "17.0-localizations-australia",
+          "title": "Australia"
+        },
+        {
+          "id": "17.0-localizations-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "17.0-localizations-brazil",
+          "title": "Brazil"
+        },
+        {
+          "id": "17.0-localizations-chile",
+          "title": "Chile"
+        },
+        {
+          "id": "17.0-localizations-colombia",
+          "title": "Colombia"
+        },
+        {
+          "id": "17.0-localizations-denmark",
+          "title": "Denmark"
+        },
+        {
+          "id": "17.0-localizations-dominican-republic",
+          "title": "Dominican Republic"
+        },
+        {
+          "id": "17.0-localizations-ecuador",
+          "title": "Ecuador"
+        },
+        {
+          "id": "17.0-localizations-estonia",
+          "title": "Estonia"
+        },
+        {
+          "id": "17.0-localizations-france",
+          "title": "France"
+        },
+        {
+          "id": "17.0-localizations-greece",
+          "title": "Greece"
+        },
+        {
+          "id": "17.0-localizations-hong-kong",
+          "title": "Hong Kong"
+        },
+        {
+          "id": "17.0-localizations-ireland",
+          "title": "Ireland"
+        },
+        {
+          "id": "17.0-localizations-japan",
+          "title": "Japan"
+        },
+        {
+          "id": "17.0-localizations-jordan",
+          "title": "Jordan"
+        },
+        {
+          "id": "17.0-localizations-kazakhstan",
+          "title": "Kazakhstan"
+        },
+        {
+          "id": "17.0-localizations-kenya",
+          "title": "Kenya"
+        },
+        {
+          "id": "17.0-localizations-latvia",
+          "title": "Latvia"
+        },
+        {
+          "id": "17.0-localizations-lithuania",
+          "title": "Lithuania"
+        },
+        {
+          "id": "17.0-localizations-malaysia",
+          "title": "Malaysia"
+        },
+        {
+          "id": "17.0-localizations-mexico",
+          "title": "Mexico"
+        },
+        {
+          "id": "17.0-localizations-morocco",
+          "title": "Morocco"
+        },
+        {
+          "id": "17.0-localizations-mozambique",
+          "title": "Mozambique"
+        },
+        {
+          "id": "17.0-localizations-netherlands",
+          "title": "Netherlands"
+        },
+        {
+          "id": "17.0-localizations-new-zealand",
+          "title": "New Zealand"
+        },
+        {
+          "id": "17.0-localizations-peru",
+          "title": "Peru"
+        },
+        {
+          "id": "17.0-localizations-philippines",
+          "title": "Philippines"
+        },
+        {
+          "id": "17.0-localizations-poland",
+          "title": "Poland"
+        },
+        {
+          "id": "17.0-localizations-romania",
+          "title": "Romania"
+        },
+        {
+          "id": "17.0-localizations-serbia",
+          "title": "Serbia"
+        },
+        {
+          "id": "17.0-localizations-singapore",
+          "title": "Singapore"
+        },
+        {
+          "id": "17.0-localizations-slovakia",
+          "title": "Slovakia"
+        },
+        {
+          "id": "17.0-localizations-soda-file-import-account-mappings",
+          "title": "SODA file import: account mappings"
+        },
+        {
+          "id": "17.0-localizations-spain",
+          "title": "Spain"
+        },
+        {
+          "id": "17.0-localizations-sweden",
+          "title": "Sweden"
+        },
+        {
+          "id": "17.0-localizations-switzerland",
+          "title": "Switzerland"
+        },
+        {
+          "id": "17.0-localizations-syscohada",
+          "title": "SYSCOHADA"
+        },
+        {
+          "id": "17.0-localizations-thailand",
+          "title": "Thailand"
+        },
+        {
+          "id": "17.0-localizations-tunisia",
+          "title": "Tunisia"
+        },
+        {
+          "id": "17.0-localizations-turkiye",
+          "title": "Türkiye"
+        },
+        {
+          "id": "17.0-localizations-united-kingdom",
+          "title": "United Kingdom"
+        },
+        {
+          "id": "17.0-localizations-united-states",
+          "title": "United States"
+        },
+        {
+          "id": "17.0-localizations-venezuela",
+          "title": "Venezuela"
+        },
+        {
+          "id": "17.0-localizations-vietnam",
+          "title": "Vietnam"
+        }
+      ]
+    },
+    {
+      "app": "Appointments",
+      "slug": "appointments",
+      "file": "appointments.md",
+      "anchor": "table_of_content_heading_1707731490324_65",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "17.0-appointments-book-a-resource",
+          "title": "Book a resource"
+        },
+        {
+          "id": "17.0-appointments-confirmation-and-cancellation-templates",
+          "title": "Confirmation and cancellation templates"
+        },
+        {
+          "id": "17.0-appointments-customer-reminders-turned-off",
+          "title": "Customer reminders turned off"
+        },
+        {
+          "id": "17.0-appointments-event-link-option",
+          "title": "Event link option"
+        },
+        {
+          "id": "17.0-appointments-exploration-with-gantt-view",
+          "title": "Exploration with Gantt view"
+        },
+        {
+          "id": "17.0-appointments-invite-colleagues-to-meetings",
+          "title": "Invite colleagues to meetings"
+        },
+        {
+          "id": "17.0-appointments-link-meetings-to-applicants-opportunities",
+          "title": "Link meetings to applicants/opportunities"
+        },
+        {
+          "id": "17.0-appointments-meetings-linked-to-applicants-opportunities",
+          "title": "Meetings linked to applicants / opportunities"
+        },
+        {
+          "id": "17.0-appointments-multi-website-support",
+          "title": "Multi-website support"
+        },
+        {
+          "id": "17.0-appointments-non-permanent-meeting-management",
+          "title": "Non-permanent meeting management"
+        },
+        {
+          "id": "17.0-appointments-pay-to-book",
+          "title": "Pay to book"
+        }
+      ]
+    },
+    {
+      "app": "Approvals",
+      "slug": "approvals",
+      "file": "approvals.md",
+      "anchor": "table_of_content_heading_1707731490324_66",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-approvals-approver-sequence",
+          "title": "Approver sequence"
+        },
+        {
+          "id": "17.0-approvals-documents-integration",
+          "title": "Documents integration"
+        }
+      ]
+    },
+    {
+      "app": "Attendances",
+      "slug": "attendances",
+      "file": "attendances.md",
+      "anchor": "table_of_content_heading_1707731490324_67",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-attendances-full-revamp",
+          "title": "Full revamp"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "table_of_content_heading_1707731490324_68",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "17.0-barcode-existing-quants-in-inventory-adjustments",
+          "title": "Existing quants in inventory adjustments"
+        },
+        {
+          "id": "17.0-barcode-manual-entry",
+          "title": "Manual entry"
+        },
+        {
+          "id": "17.0-barcode-manufacturing-with-barcode",
+          "title": "Manufacturing with Barcode"
+        },
+        {
+          "id": "17.0-barcode-product-picture",
+          "title": "Product picture"
+        },
+        {
+          "id": "17.0-barcode-returns-from-barcodes",
+          "title": "Returns from barcodes"
+        },
+        {
+          "id": "17.0-barcode-scan-source",
+          "title": "Scan source"
+        },
+        {
+          "id": "17.0-barcode-smooth-handling-of-reserved-quantities",
+          "title": "Smooth handling of reserved quantities"
+        },
+        {
+          "id": "17.0-barcode-sound-and-visual-effects",
+          "title": "Sound and visual effects"
+        }
+      ]
+    },
+    {
+      "app": "Calendar",
+      "slug": "calendar",
+      "file": "calendar.md",
+      "anchor": "table_of_content_heading_1707731490324_69",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-calendar-hide-weekends",
+          "title": "Hide weekends"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "table_of_content_heading_1707731490324_70",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-crm-meeting-date",
+          "title": "Meeting date"
+        },
+        {
+          "id": "17.0-crm-tags-leads-to-activity-reports",
+          "title": "Tags: leads to activity reports"
+        }
+      ]
+    },
+    {
+      "app": "Dashboards",
+      "slug": "dashboards",
+      "file": "dashboards.md",
+      "anchor": "table_of_content_heading_1707731490324_71",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "17.0-dashboards-blank-dashboards",
+          "title": "Blank dashboards"
+        },
+        {
+          "id": "17.0-dashboards-dashboard-sharing",
+          "title": "Dashboard sharing"
+        },
+        {
+          "id": "17.0-dashboards-year-to-date-filter",
+          "title": "Year-to-date filter"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "table_of_content_heading_1707731490324_72",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "17.0-discuss-attachments-panel",
+          "title": "Attachments panel"
+        },
+        {
+          "id": "17.0-discuss-edit-sent-messages",
+          "title": "Edit sent messages"
+        },
+        {
+          "id": "17.0-discuss-email-addresses-in-chatter",
+          "title": "Email addresses in chatter"
+        },
+        {
+          "id": "17.0-discuss-emoji-selector-recently-used",
+          "title": "Emoji selector: recently used"
+        },
+        {
+          "id": "17.0-discuss-gif-button",
+          "title": "GIF button"
+        },
+        {
+          "id": "17.0-discuss-mark-as-unread",
+          "title": "Mark as unread"
+        },
+        {
+          "id": "17.0-discuss-mentions-in-the-full-composer",
+          "title": "Mentions in the full composer"
+        },
+        {
+          "id": "17.0-discuss-notification-preferences",
+          "title": "Notification preferences"
+        },
+        {
+          "id": "17.0-discuss-options-menu-from-username",
+          "title": "Options menu from username"
+        },
+        {
+          "id": "17.0-discuss-pin-messages",
+          "title": "Pin messages"
+        },
+        {
+          "id": "17.0-discuss-raise-hand-option-from-discuss-meeting",
+          "title": "Raise hand option from Discuss meeting"
+        },
+        {
+          "id": "17.0-discuss-search-messages",
+          "title": "Search messages"
+        },
+        {
+          "id": "17.0-discuss-simultaneous-screen-and-video-sharing",
+          "title": "Simultaneous screen and video sharing"
+        },
+        {
+          "id": "17.0-discuss-voice-messages",
+          "title": "Voice messages"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "table_of_content_heading_1707731490324_73",
+      "item_count": 19,
+      "notes": [
+        {
+          "id": "17.0-documents-trash-bin-and-auto-deletion",
+          "title": "Trash bin and auto-deletion"
+        },
+        {
+          "id": "17.0-documents-split-tool-improvements",
+          "title": "Split tool improvements"
+        },
+        {
+          "id": "17.0-documents-file-sharing-and-downloading",
+          "title": "File sharing and downloading"
+        },
+        {
+          "id": "17.0-documents-fleet-integration",
+          "title": "Fleet integration"
+        },
+        {
+          "id": "17.0-documents-multiple-pages-thumbnail",
+          "title": "Multiple pages thumbnail"
+        },
+        {
+          "id": "17.0-documents-document-request",
+          "title": "Document request"
+        },
+        {
+          "id": "17.0-documents-all-workspace-improvements",
+          "title": "\"All\" workspace improvements"
+        },
+        {
+          "id": "17.0-documents-actions-accounting-journal",
+          "title": "Actions: accounting journal"
+        },
+        {
+          "id": "17.0-documents-batch-upload",
+          "title": "Batch upload"
+        },
+        {
+          "id": "17.0-documents-bring-hr-signed-documents-into-documents",
+          "title": "Bring HR signed documents into Documents"
+        },
+        {
+          "id": "17.0-documents-create-expense-action",
+          "title": "Create Expense action"
+        },
+        {
+          "id": "17.0-documents-drag-and-drop-in-workspace-panel",
+          "title": "Drag-and-drop in Workspace panel"
+        },
+        {
+          "id": "17.0-documents-improve-link-management",
+          "title": "Improve link management"
+        },
+        {
+          "id": "17.0-documents-keyboard-shortcuts",
+          "title": "Keyboard shortcuts"
+        },
+        {
+          "id": "17.0-documents-navigation-through-url",
+          "title": "Navigation through URL"
+        },
+        {
+          "id": "17.0-documents-search-by-product",
+          "title": "Search by product"
+        },
+        {
+          "id": "17.0-documents-set-contact-on-emailed-files",
+          "title": "Set contact on emailed files"
+        },
+        {
+          "id": "17.0-documents-sharing-portal-multiple-tabs",
+          "title": "Sharing portal: multiple tabs"
+        },
+        {
+          "id": "17.0-documents-trash-excel-files-after-conversion",
+          "title": "Trash Excel files after conversion"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "table_of_content_heading_1707731490324_74",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "17.0-ecommerce-address-detection-and-management",
+          "title": "Address detection and management"
+        },
+        {
+          "id": "17.0-ecommerce-checkout-redesign",
+          "title": "Checkout redesign"
+        },
+        {
+          "id": "17.0-ecommerce-display-product-tags",
+          "title": "Display product tags"
+        },
+        {
+          "id": "17.0-ecommerce-images-as-attribute-values",
+          "title": "Images as attribute values"
+        },
+        {
+          "id": "17.0-ecommerce-multi-checkbox-attribute",
+          "title": "Multi-checkbox attribute"
+        },
+        {
+          "id": "17.0-ecommerce-product-description-layout",
+          "title": "Product description layout"
+        },
+        {
+          "id": "17.0-ecommerce-remove-search-bar",
+          "title": "Remove search bar"
+        },
+        {
+          "id": "17.0-ecommerce-set-display-product-prices-by-website",
+          "title": "Set \"Display Product Prices\" by website"
+        },
+        {
+          "id": "17.0-ecommerce-shipping-methods-without-inventory",
+          "title": "Shipping methods without inventory"
+        },
+        {
+          "id": "17.0-ecommerce-show-available-coupons",
+          "title": "Show available coupons"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "table_of_content_heading_1707731490324_75",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "17.0-elearning-enrollment-and-invitation",
+          "title": "Enrollment and invitation"
+        },
+        {
+          "id": "17.0-elearning-multiple-correct-answers",
+          "title": "Multiple correct answers"
+        },
+        {
+          "id": "17.0-elearning-prerequisite-courses",
+          "title": "Prerequisite courses"
+        },
+        {
+          "id": "17.0-elearning-resume-courses",
+          "title": "Resume courses"
+        },
+        {
+          "id": "17.0-elearning-section-duration",
+          "title": "Section duration"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "table_of_content_heading_1707731490324_76",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-email-marketing-new-mailing-templates",
+          "title": "New mailing templates"
+        },
+        {
+          "id": "17.0-email-marketing-unsubscribe-flow-improvement",
+          "title": "Unsubscribe flow improvement"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "table_of_content_heading_1707731490324_77",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "17.0-employees-add-fleet-manager-to-plan",
+          "title": "Add fleet manager to plan"
+        },
+        {
+          "id": "17.0-employees-certification-report",
+          "title": "Certification report"
+        },
+        {
+          "id": "17.0-employees-employee-widget",
+          "title": "Employee widget"
+        },
+        {
+          "id": "17.0-employees-generate-employee-cv",
+          "title": "Generate employee CV"
+        },
+        {
+          "id": "17.0-employees-graph-and-pivot-views",
+          "title": "Graph and pivot views"
+        },
+        {
+          "id": "17.0-employees-homeworking",
+          "title": "Homeworking"
+        },
+        {
+          "id": "17.0-employees-hr-files-access-link",
+          "title": "HR files access link"
+        },
+        {
+          "id": "17.0-employees-managers",
+          "title": "Managers"
+        },
+        {
+          "id": "17.0-employees-newly-hired-filter",
+          "title": "Newly Hired filter"
+        },
+        {
+          "id": "17.0-employees-organizational-chart-view",
+          "title": "Organizational chart view"
+        },
+        {
+          "id": "17.0-employees-presence-icon-visible",
+          "title": "Presence icon visible"
+        },
+        {
+          "id": "17.0-employees-private-car-plate",
+          "title": "Private car plate"
+        },
+        {
+          "id": "17.0-employees-signature-requests",
+          "title": "Signature requests"
+        },
+        {
+          "id": "17.0-employees-skills",
+          "title": "Skills"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "table_of_content_heading_1707731490324_78",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "17.0-events-attendees-list-scanning",
+          "title": "Attendees list scanning"
+        },
+        {
+          "id": "17.0-events-badge-dimension-and-background",
+          "title": "Badge dimension and background"
+        },
+        {
+          "id": "17.0-events-display-pricelist-picker",
+          "title": "Display pricelist picker"
+        },
+        {
+          "id": "17.0-events-event-language",
+          "title": "Event language"
+        },
+        {
+          "id": "17.0-events-filter-attendees",
+          "title": "Filter attendees"
+        },
+        {
+          "id": "17.0-events-multi-website-support",
+          "title": "Multi-website support"
+        },
+        {
+          "id": "17.0-events-registration-form-flexibility",
+          "title": "Registration form flexibility"
+        },
+        {
+          "id": "17.0-events-ticket-order",
+          "title": "Ticket order"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "table_of_content_heading_1707731490324_79",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "17.0-expenses-accounting-flow-revamp",
+          "title": "Accounting flow revamp"
+        },
+        {
+          "id": "17.0-expenses-default-category",
+          "title": "Default category"
+        },
+        {
+          "id": "17.0-expenses-expense-report-payments",
+          "title": "Expense report: payments"
+        },
+        {
+          "id": "17.0-expenses-expense-report-improved-pdf",
+          "title": "Expense report: improved PDF"
+        },
+        {
+          "id": "17.0-expenses-forced-amount-in-company-currency",
+          "title": "Forced amount in company currency"
+        },
+        {
+          "id": "17.0-expenses-improve-status-consistency",
+          "title": "Improve status consistency"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "table_of_content_heading_1707731490324_80",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-fleet-order-date",
+          "title": "Order date"
+        },
+        {
+          "id": "17.0-fleet-search-by-model-or-brand",
+          "title": "Search by model or brand"
+        }
+      ]
+    },
+    {
+      "app": "Forum",
+      "slug": "forum",
+      "file": "forum.md",
+      "anchor": "table_of_content_heading_1707731490324_81",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-forum-front-end-redesign",
+          "title": "Front end redesign"
+        },
+        {
+          "id": "17.0-forum-pending-posts-per-forum",
+          "title": "Pending posts per forum"
+        }
+      ]
+    },
+    {
+      "app": "Frontdesk",
+      "slug": "frontdesk",
+      "file": "frontdesk.md",
+      "anchor": "table_of_content_heading_1707731490324_82",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-frontdesk-visitor-management",
+          "title": "Visitor management"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "table_of_content_heading_1707731490324_83",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-helpdesk-help-center-quick-links",
+          "title": "Help center quick links"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "table_of_content_heading_1707731490324_84",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "17.0-inventory-autobatch",
+          "title": "Autobatch"
+        },
+        {
+          "id": "17.0-inventory-fifo-product-costs",
+          "title": "FIFO product costs"
+        },
+        {
+          "id": "17.0-inventory-flexible-reservation",
+          "title": "Flexible reservation"
+        },
+        {
+          "id": "17.0-inventory-forecast-report-reservation",
+          "title": "Forecast report reservation"
+        },
+        {
+          "id": "17.0-inventory-incoterms",
+          "title": "Incoterms"
+        },
+        {
+          "id": "17.0-inventory-lot-serial-properties",
+          "title": "Lot/serial properties"
+        },
+        {
+          "id": "17.0-inventory-lots-expiry-and-quantity-mass-entry",
+          "title": "Lots expiry and quantity mass entry"
+        },
+        {
+          "id": "17.0-inventory-mto-mts",
+          "title": "MTO/MTS"
+        },
+        {
+          "id": "17.0-inventory-new-removal-strategy-least-packages",
+          "title": "New removal strategy: least packages"
+        },
+        {
+          "id": "17.0-inventory-operations-menu",
+          "title": "Operations menu"
+        },
+        {
+          "id": "17.0-inventory-packaging-display-on-documents",
+          "title": "Packaging display on documents"
+        },
+        {
+          "id": "17.0-inventory-print-at-operation-type",
+          "title": "Print at operation type"
+        },
+        {
+          "id": "17.0-inventory-product-quantity-update",
+          "title": "Product quantity update"
+        },
+        {
+          "id": "17.0-inventory-real-time-inventory-valuation",
+          "title": "Real-time inventory valuation"
+        },
+        {
+          "id": "17.0-inventory-reception-report-barcodes",
+          "title": "Reception report barcodes"
+        },
+        {
+          "id": "17.0-inventory-replenishment-improvements",
+          "title": "Replenishment improvements"
+        },
+        {
+          "id": "17.0-inventory-reserve-unreserve-button",
+          "title": "Reserve / unreserve button"
+        },
+        {
+          "id": "17.0-inventory-revamp-pickings",
+          "title": "Revamp pickings"
+        },
+        {
+          "id": "17.0-inventory-shipping-based-routing",
+          "title": "Shipping-based routing"
+        },
+        {
+          "id": "17.0-inventory-stock-aging-report",
+          "title": "Stock aging report"
+        }
+      ]
+    },
+    {
+      "app": "Knowledge",
+      "slug": "knowledge",
+      "file": "knowledge.md",
+      "anchor": "table_of_content_heading_1707731490324_85",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "17.0-knowledge-article-comments",
+          "title": "Article comments"
+        },
+        {
+          "id": "17.0-knowledge-articles-items-conversion",
+          "title": "Articles-items conversion"
+        },
+        {
+          "id": "17.0-knowledge-collaborate-with-portal-users",
+          "title": "Collaborate with portal users"
+        },
+        {
+          "id": "17.0-knowledge-collaborative-mode",
+          "title": "Collaborative mode"
+        },
+        {
+          "id": "17.0-knowledge-comments-on-invites",
+          "title": "Comments on invites"
+        },
+        {
+          "id": "17.0-knowledge-drag-and-drop-to-delete",
+          "title": "Drag and drop to delete"
+        },
+        {
+          "id": "17.0-knowledge-embed-gantt-views",
+          "title": "Embed Gantt views"
+        },
+        {
+          "id": "17.0-knowledge-improved-file-command",
+          "title": "Improved /file command"
+        },
+        {
+          "id": "17.0-knowledge-insert-banners",
+          "title": "Insert banners"
+        },
+        {
+          "id": "17.0-knowledge-insert-videos",
+          "title": "Insert videos"
+        },
+        {
+          "id": "17.0-knowledge-item-calendar",
+          "title": "Item calendar"
+        },
+        {
+          "id": "17.0-knowledge-item-kanban-view-stages",
+          "title": "Item Kanban view: stages"
+        },
+        {
+          "id": "17.0-knowledge-load-templates",
+          "title": "Load templates"
+        },
+        {
+          "id": "17.0-knowledge-manage-visibility",
+          "title": "Manage visibility"
+        },
+        {
+          "id": "17.0-knowledge-mobile-navigation",
+          "title": "Mobile navigation"
+        },
+        {
+          "id": "17.0-knowledge-portal-access",
+          "title": "Portal access"
+        },
+        {
+          "id": "17.0-knowledge-print-article-as-pdf",
+          "title": "Print article as PDF"
+        },
+        {
+          "id": "17.0-knowledge-reposition-covers",
+          "title": "Reposition covers"
+        },
+        {
+          "id": "17.0-knowledge-save-customized-groups-and-filters",
+          "title": "Save customized groups and filters"
+        },
+        {
+          "id": "17.0-knowledge-version-history",
+          "title": "Version history"
+        }
+      ]
+    },
+    {
+      "app": "Live Chat",
+      "slug": "live-chat",
+      "file": "live-chat.md",
+      "anchor": "table_of_content_heading_1707731490324_86",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "17.0-live-chat-additional-languages-on-user-profile",
+          "title": "Additional languages on user profile"
+        },
+        {
+          "id": "17.0-live-chat-improved-flows",
+          "title": "Improved flows"
+        },
+        {
+          "id": "17.0-live-chat-live-chat-calls",
+          "title": "Live Chat calls"
+        },
+        {
+          "id": "17.0-live-chat-message-options",
+          "title": "Message options"
+        },
+        {
+          "id": "17.0-live-chat-open-session-history-in-discuss",
+          "title": "Open session history in Discuss"
+        },
+        {
+          "id": "17.0-live-chat-send-attachments",
+          "title": "Send attachments"
+        }
+      ]
+    },
+    {
+      "app": "Maintenance",
+      "slug": "maintenance",
+      "file": "maintenance.md",
+      "anchor": "table_of_content_heading_1707731490324_87",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-maintenance-maintenance",
+          "title": "Maintenance"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "table_of_content_heading_1707731490324_88",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "17.0-manufacturing-bom-updates",
+          "title": "BOM updates"
+        },
+        {
+          "id": "17.0-manufacturing-components-demand-propagation",
+          "title": "Components demand propagation"
+        },
+        {
+          "id": "17.0-manufacturing-manufacturing-orders-overview",
+          "title": "Manufacturing orders overview"
+        },
+        {
+          "id": "17.0-manufacturing-ux-improvements",
+          "title": "UX improvements"
+        },
+        {
+          "id": "17.0-manufacturing-planning",
+          "title": "Planning"
+        }
+      ]
+    },
+    {
+      "app": "Marketing Automation",
+      "slug": "marketing-automation",
+      "file": "marketing-automation.md",
+      "anchor": "table_of_content_heading_1707731490324_89",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-marketing-automation-campaign-templates",
+          "title": "Campaign templates"
+        }
+      ]
+    },
+    {
+      "app": "Meeting Rooms",
+      "slug": "meeting-rooms",
+      "file": "meeting-rooms.md",
+      "anchor": "table_of_content_heading_1707731490324_90",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-meeting-rooms-room-booking-management",
+          "title": "Room booking management"
+        }
+      ]
+    },
+    {
+      "app": "Online Payments",
+      "slug": "online-payments",
+      "file": "online-payments.md",
+      "anchor": "table_of_content_heading_1707731490324_91",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "17.0-online-payments-adyen-partial-payment-capture",
+          "title": "Adyen partial payment capture"
+        },
+        {
+          "id": "17.0-online-payments-currency-filter",
+          "title": "Currency filter"
+        },
+        {
+          "id": "17.0-online-payments-demo-provider-express-checkout",
+          "title": "Demo provider: express checkout"
+        },
+        {
+          "id": "17.0-online-payments-demo-provider-partial-capture",
+          "title": "Demo provider: partial capture"
+        },
+        {
+          "id": "17.0-online-payments-fees-currency",
+          "title": "Fees currency"
+        },
+        {
+          "id": "17.0-online-payments-link-payment-methods-with-transactions",
+          "title": "Link payment methods with transactions"
+        },
+        {
+          "id": "17.0-online-payments-payment-forms-payment-methods-display",
+          "title": "Payment forms: payment methods display"
+        },
+        {
+          "id": "17.0-online-payments-payment-link-generation",
+          "title": "Payment link generation"
+        },
+        {
+          "id": "17.0-online-payments-public-users-payment-with-tokens",
+          "title": "Public users payment with tokens"
+        },
+        {
+          "id": "17.0-online-payments-razorpay-tokenization-support",
+          "title": "Razorpay: tokenization support"
+        },
+        {
+          "id": "17.0-online-payments-remove-extra-fees",
+          "title": "Remove extra fees"
+        },
+        {
+          "id": "17.0-online-payments-sepa-pay-once-to-create-mandate",
+          "title": "SEPA: pay once to create mandate"
+        },
+        {
+          "id": "17.0-online-payments-stripe",
+          "title": "Stripe"
+        },
+        {
+          "id": "17.0-online-payments-wire-transfers-payment-instructions",
+          "title": "Wire transfers: payment instructions"
+        },
+        {
+          "id": "17.0-online-payments-xendit",
+          "title": "Xendit"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "table_of_content_heading_1707731490324_92",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "17.0-payroll-account-number-validation",
+          "title": "Account number validation"
+        },
+        {
+          "id": "17.0-payroll-automated-cancellation-of-signature-requests",
+          "title": "Automated cancellation of signature requests"
+        },
+        {
+          "id": "17.0-payroll-bye-contract-history",
+          "title": "Bye contract history"
+        },
+        {
+          "id": "17.0-payroll-conditional-advantages",
+          "title": "Conditional advantages"
+        },
+        {
+          "id": "17.0-payroll-existing-payslips-to-open-batches",
+          "title": "Existing payslips to open batches"
+        },
+        {
+          "id": "17.0-payroll-extra-hours-work-entries",
+          "title": "Extra hours: work entries"
+        },
+        {
+          "id": "17.0-payroll-force-new-car-list",
+          "title": "Force new car list"
+        },
+        {
+          "id": "17.0-payroll-fuel-type-on-contract",
+          "title": "Fuel type on contract"
+        },
+        {
+          "id": "17.0-payroll-generic-salary-attachments",
+          "title": "Generic salary attachments"
+        },
+        {
+          "id": "17.0-payroll-break-periods-on-working-schedule",
+          "title": "Break periods on working schedule"
+        },
+        {
+          "id": "17.0-payroll-order-salary-structure-types",
+          "title": "Order salary structure types"
+        },
+        {
+          "id": "17.0-payroll-payslip-viewer",
+          "title": "Payslip viewer"
+        },
+        {
+          "id": "17.0-payroll-report-generation-and-employee-selection",
+          "title": "Report generation and employee selection"
+        },
+        {
+          "id": "17.0-payroll-salary-configurator-expiration-date",
+          "title": "Salary configurator: Expiration date"
+        },
+        {
+          "id": "17.0-payroll-salary-structure-new-duplicate",
+          "title": "Salary structure (new/duplicate)"
+        },
+        {
+          "id": "17.0-payroll-worked-days-and-input",
+          "title": "Worked days and input"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "table_of_content_heading_1707731490324_93",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "17.0-planning-auto-plan-open-shifts",
+          "title": "Auto plan open shifts"
+        },
+        {
+          "id": "17.0-planning-split-shifts-from-the-gantt-view",
+          "title": "Split shifts from the Gantt view"
+        },
+        {
+          "id": "17.0-planning-switching-shifts",
+          "title": "Switching shifts"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "table_of_content_heading_1707731490324_94",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "17.0-point-of-sale-combo-meals",
+          "title": "Combo meals"
+        },
+        {
+          "id": "17.0-point-of-sale-credit-limits-support",
+          "title": "Credit limits support"
+        },
+        {
+          "id": "17.0-point-of-sale-cross-session-floor-plans-and-orders",
+          "title": "Cross-session floor plans and orders"
+        },
+        {
+          "id": "17.0-point-of-sale-display-rewards-and-coupons-origin",
+          "title": "Display rewards and coupons' origin"
+        },
+        {
+          "id": "17.0-point-of-sale-floor-map-in-restaurants",
+          "title": "Floor map in restaurants"
+        },
+        {
+          "id": "17.0-point-of-sale-frontend-delivery-date",
+          "title": "Frontend delivery date"
+        },
+        {
+          "id": "17.0-point-of-sale-images-on-payment-methods",
+          "title": "Images on payment methods"
+        },
+        {
+          "id": "17.0-point-of-sale-non-user-employees-access",
+          "title": "Non-user employees access"
+        },
+        {
+          "id": "17.0-point-of-sale-preparation-display",
+          "title": "Preparation display"
+        },
+        {
+          "id": "17.0-point-of-sale-preparation-tools-for-everyone",
+          "title": "Preparation tools for everyone"
+        },
+        {
+          "id": "17.0-point-of-sale-prevent-cash-payment-method-re-use",
+          "title": "Prevent cash payment method re-use"
+        },
+        {
+          "id": "17.0-point-of-sale-rescue-sessions-information",
+          "title": "Rescue sessions information"
+        },
+        {
+          "id": "17.0-point-of-sale-rewards-origin-and-applied-coupons",
+          "title": "Rewards origin and applied coupons"
+        },
+        {
+          "id": "17.0-point-of-sale-rewards-origin-and-applied-coupons-2",
+          "title": "Rewards origin and applied coupons"
+        },
+        {
+          "id": "17.0-point-of-sale-scan-a-qr-code-get-the-menu",
+          "title": "Scan a QR code, get the menu"
+        },
+        {
+          "id": "17.0-point-of-sale-scan-and-pay",
+          "title": "Scan and pay"
+        },
+        {
+          "id": "17.0-point-of-sale-self-order-online-payment",
+          "title": "Self-order: online payment"
+        },
+        {
+          "id": "17.0-point-of-sale-self-ordering-at-table",
+          "title": "Self-ordering at table"
+        },
+        {
+          "id": "17.0-point-of-sale-self-service-kiosk",
+          "title": "Self-service kiosk"
+        },
+        {
+          "id": "17.0-point-of-sale-table-booking-from-appointment-to-pos",
+          "title": "Table booking: from Appointment to PoS"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "table_of_content_heading_1707731490324_95",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "17.0-project-additional-task-statuses",
+          "title": "Additional task statuses"
+        },
+        {
+          "id": "17.0-project-create-project-from-so",
+          "title": "Create project from SO"
+        },
+        {
+          "id": "17.0-project-down-payments-for-project-profitability",
+          "title": "Down payments for project profitability"
+        },
+        {
+          "id": "17.0-project-project-access-in-multi-company-environments",
+          "title": "Project access in multi-company environments"
+        },
+        {
+          "id": "17.0-project-recurring-tasks-generate-new-on-completion",
+          "title": "Recurring tasks: generate new on completion"
+        },
+        {
+          "id": "17.0-project-so-generation-from-projects",
+          "title": "SO generation from projects"
+        },
+        {
+          "id": "17.0-project-sub-tasks-and-dependency-warning-on-kanban-cards",
+          "title": "Sub-tasks and dependency warning on kanban cards"
+        },
+        {
+          "id": "17.0-project-task-configuration-shortcuts",
+          "title": "Task configuration shortcuts"
+        },
+        {
+          "id": "17.0-project-task-scheduling-with-no-allocated-time",
+          "title": "Task scheduling with no allocated time"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "table_of_content_heading_1707731490324_96",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-purchase-purchase-discounts",
+          "title": "Purchase discounts"
+        },
+        {
+          "id": "17.0-purchase-vendor-catalog",
+          "title": "Vendor catalog"
+        }
+      ]
+    },
+    {
+      "app": "Quality",
+      "slug": "quality",
+      "file": "quality.md",
+      "anchor": "table_of_content_heading_1707731490324_97",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-quality-failure-locations",
+          "title": "Failure locations"
+        }
+      ]
+    },
+    {
+      "app": "Recruitment",
+      "slug": "recruitment",
+      "file": "recruitment.md",
+      "anchor": "table_of_content_heading_1707731490324_98",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "17.0-recruitment-appointments-integration",
+          "title": "Appointments integration"
+        },
+        {
+          "id": "17.0-recruitment-blacklist-email-providers",
+          "title": "Blacklist email providers"
+        },
+        {
+          "id": "17.0-recruitment-chatter-access-and-offers",
+          "title": "Chatter access and offers"
+        },
+        {
+          "id": "17.0-recruitment-send-sms-from-list-view",
+          "title": "Send SMS from list view"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "table_of_content_heading_1707731490324_99",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "17.0-rental-quotation-templates-catalogs-and-optional-products",
+          "title": "Quotation templates, catalogs, and optional products"
+        },
+        {
+          "id": "17.0-rental-single-rental-period",
+          "title": "Single rental period"
+        },
+        {
+          "id": "17.0-rental-stock-rental",
+          "title": "Stock Rental"
+        }
+      ]
+    },
+    {
+      "app": "Repair",
+      "slug": "repair",
+      "file": "repair.md",
+      "anchor": "table_of_content_heading_1707731490324_100",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-repair-improved-repair-process",
+          "title": "Improved repair process"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "table_of_content_heading_1707731490324_101",
+      "item_count": 19,
+      "notes": [
+        {
+          "id": "17.0-sales-add-products-from-catalog",
+          "title": "Add products from catalog"
+        },
+        {
+          "id": "17.0-sales-amazon-connector",
+          "title": "Amazon Connector"
+        },
+        {
+          "id": "17.0-sales-amazon-synchronization",
+          "title": "Amazon synchronization"
+        },
+        {
+          "id": "17.0-sales-confirmation-on-down-payment",
+          "title": "Confirmation on down payment"
+        },
+        {
+          "id": "17.0-sales-down-payment-descriptions",
+          "title": "Down payment descriptions"
+        },
+        {
+          "id": "17.0-sales-events-support-quotation-templates",
+          "title": "Events: support quotation templates"
+        },
+        {
+          "id": "17.0-sales-global-discounts",
+          "title": "Global discounts"
+        },
+        {
+          "id": "17.0-sales-loyalty-restricted-to-pricelist",
+          "title": "Loyalty: restricted to pricelist"
+        },
+        {
+          "id": "17.0-sales-loyalty-starting-date",
+          "title": "Loyalty: starting date"
+        },
+        {
+          "id": "17.0-sales-no-tax-on-fixed-discounts",
+          "title": "No tax on fixed discounts"
+        },
+        {
+          "id": "17.0-sales-partial-payments",
+          "title": "Partial payments"
+        },
+        {
+          "id": "17.0-sales-pdf-quote-builder",
+          "title": "PDF quote builder"
+        },
+        {
+          "id": "17.0-sales-pdf-reports-lines-with-zero-quantities",
+          "title": "PDF reports: lines with zero quantities"
+        },
+        {
+          "id": "17.0-sales-pricelist-chatter",
+          "title": "Pricelist: chatter"
+        },
+        {
+          "id": "17.0-sales-product-documents",
+          "title": "Product documents"
+        },
+        {
+          "id": "17.0-sales-quotations-mass-cancellation",
+          "title": "Quotations mass cancellation"
+        },
+        {
+          "id": "17.0-sales-sales-order-locked",
+          "title": "Sales order locked"
+        },
+        {
+          "id": "17.0-sales-sales-without-pricelists",
+          "title": "Sales without pricelists"
+        },
+        {
+          "id": "17.0-sales-stat-button-on-customers",
+          "title": "Stat button on customers"
+        }
+      ]
+    },
+    {
+      "app": "Shipping Connectors",
+      "slug": "shipping-connectors",
+      "file": "shipping-connectors.md",
+      "anchor": "table_of_content_heading_1707731490324_102",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "17.0-shipping-connectors-sendcloud",
+          "title": "Sendcloud"
+        },
+        {
+          "id": "17.0-shipping-connectors-shiprocket",
+          "title": "Shiprocket"
+        },
+        {
+          "id": "17.0-shipping-connectors-starshipit",
+          "title": "Starshipit"
+        }
+      ]
+    },
+    {
+      "app": "Shop Floor",
+      "slug": "shop-floor",
+      "file": "shop-floor.md",
+      "anchor": "table_of_content_heading_1707731490324_103",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "17.0-shop-floor-new-mrp-app",
+          "title": "New MRP app"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "table_of_content_heading_1707731490324_104",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "17.0-sign-email-reminders",
+          "title": "Email reminders"
+        },
+        {
+          "id": "17.0-sign-expiration-dates",
+          "title": "Expiration dates"
+        },
+        {
+          "id": "17.0-sign-mass-download-of-signed-documents",
+          "title": "Mass download of signed documents"
+        },
+        {
+          "id": "17.0-sign-signed-documents-tags",
+          "title": "Signed documents tags"
+        },
+        {
+          "id": "17.0-sign-tag-management",
+          "title": "Tag management"
+        }
+      ]
+    },
+    {
+      "app": "Spreadsheet",
+      "slug": "spreadsheet",
+      "file": "spreadsheet.md",
+      "anchor": "table_of_content_heading_1707731490324_105",
+      "item_count": 45,
+      "notes": [
+        {
+          "id": "17.0-spreadsheet-default-number-and-date-format",
+          "title": "Default number and date format"
+        },
+        {
+          "id": "17.0-spreadsheet-multi-cell-array-functions",
+          "title": "Multi-cell array functions"
+        },
+        {
+          "id": "17.0-spreadsheet-dynamic-pivot-tables",
+          "title": "Dynamic pivot tables"
+        },
+        {
+          "id": "17.0-spreadsheet-smart-charts-2-0",
+          "title": "Smart charts 2.0"
+        },
+        {
+          "id": "17.0-spreadsheet-version-history",
+          "title": "Version history"
+        },
+        {
+          "id": "17.0-spreadsheet-data-validation",
+          "title": "Data validation"
+        },
+        {
+          "id": "17.0-spreadsheet-group-rows-or-columns",
+          "title": "Group rows or columns"
+        },
+        {
+          "id": "17.0-spreadsheet-remove-duplicate-rows",
+          "title": "Remove duplicate rows"
+        },
+        {
+          "id": "17.0-spreadsheet-split-text-into-columns",
+          "title": "Split text into columns"
+        },
+        {
+          "id": "17.0-spreadsheet-trim-whitespaces",
+          "title": "Trim whitespaces"
+        },
+        {
+          "id": "17.0-spreadsheet-share-spreadsheets",
+          "title": "Share spreadsheets"
+        },
+        {
+          "id": "17.0-spreadsheet-dashboard-sharing",
+          "title": "Dashboard sharing"
+        },
+        {
+          "id": "17.0-spreadsheet-new-functions",
+          "title": "New functions"
+        },
+        {
+          "id": "17.0-spreadsheet-advanced-text-formatting",
+          "title": "Advanced text formatting"
+        },
+        {
+          "id": "17.0-spreadsheet-autofill-alphanumeric-values",
+          "title": "Autofill alphanumeric values"
+        },
+        {
+          "id": "17.0-spreadsheet-autofill-beyond-viewport",
+          "title": "Autofill beyond viewport"
+        },
+        {
+          "id": "17.0-spreadsheet-blank-spreadsheets-auto-cleanup",
+          "title": "Blank spreadsheets auto-cleanup"
+        },
+        {
+          "id": "17.0-spreadsheet-border-styles",
+          "title": "Border styles"
+        },
+        {
+          "id": "17.0-spreadsheet-cell-reference-when-scrolling",
+          "title": "Cell reference when scrolling"
+        },
+        {
+          "id": "17.0-spreadsheet-chart-categories",
+          "title": "Chart categories"
+        },
+        {
+          "id": "17.0-spreadsheet-chart-data-series-header-row",
+          "title": "Chart data series: header row"
+        },
+        {
+          "id": "17.0-spreadsheet-chart-domain-edition",
+          "title": "Chart domain edition"
+        },
+        {
+          "id": "17.0-spreadsheet-contextual-domain-import",
+          "title": "Contextual domain import"
+        },
+        {
+          "id": "17.0-spreadsheet-date-and-time-formats",
+          "title": "Date and time formats"
+        },
+        {
+          "id": "17.0-spreadsheet-drag-and-drop-sheets",
+          "title": "Drag and drop sheets"
+        },
+        {
+          "id": "17.0-spreadsheet-editable-font-size-selector",
+          "title": "Editable font size selector"
+        },
+        {
+          "id": "17.0-spreadsheet-essential-keyboard-shortcuts",
+          "title": "Essential keyboard shortcuts"
+        },
+        {
+          "id": "17.0-spreadsheet-extend-filters-to-match-new-data-sources",
+          "title": "Extend filters to match new data sources"
+        },
+        {
+          "id": "17.0-spreadsheet-format-painter-mode",
+          "title": "Format painter mode"
+        },
+        {
+          "id": "17.0-spreadsheet-global-filter-from-to",
+          "title": "Global filter: \"From/To\""
+        },
+        {
+          "id": "17.0-spreadsheet-global-filters-order",
+          "title": "Global filters order"
+        },
+        {
+          "id": "17.0-spreadsheet-image-insertion",
+          "title": "Image insertion"
+        },
+        {
+          "id": "17.0-spreadsheet-improve-color-picker",
+          "title": "Improve color picker"
+        },
+        {
+          "id": "17.0-spreadsheet-improved-date-parsing",
+          "title": "Improved date parsing"
+        },
+        {
+          "id": "17.0-spreadsheet-insert-functions",
+          "title": "Insert functions"
+        },
+        {
+          "id": "17.0-spreadsheet-insert-line-breaks",
+          "title": "Insert line breaks"
+        },
+        {
+          "id": "17.0-spreadsheet-insert-links-shortcut",
+          "title": "Insert links shortcut"
+        },
+        {
+          "id": "17.0-spreadsheet-new-functions-for-prediction-assessments",
+          "title": "New functions for prediction assessments"
+        },
+        {
+          "id": "17.0-spreadsheet-odoo-formulas-insertion",
+          "title": "ODOO formulas insertion"
+        },
+        {
+          "id": "17.0-spreadsheet-search-granularity",
+          "title": "Search granularity"
+        },
+        {
+          "id": "17.0-spreadsheet-snap-to-align",
+          "title": "Snap to align"
+        },
+        {
+          "id": "17.0-spreadsheet-text-vertical-alignment-on-import-export",
+          "title": "Text vertical alignment on import/export"
+        },
+        {
+          "id": "17.0-spreadsheet-text-wrapping-and-vertical-align",
+          "title": "Text wrapping and vertical align"
+        },
+        {
+          "id": "17.0-spreadsheet-text-wrapping-on-import-export",
+          "title": "Text wrapping on import/export"
+        },
+        {
+          "id": "17.0-spreadsheet-use-cell-as-value",
+          "title": "Use cell as value"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "table_of_content_heading_1707731490324_106",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "17.0-studio-approval-rules-granular-control",
+          "title": "Approval rules: granular control"
+        },
+        {
+          "id": "17.0-studio-approval-rules-server-side-enforcement",
+          "title": "Approval rules: server-side enforcement"
+        },
+        {
+          "id": "17.0-studio-button-visibility",
+          "title": "Button visibility"
+        },
+        {
+          "id": "17.0-studio-currency-field-configuration",
+          "title": "Currency field configuration"
+        },
+        {
+          "id": "17.0-studio-custom-model-publication-on-website",
+          "title": "Custom model publication on website"
+        },
+        {
+          "id": "17.0-studio-disable-number-formatting",
+          "title": "Disable number formatting"
+        },
+        {
+          "id": "17.0-studio-new-report-editor",
+          "title": "New report editor"
+        },
+        {
+          "id": "17.0-studio-revamped-automation-rules",
+          "title": "Revamped automation rules"
+        }
+      ]
+    },
+    {
+      "app": "Subscriptions",
+      "slug": "subscriptions",
+      "file": "subscriptions.md",
+      "anchor": "table_of_content_heading_1707731490324_107",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "17.0-subscriptions-calendar-view",
+          "title": "Calendar view"
+        },
+        {
+          "id": "17.0-subscriptions-cancel-uninvoiced-subscriptions",
+          "title": "Cancel uninvoiced subscriptions"
+        },
+        {
+          "id": "17.0-subscriptions-close-reasons-portal-retention-step",
+          "title": "Close reasons: portal retention step"
+        },
+        {
+          "id": "17.0-subscriptions-consolidated-invoice",
+          "title": "Consolidated invoice"
+        },
+        {
+          "id": "17.0-subscriptions-down-payment-invoices",
+          "title": "Down payment invoices"
+        },
+        {
+          "id": "17.0-subscriptions-first-contract-date",
+          "title": "First contract date"
+        },
+        {
+          "id": "17.0-subscriptions-health-checks-replaced-by-automated-actions",
+          "title": "Health checks replaced by automated actions"
+        },
+        {
+          "id": "17.0-subscriptions-new-mrr-reports",
+          "title": "New MRR reports"
+        },
+        {
+          "id": "17.0-subscriptions-recurring-plans",
+          "title": "Recurring plans"
+        },
+        {
+          "id": "17.0-subscriptions-renewals-and-upsells-alternative-quotations",
+          "title": "Renewals and upsells: alternative quotations"
+        },
+        {
+          "id": "17.0-subscriptions-self-service-portal",
+          "title": "Self-service portal"
+        },
+        {
+          "id": "17.0-subscriptions-settings-and-templates",
+          "title": "Settings and templates"
+        },
+        {
+          "id": "17.0-subscriptions-storable-products-support",
+          "title": "Storable products support"
+        },
+        {
+          "id": "17.0-subscriptions-unified-subscription-status",
+          "title": "Unified subscription status"
+        }
+      ]
+    },
+    {
+      "app": "Surveys",
+      "slug": "surveys",
+      "file": "surveys.md",
+      "anchor": "table_of_content_heading_1707731490324_108",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "17.0-surveys-preconfigured-survey-types",
+          "title": "Preconfigured survey types"
+        },
+        {
+          "id": "17.0-surveys-triggering-answers",
+          "title": "Triggering answers"
+        },
+        {
+          "id": "17.0-surveys-multiple-choice-answer-display",
+          "title": "Multiple choice answer display"
+        },
+        {
+          "id": "17.0-surveys-customizable-certificates-with-studio",
+          "title": "Customizable certificates with Studio"
+        },
+        {
+          "id": "17.0-surveys-duplicate-questions",
+          "title": "Duplicate questions"
+        },
+        {
+          "id": "17.0-surveys-free-navigation",
+          "title": "Free navigation"
+        },
+        {
+          "id": "17.0-surveys-new-survey-notification",
+          "title": "New survey notification"
+        },
+        {
+          "id": "17.0-surveys-presenter-tooltip",
+          "title": "Presenter tooltip"
+        },
+        {
+          "id": "17.0-surveys-questions-without-correct-answers",
+          "title": "Questions without correct answers"
+        },
+        {
+          "id": "17.0-surveys-results-zoom-in",
+          "title": "Results zoom in"
+        },
+        {
+          "id": "17.0-surveys-scoring-with-answers-after-each-page",
+          "title": "Scoring with answers after each page"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "table_of_content_heading_1707731490324_109",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "17.0-time-off-exceed-balance",
+          "title": "Exceed balance"
+        },
+        {
+          "id": "17.0-time-off-france-part-time-employee-time-off",
+          "title": "France: part-time employee time off"
+        },
+        {
+          "id": "17.0-time-off-hourly-accruals-computation",
+          "title": "Hourly accruals computation"
+        },
+        {
+          "id": "17.0-time-off-multiple-responsible-time-off-officers",
+          "title": "Multiple responsible Time Off officers"
+        },
+        {
+          "id": "17.0-time-off-notification-on-deletion",
+          "title": "Notification on deletion"
+        },
+        {
+          "id": "17.0-time-off-part-time-visibility",
+          "title": "Part time visibility"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "table_of_content_heading_1707731490324_110",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "17.0-timesheets-awesome-timesheet-deprecation",
+          "title": "Awesome Timesheet deprecation"
+        },
+        {
+          "id": "17.0-timesheets-bill-timesheets-from-projects-without-a-sales-order",
+          "title": "Bill timesheets from projects without a sales order"
+        },
+        {
+          "id": "17.0-timesheets-billing-rate-leaderboard",
+          "title": "Billing rate leaderboard"
+        },
+        {
+          "id": "17.0-timesheets-grid-view-overtime",
+          "title": "Grid view: overtime"
+        }
+      ]
+    },
+    {
+      "app": "To-do",
+      "slug": "to-do",
+      "file": "to-do.md",
+      "anchor": "table_of_content_heading_1707731490324_111",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "17.0-to-do-goodbye-notes-hello-to-do",
+          "title": "Goodbye Notes, Hello To-do!"
+        },
+        {
+          "id": "17.0-to-do-command-palette-integration",
+          "title": "Command palette integration"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "table_of_content_heading_1707731490324_112",
+      "item_count": 27,
+      "notes": [
+        {
+          "id": "17.0-website-background-shapes-on-mobile",
+          "title": "Background shapes on mobile"
+        },
+        {
+          "id": "17.0-website-banner-building-block",
+          "title": "Banner building block"
+        },
+        {
+          "id": "17.0-website-button-labels-edit-from-panel",
+          "title": "Button labels: edit from panel"
+        },
+        {
+          "id": "17.0-website-button-video-and-image-building-blocks",
+          "title": "Button, video, and image building blocks"
+        },
+        {
+          "id": "17.0-website-carousel-snippet",
+          "title": "Carousel snippet"
+        },
+        {
+          "id": "17.0-website-form-multiple-files-upload",
+          "title": "Form multiple files upload"
+        },
+        {
+          "id": "17.0-website-grid-layout-spacing",
+          "title": "Grid layout: spacing"
+        },
+        {
+          "id": "17.0-website-grid-overlay-design",
+          "title": "Grid overlay design"
+        },
+        {
+          "id": "17.0-website-image-hover-effects",
+          "title": "Image hover effects"
+        },
+        {
+          "id": "17.0-website-images-drag-and-drop",
+          "title": "Images drag and drop"
+        },
+        {
+          "id": "17.0-website-inner-content-blocks-in-grid-layout",
+          "title": "Inner content blocks in grid layout"
+        },
+        {
+          "id": "17.0-website-instagram-feed",
+          "title": "Instagram feed"
+        },
+        {
+          "id": "17.0-website-navbar-customization",
+          "title": "Navbar customization"
+        },
+        {
+          "id": "17.0-website-new-color-system",
+          "title": "New color system"
+        },
+        {
+          "id": "17.0-website-new-header-templates",
+          "title": "New header templates"
+        },
+        {
+          "id": "17.0-website-page-templates",
+          "title": "Page templates"
+        },
+        {
+          "id": "17.0-website-pop-up-on-click",
+          "title": "Pop-up on click"
+        },
+        {
+          "id": "17.0-website-responsive-user-font-sizes",
+          "title": "Responsive user font sizes"
+        },
+        {
+          "id": "17.0-website-save-block-with-url-image",
+          "title": "Save block with URL image"
+        },
+        {
+          "id": "17.0-website-scrap-existing-website",
+          "title": "Scrap existing website"
+        },
+        {
+          "id": "17.0-website-shapes-on-images",
+          "title": "Shapes on images"
+        },
+        {
+          "id": "17.0-website-specific-number-of-columns-on-mobile",
+          "title": "Specific number of columns on mobile"
+        },
+        {
+          "id": "17.0-website-text-highlight-effects",
+          "title": "Text highlight effects"
+        },
+        {
+          "id": "17.0-website-theme-color-palette",
+          "title": "Theme color palette"
+        },
+        {
+          "id": "17.0-website-top-bar-access-after-website-creation",
+          "title": "Top bar access after website creation"
+        },
+        {
+          "id": "17.0-website-webp-image-support",
+          "title": "WebP image support"
+        },
+        {
+          "id": "17.0-website-website-configurator-chatgpt",
+          "title": "Website configurator: ChatGPT"
+        }
+      ]
+    },
+    {
+      "app": "Industries",
+      "slug": "industries",
+      "file": "industries.md",
+      "anchor": "table_of_content_heading_1707731490324_113",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "17.0-industries-industries-definition",
+          "title": "Industries definition"
+        },
+        {
+          "id": "17.0-industries-available-online",
+          "title": "Available online"
+        },
+        {
+          "id": "17.0-industries-data-modules-detection",
+          "title": "Data modules detection"
+        },
+        {
+          "id": "17.0-industries-industries-categories",
+          "title": "Industries categories"
+        },
+        {
+          "id": "17.0-industries-community-modules",
+          "title": "Community modules"
+        },
+        {
+          "id": "17.0-industries-dedicated-runbot",
+          "title": "Dedicated runbot"
+        },
+        {
+          "id": "17.0-industries-10-data-modules-released",
+          "title": "10 data modules released"
+        }
+      ]
+    }
+  ],
+  "item_count": 544
+}

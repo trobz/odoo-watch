@@ -1,0 +1,3001 @@
+{
+  "version": "19.0",
+  "source_url": "https://www.odoo.com/odoo-19-release-notes",
+  "apps": [
+    {
+      "app": "General",
+      "slug": "general",
+      "file": "general.md",
+      "anchor": "table_of_content_heading_1_76",
+      "item_count": 37,
+      "notes": [
+        {
+          "id": "19.0-general-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "19.0-general-add-stage-button",
+          "title": "Add stage button"
+        },
+        {
+          "id": "19.0-general-avatars-in-custom-filters",
+          "title": "Avatars in custom filters"
+        },
+        {
+          "id": "19.0-general-badge-notification",
+          "title": "Badge notification"
+        },
+        {
+          "id": "19.0-general-buttons-on-mobile",
+          "title": "Buttons on mobile"
+        },
+        {
+          "id": "19.0-general-customer-documents",
+          "title": "Customer documents"
+        },
+        {
+          "id": "19.0-general-dialog-design",
+          "title": "Dialog design"
+        },
+        {
+          "id": "19.0-general-email-recipients",
+          "title": "Email recipients"
+        },
+        {
+          "id": "19.0-general-export-wizard",
+          "title": "Export wizard"
+        },
+        {
+          "id": "19.0-general-exports-default-fields",
+          "title": "Exports: default fields"
+        },
+        {
+          "id": "19.0-general-favorite-filters",
+          "title": "Favorite filters"
+        },
+        {
+          "id": "19.0-general-follower-management",
+          "title": "Follower management"
+        },
+        {
+          "id": "19.0-general-gantt-view",
+          "title": "Gantt view"
+        },
+        {
+          "id": "19.0-general-gmail-and-outlook-account-connection",
+          "title": "Gmail and Outlook account connection"
+        },
+        {
+          "id": "19.0-general-grouped-records-list-view",
+          "title": "Grouped records: list view"
+        },
+        {
+          "id": "19.0-general-html-property-field-type",
+          "title": "HTML property field type"
+        },
+        {
+          "id": "19.0-general-import-product-variants",
+          "title": "Import product variants"
+        },
+        {
+          "id": "19.0-general-import-templates",
+          "title": "Import templates"
+        },
+        {
+          "id": "19.0-general-kanban-cards-and-stages",
+          "title": "Kanban cards and stages"
+        },
+        {
+          "id": "19.0-general-list-view",
+          "title": "List view"
+        },
+        {
+          "id": "19.0-general-mobile-date-picker",
+          "title": "Mobile: date picker"
+        },
+        {
+          "id": "19.0-general-mobile-select-all-records",
+          "title": "Mobile: select all records"
+        },
+        {
+          "id": "19.0-general-odoo-pwa-pull-to-refresh",
+          "title": "Odoo PWA: pull-to-refresh"
+        },
+        {
+          "id": "19.0-general-open-link-in-new-tab",
+          "title": "Open link in new tab"
+        },
+        {
+          "id": "19.0-general-out-of-office-reply",
+          "title": "Out-of-office reply"
+        },
+        {
+          "id": "19.0-general-portal-users",
+          "title": "Portal users"
+        },
+        {
+          "id": "19.0-general-preview-attachments",
+          "title": "Preview attachments"
+        },
+        {
+          "id": "19.0-general-product-access-rights",
+          "title": "Product access rights"
+        },
+        {
+          "id": "19.0-general-properties",
+          "title": "Properties"
+        },
+        {
+          "id": "19.0-general-replying-to-or-forwarding-specific-messages",
+          "title": "Replying to or forwarding specific messages"
+        },
+        {
+          "id": "19.0-general-rich-text-editor",
+          "title": "Rich-text editor"
+        },
+        {
+          "id": "19.0-general-share-filters",
+          "title": "Share filters"
+        },
+        {
+          "id": "19.0-general-show-records-after-import",
+          "title": "Show records after import"
+        },
+        {
+          "id": "19.0-general-smaller-status-bar-on-mobile",
+          "title": "Smaller status bar on mobile"
+        },
+        {
+          "id": "19.0-general-suggested-recipients",
+          "title": "Suggested recipients"
+        },
+        {
+          "id": "19.0-general-twilio",
+          "title": "Twilio"
+        },
+        {
+          "id": "19.0-general-warning-messages",
+          "title": "Warning messages"
+        }
+      ]
+    },
+    {
+      "app": "Technical",
+      "slug": "technical",
+      "file": "technical.md",
+      "anchor": "table_of_content_heading_1_19",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "19.0-technical-cached-data",
+          "title": "Cached data"
+        },
+        {
+          "id": "19.0-technical-cached-translations",
+          "title": "Cached translations"
+        },
+        {
+          "id": "19.0-technical-control-panel-display",
+          "title": "Control panel display"
+        },
+        {
+          "id": "19.0-technical-date-format",
+          "title": "Date format"
+        },
+        {
+          "id": "19.0-technical-dropdown-formatting",
+          "title": "Dropdown formatting"
+        },
+        {
+          "id": "19.0-technical-import-any-file-format",
+          "title": "Import any file format"
+        },
+        {
+          "id": "19.0-technical-incremental-mass-edit",
+          "title": "Incremental mass edit"
+        },
+        {
+          "id": "19.0-technical-new-partner-autocomplete-provider-dun-bradstreet",
+          "title": "New partner autocomplete provider: Dun & Bradstreet"
+        },
+        {
+          "id": "19.0-technical-parent-record-change",
+          "title": "Parent record change"
+        },
+        {
+          "id": "19.0-technical-tracking-information-for-messages-sent-from-list-view",
+          "title": "Tracking information for messages sent from list view"
+        }
+      ]
+    },
+    {
+      "app": "Industries",
+      "slug": "industries",
+      "file": "industries.md",
+      "anchor": "table_of_content_heading_1_20",
+      "item_count": 58,
+      "notes": [
+        {
+          "id": "19.0-industries-accounting-firm",
+          "title": "Accounting Firm"
+        },
+        {
+          "id": "19.0-industries-bakery",
+          "title": "Bakery"
+        },
+        {
+          "id": "19.0-industries-beauty-parlor",
+          "title": "Beauty Parlor"
+        },
+        {
+          "id": "19.0-industries-beverage-distributor",
+          "title": "Beverage Distributor"
+        },
+        {
+          "id": "19.0-industries-bowling-alleys",
+          "title": "Bowling Alleys"
+        },
+        {
+          "id": "19.0-industries-campsite",
+          "title": "Campsite"
+        },
+        {
+          "id": "19.0-industries-candy-shop",
+          "title": "Candy Shop"
+        },
+        {
+          "id": "19.0-industries-carpenter",
+          "title": "Carpenter"
+        },
+        {
+          "id": "19.0-industries-catering",
+          "title": "Catering"
+        },
+        {
+          "id": "19.0-industries-cleaning-service",
+          "title": "Cleaning Service"
+        },
+        {
+          "id": "19.0-industries-climbing-gym",
+          "title": "Climbing Gym"
+        },
+        {
+          "id": "19.0-industries-concert-halls",
+          "title": "Concert Halls"
+        },
+        {
+          "id": "19.0-industries-condominium",
+          "title": "Condominium"
+        },
+        {
+          "id": "19.0-industries-construction-developer",
+          "title": "Construction Developer"
+        },
+        {
+          "id": "19.0-industries-cosmetics-store",
+          "title": "Cosmetics Store"
+        },
+        {
+          "id": "19.0-industries-coworking-space",
+          "title": "Coworking Space"
+        },
+        {
+          "id": "19.0-industries-dropshipping",
+          "title": "Dropshipping"
+        },
+        {
+          "id": "19.0-industries-elearning-platform",
+          "title": "eLearning Platform"
+        },
+        {
+          "id": "19.0-industries-electrician",
+          "title": "Electrician"
+        },
+        {
+          "id": "19.0-industries-environmental-agency",
+          "title": "Environmental Agency"
+        },
+        {
+          "id": "19.0-industries-escape-rooms",
+          "title": "Escape Rooms"
+        },
+        {
+          "id": "19.0-industries-event-management",
+          "title": "Event Management"
+        },
+        {
+          "id": "19.0-industries-eyewear-store",
+          "title": "Eyewear Store"
+        },
+        {
+          "id": "19.0-industries-florist",
+          "title": "Florist"
+        },
+        {
+          "id": "19.0-industries-food-distribution",
+          "title": "Food distribution"
+        },
+        {
+          "id": "19.0-industries-food-truck",
+          "title": "Food Truck"
+        },
+        {
+          "id": "19.0-industries-gallery",
+          "title": "Gallery"
+        },
+        {
+          "id": "19.0-industries-hair-salon",
+          "title": "Hair Salon"
+        },
+        {
+          "id": "19.0-industries-handyman",
+          "title": "Handyman"
+        },
+        {
+          "id": "19.0-industries-hotel",
+          "title": "Hotel"
+        },
+        {
+          "id": "19.0-industries-hvac-services",
+          "title": "HVAC Services"
+        },
+        {
+          "id": "19.0-industries-law-firm",
+          "title": "Law Firm"
+        },
+        {
+          "id": "19.0-industries-library",
+          "title": "Library"
+        },
+        {
+          "id": "19.0-industries-machine-and-tool-rental",
+          "title": "Machine and Tool Rental"
+        },
+        {
+          "id": "19.0-industries-marketing-agency",
+          "title": "Marketing Agency"
+        },
+        {
+          "id": "19.0-industries-mental-therapy",
+          "title": "Mental Therapy"
+        },
+        {
+          "id": "19.0-industries-metal-fabricator",
+          "title": "Metal Fabricator"
+        },
+        {
+          "id": "19.0-industries-microbrewery",
+          "title": "Microbrewery"
+        },
+        {
+          "id": "19.0-industries-night-club",
+          "title": "Night Club"
+        },
+        {
+          "id": "19.0-industries-non-profit-organization",
+          "title": "Non-profit Organization"
+        },
+        {
+          "id": "19.0-industries-outdoor-activities",
+          "title": "Outdoor Activities"
+        },
+        {
+          "id": "19.0-industries-personal-trainer",
+          "title": "Personal Trainer"
+        },
+        {
+          "id": "19.0-industries-pet-groomer",
+          "title": "Pet Groomer"
+        },
+        {
+          "id": "19.0-industries-physical-therapy",
+          "title": "Physical Therapy"
+        },
+        {
+          "id": "19.0-industries-real-estate",
+          "title": "Real Estate"
+        },
+        {
+          "id": "19.0-industries-shoemaker",
+          "title": "Shoemaker"
+        },
+        {
+          "id": "19.0-industries-spa-resort",
+          "title": "Spa Resort"
+        },
+        {
+          "id": "19.0-industries-sport-events",
+          "title": "Sport Events"
+        },
+        {
+          "id": "19.0-industries-tattoo-shop",
+          "title": "Tattoo Shop"
+        },
+        {
+          "id": "19.0-industries-team-sports-club",
+          "title": "Team Sports Club"
+        },
+        {
+          "id": "19.0-industries-textile-manufacturing",
+          "title": "Textile Manufacturing"
+        },
+        {
+          "id": "19.0-industries-theater",
+          "title": "Theater"
+        },
+        {
+          "id": "19.0-industries-third-party-logistics",
+          "title": "Third-Party Logistics"
+        },
+        {
+          "id": "19.0-industries-thrift-store",
+          "title": "Thrift Store"
+        },
+        {
+          "id": "19.0-industries-veterinary-clinic",
+          "title": "Veterinary Clinic"
+        },
+        {
+          "id": "19.0-industries-wedding-planner",
+          "title": "Wedding Planner"
+        },
+        {
+          "id": "19.0-industries-wine-shop",
+          "title": "Wine Shop"
+        },
+        {
+          "id": "19.0-industries-yoga-pilates-studio",
+          "title": "Yoga & Pilates Studio"
+        }
+      ]
+    },
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "table_of_content_heading_1_21",
+      "item_count": 44,
+      "notes": [
+        {
+          "id": "19.0-accounting-account-selection",
+          "title": "Account selection"
+        },
+        {
+          "id": "19.0-accounting-analytic-budgets-in-one-app-free",
+          "title": "Analytic budgets in One App Free"
+        },
+        {
+          "id": "19.0-accounting-analytic-subplans",
+          "title": "Analytic subplans"
+        },
+        {
+          "id": "19.0-accounting-annual-statements-composite-report",
+          "title": "Annual statements composite report"
+        },
+        {
+          "id": "19.0-accounting-audit-reports",
+          "title": "Audit reports"
+        },
+        {
+          "id": "19.0-accounting-asset-import-templates",
+          "title": "Asset import templates"
+        },
+        {
+          "id": "19.0-accounting-bank-reconciliation",
+          "title": "Bank reconciliation"
+        },
+        {
+          "id": "19.0-accounting-bank-statement-ocr-manual-correction",
+          "title": "Bank statement OCR manual correction"
+        },
+        {
+          "id": "19.0-accounting-bank-transactions-with-pdf-preview",
+          "title": "Bank transactions with PDF preview"
+        },
+        {
+          "id": "19.0-accounting-cash-discounts",
+          "title": "Cash discounts"
+        },
+        {
+          "id": "19.0-accounting-debit-notes",
+          "title": "Debit notes"
+        },
+        {
+          "id": "19.0-accounting-default-recipient-bank-account",
+          "title": "Default recipient bank account"
+        },
+        {
+          "id": "19.0-accounting-deferred-miscellaneous-entries",
+          "title": "Deferred miscellaneous entries"
+        },
+        {
+          "id": "19.0-accounting-down-payment-account",
+          "title": "Down payment account"
+        },
+        {
+          "id": "19.0-accounting-duplicate-bill-detection",
+          "title": "Duplicate bill detection"
+        },
+        {
+          "id": "19.0-accounting-exclude-from-follow-up",
+          "title": "Exclude from follow-up"
+        },
+        {
+          "id": "19.0-accounting-fiscal-categories-on-accounts",
+          "title": "Fiscal categories on accounts"
+        },
+        {
+          "id": "19.0-accounting-fiscal-positions",
+          "title": "Fiscal positions"
+        },
+        {
+          "id": "19.0-accounting-follow-up-via-whatsapp",
+          "title": "Follow up via WhatsApp"
+        },
+        {
+          "id": "19.0-accounting-follow-up-report",
+          "title": "Follow-up report"
+        },
+        {
+          "id": "19.0-accounting-follow-up-partner-ledger-access-to-invoicing-and-banks",
+          "title": "Follow-up/partner ledger access to Invoicing and banks"
+        },
+        {
+          "id": "19.0-accounting-improved-duplicate-detection",
+          "title": "Improved duplicate detection"
+        },
+        {
+          "id": "19.0-accounting-invoice-email-attachments",
+          "title": "Invoice email attachments"
+        },
+        {
+          "id": "19.0-accounting-invoice-analysis",
+          "title": "Invoice analysis"
+        },
+        {
+          "id": "19.0-accounting-iso20022",
+          "title": "ISO20022"
+        },
+        {
+          "id": "19.0-accounting-kyc-payment-verification",
+          "title": "KYC payment verification"
+        },
+        {
+          "id": "19.0-accounting-light-audit-trail",
+          "title": "Light audit trail"
+        },
+        {
+          "id": "19.0-accounting-menu-and-form-organization-and-layout",
+          "title": "Menu and form organization and layout"
+        },
+        {
+          "id": "19.0-accounting-miscellaneous-journals-dashboard-link",
+          "title": "Miscellaneous journals dashboard link"
+        },
+        {
+          "id": "19.0-accounting-ocr-manual-correction",
+          "title": "OCR manual correction"
+        },
+        {
+          "id": "19.0-accounting-open-on-date",
+          "title": "Open on date"
+        },
+        {
+          "id": "19.0-accounting-payment-communication-generation",
+          "title": "Payment communication generation"
+        },
+        {
+          "id": "19.0-accounting-payment-withholding-tax",
+          "title": "Payment withholding tax"
+        },
+        {
+          "id": "19.0-accounting-print-send",
+          "title": "Print & Send"
+        },
+        {
+          "id": "19.0-accounting-professional-percentage-for-receipts",
+          "title": "Professional percentage for receipts"
+        },
+        {
+          "id": "19.0-accounting-purchase-and-sales-receipts",
+          "title": "Purchase and sales receipts"
+        },
+        {
+          "id": "19.0-accounting-purchase-order-matching",
+          "title": "Purchase order matching"
+        },
+        {
+          "id": "19.0-accounting-report-annotations",
+          "title": "Report annotations"
+        },
+        {
+          "id": "19.0-accounting-reset-invoices-bills-to-draft",
+          "title": "Reset invoices/bills to draft"
+        },
+        {
+          "id": "19.0-accounting-review-invoices",
+          "title": "Review invoices"
+        },
+        {
+          "id": "19.0-accounting-tax-report-tax-tag-signs",
+          "title": "Tax report: tax tag signs"
+        },
+        {
+          "id": "19.0-accounting-tax-return",
+          "title": "Tax return"
+        },
+        {
+          "id": "19.0-accounting-taxable-supply-date",
+          "title": "Taxable supply date"
+        },
+        {
+          "id": "19.0-accounting-updated-action-names",
+          "title": "Updated action names"
+        }
+      ]
+    },
+    {
+      "app": "Localizations",
+      "slug": "localizations",
+      "file": "localizations.md",
+      "anchor": "table_of_content_heading_1_22",
+      "item_count": 50,
+      "notes": [
+        {
+          "id": "19.0-localizations-argentina",
+          "title": "Argentina 🇦🇷"
+        },
+        {
+          "id": "19.0-localizations-australia",
+          "title": "Australia 🇦🇺"
+        },
+        {
+          "id": "19.0-localizations-bahrain",
+          "title": "Bahrain 🇧🇭"
+        },
+        {
+          "id": "19.0-localizations-belgium",
+          "title": "Belgium 🇧🇪"
+        },
+        {
+          "id": "19.0-localizations-brazil",
+          "title": "Brazil 🇧🇷"
+        },
+        {
+          "id": "19.0-localizations-bulgaria",
+          "title": "Bulgaria 🇧🇬"
+        },
+        {
+          "id": "19.0-localizations-cambodia",
+          "title": "Cambodia 🇰🇭"
+        },
+        {
+          "id": "19.0-localizations-chile",
+          "title": "Chile 🇨🇱"
+        },
+        {
+          "id": "19.0-localizations-china",
+          "title": "China 🇨🇳"
+        },
+        {
+          "id": "19.0-localizations-colombia",
+          "title": "Colombia 🇨🇴"
+        },
+        {
+          "id": "19.0-localizations-ecuador",
+          "title": "Ecuador 🇪🇨"
+        },
+        {
+          "id": "19.0-localizations-egypt",
+          "title": "Egypt 🇪🇬"
+        },
+        {
+          "id": "19.0-localizations-european-union-vat",
+          "title": "European Union VAT"
+        },
+        {
+          "id": "19.0-localizations-gcc-countries",
+          "title": "GCC countries"
+        },
+        {
+          "id": "19.0-localizations-georgia",
+          "title": "Georgia 🇬🇪"
+        },
+        {
+          "id": "19.0-localizations-germany",
+          "title": "Germany 🇩🇪"
+        },
+        {
+          "id": "19.0-localizations-hong-kong",
+          "title": "Hong Kong 🇭🇰"
+        },
+        {
+          "id": "19.0-localizations-hungary",
+          "title": "Hungary 🇭🇺"
+        },
+        {
+          "id": "19.0-localizations-india",
+          "title": "India 🇮🇳"
+        },
+        {
+          "id": "19.0-localizations-indonesia",
+          "title": "Indonesia 🇮🇩"
+        },
+        {
+          "id": "19.0-localizations-iraq",
+          "title": "Iraq 🇮🇶"
+        },
+        {
+          "id": "19.0-localizations-japan",
+          "title": "Japan 🇯🇵"
+        },
+        {
+          "id": "19.0-localizations-jordan",
+          "title": "Jordan 🇯🇴"
+        },
+        {
+          "id": "19.0-localizations-kazakhstan",
+          "title": "Kazakhstan 🇰🇿"
+        },
+        {
+          "id": "19.0-localizations-kenya",
+          "title": "Kenya 🇰🇪"
+        },
+        {
+          "id": "19.0-localizations-korea",
+          "title": "Korea 🇰🇷"
+        },
+        {
+          "id": "19.0-localizations-lebanon",
+          "title": "Lebanon 🇱🇧"
+        },
+        {
+          "id": "19.0-localizations-luxembourg",
+          "title": "Luxembourg 🇱🇺"
+        },
+        {
+          "id": "19.0-localizations-malaysia",
+          "title": "Malaysia 🇲🇾"
+        },
+        {
+          "id": "19.0-localizations-mexico",
+          "title": "Mexico 🇲🇽"
+        },
+        {
+          "id": "19.0-localizations-netherlands",
+          "title": "Netherlands 🇳🇱"
+        },
+        {
+          "id": "19.0-localizations-new-zealand",
+          "title": "New Zealand 🇳🇿"
+        },
+        {
+          "id": "19.0-localizations-oman",
+          "title": "Oman 🇴🇲"
+        },
+        {
+          "id": "19.0-localizations-pakistan",
+          "title": "Pakistan 🇵🇰"
+        },
+        {
+          "id": "19.0-localizations-peru",
+          "title": "Peru 🇵🇪"
+        },
+        {
+          "id": "19.0-localizations-philippines",
+          "title": "Philippines 🇵🇭"
+        },
+        {
+          "id": "19.0-localizations-romania",
+          "title": "Romania 🇷🇴"
+        },
+        {
+          "id": "19.0-localizations-saudi-arabia",
+          "title": "Saudi Arabia 🇸🇦"
+        },
+        {
+          "id": "19.0-localizations-singapore",
+          "title": "Singapore 🇸🇬"
+        },
+        {
+          "id": "19.0-localizations-slovenia",
+          "title": "Slovenia 🇸🇮"
+        },
+        {
+          "id": "19.0-localizations-spain",
+          "title": "Spain 🇪🇸"
+        },
+        {
+          "id": "19.0-localizations-sri-lanka",
+          "title": "Sri Lanka 🇱🇰"
+        },
+        {
+          "id": "19.0-localizations-switzerland",
+          "title": "Switzerland 🇨🇭"
+        },
+        {
+          "id": "19.0-localizations-taiwan",
+          "title": "Taiwan 🇹🇼"
+        },
+        {
+          "id": "19.0-localizations-thailand",
+          "title": "Thailand 🇹🇭"
+        },
+        {
+          "id": "19.0-localizations-turkiye",
+          "title": "Türkiye 🇹🇷"
+        },
+        {
+          "id": "19.0-localizations-united-arab-emirates",
+          "title": "United Arab Emirates 🇦🇪"
+        },
+        {
+          "id": "19.0-localizations-united-states-of-america",
+          "title": "United States of America 🇺🇸"
+        },
+        {
+          "id": "19.0-localizations-uzbekistan",
+          "title": "Uzbekistan 🇺🇿"
+        },
+        {
+          "id": "19.0-localizations-vietnam",
+          "title": "Vietnam 🇻🇳"
+        }
+      ]
+    },
+    {
+      "app": "AI",
+      "slug": "ai",
+      "file": "ai.md",
+      "anchor": "table_of_content_heading_1_23",
+      "item_count": 18,
+      "notes": [
+        {
+          "id": "19.0-ai-agents",
+          "title": "Agents"
+        },
+        {
+          "id": "19.0-ai-ai-agent-database-queries",
+          "title": "AI agent database queries"
+        },
+        {
+          "id": "19.0-ai-ai-button-in-top-bar",
+          "title": "AI button in top bar"
+        },
+        {
+          "id": "19.0-ai-ai-fields",
+          "title": "AI fields"
+        },
+        {
+          "id": "19.0-ai-ask-ai-search",
+          "title": "Ask AI search"
+        },
+        {
+          "id": "19.0-ai-chatgpt-5-0",
+          "title": "ChatGPT 5.0"
+        },
+        {
+          "id": "19.0-ai-draft-with-odoo-ai",
+          "title": "Draft with Odoo AI"
+        },
+        {
+          "id": "19.0-ai-email-template-prompts",
+          "title": "Email template prompts"
+        },
+        {
+          "id": "19.0-ai-files-for-fields-and-actions",
+          "title": "Files for fields and actions"
+        },
+        {
+          "id": "19.0-ai-gemini-account",
+          "title": "Gemini account"
+        },
+        {
+          "id": "19.0-ai-leads-from-ai-agent",
+          "title": "Leads from AI agent"
+        },
+        {
+          "id": "19.0-ai-livechat-integration",
+          "title": "Livechat integration"
+        },
+        {
+          "id": "19.0-ai-server-actions",
+          "title": "Server actions"
+        },
+        {
+          "id": "19.0-ai-sources",
+          "title": "Sources"
+        },
+        {
+          "id": "19.0-ai-unified-ai-workflows",
+          "title": "Unified AI workflows"
+        },
+        {
+          "id": "19.0-ai-voice-transcript",
+          "title": "Voice transcript"
+        },
+        {
+          "id": "19.0-ai-web-page-generation",
+          "title": "Web page generation"
+        },
+        {
+          "id": "19.0-ai-web-search-for-fields-and-actions",
+          "title": "Web search for fields and actions"
+        }
+      ]
+    },
+    {
+      "app": "Appointments",
+      "slug": "appointments",
+      "file": "appointments.md",
+      "anchor": "table_of_content_heading_1_24",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "19.0-appointments-assign-the-same-salesperson",
+          "title": "Assign the same salesperson"
+        },
+        {
+          "id": "19.0-appointments-external-website-integration",
+          "title": "External website integration"
+        },
+        {
+          "id": "19.0-appointments-flexible-appointment-scheduling",
+          "title": "Flexible appointment scheduling"
+        },
+        {
+          "id": "19.0-appointments-flexible-appointments-duration-display",
+          "title": "Flexible appointments: duration display"
+        },
+        {
+          "id": "19.0-appointments-google-reserve-integration",
+          "title": "Google Reserve integration"
+        },
+        {
+          "id": "19.0-appointments-group-sessions",
+          "title": "Group sessions"
+        },
+        {
+          "id": "19.0-appointments-reusable-and-default-questions",
+          "title": "Reusable and default questions"
+        },
+        {
+          "id": "19.0-appointments-slot-creation",
+          "title": "Slot creation"
+        },
+        {
+          "id": "19.0-appointments-unavailable-resources",
+          "title": "Unavailable resources"
+        },
+        {
+          "id": "19.0-appointments-ux-improvement",
+          "title": "UX improvement"
+        }
+      ]
+    },
+    {
+      "app": "Appraisals",
+      "slug": "appraisals",
+      "file": "appraisals.md",
+      "anchor": "table_of_content_heading_1_25",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-appraisals-appraisal-campaign",
+          "title": "Appraisal campaign"
+        },
+        {
+          "id": "19.0-appraisals-goals",
+          "title": "Goals"
+        },
+        {
+          "id": "19.0-appraisals-goals-for-multiple-employees",
+          "title": "Goals for multiple employees"
+        },
+        {
+          "id": "19.0-appraisals-job-target",
+          "title": "Job target"
+        }
+      ]
+    },
+    {
+      "app": "Attendances",
+      "slug": "attendances",
+      "file": "attendances.md",
+      "anchor": "table_of_content_heading_1_26",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "19.0-attendances-access-rights",
+          "title": "Access rights"
+        },
+        {
+          "id": "19.0-attendances-automatic-checkout",
+          "title": "Automatic checkout"
+        },
+        {
+          "id": "19.0-attendances-disable-gps-tracking",
+          "title": "Disable GPS tracking"
+        },
+        {
+          "id": "19.0-attendances-location-computation",
+          "title": "Location computation"
+        },
+        {
+          "id": "19.0-attendances-overtime-rulesets",
+          "title": "Overtime rulesets"
+        },
+        {
+          "id": "19.0-attendances-show-presence-indicator-on-kiosk",
+          "title": "Show presence indicator on kiosk"
+        },
+        {
+          "id": "19.0-attendances-time-off-ledger",
+          "title": "Time off ledger"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "table_of_content_heading_1_27",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "19.0-barcode-lot-and-serial-number-properties",
+          "title": "Lot and serial number properties"
+        },
+        {
+          "id": "19.0-barcode-operation-descriptions",
+          "title": "Operation descriptions"
+        },
+        {
+          "id": "19.0-barcode-product-source-location",
+          "title": "Product source location"
+        }
+      ]
+    },
+    {
+      "app": "Blog",
+      "slug": "blog",
+      "file": "blog.md",
+      "anchor": "table_of_content_heading_1_28",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-blog-blog-reordering",
+          "title": "Blog reordering"
+        }
+      ]
+    },
+    {
+      "app": "Calendar",
+      "slug": "calendar",
+      "file": "calendar.md",
+      "anchor": "table_of_content_heading_1_29",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "19.0-calendar-calendar-form-view",
+          "title": "Calendar form view"
+        },
+        {
+          "id": "19.0-calendar-whatsapp-reminders-for-calendar-events",
+          "title": "WhatsApp reminders for calendar events"
+        }
+      ]
+    },
+    {
+      "app": "Contacts",
+      "slug": "contacts",
+      "file": "contacts.md",
+      "anchor": "table_of_content_heading_1_77",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "19.0-contacts-address-autocomplete-widget",
+          "title": "Address autocomplete widget"
+        },
+        {
+          "id": "19.0-contacts-contact-autocomplete",
+          "title": "Contact autocomplete"
+        },
+        {
+          "id": "19.0-contacts-contact-form-revamp",
+          "title": "Contact form revamp"
+        },
+        {
+          "id": "19.0-contacts-contact-statistics",
+          "title": "Contact statistics"
+        },
+        {
+          "id": "19.0-contacts-contacts-mobile-field",
+          "title": "Contacts: \"Mobile\" field"
+        },
+        {
+          "id": "19.0-contacts-properties",
+          "title": "Properties"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "table_of_content_heading_1_30",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "19.0-crm-ai-insights",
+          "title": "AI insights"
+        },
+        {
+          "id": "19.0-crm-business-card-scans",
+          "title": "Business card scans"
+        },
+        {
+          "id": "19.0-crm-auto-assignment-to-team-leaders",
+          "title": "Auto-assignment to team leaders"
+        },
+        {
+          "id": "19.0-crm-lead-assignment-priority-filter",
+          "title": "Lead assignment: priority filter"
+        },
+        {
+          "id": "19.0-crm-quick-create-contacts",
+          "title": "Quick-create contacts"
+        }
+      ]
+    },
+    {
+      "app": "Dashboards",
+      "slug": "dashboards",
+      "file": "dashboards.md",
+      "anchor": "table_of_content_heading_1_31",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "19.0-dashboards-blank-dashboards",
+          "title": "Blank dashboards"
+        },
+        {
+          "id": "19.0-dashboards-charts-fullscreen-display",
+          "title": "Charts: fullscreen display"
+        },
+        {
+          "id": "19.0-dashboards-date-filter",
+          "title": "Date filter"
+        },
+        {
+          "id": "19.0-dashboards-favorites",
+          "title": "Favorites"
+        },
+        {
+          "id": "19.0-dashboards-global-filters",
+          "title": "Global filters"
+        },
+        {
+          "id": "19.0-dashboards-live-chat-ongoing-conversations",
+          "title": "Live Chat - Ongoing conversations"
+        },
+        {
+          "id": "19.0-dashboards-measure-sorting",
+          "title": "Measure sorting"
+        },
+        {
+          "id": "19.0-dashboards-multicompany-dashboards",
+          "title": "Multicompany dashboards"
+        },
+        {
+          "id": "19.0-dashboards-switch-chart-views",
+          "title": "Switch chart views"
+        },
+        {
+          "id": "19.0-dashboards-time-based-charts",
+          "title": "Time-based charts"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "table_of_content_heading_1_32",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "19.0-discuss-audio-and-video-device-selection",
+          "title": "Audio and video device selection"
+        },
+        {
+          "id": "19.0-discuss-background-blur-for-video-calls",
+          "title": "Background blur for video calls"
+        },
+        {
+          "id": "19.0-discuss-chat-status",
+          "title": "Chat status"
+        },
+        {
+          "id": "19.0-discuss-emoji-shortcut",
+          "title": "Emoji shortcut"
+        },
+        {
+          "id": "19.0-discuss-live-conference-share-audio",
+          "title": "Live conference share audio"
+        },
+        {
+          "id": "19.0-discuss-mention-groups-of-users",
+          "title": "Mention groups of users"
+        },
+        {
+          "id": "19.0-discuss-most-recent-emoji",
+          "title": "Most recent emoji"
+        },
+        {
+          "id": "19.0-discuss-picture-in-picture-mode",
+          "title": "Picture-in-picture mode"
+        },
+        {
+          "id": "19.0-discuss-push-notifications",
+          "title": "Push notifications"
+        },
+        {
+          "id": "19.0-discuss-time-off-indication-in-avatar-widget",
+          "title": "Time off indication in avatar widget"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "table_of_content_heading_1_33",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "19.0-documents-accounting-documents",
+          "title": "Accounting documents"
+        },
+        {
+          "id": "19.0-documents-add-documents-from-chatter",
+          "title": "Add documents from chatter"
+        },
+        {
+          "id": "19.0-documents-changes-logged-in-chatter",
+          "title": "Changes logged in chatter"
+        },
+        {
+          "id": "19.0-documents-convert-email-into-document",
+          "title": "Convert email into document"
+        },
+        {
+          "id": "19.0-documents-document-location",
+          "title": "Document location"
+        },
+        {
+          "id": "19.0-documents-document-rights-warnings",
+          "title": "Document rights warnings"
+        },
+        {
+          "id": "19.0-documents-hr-documents",
+          "title": "HR documents"
+        },
+        {
+          "id": "19.0-documents-list-view-quick-access-buttons",
+          "title": "List view: quick access buttons"
+        },
+        {
+          "id": "19.0-documents-management-with-ai",
+          "title": "Management with AI"
+        },
+        {
+          "id": "19.0-documents-new-journal-entry-server-action-type",
+          "title": "New Journal Entry server action type"
+        },
+        {
+          "id": "19.0-documents-preview-and-thumbnails",
+          "title": "Preview and thumbnails"
+        },
+        {
+          "id": "19.0-documents-sharing-and-access-rights",
+          "title": "Sharing and access rights"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "table_of_content_heading_1_34",
+      "item_count": 40,
+      "notes": [
+        {
+          "id": "19.0-ecommerce-shop-page-layout-and-options",
+          "title": "/shop page layout and options"
+        },
+        {
+          "id": "19.0-ecommerce-abandoned-cart-email",
+          "title": "Abandoned cart email"
+        },
+        {
+          "id": "19.0-ecommerce-address-selector",
+          "title": "Address selector"
+        },
+        {
+          "id": "19.0-ecommerce-alternative-products-block-title",
+          "title": "Alternative products block title"
+        },
+        {
+          "id": "19.0-ecommerce-attributes-display",
+          "title": "Attributes display"
+        },
+        {
+          "id": "19.0-ecommerce-cart-page-list-of-supported-payment-methods",
+          "title": "Cart page: list of supported payment methods"
+        },
+        {
+          "id": "19.0-ecommerce-cart-summary",
+          "title": "Cart summary"
+        },
+        {
+          "id": "19.0-ecommerce-cash-on-delivery",
+          "title": "Cash on delivery"
+        },
+        {
+          "id": "19.0-ecommerce-catalog-building-block-templates",
+          "title": "Catalog building block templates"
+        },
+        {
+          "id": "19.0-ecommerce-category-header-options",
+          "title": "Category header options"
+        },
+        {
+          "id": "19.0-ecommerce-checkout-layout-improvements",
+          "title": "Checkout layout improvements"
+        },
+        {
+          "id": "19.0-ecommerce-checkout-page",
+          "title": "Checkout page"
+        },
+        {
+          "id": "19.0-ecommerce-click-collect-stock-availability",
+          "title": "Click & Collect stock availability"
+        },
+        {
+          "id": "19.0-ecommerce-combo-configurator",
+          "title": "Combo configurator"
+        },
+        {
+          "id": "19.0-ecommerce-comparison-tool",
+          "title": "Comparison tool"
+        },
+        {
+          "id": "19.0-ecommerce-ecommerce-urls",
+          "title": "eCommerce URLs"
+        },
+        {
+          "id": "19.0-ecommerce-edit-checkout-stages",
+          "title": "Edit checkout stages"
+        },
+        {
+          "id": "19.0-ecommerce-empty-screens-animation",
+          "title": "Empty screens animation"
+        },
+        {
+          "id": "19.0-ecommerce-footer-template-with-payment-methods",
+          "title": "Footer template with payment methods"
+        },
+        {
+          "id": "19.0-ecommerce-free-orders",
+          "title": "Free orders"
+        },
+        {
+          "id": "19.0-ecommerce-google-merchant-center",
+          "title": "Google Merchant Center"
+        },
+        {
+          "id": "19.0-ecommerce-hover-magnifier",
+          "title": "Hover magnifier"
+        },
+        {
+          "id": "19.0-ecommerce-image-attribute-display-type",
+          "title": "Image attribute display type"
+        },
+        {
+          "id": "19.0-ecommerce-improved-seo-of-product-pages",
+          "title": "Improved SEO of product pages"
+        },
+        {
+          "id": "19.0-ecommerce-mobile-cart-summary-review",
+          "title": "Mobile cart summary review"
+        },
+        {
+          "id": "19.0-ecommerce-onboarding-steps",
+          "title": "Onboarding steps"
+        },
+        {
+          "id": "19.0-ecommerce-pagination",
+          "title": "Pagination"
+        },
+        {
+          "id": "19.0-ecommerce-pick-up-in-store",
+          "title": "Pick up in store"
+        },
+        {
+          "id": "19.0-ecommerce-prevent-sales-product-name-on-contact-form",
+          "title": "Prevent sales: product name on contact form"
+        },
+        {
+          "id": "19.0-ecommerce-product-building-blocks",
+          "title": "Product building blocks"
+        },
+        {
+          "id": "19.0-ecommerce-product-configurator",
+          "title": "Product configurator"
+        },
+        {
+          "id": "19.0-ecommerce-product-page",
+          "title": "Product page"
+        },
+        {
+          "id": "19.0-ecommerce-quick-reordering",
+          "title": "Quick reordering"
+        },
+        {
+          "id": "19.0-ecommerce-ribbons",
+          "title": "Ribbons"
+        },
+        {
+          "id": "19.0-ecommerce-shipping-address-setting",
+          "title": "Shipping address setting"
+        },
+        {
+          "id": "19.0-ecommerce-shop-page-categories",
+          "title": "Shop page: categories"
+        },
+        {
+          "id": "19.0-ecommerce-subscription-product-page",
+          "title": "Subscription product page"
+        },
+        {
+          "id": "19.0-ecommerce-unit-of-measure-selector",
+          "title": "Unit of measure selector"
+        },
+        {
+          "id": "19.0-ecommerce-variant-preview-on-product-cards",
+          "title": "Variant preview on product cards"
+        },
+        {
+          "id": "19.0-ecommerce-wishlist-page-layout",
+          "title": "Wishlist page layout"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "table_of_content_heading_1_35",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-elearning-link-based-course-access",
+          "title": "Link-based course access"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "table_of_content_heading_1_36",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-email-marketing-new-editor",
+          "title": "New editor"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "table_of_content_heading_1_37",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "19.0-employees-birthdays",
+          "title": "Birthdays"
+        },
+        {
+          "id": "19.0-employees-employee-and-contract-merge",
+          "title": "Employee and contract merge"
+        },
+        {
+          "id": "19.0-employees-learning-management-system-basics",
+          "title": "Learning management system basics"
+        },
+        {
+          "id": "19.0-employees-offers-for-non-users",
+          "title": "Offers for non-users"
+        },
+        {
+          "id": "19.0-employees-remote-work-enabled-by-default",
+          "title": "Remote work enabled by default"
+        },
+        {
+          "id": "19.0-employees-skills-and-certifications",
+          "title": "Skills and certifications"
+        },
+        {
+          "id": "19.0-employees-smart-buttons",
+          "title": "Smart buttons"
+        }
+      ]
+    },
+    {
+      "app": "Equity",
+      "slug": "equity",
+      "file": "equity.md",
+      "anchor": "table_of_content_heading_1_38",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-equity-new-app",
+          "title": "New app"
+        }
+      ]
+    },
+    {
+      "app": "ESG",
+      "slug": "esg",
+      "file": "esg.md",
+      "anchor": "table_of_content_heading_1_39",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "19.0-esg-carbon-analytics",
+          "title": "Carbon analytics"
+        },
+        {
+          "id": "19.0-esg-carbon-footprint",
+          "title": "Carbon footprint"
+        },
+        {
+          "id": "19.0-esg-emission-factors",
+          "title": "Emission factors"
+        },
+        {
+          "id": "19.0-esg-ipcc-database-integration",
+          "title": "IPCC database integration"
+        },
+        {
+          "id": "19.0-esg-new-app",
+          "title": "New app"
+        },
+        {
+          "id": "19.0-esg-social-metrics",
+          "title": "Social metrics"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "table_of_content_heading_1_40",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "19.0-events-communication-triggers",
+          "title": "Communication triggers"
+        },
+        {
+          "id": "19.0-events-event-cancellation",
+          "title": "Event cancellation"
+        },
+        {
+          "id": "19.0-events-frontend-event-ticket-creation",
+          "title": "Frontend event ticket creation"
+        },
+        {
+          "id": "19.0-events-multi-slot-events",
+          "title": "Multi-slot events"
+        },
+        {
+          "id": "19.0-events-shared-question-library",
+          "title": "Shared question library"
+        },
+        {
+          "id": "19.0-events-sponsors-on-event-tickets",
+          "title": "Sponsors on event tickets"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "table_of_content_heading_1_41",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-expenses-disallowed-expenses-reverse-amount-percentage",
+          "title": "Disallowed expenses: reverse amount percentage"
+        },
+        {
+          "id": "19.0-expenses-expense-reports-removed",
+          "title": "Expense reports removed"
+        },
+        {
+          "id": "19.0-expenses-partial-bill-deductibility",
+          "title": "Partial bill deductibility"
+        },
+        {
+          "id": "19.0-expenses-physical-expense-cards",
+          "title": "Physical expense cards"
+        }
+      ]
+    },
+    {
+      "app": "Field Service",
+      "slug": "field-service",
+      "file": "field-service.md",
+      "anchor": "table_of_content_heading_1_42",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-field-service-appointments",
+          "title": "Appointments"
+        },
+        {
+          "id": "19.0-field-service-geo-location-tracking-for-tasks",
+          "title": "Geo-location tracking for tasks"
+        },
+        {
+          "id": "19.0-field-service-task-report",
+          "title": "Task report"
+        },
+        {
+          "id": "19.0-field-service-worksheet-report-conditional-visibility",
+          "title": "Worksheet report: conditional visibility"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "table_of_content_heading_1_43",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-fleet-odometers-report",
+          "title": "Odometers report"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "table_of_content_heading_1_44",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "19.0-helpdesk-inactive-tickets",
+          "title": "Inactive tickets"
+        },
+        {
+          "id": "19.0-helpdesk-reimbursements-gift-cards",
+          "title": "Reimbursements: gift cards"
+        },
+        {
+          "id": "19.0-helpdesk-send-replacement-products",
+          "title": "Send replacement products"
+        },
+        {
+          "id": "19.0-helpdesk-ticket-creation-files-and-images",
+          "title": "Ticket creation: files and images"
+        },
+        {
+          "id": "19.0-helpdesk-ticket-dispatching-based-on-tags",
+          "title": "Ticket dispatching based on tags"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "table_of_content_heading_1_45",
+      "item_count": 26,
+      "notes": [
+        {
+          "id": "19.0-inventory-batches-and-dispatches",
+          "title": "Batches and dispatches"
+        },
+        {
+          "id": "19.0-inventory-forecasted-report-expired-products",
+          "title": "Forecasted report: expired products"
+        },
+        {
+          "id": "19.0-inventory-inventory-valuation",
+          "title": "Inventory valuation"
+        },
+        {
+          "id": "19.0-inventory-late-availability-filter",
+          "title": "Late Availability filter"
+        },
+        {
+          "id": "19.0-inventory-locations",
+          "title": "Locations"
+        },
+        {
+          "id": "19.0-inventory-lots-and-serial-numbers",
+          "title": "Lots and serial numbers"
+        },
+        {
+          "id": "19.0-inventory-master-production-scheduler",
+          "title": "Master Production Scheduler"
+        },
+        {
+          "id": "19.0-inventory-merge-batches-or-waves",
+          "title": "Merge batches or waves"
+        },
+        {
+          "id": "19.0-inventory-merge-packaging-with-uom",
+          "title": "Merge packaging with UoM"
+        },
+        {
+          "id": "19.0-inventory-multiple-routes-on-sales-order-lines",
+          "title": "Multiple routes on sales order lines"
+        },
+        {
+          "id": "19.0-inventory-packages-within-packages",
+          "title": "Packages within packages"
+        },
+        {
+          "id": "19.0-inventory-partner-in-traceability-report",
+          "title": "Partner in traceability report"
+        },
+        {
+          "id": "19.0-inventory-physical-inventory",
+          "title": "Physical inventory"
+        },
+        {
+          "id": "19.0-inventory-product-route-configuration",
+          "title": "Product route configuration"
+        },
+        {
+          "id": "19.0-inventory-products-with-missing-vendors",
+          "title": "Products with missing vendors"
+        },
+        {
+          "id": "19.0-inventory-products-quantity-on-hand",
+          "title": "Products' quantity on hand"
+        },
+        {
+          "id": "19.0-inventory-reordering-rules",
+          "title": "Reordering rules"
+        },
+        {
+          "id": "19.0-inventory-replenish-on-order-mto-route",
+          "title": "Replenish on Order (MTO) route"
+        },
+        {
+          "id": "19.0-inventory-replenishment-view",
+          "title": "Replenishment view"
+        },
+        {
+          "id": "19.0-inventory-report-improvements",
+          "title": "Report improvements"
+        },
+        {
+          "id": "19.0-inventory-reservation-upon-adjustment-validation",
+          "title": "Reservation upon adjustment validation"
+        },
+        {
+          "id": "19.0-inventory-suggested-quantity-to-replenish-in-vendor-catalog",
+          "title": "Suggested quantity to replenish in vendor catalog"
+        },
+        {
+          "id": "19.0-inventory-update-quantity",
+          "title": "Update quantity"
+        },
+        {
+          "id": "19.0-inventory-ups-connector-signature-required",
+          "title": "UPS Connector signature required"
+        },
+        {
+          "id": "19.0-inventory-warehouse-in-traceability-report",
+          "title": "Warehouse in traceability report"
+        },
+        {
+          "id": "19.0-inventory-whatsapp-shipping-notifications",
+          "title": "WhatsApp shipping notifications"
+        }
+      ]
+    },
+    {
+      "app": "Knowledge",
+      "slug": "knowledge",
+      "file": "knowledge.md",
+      "anchor": "table_of_content_heading_1_46",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "19.0-knowledge-collapsible-toggles",
+          "title": "Collapsible toggles"
+        },
+        {
+          "id": "19.0-knowledge-custom-templates",
+          "title": "Custom templates"
+        },
+        {
+          "id": "19.0-knowledge-public-view",
+          "title": "Public view"
+        }
+      ]
+    },
+    {
+      "app": "Live Chat",
+      "slug": "live-chat",
+      "file": "live-chat.md",
+      "anchor": "table_of_content_heading_1_47",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "19.0-live-chat-access-rights",
+          "title": "Access rights"
+        },
+        {
+          "id": "19.0-live-chat-call-measures",
+          "title": "Call measures"
+        },
+        {
+          "id": "19.0-live-chat-chatbot-session-statistics",
+          "title": "Chatbot session statistics"
+        },
+        {
+          "id": "19.0-live-chat-concurrent-chat-limit",
+          "title": "Concurrent chat limit"
+        },
+        {
+          "id": "19.0-live-chat-conversation-copy",
+          "title": "Conversation copy"
+        },
+        {
+          "id": "19.0-live-chat-create-lead-and-forward",
+          "title": "Create lead and forward"
+        },
+        {
+          "id": "19.0-live-chat-created-tickets-lead-measures",
+          "title": "Created tickets/lead measures"
+        },
+        {
+          "id": "19.0-live-chat-forward-chats-based-on-expertise",
+          "title": "Forward chats based on expertise"
+        },
+        {
+          "id": "19.0-live-chat-handled-by-bot-agent-measures",
+          "title": "Handled by bot/agent measures"
+        },
+        {
+          "id": "19.0-live-chat-info-side-panel",
+          "title": "Info side panel"
+        },
+        {
+          "id": "19.0-live-chat-info-side-panel-tags",
+          "title": "Info side panel: tags"
+        },
+        {
+          "id": "19.0-live-chat-redirect-after-positive-ratings",
+          "title": "Redirect after positive ratings"
+        },
+        {
+          "id": "19.0-live-chat-success-statistics",
+          "title": "Success statistics"
+        }
+      ]
+    },
+    {
+      "app": "Maintenance",
+      "slug": "maintenance",
+      "file": "maintenance.md",
+      "anchor": "table_of_content_heading_1_48",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-maintenance-email-alias",
+          "title": "Email alias"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "table_of_content_heading_1_49",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "19.0-manufacturing-bills-of-materials-default-batch-size",
+          "title": "Bills of materials: default batch size"
+        },
+        {
+          "id": "19.0-manufacturing-bills-of-materials-highlight-consumption-field",
+          "title": "Bills of materials: Highlight consumption field"
+        },
+        {
+          "id": "19.0-manufacturing-bom-overview-and-work-center-capacity",
+          "title": "BoM overview and work center capacity"
+        },
+        {
+          "id": "19.0-manufacturing-gantt-view-for-manufacturing-orders",
+          "title": "Gantt view for manufacturing orders"
+        },
+        {
+          "id": "19.0-manufacturing-manufacturing-order-ux",
+          "title": "Manufacturing order UX"
+        },
+        {
+          "id": "19.0-manufacturing-multiple-serial-lot-numbers-per-mo",
+          "title": "Multiple serial/lot numbers per MO"
+        },
+        {
+          "id": "19.0-manufacturing-operation-costing",
+          "title": "Operation costing"
+        },
+        {
+          "id": "19.0-manufacturing-split-manufacturing-order",
+          "title": "Split manufacturing order"
+        },
+        {
+          "id": "19.0-manufacturing-subcontracting-reception",
+          "title": "Subcontracting reception"
+        },
+        {
+          "id": "19.0-manufacturing-work-center-employee-cost-impact",
+          "title": "Work center employee cost impact"
+        },
+        {
+          "id": "19.0-manufacturing-work-order-search-view",
+          "title": "Work order search view"
+        },
+        {
+          "id": "19.0-manufacturing-work-order-status",
+          "title": "Work order status"
+        }
+      ]
+    },
+    {
+      "app": "Membership",
+      "slug": "membership",
+      "file": "membership.md",
+      "anchor": "table_of_content_heading_1_51",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-membership-removal-replacement",
+          "title": "Removal/replacement"
+        }
+      ]
+    },
+    {
+      "app": "Online Payments",
+      "slug": "online-payments",
+      "file": "online-payments.md",
+      "anchor": "table_of_content_heading_1_52",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "19.0-online-payments-automatic-creation-of-payment-providers",
+          "title": "Automatic creation of payment providers"
+        },
+        {
+          "id": "19.0-online-payments-dpo",
+          "title": "DPO"
+        },
+        {
+          "id": "19.0-online-payments-ecpay",
+          "title": "ECPay"
+        },
+        {
+          "id": "19.0-online-payments-iyzico",
+          "title": "Iyzico"
+        },
+        {
+          "id": "19.0-online-payments-lazada",
+          "title": "Lazada"
+        },
+        {
+          "id": "19.0-online-payments-mercado-pago",
+          "title": "Mercado Pago"
+        },
+        {
+          "id": "19.0-online-payments-mollie",
+          "title": "Mollie"
+        },
+        {
+          "id": "19.0-online-payments-nuvei",
+          "title": "Nuvei"
+        },
+        {
+          "id": "19.0-online-payments-paymob",
+          "title": "Paymob"
+        },
+        {
+          "id": "19.0-online-payments-razorpay",
+          "title": "Razorpay"
+        },
+        {
+          "id": "19.0-online-payments-redsys",
+          "title": "Redsys"
+        },
+        {
+          "id": "19.0-online-payments-sepa-payment-token",
+          "title": "SEPA payment token"
+        },
+        {
+          "id": "19.0-online-payments-stripe",
+          "title": "Stripe"
+        },
+        {
+          "id": "19.0-online-payments-stripe-supports-twint",
+          "title": "Stripe supports Twint"
+        },
+        {
+          "id": "19.0-online-payments-test-versus-live-transactions",
+          "title": "Test versus live transactions"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "table_of_content_heading_1_53",
+      "item_count": 18,
+      "notes": [
+        {
+          "id": "19.0-payroll-contract-end-date-on-offers",
+          "title": "Contract end date on offers"
+        },
+        {
+          "id": "19.0-payroll-contract-source",
+          "title": "Contract source"
+        },
+        {
+          "id": "19.0-payroll-manual-file-generation-in-reports",
+          "title": "Manual file generation in reports"
+        },
+        {
+          "id": "19.0-payroll-master-report",
+          "title": "Master report"
+        },
+        {
+          "id": "19.0-payroll-multiple-accounts-for-employees",
+          "title": "Multiple accounts for employees"
+        },
+        {
+          "id": "19.0-payroll-multiple-analytic-accounts",
+          "title": "Multiple analytic accounts"
+        },
+        {
+          "id": "19.0-payroll-pay-runs",
+          "title": "Pay runs"
+        },
+        {
+          "id": "19.0-payroll-payslip-correction",
+          "title": "Payslip correction"
+        },
+        {
+          "id": "19.0-payroll-payslip-generation",
+          "title": "Payslip generation"
+        },
+        {
+          "id": "19.0-payroll-payslip-lines-report",
+          "title": "Payslip lines report"
+        },
+        {
+          "id": "19.0-payroll-properties-as-benefits",
+          "title": "Properties as benefits"
+        },
+        {
+          "id": "19.0-payroll-properties-on-employee-records",
+          "title": "Properties on employee records"
+        },
+        {
+          "id": "19.0-payroll-salary-attachments",
+          "title": "Salary attachments"
+        },
+        {
+          "id": "19.0-payroll-salary-rule-parameters",
+          "title": "Salary rule parameters"
+        },
+        {
+          "id": "19.0-payroll-salary-rules-domain-condition",
+          "title": "Salary rules domain condition"
+        },
+        {
+          "id": "19.0-payroll-work-entries",
+          "title": "Work entries"
+        },
+        {
+          "id": "19.0-payroll-work-entries-duration",
+          "title": "Work entries duration"
+        },
+        {
+          "id": "19.0-payroll-work-entry-type-rate",
+          "title": "Work entry type: rate"
+        }
+      ]
+    },
+    {
+      "app": "Phone",
+      "slug": "phone",
+      "file": "phone.md",
+      "anchor": "table_of_content_heading_1_54",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-phone-call-form-view",
+          "title": "Call form view"
+        },
+        {
+          "id": "19.0-phone-call-recording",
+          "title": "Call recording"
+        },
+        {
+          "id": "19.0-phone-call-transfer",
+          "title": "Call transfer"
+        },
+        {
+          "id": "19.0-phone-ux-ui-improvements",
+          "title": "UX/UI improvements"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "table_of_content_heading_1_55",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "19.0-planning-auto-plan-on-flexible-schedules",
+          "title": "Auto-plan on flexible schedules"
+        },
+        {
+          "id": "19.0-planning-multi-day-shift-creation",
+          "title": "Multi-day shift creation"
+        },
+        {
+          "id": "19.0-planning-multiple-shift-creation-from-calendar-view",
+          "title": "Multiple shift creation from calendar view"
+        },
+        {
+          "id": "19.0-planning-planning-attendance-analysis",
+          "title": "Planning / Attendance analysis"
+        },
+        {
+          "id": "19.0-planning-planning-preview",
+          "title": "Planning preview"
+        },
+        {
+          "id": "19.0-planning-rental-orders",
+          "title": "Rental orders"
+        },
+        {
+          "id": "19.0-planning-schedule-printing",
+          "title": "Schedule printing"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "table_of_content_heading_1_56",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "19.0-point-of-sale-default-zpl-formats",
+          "title": "Default ZPL formats"
+        },
+        {
+          "id": "19.0-point-of-sale-global-invoice",
+          "title": "Global invoice"
+        },
+        {
+          "id": "19.0-point-of-sale-gofood-delivery-integration",
+          "title": "GoFood delivery integration"
+        },
+        {
+          "id": "19.0-point-of-sale-grabfood-delivery-integration",
+          "title": "GrabFood delivery integration"
+        },
+        {
+          "id": "19.0-point-of-sale-group-products",
+          "title": "Group products"
+        },
+        {
+          "id": "19.0-point-of-sale-long-press-click-for-product-info",
+          "title": "Long press/click for product info"
+        },
+        {
+          "id": "19.0-point-of-sale-minimal-rights-profile",
+          "title": "Minimal rights profile"
+        },
+        {
+          "id": "19.0-point-of-sale-one-click-payment-validation",
+          "title": "One-click payment validation"
+        },
+        {
+          "id": "19.0-point-of-sale-pos-presets",
+          "title": "PoS presets"
+        },
+        {
+          "id": "19.0-point-of-sale-product-info",
+          "title": "Product info"
+        },
+        {
+          "id": "19.0-point-of-sale-restaurant-allergen-management",
+          "title": "Restaurant: allergen management"
+        },
+        {
+          "id": "19.0-point-of-sale-restaurant-organizing-orders-into-courses",
+          "title": "Restaurant: organizing orders into courses"
+        },
+        {
+          "id": "19.0-point-of-sale-restaurant-preparation-time-report",
+          "title": "Restaurant: preparation time report"
+        },
+        {
+          "id": "19.0-point-of-sale-settling-due-accounts",
+          "title": "Settling due accounts"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "table_of_content_heading_1_57",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "19.0-project-add-assignees-via-email",
+          "title": "Add assignees via email"
+        },
+        {
+          "id": "19.0-project-auto-plan-on-flexible-schedules",
+          "title": "Auto-plan on flexible schedules"
+        },
+        {
+          "id": "19.0-project-drag-and-drop-tasks-in-calendar-view",
+          "title": "Drag and drop tasks in calendar view"
+        },
+        {
+          "id": "19.0-project-gantt-view-for-tasks-on-portal",
+          "title": "Gantt view for tasks on portal"
+        },
+        {
+          "id": "19.0-project-multiple-priority-levels-for-tasks",
+          "title": "Multiple priority levels for tasks"
+        },
+        {
+          "id": "19.0-project-project-templates",
+          "title": "Project templates"
+        },
+        {
+          "id": "19.0-project-share-private-projects-with-portal-users",
+          "title": "Share private projects with portal users"
+        },
+        {
+          "id": "19.0-project-task-scheduling-based-on-template",
+          "title": "Task scheduling based on template"
+        },
+        {
+          "id": "19.0-project-task-template-for-service-products",
+          "title": "Task template for service products"
+        },
+        {
+          "id": "19.0-project-task-templates",
+          "title": "Task templates"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "table_of_content_heading_1_58",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "19.0-purchase-alternative-rfqs",
+          "title": "Alternative RFQs"
+        },
+        {
+          "id": "19.0-purchase-cancel-and-delete-purchase-orders",
+          "title": "Cancel and delete purchase orders"
+        },
+        {
+          "id": "19.0-purchase-forecast-based-purchasing",
+          "title": "Forecast-based purchasing"
+        },
+        {
+          "id": "19.0-purchase-group-rfqs-for-vendors",
+          "title": "Group RFQs for vendors"
+        },
+        {
+          "id": "19.0-purchase-improved-rfq-dashboard-and-ux",
+          "title": "Improved RFQ dashboard and UX"
+        },
+        {
+          "id": "19.0-purchase-purchase-and-product-units",
+          "title": "Purchase and product units"
+        },
+        {
+          "id": "19.0-purchase-purchase-catalog",
+          "title": "Purchase catalog"
+        },
+        {
+          "id": "19.0-purchase-purchase-orders-from-sales-orders",
+          "title": "Purchase orders from sales orders"
+        },
+        {
+          "id": "19.0-purchase-remove-locked-status",
+          "title": "Remove locked status"
+        },
+        {
+          "id": "19.0-purchase-unit-price-smart-update",
+          "title": "Unit price smart update"
+        },
+        {
+          "id": "19.0-purchase-upload-bill",
+          "title": "Upload bill"
+        }
+      ]
+    },
+    {
+      "app": "Quality",
+      "slug": "quality",
+      "file": "quality.md",
+      "anchor": "table_of_content_heading_1_59",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-quality-quality-control-points-failure-location",
+          "title": "Quality control points: failure location"
+        }
+      ]
+    },
+    {
+      "app": "Recruitment",
+      "slug": "recruitment",
+      "file": "recruitment.md",
+      "anchor": "table_of_content_heading_1_60",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-recruitment-campaign-tracking",
+          "title": "Campaign tracking"
+        },
+        {
+          "id": "19.0-recruitment-job-matching",
+          "title": "Job matching"
+        },
+        {
+          "id": "19.0-recruitment-salary-configurator-states",
+          "title": "Salary configurator states"
+        },
+        {
+          "id": "19.0-recruitment-talent-pool",
+          "title": "Talent pool"
+        }
+      ]
+    },
+    {
+      "app": "Referrals",
+      "slug": "referrals",
+      "file": "referrals.md",
+      "anchor": "table_of_content_heading_1_61",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-referrals-access-rights",
+          "title": "Access rights"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "table_of_content_heading_1_62",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "19.0-rental-drag-and-drop",
+          "title": "Drag and drop"
+        },
+        {
+          "id": "19.0-rental-hourly-booking",
+          "title": "Hourly booking"
+        }
+      ]
+    },
+    {
+      "app": "Repairs",
+      "slug": "repairs",
+      "file": "repairs.md",
+      "anchor": "table_of_content_heading_1_63",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-repairs-repair-orders-from-inventory-operations",
+          "title": "Repair orders from inventory operations"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "table_of_content_heading_1_64",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "19.0-sales-amazon-connector",
+          "title": "Amazon Connector"
+        },
+        {
+          "id": "19.0-sales-catalog-sections",
+          "title": "Catalog sections"
+        },
+        {
+          "id": "19.0-sales-combo-products-improvements",
+          "title": "Combo products improvements"
+        },
+        {
+          "id": "19.0-sales-commission-adjustment",
+          "title": "Commission adjustment"
+        },
+        {
+          "id": "19.0-sales-commission-forecast-notes",
+          "title": "Commission forecast notes"
+        },
+        {
+          "id": "19.0-sales-delivery-date-based-on-product-type",
+          "title": "Delivery date based on product type"
+        },
+        {
+          "id": "19.0-sales-editable-optional-products-in-portal",
+          "title": "Editable optional products in portal"
+        },
+        {
+          "id": "19.0-sales-gelato-integration",
+          "title": "Gelato integration"
+        },
+        {
+          "id": "19.0-sales-hide-section-prices-and-composition",
+          "title": "Hide section prices and composition"
+        },
+        {
+          "id": "19.0-sales-loyalty-cards-product-domain",
+          "title": "Loyalty cards: product domain"
+        },
+        {
+          "id": "19.0-sales-partial-payments-on-user-portal",
+          "title": "Partial payments on user portal"
+        },
+        {
+          "id": "19.0-sales-quote-builder-default-headers-footers",
+          "title": "Quote builder: default headers/footers"
+        },
+        {
+          "id": "19.0-sales-sales-team-notifications-for-paid-invoices",
+          "title": "Sales team notifications for paid invoices"
+        },
+        {
+          "id": "19.0-sales-separate-print-and-send-quote",
+          "title": "Separate print and send quote"
+        },
+        {
+          "id": "19.0-sales-shopee-integration",
+          "title": "Shopee integration"
+        },
+        {
+          "id": "19.0-sales-wallet-top-up-from-portal",
+          "title": "Wallet top-up from portal"
+        }
+      ]
+    },
+    {
+      "app": "Shop Floor",
+      "slug": "shop-floor",
+      "file": "shop-floor.md",
+      "anchor": "table_of_content_heading_1_65",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "19.0-shop-floor-closing-manufacturing-orders",
+          "title": "Closing manufacturing orders"
+        },
+        {
+          "id": "19.0-shop-floor-component-moves",
+          "title": "Component moves"
+        },
+        {
+          "id": "19.0-shop-floor-design-update",
+          "title": "Design update"
+        },
+        {
+          "id": "19.0-shop-floor-modify-work-order-routing",
+          "title": "Modify work order routing"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "table_of_content_heading_1_78",
+      "item_count": 18,
+      "notes": [
+        {
+          "id": "19.0-sign-assign-fixed-signers-on-templates",
+          "title": "Assign fixed signers on templates"
+        },
+        {
+          "id": "19.0-sign-auto-complete",
+          "title": "Auto-complete"
+        },
+        {
+          "id": "19.0-sign-automatic-signer-assignation",
+          "title": "Automatic signer assignation"
+        },
+        {
+          "id": "19.0-sign-certificate-of-completion-reference",
+          "title": "Certificate of completion reference"
+        },
+        {
+          "id": "19.0-sign-copying-and-pasting-fields",
+          "title": "Copying and pasting fields"
+        },
+        {
+          "id": "19.0-sign-document-envelopes",
+          "title": "Document envelopes"
+        },
+        {
+          "id": "19.0-sign-expiration-date-for-shared-links",
+          "title": "Expiration date for shared links"
+        },
+        {
+          "id": "19.0-sign-import-files-from-documents",
+          "title": "Import files from Documents"
+        },
+        {
+          "id": "19.0-sign-list-of-remaining-documents-to-sign-for-non-portal-signers",
+          "title": "List of remaining documents to sign for non-portal signers"
+        },
+        {
+          "id": "19.0-sign-quick-sign",
+          "title": "Quick sign"
+        },
+        {
+          "id": "19.0-sign-read-only-fields",
+          "title": "Read-only fields"
+        },
+        {
+          "id": "19.0-sign-revamped-user-interface",
+          "title": "Revamped user interface"
+        },
+        {
+          "id": "19.0-sign-select-multiple-fields-to-move-them-all-together",
+          "title": "Select multiple fields to move them all together"
+        },
+        {
+          "id": "19.0-sign-send-via-whatsapp",
+          "title": "Send via WhatsApp"
+        },
+        {
+          "id": "19.0-sign-sign-documents-in-the-chatter",
+          "title": "Sign documents in the chatter"
+        },
+        {
+          "id": "19.0-sign-signature-request-upload-pdf",
+          "title": "Signature request: upload PDF"
+        },
+        {
+          "id": "19.0-sign-template-layout-preview",
+          "title": "Template layout preview"
+        },
+        {
+          "id": "19.0-sign-update-template-documents",
+          "title": "Update template documents"
+        }
+      ]
+    },
+    {
+      "app": "Spreadsheet",
+      "slug": "spreadsheet",
+      "file": "spreadsheet.md",
+      "anchor": "table_of_content_heading_1_67",
+      "item_count": 28,
+      "notes": [
+        {
+          "id": "19.0-spreadsheet-access-to-referenced-records",
+          "title": "Access to referenced records"
+        },
+        {
+          "id": "19.0-spreadsheet-chart-and-axis-titles-font-size",
+          "title": "Chart and axis titles: font size"
+        },
+        {
+          "id": "19.0-spreadsheet-chart-customization",
+          "title": "Chart customization"
+        },
+        {
+          "id": "19.0-spreadsheet-command-palette",
+          "title": "Command palette"
+        },
+        {
+          "id": "19.0-spreadsheet-complex-formulas-auto-format",
+          "title": "Complex formulas auto-format"
+        },
+        {
+          "id": "19.0-spreadsheet-conditional-formatting-using-custom-formulas",
+          "title": "Conditional formatting using custom formulas"
+        },
+        {
+          "id": "19.0-spreadsheet-csv-files",
+          "title": "CSV files"
+        },
+        {
+          "id": "19.0-spreadsheet-data-validation-conditions-auto-complete",
+          "title": "Data validation conditions: auto-complete"
+        },
+        {
+          "id": "19.0-spreadsheet-data-validation-import-export",
+          "title": "Data validation import/export"
+        },
+        {
+          "id": "19.0-spreadsheet-date-filters-and-additional-time-periods",
+          "title": "Date filters and additional time periods"
+        },
+        {
+          "id": "19.0-spreadsheet-dynamic-pivot-tables",
+          "title": "Dynamic pivot tables"
+        },
+        {
+          "id": "19.0-spreadsheet-dynamic-pivots-dimension-grouping",
+          "title": "Dynamic pivots: dimension grouping"
+        },
+        {
+          "id": "19.0-spreadsheet-filter-on-boolean",
+          "title": "Filter on boolean"
+        },
+        {
+          "id": "19.0-spreadsheet-formula-arguments",
+          "title": "Formula: arguments"
+        },
+        {
+          "id": "19.0-spreadsheet-global-filters",
+          "title": "Global filters"
+        },
+        {
+          "id": "19.0-spreadsheet-irregularity-map",
+          "title": "Irregularity map"
+        },
+        {
+          "id": "19.0-spreadsheet-middle-click",
+          "title": "Middle click"
+        },
+        {
+          "id": "19.0-spreadsheet-new-chart-types",
+          "title": "New chart types"
+        },
+        {
+          "id": "19.0-spreadsheet-new-functions",
+          "title": "New functions"
+        },
+        {
+          "id": "19.0-spreadsheet-number-filtering-based-on-condition",
+          "title": "Number filtering based on condition"
+        },
+        {
+          "id": "19.0-spreadsheet-odoo-pivot-table-insertion",
+          "title": "Odoo pivot table insertion"
+        },
+        {
+          "id": "19.0-spreadsheet-offset-periods",
+          "title": "Offset periods"
+        },
+        {
+          "id": "19.0-spreadsheet-pivots",
+          "title": "Pivots"
+        },
+        {
+          "id": "19.0-spreadsheet-presorted-fields-by-type",
+          "title": "Presorted fields by type"
+        },
+        {
+          "id": "19.0-spreadsheet-reordering-data-series-in-charts",
+          "title": "Reordering data series in charts"
+        },
+        {
+          "id": "19.0-spreadsheet-side-panels",
+          "title": "Side panels"
+        },
+        {
+          "id": "19.0-spreadsheet-spreadsheet-on-mobile-devices",
+          "title": "Spreadsheet on mobile devices"
+        },
+        {
+          "id": "19.0-spreadsheet-support-as-first-character-for-numbers-formulas",
+          "title": "Support \"+\" as first character for numbers & formulas"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "table_of_content_heading_1_68",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "19.0-studio-adding-followers-dynamically",
+          "title": "Adding followers dynamically"
+        },
+        {
+          "id": "19.0-studio-button-tooltips",
+          "title": "Button tooltips"
+        },
+        {
+          "id": "19.0-studio-fixed-column-width",
+          "title": "Fixed column width"
+        },
+        {
+          "id": "19.0-studio-html-actions",
+          "title": "HTML actions"
+        },
+        {
+          "id": "19.0-studio-kanban-fold-field",
+          "title": "Kanban fold field"
+        },
+        {
+          "id": "19.0-studio-record-duplication",
+          "title": "Record duplication"
+        },
+        {
+          "id": "19.0-studio-report-editor-expressions",
+          "title": "Report editor expressions"
+        },
+        {
+          "id": "19.0-studio-report-field-edition",
+          "title": "Report: field edition"
+        },
+        {
+          "id": "19.0-studio-server-actions-relational-fields",
+          "title": "Server actions: relational fields"
+        },
+        {
+          "id": "19.0-studio-typeahead-search",
+          "title": "Typeahead search"
+        },
+        {
+          "id": "19.0-studio-view-editing",
+          "title": "View editing"
+        }
+      ]
+    },
+    {
+      "app": "Subscriptions",
+      "slug": "subscriptions",
+      "file": "subscriptions.md",
+      "anchor": "table_of_content_heading_1_69",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "19.0-subscriptions-automation-rules",
+          "title": "Automation rules"
+        },
+        {
+          "id": "19.0-subscriptions-one-time-sale-of-goods",
+          "title": "One-time sale of goods"
+        },
+        {
+          "id": "19.0-subscriptions-pricelists-for-recurring-products",
+          "title": "Pricelists for recurring products"
+        },
+        {
+          "id": "19.0-subscriptions-prorated-product-prices",
+          "title": "Prorated product prices"
+        },
+        {
+          "id": "19.0-subscriptions-subscriptions-based-on-delivered-quantity",
+          "title": "Subscriptions based on delivered quantity"
+        },
+        {
+          "id": "19.0-subscriptions-update-invoicing-address-from-portal",
+          "title": "Update invoicing address from portal"
+        }
+      ]
+    },
+    {
+      "app": "Surveys",
+      "slug": "surveys",
+      "file": "surveys.md",
+      "anchor": "table_of_content_heading_1_70",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "19.0-surveys-lead-qualification",
+          "title": "Lead qualification"
+        },
+        {
+          "id": "19.0-surveys-result-analysis",
+          "title": "Result analysis"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "table_of_content_heading_1_71",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "19.0-time-off-complex-durations",
+          "title": "Complex durations"
+        },
+        {
+          "id": "19.0-time-off-halfday-visibility",
+          "title": "Halfday visibility"
+        },
+        {
+          "id": "19.0-time-off-simultaneous-leaves",
+          "title": "Simultaneous leaves"
+        },
+        {
+          "id": "19.0-time-off-time-off-type",
+          "title": "Time off type"
+        },
+        {
+          "id": "19.0-time-off-ux-improvements",
+          "title": "UX improvements"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "table_of_content_heading_1_72",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-timesheets-multiple-timesheet-creation-from-calendar-view",
+          "title": "Multiple timesheet creation from calendar view"
+        }
+      ]
+    },
+    {
+      "app": "To-do",
+      "slug": "to-do",
+      "file": "to-do.md",
+      "anchor": "table_of_content_heading_1_73",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "19.0-to-do-deadlines",
+          "title": "Deadlines"
+        },
+        {
+          "id": "19.0-to-do-to-do-email-alias",
+          "title": "To-do email alias"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "table_of_content_heading_1_74",
+      "item_count": 17,
+      "notes": [
+        {
+          "id": "19.0-website-404-page",
+          "title": "404 page"
+        },
+        {
+          "id": "19.0-website-alerts-design",
+          "title": "Alerts design"
+        },
+        {
+          "id": "19.0-website-building-blocks",
+          "title": "Building blocks"
+        },
+        {
+          "id": "19.0-website-building-blocks-events-and-blogs",
+          "title": "Building blocks: events and blogs"
+        },
+        {
+          "id": "19.0-website-customization-of-portal-pages",
+          "title": "Customization of portal pages"
+        },
+        {
+          "id": "19.0-website-event-sidebar",
+          "title": "Event sidebar"
+        },
+        {
+          "id": "19.0-website-forms-field-validation",
+          "title": "Forms: field validation"
+        },
+        {
+          "id": "19.0-website-grid-layout-inner-content-blocks",
+          "title": "Grid layout: inner content blocks"
+        },
+        {
+          "id": "19.0-website-hide-headers-footers",
+          "title": "Hide headers/footers"
+        },
+        {
+          "id": "19.0-website-mobile-mega-menus",
+          "title": "Mobile: mega menus"
+        },
+        {
+          "id": "19.0-website-navbar-alignment",
+          "title": "Navbar alignment"
+        },
+        {
+          "id": "19.0-website-new-parallax-scrolling-effects",
+          "title": "New parallax scrolling effects"
+        },
+        {
+          "id": "19.0-website-scrolling-mode-for-carousel-snippets",
+          "title": "Scrolling mode for carousel snippets"
+        },
+        {
+          "id": "19.0-website-seo-improvements-and-checks",
+          "title": "SEO improvements and checks"
+        },
+        {
+          "id": "19.0-website-settings",
+          "title": "Settings"
+        },
+        {
+          "id": "19.0-website-user-profile-page",
+          "title": "User profile page"
+        },
+        {
+          "id": "19.0-website-website-builder-ui",
+          "title": "Website builder UI"
+        }
+      ]
+    },
+    {
+      "app": "WhatsApp",
+      "slug": "whatsapp",
+      "file": "whatsapp.md",
+      "anchor": "table_of_content_heading_1_75",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "19.0-whatsapp-whatsapp-account-in-conversations",
+          "title": "WhatsApp account in conversations"
+        }
+      ]
+    }
+  ],
+  "item_count": 618
+}

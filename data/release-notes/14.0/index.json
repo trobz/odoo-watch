@@ -1,0 +1,1535 @@
+{
+  "version": "14.0",
+  "source_url": "http://web.archive.org/web/20250615185727id_/https://www.odoo.com/odoo-14-release-notes",
+  "apps": [
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-accounting-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-accounting-enterprise",
+          "title": "Enterprise"
+        }
+      ]
+    },
+    {
+      "app": "Appraisal",
+      "slug": "appraisal",
+      "file": "appraisal.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-appraisal-survey",
+          "title": "Survey"
+        },
+        {
+          "id": "14.0-appraisal-goals",
+          "title": "Goals"
+        },
+        {
+          "id": "14.0-appraisal-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-barcode-demo-data",
+          "title": "Demo Data"
+        },
+        {
+          "id": "14.0-barcode-barcode-management",
+          "title": "Barcode Management"
+        },
+        {
+          "id": "14.0-barcode-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Calendar",
+      "slug": "calendar",
+      "file": "calendar.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-calendar-outlook-synchronization",
+          "title": "Outlook Synchronization"
+        },
+        {
+          "id": "14.0-calendar-recurrence",
+          "title": "Recurrence"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-crm-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-crm-mrr",
+          "title": "MRR"
+        },
+        {
+          "id": "14.0-crm-outlook-integration",
+          "title": "Outlook Integration"
+        }
+      ]
+    },
+    {
+      "app": "Data Cleaning",
+      "slug": "data-cleaning",
+      "file": "data-cleaning.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-data-cleaning-duplication",
+          "title": "Duplication"
+        },
+        {
+          "id": "14.0-data-cleaning-field-cleaning",
+          "title": "Field Cleaning"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "14.0-discuss-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "14.0-discuss-activities-2",
+          "title": "Activities"
+        },
+        {
+          "id": "14.0-discuss-activities-3",
+          "title": "Activities"
+        },
+        {
+          "id": "14.0-discuss-channel",
+          "title": "Channel"
+        },
+        {
+          "id": "14.0-discuss-chat",
+          "title": "Chat"
+        },
+        {
+          "id": "14.0-discuss-out-of-office",
+          "title": "Out of Office"
+        },
+        {
+          "id": "14.0-discuss-private-channels",
+          "title": "Private Channels"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-documents-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "14.0-documents-front-end-refactoring",
+          "title": "Front-End Refactoring"
+        },
+        {
+          "id": "14.0-documents-pdf",
+          "title": "PDF"
+        },
+        {
+          "id": "14.0-documents-pdf-reports",
+          "title": "PDF Reports"
+        },
+        {
+          "id": "14.0-documents-split",
+          "title": "Split"
+        },
+        {
+          "id": "14.0-documents-versioning",
+          "title": "Versioning"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "14.0-elearning-certifications",
+          "title": "Certifications"
+        },
+        {
+          "id": "14.0-elearning-courses",
+          "title": "Courses"
+        },
+        {
+          "id": "14.0-elearning-descriptions",
+          "title": "Descriptions"
+        },
+        {
+          "id": "14.0-elearning-karma",
+          "title": "Karma"
+        },
+        {
+          "id": "14.0-elearning-quizzes",
+          "title": "Quizzes"
+        },
+        {
+          "id": "14.0-elearning-technical",
+          "title": "Technical"
+        },
+        {
+          "id": "14.0-elearning-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-elearning-usability-2",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "14.0-email-marketing-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "14.0-email-marketing-emojis",
+          "title": "Emojis"
+        },
+        {
+          "id": "14.0-email-marketing-kanban",
+          "title": "Kanban"
+        },
+        {
+          "id": "14.0-email-marketing-preview",
+          "title": "Preview"
+        },
+        {
+          "id": "14.0-email-marketing-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "14.0-email-marketing-snippets",
+          "title": "Snippets"
+        },
+        {
+          "id": "14.0-email-marketing-utm",
+          "title": "UTM"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "14.0-employees-accrued-time-off",
+          "title": "Accrued Time Off"
+        },
+        {
+          "id": "14.0-employees-accrued-time-off-2",
+          "title": "Accrued Time Off"
+        },
+        {
+          "id": "14.0-employees-availability",
+          "title": "Availability"
+        },
+        {
+          "id": "14.0-employees-contract",
+          "title": "Contract"
+        },
+        {
+          "id": "14.0-employees-credit-time-days",
+          "title": "Credit Time Days"
+        },
+        {
+          "id": "14.0-employees-departure",
+          "title": "Departure"
+        },
+        {
+          "id": "14.0-employees-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "14.0-employees-expiration-date",
+          "title": "Expiration Date"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "14.0-events-crm-integration",
+          "title": "CRM Integration"
+        },
+        {
+          "id": "14.0-events-crm-integration-2",
+          "title": "CRM Integration"
+        },
+        {
+          "id": "14.0-events-event-tags",
+          "title": "Event Tags"
+        },
+        {
+          "id": "14.0-events-exhibitors",
+          "title": "Exhibitors"
+        },
+        {
+          "id": "14.0-events-favorite-talks",
+          "title": "Favorite Talks"
+        },
+        {
+          "id": "14.0-events-gamification",
+          "title": "Gamification"
+        },
+        {
+          "id": "14.0-events-gantt",
+          "title": "Gantt"
+        },
+        {
+          "id": "14.0-events-graph-map",
+          "title": "Graph & Map"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-expenses-ocr",
+          "title": "OCR"
+        },
+        {
+          "id": "14.0-expenses-ocr-2",
+          "title": "OCR"
+        },
+        {
+          "id": "14.0-expenses-payments",
+          "title": "Payments"
+        },
+        {
+          "id": "14.0-expenses-payments-2",
+          "title": "Payments"
+        }
+      ]
+    },
+    {
+      "app": "Field Service",
+      "slug": "field-service",
+      "file": "field-service.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "14.0-field-service-link-with-inventory",
+          "title": "Link with Inventory"
+        },
+        {
+          "id": "14.0-field-service-link-with-inventory-2",
+          "title": "Link with Inventory"
+        },
+        {
+          "id": "14.0-field-service-products-on-tasks",
+          "title": "Products on Tasks"
+        },
+        {
+          "id": "14.0-field-service-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-field-service-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-field-service-usability-3",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-field-service-usability-4",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-fleet-accounting",
+          "title": "Accounting"
+        },
+        {
+          "id": "14.0-fleet-archive",
+          "title": "Archive"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-helpdesk-sla-policies",
+          "title": "SLA Policies"
+        },
+        {
+          "id": "14.0-helpdesk-sla-policies-2",
+          "title": "SLA Policies"
+        }
+      ]
+    },
+    {
+      "app": "IAP",
+      "slug": "iap",
+      "file": "iap.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-iap-iap-services",
+          "title": "IAP Services"
+        },
+        {
+          "id": "14.0-iap-sms",
+          "title": "SMS"
+        },
+        {
+          "id": "14.0-iap-sms-2",
+          "title": "SMS"
+        },
+        {
+          "id": "14.0-iap-snailmail",
+          "title": "Snailmail"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-inventory-access-rights",
+          "title": "Access Rights"
+        },
+        {
+          "id": "14.0-inventory-archive",
+          "title": "Archive"
+        },
+        {
+          "id": "14.0-inventory-expiration-dates",
+          "title": "Expiration Dates"
+        },
+        {
+          "id": "14.0-inventory-expiration-dates-2",
+          "title": "Expiration Dates"
+        }
+      ]
+    },
+    {
+      "app": "Invoicing",
+      "slug": "invoicing",
+      "file": "invoicing.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-invoicing-invoice-policy",
+          "title": "Invoice Policy"
+        },
+        {
+          "id": "14.0-invoicing-taxcloud",
+          "title": "Taxcloud"
+        },
+        {
+          "id": "14.0-invoicing-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "IoT",
+      "slug": "iot",
+      "file": "iot.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-iot-log-files",
+          "title": "Log Files"
+        },
+        {
+          "id": "14.0-iot-packages",
+          "title": "Packages"
+        },
+        {
+          "id": "14.0-iot-printing-options",
+          "title": "Printing Options"
+        },
+        {
+          "id": "14.0-iot-raspberry-pi-4",
+          "title": "Raspberry Pi 4"
+        }
+      ]
+    },
+    {
+      "app": "Livechat",
+      "slug": "livechat",
+      "file": "livechat.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-livechat-chat",
+          "title": "Chat"
+        },
+        {
+          "id": "14.0-livechat-visitors",
+          "title": "Visitors"
+        }
+      ]
+    },
+    {
+      "app": "Localization",
+      "slug": "localization",
+      "file": "localization.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-localization-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "14.0-localization-sweden",
+          "title": "Sweden"
+        },
+        {
+          "id": "14.0-localization-switzerland",
+          "title": "Switzerland"
+        }
+      ]
+    },
+    {
+      "app": "Lunch",
+      "slug": "lunch",
+      "file": "lunch.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-lunch-alert",
+          "title": "Alert"
+        },
+        {
+          "id": "14.0-lunch-products",
+          "title": "Products"
+        },
+        {
+          "id": "14.0-lunch-vendor",
+          "title": "Vendor"
+        },
+        {
+          "id": "14.0-lunch-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-manufacturing-batch-pickings",
+          "title": "Batch Pickings"
+        },
+        {
+          "id": "14.0-manufacturing-flexible-consumption",
+          "title": "Flexible Consumption"
+        },
+        {
+          "id": "14.0-manufacturing-help-rescheduling",
+          "title": "Help Rescheduling"
+        },
+        {
+          "id": "14.0-manufacturing-manufacturing-orders",
+          "title": "Manufacturing Orders"
+        },
+        {
+          "id": "14.0-manufacturing-manufacturing-orders-2",
+          "title": "Manufacturing Orders"
+        },
+        {
+          "id": "14.0-manufacturing-planning-visibility",
+          "title": "Planning Visibility"
+        }
+      ]
+    },
+    {
+      "app": "Marketing Automation",
+      "slug": "marketing-automation",
+      "file": "marketing-automation.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-marketing-automation-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-marketing-automation-usability-2",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Mobile",
+      "slug": "mobile",
+      "file": "mobile.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-mobile-kanban",
+          "title": "Kanban"
+        },
+        {
+          "id": "14.0-mobile-links",
+          "title": "Links"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-payroll-advantages-benefits",
+          "title": "Advantages/Benefits"
+        },
+        {
+          "id": "14.0-payroll-atn-belgium",
+          "title": "ATN (Belgium)"
+        },
+        {
+          "id": "14.0-payroll-exceptional-pay",
+          "title": "Exceptional Pay"
+        },
+        {
+          "id": "14.0-payroll-salary-belgium",
+          "title": "Salary (Belgium)"
+        },
+        {
+          "id": "14.0-payroll-time-off",
+          "title": "Time Off"
+        },
+        {
+          "id": "14.0-payroll-warrant-belgium",
+          "title": "Warrant (Belgium)"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-planning-access-rights",
+          "title": "Access Rights"
+        },
+        {
+          "id": "14.0-planning-duplication",
+          "title": "Duplication"
+        },
+        {
+          "id": "14.0-planning-open-shifts",
+          "title": "Open Shifts"
+        },
+        {
+          "id": "14.0-planning-open-shifts-2",
+          "title": "Open Shifts"
+        },
+        {
+          "id": "14.0-planning-roles",
+          "title": "Roles"
+        },
+        {
+          "id": "14.0-planning-send-schedule",
+          "title": "Send Schedule"
+        }
+      ]
+    },
+    {
+      "app": "PoS",
+      "slug": "pos",
+      "file": "pos.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-pos-cash-rounding",
+          "title": "Cash Rounding"
+        },
+        {
+          "id": "14.0-pos-configuration",
+          "title": "Configuration"
+        },
+        {
+          "id": "14.0-pos-loyalty-programs",
+          "title": "Loyalty Programs"
+        },
+        {
+          "id": "14.0-pos-mobile",
+          "title": "Mobile"
+        },
+        {
+          "id": "14.0-pos-payments",
+          "title": "Payments"
+        },
+        {
+          "id": "14.0-pos-product-configurator",
+          "title": "Product Configurator"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "",
+      "item_count": 18,
+      "notes": [
+        {
+          "id": "14.0-project-analytical-accounting",
+          "title": "Analytical Accounting"
+        },
+        {
+          "id": "14.0-project-analytical-accounting-2",
+          "title": "Analytical Accounting"
+        },
+        {
+          "id": "14.0-project-collaborative-pads",
+          "title": "Collaborative Pads"
+        },
+        {
+          "id": "14.0-project-link-with-planning",
+          "title": "Link with Planning"
+        },
+        {
+          "id": "14.0-project-link-with-sales",
+          "title": "Link with Sales"
+        },
+        {
+          "id": "14.0-project-link-with-sales-2",
+          "title": "Link with Sales"
+        },
+        {
+          "id": "14.0-project-link-with-sales-3",
+          "title": "Link with Sales"
+        },
+        {
+          "id": "14.0-project-link-with-timesheets",
+          "title": "Link with Timesheets"
+        },
+        {
+          "id": "14.0-project-link-with-timesheets-2",
+          "title": "Link with Timesheets"
+        },
+        {
+          "id": "14.0-project-project-visibility",
+          "title": "Project Visibility"
+        },
+        {
+          "id": "14.0-project-project-visibility-2",
+          "title": "Project Visibility"
+        },
+        {
+          "id": "14.0-project-recurring-tasks",
+          "title": "Recurring Tasks"
+        },
+        {
+          "id": "14.0-project-sub-tasks",
+          "title": "Sub-tasks"
+        },
+        {
+          "id": "14.0-project-sub-tasks-2",
+          "title": "Sub-tasks"
+        },
+        {
+          "id": "14.0-project-sub-tasks-3",
+          "title": "Sub-tasks"
+        },
+        {
+          "id": "14.0-project-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-project-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-project-usability-3",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "14.0-purchase-integration-with-approvals",
+          "title": "Integration with Approvals"
+        },
+        {
+          "id": "14.0-purchase-margin-computation",
+          "title": "Margin Computation"
+        },
+        {
+          "id": "14.0-purchase-pricelists",
+          "title": "Pricelists"
+        },
+        {
+          "id": "14.0-purchase-returns",
+          "title": "Returns"
+        },
+        {
+          "id": "14.0-purchase-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-purchase-vendor-bill",
+          "title": "Vendor Bill"
+        }
+      ]
+    },
+    {
+      "app": "Recruitment",
+      "slug": "recruitment",
+      "file": "recruitment.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-recruitment-applicants",
+          "title": "Applicants"
+        },
+        {
+          "id": "14.0-recruitment-archiving-flow",
+          "title": "Archiving Flow"
+        },
+        {
+          "id": "14.0-recruitment-contacts",
+          "title": "Contacts"
+        },
+        {
+          "id": "14.0-recruitment-dashboard",
+          "title": "Dashboard"
+        }
+      ]
+    },
+    {
+      "app": "Referral",
+      "slug": "referral",
+      "file": "referral.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-referral-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-referral-usability-2",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-rental-opportunities",
+          "title": "Opportunities"
+        },
+        {
+          "id": "14.0-rental-orders",
+          "title": "Orders"
+        },
+        {
+          "id": "14.0-rental-products",
+          "title": "Products"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-sales-amazon",
+          "title": "Amazon"
+        },
+        {
+          "id": "14.0-sales-country",
+          "title": "Country"
+        },
+        {
+          "id": "14.0-sales-coupon",
+          "title": "Coupon"
+        },
+        {
+          "id": "14.0-sales-incoterms",
+          "title": "Incoterms"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-sign-portal",
+          "title": "Portal"
+        },
+        {
+          "id": "14.0-sign-mobile",
+          "title": "Mobile"
+        }
+      ]
+    },
+    {
+      "app": "SMS Marketing",
+      "slug": "sms-marketing",
+      "file": "sms-marketing.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "14.0-sms-marketing-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "14.0-sms-marketing-kanban",
+          "title": "Kanban"
+        },
+        {
+          "id": "14.0-sms-marketing-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "14.0-sms-marketing-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-sms-marketing-usability-2",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Social Marketing",
+      "slug": "social-marketing",
+      "file": "social-marketing.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-social-marketing-demo-module",
+          "title": "Demo Module"
+        },
+        {
+          "id": "14.0-social-marketing-linkedin",
+          "title": "LinkedIn"
+        },
+        {
+          "id": "14.0-social-marketing-tour",
+          "title": "Tour"
+        }
+      ]
+    },
+    {
+      "app": "Spreadsheet",
+      "slug": "spreadsheet",
+      "file": "spreadsheet.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-spreadsheet-filters",
+          "title": "Filters"
+        },
+        {
+          "id": "14.0-spreadsheet-pivot-insert",
+          "title": "Pivot Insert"
+        },
+        {
+          "id": "14.0-spreadsheet-templates",
+          "title": "Templates"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "14.0-studio-approval-rules",
+          "title": "Approval Rules"
+        },
+        {
+          "id": "14.0-studio-automation",
+          "title": "Automation"
+        },
+        {
+          "id": "14.0-studio-custom-one2many",
+          "title": "Custom one2many"
+        },
+        {
+          "id": "14.0-studio-custom-picture",
+          "title": "Custom Picture"
+        },
+        {
+          "id": "14.0-studio-custom-sort",
+          "title": "Custom Sort"
+        },
+        {
+          "id": "14.0-studio-date-filters",
+          "title": "Date Filters"
+        },
+        {
+          "id": "14.0-studio-map-view",
+          "title": "Map View"
+        },
+        {
+          "id": "14.0-studio-mass-edition",
+          "title": "Mass Edition"
+        },
+        {
+          "id": "14.0-studio-menu-items",
+          "title": "Menu Items"
+        },
+        {
+          "id": "14.0-studio-quick-create",
+          "title": "Quick Create"
+        },
+        {
+          "id": "14.0-studio-report-address-block",
+          "title": "Report Address Block"
+        },
+        {
+          "id": "14.0-studio-search-view-customization-ui",
+          "title": "Search View Customization UI"
+        }
+      ]
+    },
+    {
+      "app": "Subscription",
+      "slug": "subscription",
+      "file": "subscription.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "14.0-subscription-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "14.0-subscription-payment-terms",
+          "title": "Payment Terms"
+        },
+        {
+          "id": "14.0-subscription-sequence",
+          "title": "Sequence"
+        },
+        {
+          "id": "14.0-subscription-services",
+          "title": "Services"
+        }
+      ]
+    },
+    {
+      "app": "Survey",
+      "slug": "survey",
+      "file": "survey.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-survey-conditional-questions",
+          "title": "Conditional Questions"
+        },
+        {
+          "id": "14.0-survey-design",
+          "title": "Design"
+        }
+      ]
+    },
+    {
+      "app": "Technical",
+      "slug": "technical",
+      "file": "technical.md",
+      "anchor": "",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "14.0-technical-access-rights-shortcut",
+          "title": "Access Rights Shortcut"
+        },
+        {
+          "id": "14.0-technical-attachments",
+          "title": "Attachments"
+        },
+        {
+          "id": "14.0-technical-email-template",
+          "title": "Email Template"
+        },
+        {
+          "id": "14.0-technical-hide-field-label",
+          "title": "Hide Field Label"
+        },
+        {
+          "id": "14.0-technical-many2many-list",
+          "title": "Many2many List"
+        },
+        {
+          "id": "14.0-technical-new-now-key",
+          "title": "New 'NOW' Key"
+        },
+        {
+          "id": "14.0-technical-onboarding-tour-priority",
+          "title": "Onboarding Tour Priority"
+        },
+        {
+          "id": "14.0-technical-owl-framework",
+          "title": "OWL Framework"
+        },
+        {
+          "id": "14.0-technical-performance",
+          "title": "Performance"
+        },
+        {
+          "id": "14.0-technical-searchpanel-options",
+          "title": "Searchpanel Options"
+        },
+        {
+          "id": "14.0-technical-sorted-actions",
+          "title": "Sorted Actions"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "14.0-time-off-accruals",
+          "title": "Accruals"
+        },
+        {
+          "id": "14.0-time-off-allocation",
+          "title": "Allocation"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "14.0-timesheets-barchart-footer",
+          "title": "Barchart Footer"
+        },
+        {
+          "id": "14.0-timesheets-encoding-unit",
+          "title": "Encoding Unit"
+        },
+        {
+          "id": "14.0-timesheets-link-with-sales",
+          "title": "Link with Sales"
+        },
+        {
+          "id": "14.0-timesheets-link-with-sales-2",
+          "title": "Link with Sales"
+        },
+        {
+          "id": "14.0-timesheets-timer",
+          "title": "Timer"
+        },
+        {
+          "id": "14.0-timesheets-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-3",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-4",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-5",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-6",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-7",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-8",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-timesheets-usability-9",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Usability",
+      "slug": "usability",
+      "file": "usability.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "14.0-usability-attachment",
+          "title": "Attachment"
+        },
+        {
+          "id": "14.0-usability-auto-colored-tags",
+          "title": "Auto-Colored Tags"
+        },
+        {
+          "id": "14.0-usability-chart-sorting",
+          "title": "Chart Sorting"
+        },
+        {
+          "id": "14.0-usability-colored-tags",
+          "title": "Colored Tags"
+        },
+        {
+          "id": "14.0-usability-company-dependent-fields",
+          "title": "Company-Dependent Fields"
+        },
+        {
+          "id": "14.0-usability-date-filters",
+          "title": "Date Filters"
+        },
+        {
+          "id": "14.0-usability-default-timezone",
+          "title": "Default Timezone"
+        },
+        {
+          "id": "14.0-usability-digest",
+          "title": "Digest"
+        }
+      ]
+    },
+    {
+      "app": "VOIP",
+      "slug": "voip",
+      "file": "voip.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "14.0-voip-call",
+          "title": "Call"
+        },
+        {
+          "id": "14.0-voip-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-voip-usability-2",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "",
+      "item_count": 42,
+      "notes": [
+        {
+          "id": "14.0-website-blog",
+          "title": "Blog"
+        },
+        {
+          "id": "14.0-website-blog-2",
+          "title": "Blog"
+        },
+        {
+          "id": "14.0-website-blog-3",
+          "title": "Blog"
+        },
+        {
+          "id": "14.0-website-builder",
+          "title": "Builder"
+        },
+        {
+          "id": "14.0-website-builder-2",
+          "title": "Builder"
+        },
+        {
+          "id": "14.0-website-builder-3",
+          "title": "Builder"
+        },
+        {
+          "id": "14.0-website-builder-4",
+          "title": "Builder"
+        },
+        {
+          "id": "14.0-website-builder-5",
+          "title": "Builder"
+        },
+        {
+          "id": "14.0-website-design",
+          "title": "Design"
+        },
+        {
+          "id": "14.0-website-design-2",
+          "title": "Design"
+        },
+        {
+          "id": "14.0-website-editor-panel",
+          "title": "Editor Panel"
+        },
+        {
+          "id": "14.0-website-editor-panel-2",
+          "title": "Editor Panel"
+        },
+        {
+          "id": "14.0-website-editor-panel-3",
+          "title": "Editor Panel"
+        },
+        {
+          "id": "14.0-website-form",
+          "title": "Form"
+        },
+        {
+          "id": "14.0-website-form-2",
+          "title": "Form"
+        },
+        {
+          "id": "14.0-website-forum",
+          "title": "Forum"
+        },
+        {
+          "id": "14.0-website-forum-2",
+          "title": "Forum"
+        },
+        {
+          "id": "14.0-website-header",
+          "title": "Header"
+        },
+        {
+          "id": "14.0-website-images",
+          "title": "Images"
+        },
+        {
+          "id": "14.0-website-language",
+          "title": "Language"
+        },
+        {
+          "id": "14.0-website-language-2",
+          "title": "Language"
+        },
+        {
+          "id": "14.0-website-mobile",
+          "title": "Mobile"
+        },
+        {
+          "id": "14.0-website-rating",
+          "title": "Rating"
+        },
+        {
+          "id": "14.0-website-rating-2",
+          "title": "Rating"
+        },
+        {
+          "id": "14.0-website-seo",
+          "title": "SEO"
+        },
+        {
+          "id": "14.0-website-seo-2",
+          "title": "SEO"
+        },
+        {
+          "id": "14.0-website-seo-3",
+          "title": "SEO"
+        },
+        {
+          "id": "14.0-website-snippets",
+          "title": "Snippets"
+        },
+        {
+          "id": "14.0-website-snippets-2",
+          "title": "Snippets"
+        },
+        {
+          "id": "14.0-website-snippets-3",
+          "title": "Snippets"
+        },
+        {
+          "id": "14.0-website-snippets-4",
+          "title": "Snippets"
+        },
+        {
+          "id": "14.0-website-technical",
+          "title": "Technical"
+        },
+        {
+          "id": "14.0-website-technical-2",
+          "title": "Technical"
+        },
+        {
+          "id": "14.0-website-themes",
+          "title": "Themes"
+        },
+        {
+          "id": "14.0-website-themes-2",
+          "title": "Themes"
+        },
+        {
+          "id": "14.0-website-themes-3",
+          "title": "Themes"
+        },
+        {
+          "id": "14.0-website-themes-4",
+          "title": "Themes"
+        },
+        {
+          "id": "14.0-website-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-website-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-website-usability-3",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-website-usability-4",
+          "title": "Usability"
+        },
+        {
+          "id": "14.0-website-usability-5",
+          "title": "Usability"
+        }
+      ]
+    }
+  ],
+  "item_count": 274
+}
