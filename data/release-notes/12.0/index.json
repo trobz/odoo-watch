@@ -1,0 +1,1138 @@
+{
+  "version": "12.0",
+  "source_url": "http://web.archive.org/web/20241213201014id_/https://www.odoo.com/odoo-12-release-notes",
+  "apps": [
+    {
+      "app": "Usability",
+      "slug": "usability",
+      "file": "usability.md",
+      "anchor": "",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "12.0-usability-cohort-view",
+          "title": "Cohort View"
+        },
+        {
+          "id": "12.0-usability-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "12.0-usability-configuration-bar",
+          "title": "Configuration Bar"
+        },
+        {
+          "id": "12.0-usability-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "12.0-usability-import",
+          "title": "Import"
+        },
+        {
+          "id": "12.0-usability-email-digest",
+          "title": "Email Digest"
+        },
+        {
+          "id": "12.0-usability-email-template",
+          "title": "Email Template"
+        },
+        {
+          "id": "12.0-usability-full-keyboard-support",
+          "title": "Full Keyboard Support"
+        },
+        {
+          "id": "12.0-usability-date-filters",
+          "title": "Date Filters"
+        },
+        {
+          "id": "12.0-usability-sharing-links",
+          "title": "Sharing Links"
+        },
+        {
+          "id": "12.0-usability-access-rights",
+          "title": "Access Rights"
+        },
+        {
+          "id": "12.0-usability-right-to-left",
+          "title": "Right-to-Left"
+        },
+        {
+          "id": "12.0-usability-demo-data",
+          "title": "Demo Data"
+        },
+        {
+          "id": "12.0-usability-calendar",
+          "title": "Calendar"
+        },
+        {
+          "id": "12.0-usability-quick-create",
+          "title": "Quick Create"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "12.0-documents-folders",
+          "title": "Folders"
+        },
+        {
+          "id": "12.0-documents-actions",
+          "title": "Actions"
+        },
+        {
+          "id": "12.0-documents-tags-by-categories",
+          "title": "Tags by Categories"
+        },
+        {
+          "id": "12.0-documents-interface",
+          "title": "Interface"
+        },
+        {
+          "id": "12.0-documents-sharing",
+          "title": "Sharing"
+        },
+        {
+          "id": "12.0-documents-mails",
+          "title": "Mails"
+        },
+        {
+          "id": "12.0-documents-request-documents",
+          "title": "Request Documents"
+        },
+        {
+          "id": "12.0-documents-split-pdfs",
+          "title": "Split PDFs"
+        },
+        {
+          "id": "12.0-documents-signature-request",
+          "title": "Signature Request"
+        },
+        {
+          "id": "12.0-documents-chat",
+          "title": "Chat"
+        },
+        {
+          "id": "12.0-documents-lock-unlock",
+          "title": "Lock/Unlock"
+        },
+        {
+          "id": "12.0-documents-preview",
+          "title": "Preview"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "12.0-barcode-workflow",
+          "title": "Workflow"
+        },
+        {
+          "id": "12.0-barcode-new-interface",
+          "title": "New Interface"
+        },
+        {
+          "id": "12.0-barcode-mobile",
+          "title": "Mobile"
+        },
+        {
+          "id": "12.0-barcode-inventory-adjustments",
+          "title": "Inventory adjustments"
+        }
+      ]
+    },
+    {
+      "app": "IoT",
+      "slug": "iot",
+      "file": "iot.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "12.0-iot-device-connection",
+          "title": "Device Connection"
+        },
+        {
+          "id": "12.0-iot-integration",
+          "title": "Integration"
+        },
+        {
+          "id": "12.0-iot-ready-out-of-the-box",
+          "title": "Ready Out of the Box"
+        },
+        {
+          "id": "12.0-iot-hardware",
+          "title": "Hardware"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "12.0-inventory-dashboard-view-and-kpis",
+          "title": "Dashboard View and KPIs"
+        },
+        {
+          "id": "12.0-inventory-push-and-pull-rules",
+          "title": "Push and Pull Rules"
+        },
+        {
+          "id": "12.0-inventory-track-pos",
+          "title": "Track POs"
+        },
+        {
+          "id": "12.0-inventory-product-cost",
+          "title": "Product Cost"
+        },
+        {
+          "id": "12.0-inventory-pdf-reports",
+          "title": "PDF Reports"
+        },
+        {
+          "id": "12.0-inventory-visual-representation-of-routes",
+          "title": "Visual Representation of Routes"
+        },
+        {
+          "id": "12.0-inventory-carriers-connector",
+          "title": "Carriers Connector"
+        },
+        {
+          "id": "12.0-inventory-unit-of-weight",
+          "title": "Unit of Weight"
+        },
+        {
+          "id": "12.0-inventory-transfer-date",
+          "title": "Transfer Date"
+        },
+        {
+          "id": "12.0-inventory-replenish",
+          "title": "Replenish"
+        },
+        {
+          "id": "12.0-inventory-putaway-strategy-by-product",
+          "title": "Putaway Strategy by Product"
+        },
+        {
+          "id": "12.0-inventory-exceptions",
+          "title": "Exceptions"
+        },
+        {
+          "id": "12.0-inventory-valuation",
+          "title": "Valuation"
+        }
+      ]
+    },
+    {
+      "app": "Purchases",
+      "slug": "purchases",
+      "file": "purchases.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "12.0-purchases-request-for-quotation",
+          "title": "Request for Quotation"
+        },
+        {
+          "id": "12.0-purchases-traceability",
+          "title": "Traceability"
+        },
+        {
+          "id": "12.0-purchases-blanket-orders",
+          "title": "Blanket Orders"
+        },
+        {
+          "id": "12.0-purchases-service",
+          "title": "Service"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "12.0-manufacturing-unbuild-orders",
+          "title": "Unbuild orders"
+        },
+        {
+          "id": "12.0-manufacturing-bom-structure",
+          "title": "BoM structure"
+        },
+        {
+          "id": "12.0-manufacturing-manufacturing-in-2-or-3-steps",
+          "title": "Manufacturing in 2 or 3 Steps"
+        },
+        {
+          "id": "12.0-manufacturing-robustness",
+          "title": "Robustness"
+        },
+        {
+          "id": "12.0-manufacturing-access-right",
+          "title": "Access Right"
+        },
+        {
+          "id": "12.0-manufacturing-variants",
+          "title": "Variants"
+        },
+        {
+          "id": "12.0-manufacturing-produce-on-mo",
+          "title": "Produce on MO"
+        },
+        {
+          "id": "12.0-manufacturing-product-cost",
+          "title": "Product Cost"
+        },
+        {
+          "id": "12.0-manufacturing-barcode-on-work-order",
+          "title": "Barcode on Work & Order"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "12.0-discuss-odoobot",
+          "title": "OdooBot"
+        },
+        {
+          "id": "12.0-discuss-moderation",
+          "title": "Moderation"
+        },
+        {
+          "id": "12.0-discuss-notifications",
+          "title": "Notifications"
+        },
+        {
+          "id": "12.0-discuss-chat",
+          "title": "Chat"
+        },
+        {
+          "id": "12.0-discuss-channels",
+          "title": "Channels"
+        }
+      ]
+    },
+    {
+      "app": "Activities",
+      "slug": "activities",
+      "file": "activities.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "12.0-activities-notifications",
+          "title": "Notifications"
+        },
+        {
+          "id": "12.0-activities-schedule",
+          "title": "Schedule"
+        },
+        {
+          "id": "12.0-activities-meetings",
+          "title": "Meetings"
+        },
+        {
+          "id": "12.0-activities-reminders",
+          "title": "Reminders"
+        },
+        {
+          "id": "12.0-activities-mail-template",
+          "title": "Mail Template"
+        },
+        {
+          "id": "12.0-activities-timetable",
+          "title": "Timetable"
+        }
+      ]
+    },
+    {
+      "app": "eSign",
+      "slug": "esign",
+      "file": "esign.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "12.0-esign-sms-validation",
+          "title": "SMS Validation"
+        },
+        {
+          "id": "12.0-esign-onboarding",
+          "title": "Onboarding"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "12.0-fleet-stages",
+          "title": "Stages"
+        },
+        {
+          "id": "12.0-fleet-activities",
+          "title": "Activities"
+        }
+      ]
+    },
+    {
+      "app": "Leaves",
+      "slug": "leaves",
+      "file": "leaves.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "12.0-leaves-day-based-encoding",
+          "title": "Day Based Encoding"
+        },
+        {
+          "id": "12.0-leaves-accrual",
+          "title": "Accrual"
+        },
+        {
+          "id": "12.0-leaves-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "12.0-leaves-menus",
+          "title": "Menus"
+        },
+        {
+          "id": "12.0-leaves-validity",
+          "title": "Validity"
+        },
+        {
+          "id": "12.0-leaves-visibility",
+          "title": "Visibility"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "12.0-email-marketing-outgoing-email-server",
+          "title": "Outgoing Email Server"
+        },
+        {
+          "id": "12.0-email-marketing-blacklist-opt-out",
+          "title": "Blacklist & Opt-out"
+        },
+        {
+          "id": "12.0-email-marketing-statistics",
+          "title": "Statistics"
+        },
+        {
+          "id": "12.0-email-marketing-plain-text-emails",
+          "title": "Plain Text Emails"
+        },
+        {
+          "id": "12.0-email-marketing-mailing-lists",
+          "title": "Mailing Lists"
+        },
+        {
+          "id": "12.0-email-marketing-utm-tracking",
+          "title": "UTM Tracking"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "12.0-crm-onboarding",
+          "title": "Onboarding"
+        },
+        {
+          "id": "12.0-crm-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "12.0-crm-notifications",
+          "title": "Notifications"
+        },
+        {
+          "id": "12.0-crm-sales-teams",
+          "title": "Sales Teams"
+        },
+        {
+          "id": "12.0-crm-domain-selector-for-lead-scoring",
+          "title": "Domain Selector for Lead Scoring"
+        },
+        {
+          "id": "12.0-crm-partner-autocomplete",
+          "title": "Partner Autocomplete"
+        },
+        {
+          "id": "12.0-crm-reveal-iap",
+          "title": "Reveal (IaP)"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "12.0-events-cohort-view",
+          "title": "Cohort View"
+        },
+        {
+          "id": "12.0-events-calendar",
+          "title": "Calendar"
+        },
+        {
+          "id": "12.0-events-twitter-wall",
+          "title": "Twitter Wall"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "12.0-point-of-sale-hardware",
+          "title": "Hardware"
+        },
+        {
+          "id": "12.0-point-of-sale-settings",
+          "title": "Settings"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "12.0-sales-configuration-bar",
+          "title": "Configuration Bar"
+        },
+        {
+          "id": "12.0-sales-sections-notes",
+          "title": "Sections & Notes"
+        },
+        {
+          "id": "12.0-sales-online-sales",
+          "title": "Online Sales"
+        },
+        {
+          "id": "12.0-sales-templates",
+          "title": "Templates"
+        },
+        {
+          "id": "12.0-sales-sales-reports",
+          "title": "Sales Reports"
+        },
+        {
+          "id": "12.0-sales-delivery-date",
+          "title": "Delivery Date"
+        },
+        {
+          "id": "12.0-sales-products",
+          "title": "Products"
+        },
+        {
+          "id": "12.0-sales-product-configurator",
+          "title": "Product Configurator"
+        },
+        {
+          "id": "12.0-sales-addresses",
+          "title": "Addresses"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "12.0-website-multi-websites",
+          "title": "Multi-Websites"
+        },
+        {
+          "id": "12.0-website-customize-theme",
+          "title": "Customize Theme"
+        },
+        {
+          "id": "12.0-website-custom-color-picker",
+          "title": "Custom Color Picker"
+        },
+        {
+          "id": "12.0-website-building-blocks",
+          "title": "Building Blocks"
+        },
+        {
+          "id": "12.0-website-seo-wizard",
+          "title": "SEO Wizard"
+        },
+        {
+          "id": "12.0-website-media-manager",
+          "title": "Media Manager"
+        },
+        {
+          "id": "12.0-website-menu",
+          "title": "Menu"
+        },
+        {
+          "id": "12.0-website-unsplash",
+          "title": "Unsplash"
+        },
+        {
+          "id": "12.0-website-webmaster",
+          "title": "Webmaster"
+        },
+        {
+          "id": "12.0-website-images",
+          "title": "Images"
+        },
+        {
+          "id": "12.0-website-drop-areas",
+          "title": "Drop Areas"
+        },
+        {
+          "id": "12.0-website-better-logo-sizing",
+          "title": "Better Logo Sizing"
+        },
+        {
+          "id": "12.0-website-footer",
+          "title": "Footer"
+        },
+        {
+          "id": "12.0-website-blogs",
+          "title": "Blogs"
+        },
+        {
+          "id": "12.0-website-forum",
+          "title": "Forum"
+        },
+        {
+          "id": "12.0-website-facebook",
+          "title": "Facebook"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "12.0-ecommerce-configuration-bar",
+          "title": "Configuration Bar"
+        },
+        {
+          "id": "12.0-ecommerce-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "12.0-ecommerce-coupons",
+          "title": "Coupons"
+        },
+        {
+          "id": "12.0-ecommerce-checkout",
+          "title": "Checkout"
+        },
+        {
+          "id": "12.0-ecommerce-zoom-on-product-images",
+          "title": "Zoom on Product Images"
+        },
+        {
+          "id": "12.0-ecommerce-vat-number",
+          "title": "VAT Number"
+        },
+        {
+          "id": "12.0-ecommerce-portal",
+          "title": "Portal"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets and Forecast",
+      "slug": "timesheets-and-forecast",
+      "file": "timesheets-and-forecast.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "12.0-timesheets-and-forecast-invoice",
+          "title": "Invoice"
+        },
+        {
+          "id": "12.0-timesheets-and-forecast-employee-rate",
+          "title": "Employee Rate"
+        },
+        {
+          "id": "12.0-timesheets-and-forecast-forecast",
+          "title": "Forecast"
+        },
+        {
+          "id": "12.0-timesheets-and-forecast-times-units",
+          "title": "Times Units"
+        },
+        {
+          "id": "12.0-timesheets-and-forecast-planned-hours",
+          "title": "Planned Hours"
+        },
+        {
+          "id": "12.0-timesheets-and-forecast-reporting",
+          "title": "Reporting"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "12.0-project-template",
+          "title": "Template"
+        },
+        {
+          "id": "12.0-project-subtasks",
+          "title": "Subtasks"
+        },
+        {
+          "id": "12.0-project-onboarding",
+          "title": "Onboarding"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "12.0-expenses-project-overview",
+          "title": "Project Overview"
+        },
+        {
+          "id": "12.0-expenses-attachments",
+          "title": "Attachments"
+        },
+        {
+          "id": "12.0-expenses-payment",
+          "title": "Payment"
+        },
+        {
+          "id": "12.0-expenses-encoding",
+          "title": "Encoding"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "12.0-helpdesk-sla",
+          "title": "SLA"
+        },
+        {
+          "id": "12.0-helpdesk-attachments",
+          "title": "Attachments"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "12.0-studio-report-designer",
+          "title": "Report Designer"
+        },
+        {
+          "id": "12.0-studio-app-logo",
+          "title": "App Logo"
+        },
+        {
+          "id": "12.0-studio-move-fields",
+          "title": "Move Fields"
+        },
+        {
+          "id": "12.0-studio-status-bar",
+          "title": "Status Bar"
+        },
+        {
+          "id": "12.0-studio-monetary-fields",
+          "title": "Monetary Fields"
+        },
+        {
+          "id": "12.0-studio-selection-values",
+          "title": "Selection Values"
+        },
+        {
+          "id": "12.0-studio-image-resizing",
+          "title": "Image Resizing"
+        }
+      ]
+    },
+    {
+      "app": "Invoicing",
+      "slug": "invoicing",
+      "file": "invoicing.md",
+      "anchor": "",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "12.0-invoicing-online-payments",
+          "title": "Online Payments"
+        },
+        {
+          "id": "12.0-invoicing-configuration-bar",
+          "title": "Configuration Bar"
+        },
+        {
+          "id": "12.0-invoicing-invoicing-communication",
+          "title": "Invoicing Communication"
+        },
+        {
+          "id": "12.0-invoicing-qr-codes",
+          "title": "QR Codes"
+        },
+        {
+          "id": "12.0-invoicing-credit-notes-in-dashboard",
+          "title": "Credit Notes in Dashboard"
+        },
+        {
+          "id": "12.0-invoicing-ocr-facturx-iap",
+          "title": "OCR & FacturX (IaP)"
+        },
+        {
+          "id": "12.0-invoicing-currency",
+          "title": "Currency"
+        },
+        {
+          "id": "12.0-invoicing-vendor-bills-autocompletion",
+          "title": "Vendor Bills Autocompletion"
+        },
+        {
+          "id": "12.0-invoicing-stripe",
+          "title": "Stripe"
+        }
+      ]
+    },
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "12.0-accounting-configuration-bar",
+          "title": "Configuration Bar"
+        },
+        {
+          "id": "12.0-accounting-payments-bank-transfers",
+          "title": "Payments & Bank Transfers"
+        },
+        {
+          "id": "12.0-accounting-various-improvements-in-usability",
+          "title": "Various Improvements in Usability"
+        },
+        {
+          "id": "12.0-accounting-bank-matching",
+          "title": "Bank Matching"
+        },
+        {
+          "id": "12.0-accounting-payments",
+          "title": "Payments"
+        },
+        {
+          "id": "12.0-accounting-currency-rates",
+          "title": "Currency Rates"
+        },
+        {
+          "id": "12.0-accounting-tax-report-audit",
+          "title": "Tax Report Audit"
+        },
+        {
+          "id": "12.0-accounting-payment-terms",
+          "title": "Payment Terms"
+        },
+        {
+          "id": "12.0-accounting-reverse-entries",
+          "title": "Reverse Entries"
+        },
+        {
+          "id": "12.0-accounting-financial-reports",
+          "title": "Financial Reports"
+        },
+        {
+          "id": "12.0-accounting-analytic-accounting",
+          "title": "Analytic Accounting"
+        },
+        {
+          "id": "12.0-accounting-fiscal-year",
+          "title": "Fiscal Year"
+        },
+        {
+          "id": "12.0-accounting-budget",
+          "title": "Budget"
+        },
+        {
+          "id": "12.0-accounting-bank-synchronization",
+          "title": "Bank Synchronization"
+        }
+      ]
+    },
+    {
+      "app": "Localizations",
+      "slug": "localizations",
+      "file": "localizations.md",
+      "anchor": "",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "12.0-localizations-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "12.0-localizations-germany",
+          "title": "Germany"
+        },
+        {
+          "id": "12.0-localizations-spain",
+          "title": "Spain"
+        },
+        {
+          "id": "12.0-localizations-netherlands",
+          "title": "Netherlands"
+        },
+        {
+          "id": "12.0-localizations-united-states",
+          "title": "United States"
+        },
+        {
+          "id": "12.0-localizations-australia",
+          "title": "Australia"
+        },
+        {
+          "id": "12.0-localizations-canada",
+          "title": "Canada"
+        },
+        {
+          "id": "12.0-localizations-switzerland",
+          "title": "Switzerland"
+        },
+        {
+          "id": "12.0-localizations-china",
+          "title": "China"
+        },
+        {
+          "id": "12.0-localizations-hong-kong",
+          "title": "Hong-Kong"
+        },
+        {
+          "id": "12.0-localizations-singapore",
+          "title": "Singapore"
+        },
+        {
+          "id": "12.0-localizations-colombia",
+          "title": "Colombia"
+        }
+      ]
+    },
+    {
+      "app": "Subscriptions",
+      "slug": "subscriptions",
+      "file": "subscriptions.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "12.0-subscriptions-salesperson-alerts",
+          "title": "Salesperson Alerts"
+        },
+        {
+          "id": "12.0-subscriptions-invoicing",
+          "title": "Invoicing"
+        },
+        {
+          "id": "12.0-subscriptions-rating",
+          "title": "Rating"
+        },
+        {
+          "id": "12.0-subscriptions-performance-assessment",
+          "title": "Performance Assessment"
+        },
+        {
+          "id": "12.0-subscriptions-dashboard",
+          "title": "Dashboard"
+        }
+      ]
+    },
+    {
+      "app": "Mobile",
+      "slug": "mobile",
+      "file": "mobile.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "12.0-mobile-view-switcher",
+          "title": "View Switcher"
+        },
+        {
+          "id": "12.0-mobile-search-panel",
+          "title": "Search Panel"
+        },
+        {
+          "id": "12.0-mobile-stat-buttons",
+          "title": "Stat Buttons"
+        },
+        {
+          "id": "12.0-mobile-camera",
+          "title": "Camera"
+        }
+      ]
+    },
+    {
+      "app": "Odoo.sh",
+      "slug": "odoo-sh",
+      "file": "odoo-sh.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "12.0-odoo-sh-online-editor",
+          "title": "Online Editor"
+        },
+        {
+          "id": "12.0-odoo-sh-ssh-access-coming-soon",
+          "title": "SSH access _(coming soon)_"
+        },
+        {
+          "id": "12.0-odoo-sh-scalable-worker",
+          "title": "Scalable Worker"
+        },
+        {
+          "id": "12.0-odoo-sh-editable-repository",
+          "title": "Editable Repository"
+        },
+        {
+          "id": "12.0-odoo-sh-kpis",
+          "title": "KPIs"
+        }
+      ]
+    },
+    {
+      "app": "Technical",
+      "slug": "technical",
+      "file": "technical.md",
+      "anchor": "",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "12.0-technical-robustness",
+          "title": "Robustness"
+        },
+        {
+          "id": "12.0-technical-action-manager",
+          "title": "Action Manager"
+        },
+        {
+          "id": "12.0-technical-staging-performance",
+          "title": "Staging Performance"
+        },
+        {
+          "id": "12.0-technical-remove-action-on-fetchmail",
+          "title": "Remove Action on Fetchmail"
+        },
+        {
+          "id": "12.0-technical-fewer-dependencies",
+          "title": "Fewer Dependencies"
+        },
+        {
+          "id": "12.0-technical-python-test",
+          "title": "Python Test"
+        },
+        {
+          "id": "12.0-technical-bootstrap-4",
+          "title": "Bootstrap 4"
+        },
+        {
+          "id": "12.0-technical-performance-optimization",
+          "title": "Performance Optimization"
+        },
+        {
+          "id": "12.0-technical-translations",
+          "title": "Translations"
+        },
+        {
+          "id": "12.0-technical-less-to-scss",
+          "title": "Less to SCSS"
+        }
+      ]
+    }
+  ],
+  "item_count": 213
+}

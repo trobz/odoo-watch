@@ -1,0 +1,1679 @@
+{
+  "version": "13.0",
+  "source_url": "http://web.archive.org/web/20260410095156id_/https://www.odoo.com/odoo-13-release-notes",
+  "apps": [
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "",
+      "item_count": 36,
+      "notes": [
+        {
+          "id": "13.0-accounting-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-accounting-reconciliation",
+          "title": "Reconciliation"
+        },
+        {
+          "id": "13.0-accounting-journals",
+          "title": "Journals"
+        },
+        {
+          "id": "13.0-accounting-assets",
+          "title": "Assets"
+        },
+        {
+          "id": "13.0-accounting-iban-compliance",
+          "title": "IBAN Compliance"
+        },
+        {
+          "id": "13.0-accounting-taxes",
+          "title": "Taxes"
+        },
+        {
+          "id": "13.0-accounting-invoicing",
+          "title": "Invoicing"
+        },
+        {
+          "id": "13.0-accounting-vendor-bills",
+          "title": "Vendor Bills"
+        },
+        {
+          "id": "13.0-accounting-sepa",
+          "title": "SEPA"
+        },
+        {
+          "id": "13.0-accounting-accounting-engine",
+          "title": "Accounting Engine"
+        },
+        {
+          "id": "13.0-accounting-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "13.0-accounting-intrastat",
+          "title": "Intrastat"
+        },
+        {
+          "id": "13.0-accounting-follow-up",
+          "title": "Follow Up"
+        },
+        {
+          "id": "13.0-accounting-taxcloud",
+          "title": "Taxcloud"
+        },
+        {
+          "id": "13.0-accounting-suspense-account-for-bank-transactions",
+          "title": "Suspense Account for Bank Transactions"
+        },
+        {
+          "id": "13.0-accounting-accounting-entries-security-modes",
+          "title": "Accounting Entries Security Modes"
+        },
+        {
+          "id": "13.0-accounting-closed-tax-period",
+          "title": "Closed Tax Period"
+        },
+        {
+          "id": "13.0-accounting-accrual",
+          "title": "Accrual"
+        },
+        {
+          "id": "13.0-accounting-deferral",
+          "title": "Deferral"
+        },
+        {
+          "id": "13.0-accounting-accounting-adjustements",
+          "title": "Accounting Adjustements"
+        },
+        {
+          "id": "13.0-accounting-refactoring",
+          "title": "Refactoring"
+        },
+        {
+          "id": "13.0-accounting-dynamic-journals-ledgers",
+          "title": "Dynamic Journals & Ledgers"
+        },
+        {
+          "id": "13.0-accounting-payment-follow-up",
+          "title": "Payment Follow-up"
+        },
+        {
+          "id": "13.0-accounting-invoices-importation",
+          "title": "Invoices importation"
+        },
+        {
+          "id": "13.0-accounting-manual-journal-entries",
+          "title": "Manual Journal Entries"
+        },
+        {
+          "id": "13.0-accounting-coda-camt-import-improvements",
+          "title": "CODA & CAMT import improvements"
+        },
+        {
+          "id": "13.0-accounting-off-balance-sheet",
+          "title": "Off Balance sheet"
+        },
+        {
+          "id": "13.0-accounting-payments",
+          "title": "Payments"
+        },
+        {
+          "id": "13.0-accounting-manual-reconciliation",
+          "title": "Manual Reconciliation"
+        },
+        {
+          "id": "13.0-accounting-reconciliation-models",
+          "title": "Reconciliation Models"
+        },
+        {
+          "id": "13.0-accounting-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "13.0-accounting-single-liability-account",
+          "title": "Single Liability Account"
+        },
+        {
+          "id": "13.0-accounting-taxes-closing-entries",
+          "title": "Taxes Closing Entries"
+        },
+        {
+          "id": "13.0-accounting-print-original-vendor-bills",
+          "title": "Print Original Vendor Bills"
+        },
+        {
+          "id": "13.0-accounting-arithmetic-operations-in-fields",
+          "title": "Arithmetic operations in fields"
+        },
+        {
+          "id": "13.0-accounting-winbooks-import",
+          "title": "Winbooks import"
+        }
+      ]
+    },
+    {
+      "app": "Activities",
+      "slug": "activities",
+      "file": "activities.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-activities-activity-type",
+          "title": "Activity Type"
+        },
+        {
+          "id": "13.0-activities-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-activities-today-s-meeting",
+          "title": "Today's Meeting"
+        }
+      ]
+    },
+    {
+      "app": "Amazon Connector",
+      "slug": "amazon-connector",
+      "file": "amazon-connector.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "13.0-amazon-connector-amazon-connector",
+          "title": "Amazon Connector"
+        }
+      ]
+    },
+    {
+      "app": "Approvals",
+      "slug": "approvals",
+      "file": "approvals.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-approvals-request",
+          "title": "Request"
+        },
+        {
+          "id": "13.0-approvals-approver",
+          "title": "Approver"
+        },
+        {
+          "id": "13.0-approvals-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "13.0-approvals-notification",
+          "title": "Notification"
+        }
+      ]
+    },
+    {
+      "app": "Appraisal",
+      "slug": "appraisal",
+      "file": "appraisal.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-appraisal-request",
+          "title": "Request"
+        },
+        {
+          "id": "13.0-appraisal-notifications",
+          "title": "Notifications"
+        },
+        {
+          "id": "13.0-appraisal-reminders",
+          "title": "Reminders"
+        },
+        {
+          "id": "13.0-appraisal-timeframe",
+          "title": "Timeframe"
+        }
+      ]
+    },
+    {
+      "app": "Consolidation",
+      "slug": "consolidation",
+      "file": "consolidation.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "13.0-consolidation-new-app",
+          "title": "New app"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "13.0-crm-activity",
+          "title": "Activity"
+        },
+        {
+          "id": "13.0-crm-lead-mining-iap",
+          "title": "Lead Mining (IAP)"
+        },
+        {
+          "id": "13.0-crm-lead-scoring",
+          "title": "Lead Scoring"
+        },
+        {
+          "id": "13.0-crm-sms",
+          "title": "SMS"
+        },
+        {
+          "id": "13.0-crm-lead-enrichment-iap",
+          "title": "Lead Enrichment (IAP)"
+        },
+        {
+          "id": "13.0-crm-sales-teams",
+          "title": "Sales Teams"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "13.0-discuss-actions",
+          "title": "Actions"
+        },
+        {
+          "id": "13.0-discuss-history",
+          "title": "History"
+        },
+        {
+          "id": "13.0-discuss-files",
+          "title": "Files"
+        },
+        {
+          "id": "13.0-discuss-emails",
+          "title": "Emails"
+        },
+        {
+          "id": "13.0-discuss-notification",
+          "title": "Notification"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-documents-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-documents-access-rights",
+          "title": "Access Rights"
+        },
+        {
+          "id": "13.0-documents-drag-drop",
+          "title": "Drag & Drop"
+        },
+        {
+          "id": "13.0-documents-integration",
+          "title": "Integration"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "13.0-ecommerce-products",
+          "title": "Products"
+        },
+        {
+          "id": "13.0-ecommerce-payu-latam",
+          "title": "PayU Latam"
+        },
+        {
+          "id": "13.0-ecommerce-building-blocks",
+          "title": "Building Blocks"
+        },
+        {
+          "id": "13.0-ecommerce-stock",
+          "title": "Stock"
+        },
+        {
+          "id": "13.0-ecommerce-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-ecommerce-coupons-promotions",
+          "title": "Coupons & Promotions"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "13.0-elearning-quizz",
+          "title": "Quizz"
+        },
+        {
+          "id": "13.0-elearning-profile",
+          "title": "Profile"
+        },
+        {
+          "id": "13.0-elearning-certification",
+          "title": "Certification"
+        },
+        {
+          "id": "13.0-elearning-courses",
+          "title": "Courses"
+        },
+        {
+          "id": "13.0-elearning-trainees",
+          "title": "Trainees"
+        },
+        {
+          "id": "13.0-elearning-kpi",
+          "title": "KPI"
+        },
+        {
+          "id": "13.0-elearning-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-elearning-ecommerce",
+          "title": "eCommerce"
+        },
+        {
+          "id": "13.0-elearning-website",
+          "title": "Website"
+        },
+        {
+          "id": "13.0-elearning-forum",
+          "title": "Forum"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-email-marketing-kpis",
+          "title": "KPIs"
+        },
+        {
+          "id": "13.0-email-marketing-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "13.0-employees-presence",
+          "title": "Presence"
+        },
+        {
+          "id": "13.0-employees-preferences",
+          "title": "Preferences"
+        },
+        {
+          "id": "13.0-employees-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-employees-skills",
+          "title": "Skills"
+        },
+        {
+          "id": "13.0-employees-resume",
+          "title": "Resume"
+        },
+        {
+          "id": "13.0-employees-onboarding",
+          "title": "Onboarding"
+        },
+        {
+          "id": "13.0-employees-kpi",
+          "title": "KPI"
+        },
+        {
+          "id": "13.0-employees-contract",
+          "title": "Contract"
+        },
+        {
+          "id": "13.0-employees-schedule",
+          "title": "Schedule"
+        },
+        {
+          "id": "13.0-employees-security",
+          "title": "Security"
+        },
+        {
+          "id": "13.0-employees-documents",
+          "title": "Documents"
+        }
+      ]
+    },
+    {
+      "app": "Event",
+      "slug": "event",
+      "file": "event.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-event-sms",
+          "title": "SMS"
+        },
+        {
+          "id": "13.0-event-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-expenses-customer-invoices",
+          "title": "Customer Invoices"
+        },
+        {
+          "id": "13.0-expenses-employee-reimbursement",
+          "title": "Employee Reimbursement"
+        },
+        {
+          "id": "13.0-expenses-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Field Service",
+      "slug": "field-service",
+      "file": "field-service.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "13.0-field-service-intervention",
+          "title": "Intervention"
+        },
+        {
+          "id": "13.0-field-service-projects",
+          "title": "Projects"
+        },
+        {
+          "id": "13.0-field-service-worksheet",
+          "title": "Worksheet"
+        },
+        {
+          "id": "13.0-field-service-sales",
+          "title": "Sales"
+        },
+        {
+          "id": "13.0-field-service-timesheet",
+          "title": "Timesheet"
+        },
+        {
+          "id": "13.0-field-service-task",
+          "title": "Task"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-fleet-claim-reports",
+          "title": "Claim reports"
+        },
+        {
+          "id": "13.0-fleet-salary",
+          "title": "Salary"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "13.0-helpdesk-leads",
+          "title": "Leads"
+        },
+        {
+          "id": "13.0-helpdesk-after-sales",
+          "title": "After-Sales"
+        },
+        {
+          "id": "13.0-helpdesk-multi-sla",
+          "title": "Multi-SLA"
+        },
+        {
+          "id": "13.0-helpdesk-time-billing",
+          "title": "Time Billing"
+        },
+        {
+          "id": "13.0-helpdesk-ticket-closing",
+          "title": "Ticket Closing"
+        }
+      ]
+    },
+    {
+      "app": "IAP",
+      "slug": "iap",
+      "file": "iap.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "13.0-iap-portal",
+          "title": "Portal"
+        },
+        {
+          "id": "13.0-iap-leads",
+          "title": "Leads"
+        },
+        {
+          "id": "13.0-iap-reveal",
+          "title": "Reveal"
+        },
+        {
+          "id": "13.0-iap-iap-accounts",
+          "title": "IAP Accounts"
+        },
+        {
+          "id": "13.0-iap-sms",
+          "title": "SMS"
+        }
+      ]
+    },
+    {
+      "app": "IoT",
+      "slug": "iot",
+      "file": "iot.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-iot-ingenico",
+          "title": "Ingenico"
+        },
+        {
+          "id": "13.0-iot-device-status",
+          "title": "Device Status"
+        },
+        {
+          "id": "13.0-iot-scan-range",
+          "title": "Scan Range"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "13.0-inventory-route",
+          "title": "Route"
+        },
+        {
+          "id": "13.0-inventory-account",
+          "title": "Account"
+        },
+        {
+          "id": "13.0-inventory-multi-company",
+          "title": "Multi-Company"
+        },
+        {
+          "id": "13.0-inventory-product",
+          "title": "Product"
+        },
+        {
+          "id": "13.0-inventory-picking",
+          "title": "Picking"
+        },
+        {
+          "id": "13.0-inventory-delivery",
+          "title": "Delivery"
+        },
+        {
+          "id": "13.0-inventory-lot-serial-number",
+          "title": "Lot/Serial Number"
+        },
+        {
+          "id": "13.0-inventory-valuation",
+          "title": "Valuation"
+        },
+        {
+          "id": "13.0-inventory-rules",
+          "title": "Rules"
+        },
+        {
+          "id": "13.0-inventory-inventory-adjustments",
+          "title": "Inventory Adjustments"
+        },
+        {
+          "id": "13.0-inventory-notification",
+          "title": "Notification"
+        },
+        {
+          "id": "13.0-inventory-forecast",
+          "title": "Forecast"
+        },
+        {
+          "id": "13.0-inventory-landed-costs",
+          "title": "Landed Costs"
+        }
+      ]
+    },
+    {
+      "app": "Livechat",
+      "slug": "livechat",
+      "file": "livechat.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-livechat-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "13.0-livechat-assignation",
+          "title": "Assignation"
+        }
+      ]
+    },
+    {
+      "app": "Localization",
+      "slug": "localization",
+      "file": "localization.md",
+      "anchor": "",
+      "item_count": 18,
+      "notes": [
+        {
+          "id": "13.0-localization-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "13.0-localization-uk",
+          "title": "UK"
+        },
+        {
+          "id": "13.0-localization-mongolia",
+          "title": "Mongolia"
+        },
+        {
+          "id": "13.0-localization-norway",
+          "title": "Norway"
+        },
+        {
+          "id": "13.0-localization-luxembourg",
+          "title": "Luxembourg"
+        },
+        {
+          "id": "13.0-localization-italy",
+          "title": "Italy"
+        },
+        {
+          "id": "13.0-localization-luxembourg-2",
+          "title": "Luxembourg"
+        },
+        {
+          "id": "13.0-localization-italy-2",
+          "title": "Italy"
+        },
+        {
+          "id": "13.0-localization-south-africa",
+          "title": "South Africa"
+        },
+        {
+          "id": "13.0-localization-israel",
+          "title": "Israel"
+        },
+        {
+          "id": "13.0-localization-austria",
+          "title": "Austria"
+        },
+        {
+          "id": "13.0-localization-argentina",
+          "title": "Argentina"
+        },
+        {
+          "id": "13.0-localization-chile",
+          "title": "Chile"
+        },
+        {
+          "id": "13.0-localization-germany",
+          "title": "Germany"
+        },
+        {
+          "id": "13.0-localization-switzerland",
+          "title": "Switzerland"
+        },
+        {
+          "id": "13.0-localization-canada",
+          "title": "Canada"
+        },
+        {
+          "id": "13.0-localization-spain",
+          "title": "Spain"
+        },
+        {
+          "id": "13.0-localization-peru",
+          "title": "Peru"
+        }
+      ]
+    },
+    {
+      "app": "Lunch",
+      "slug": "lunch",
+      "file": "lunch.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-lunch-vendors",
+          "title": "Vendors"
+        },
+        {
+          "id": "13.0-lunch-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-lunch-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-lunch-mail",
+          "title": "Mail"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "13.0-manufacturing-bill-of-materials",
+          "title": "Bill of Materials"
+        },
+        {
+          "id": "13.0-manufacturing-work-order",
+          "title": "Work Order"
+        },
+        {
+          "id": "13.0-manufacturing-mps",
+          "title": "MPS"
+        },
+        {
+          "id": "13.0-manufacturing-work-centers",
+          "title": "Work Centers"
+        },
+        {
+          "id": "13.0-manufacturing-subcontracting",
+          "title": "Subcontracting"
+        },
+        {
+          "id": "13.0-manufacturing-worksheets",
+          "title": "Worksheets"
+        }
+      ]
+    },
+    {
+      "app": "Marketing",
+      "slug": "marketing",
+      "file": "marketing.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-marketing-templates",
+          "title": "Templates"
+        },
+        {
+          "id": "13.0-marketing-odoo-social",
+          "title": "Odoo Social"
+        },
+        {
+          "id": "13.0-marketing-visitors-tracking",
+          "title": "Visitors Tracking"
+        },
+        {
+          "id": "13.0-marketing-push-notifications",
+          "title": "Push Notifications"
+        }
+      ]
+    },
+    {
+      "app": "Marketing Automation",
+      "slug": "marketing-automation",
+      "file": "marketing-automation.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "13.0-marketing-automation-sms",
+          "title": "SMS"
+        }
+      ]
+    },
+    {
+      "app": "Mobile",
+      "slug": "mobile",
+      "file": "mobile.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "13.0-mobile-scan",
+          "title": "Scan"
+        },
+        {
+          "id": "13.0-mobile-timesheets",
+          "title": "Timesheets"
+        },
+        {
+          "id": "13.0-mobile-discuss",
+          "title": "Discuss"
+        },
+        {
+          "id": "13.0-mobile-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "13.0-mobile-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-mobile-push-notifications",
+          "title": "Push Notifications"
+        },
+        {
+          "id": "13.0-mobile-swipe",
+          "title": "Swipe"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "13.0-payroll-benefits",
+          "title": "Benefits"
+        },
+        {
+          "id": "13.0-payroll-contract",
+          "title": "Contract"
+        },
+        {
+          "id": "13.0-payroll-work-entry",
+          "title": "Work Entry"
+        },
+        {
+          "id": "13.0-payroll-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "13.0-payroll-structure",
+          "title": "Structure"
+        },
+        {
+          "id": "13.0-payroll-salary",
+          "title": "Salary"
+        },
+        {
+          "id": "13.0-payroll-meal-voucher",
+          "title": "Meal voucher"
+        },
+        {
+          "id": "13.0-payroll-specific-pay",
+          "title": "Specific Pay"
+        },
+        {
+          "id": "13.0-payroll-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-payroll-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "13.0-payroll-belgian-localization",
+          "title": "Belgian Localization"
+        },
+        {
+          "id": "13.0-payroll-accounting",
+          "title": "Accounting"
+        },
+        {
+          "id": "13.0-payroll-history",
+          "title": "History"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "13.0-planning-planning",
+          "title": "Planning"
+        },
+        {
+          "id": "13.0-planning-roles",
+          "title": "Roles"
+        },
+        {
+          "id": "13.0-planning-duplication",
+          "title": "Duplication"
+        },
+        {
+          "id": "13.0-planning-recurrence",
+          "title": "Recurrence"
+        },
+        {
+          "id": "13.0-planning-open-shifts",
+          "title": "Open Shifts"
+        },
+        {
+          "id": "13.0-planning-shifts-templates",
+          "title": "Shifts Templates"
+        },
+        {
+          "id": "13.0-planning-unavailability",
+          "title": "Unavailability"
+        },
+        {
+          "id": "13.0-planning-portal",
+          "title": "Portal"
+        }
+      ]
+    },
+    {
+      "app": "PLM",
+      "slug": "plm",
+      "file": "plm.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "13.0-plm-plm-approvals",
+          "title": "PLM Approvals"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "13.0-point-of-sale-employees",
+          "title": "Employees"
+        },
+        {
+          "id": "13.0-point-of-sale-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-point-of-sale-keypad",
+          "title": "Keypad"
+        },
+        {
+          "id": "13.0-point-of-sale-alerts",
+          "title": "Alerts"
+        },
+        {
+          "id": "13.0-point-of-sale-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "13.0-point-of-sale-printers",
+          "title": "Printers"
+        },
+        {
+          "id": "13.0-point-of-sale-cash-control",
+          "title": "Cash Control"
+        },
+        {
+          "id": "13.0-point-of-sale-session-closing",
+          "title": "Session Closing"
+        },
+        {
+          "id": "13.0-point-of-sale-tip-in-ticket",
+          "title": "Tip in Ticket"
+        },
+        {
+          "id": "13.0-point-of-sale-payment",
+          "title": "Payment"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-purchase-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "13.0-purchase-purchase-order",
+          "title": "Purchase Order"
+        },
+        {
+          "id": "13.0-purchase-variant",
+          "title": "Variant"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-project-forecast",
+          "title": "Forecast"
+        },
+        {
+          "id": "13.0-project-project-overview",
+          "title": "Project Overview"
+        }
+      ]
+    },
+    {
+      "app": "Usability",
+      "slug": "usability",
+      "file": "usability.md",
+      "anchor": "",
+      "item_count": 23,
+      "notes": [
+        {
+          "id": "13.0-usability-demo-data",
+          "title": "Demo Data"
+        },
+        {
+          "id": "13.0-usability-setup",
+          "title": "Setup"
+        },
+        {
+          "id": "13.0-usability-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "13.0-usability-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "13.0-usability-snailmail-iap",
+          "title": "Snailmail (IAP)"
+        },
+        {
+          "id": "13.0-usability-gantt",
+          "title": "Gantt"
+        },
+        {
+          "id": "13.0-usability-access-rights",
+          "title": "Access rights"
+        },
+        {
+          "id": "13.0-usability-timezone",
+          "title": "Timezone"
+        },
+        {
+          "id": "13.0-usability-kanban",
+          "title": "Kanban"
+        },
+        {
+          "id": "13.0-usability-date-filters",
+          "title": "Date Filters"
+        },
+        {
+          "id": "13.0-usability-multi-company",
+          "title": "Multi-company"
+        },
+        {
+          "id": "13.0-usability-maps-view",
+          "title": "Maps view"
+        },
+        {
+          "id": "13.0-usability-custom-lists",
+          "title": "Custom Lists"
+        },
+        {
+          "id": "13.0-usability-import",
+          "title": "Import"
+        },
+        {
+          "id": "13.0-usability-languages",
+          "title": "Languages"
+        },
+        {
+          "id": "13.0-usability-calendar",
+          "title": "Calendar"
+        },
+        {
+          "id": "13.0-usability-documents",
+          "title": "Documents"
+        },
+        {
+          "id": "13.0-usability-search-panel",
+          "title": "Search Panel"
+        },
+        {
+          "id": "13.0-usability-ribbons",
+          "title": "Ribbons"
+        },
+        {
+          "id": "13.0-usability-column-resizing",
+          "title": "Column Resizing"
+        },
+        {
+          "id": "13.0-usability-signature-widget",
+          "title": "Signature Widget"
+        },
+        {
+          "id": "13.0-usability-export",
+          "title": "Export"
+        },
+        {
+          "id": "13.0-usability-product",
+          "title": "Product"
+        }
+      ]
+    },
+    {
+      "app": "Referral",
+      "slug": "referral",
+      "file": "referral.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "13.0-referral-game",
+          "title": "Game"
+        },
+        {
+          "id": "13.0-referral-recruitment",
+          "title": "Recruitment"
+        },
+        {
+          "id": "13.0-referral-share",
+          "title": "Share"
+        },
+        {
+          "id": "13.0-referral-mobile",
+          "title": "Mobile"
+        },
+        {
+          "id": "13.0-referral-utm",
+          "title": "UTM"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-rental-product",
+          "title": "Product"
+        },
+        {
+          "id": "13.0-rental-2-date-times-picker",
+          "title": "2 Date times-picker"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "13.0-sales-refund",
+          "title": "Refund"
+        },
+        {
+          "id": "13.0-sales-invoicing",
+          "title": "Invoicing"
+        },
+        {
+          "id": "13.0-sales-signature",
+          "title": "Signature"
+        },
+        {
+          "id": "13.0-sales-order-date",
+          "title": "Order Date"
+        },
+        {
+          "id": "13.0-sales-product-variants",
+          "title": "Product Variants"
+        },
+        {
+          "id": "13.0-sales-product-configurator",
+          "title": "Product Configurator"
+        },
+        {
+          "id": "13.0-sales-new-sales-order-form",
+          "title": "New Sales Order Form"
+        },
+        {
+          "id": "13.0-sales-emails",
+          "title": "Emails"
+        },
+        {
+          "id": "13.0-sales-alipay",
+          "title": "Alipay"
+        },
+        {
+          "id": "13.0-sales-wire-transfer",
+          "title": "Wire Transfer"
+        },
+        {
+          "id": "13.0-sales-extra-fees",
+          "title": "Extra Fees"
+        },
+        {
+          "id": "13.0-sales-optional-products",
+          "title": "Optional Products"
+        },
+        {
+          "id": "13.0-sales-delivery",
+          "title": "Delivery"
+        },
+        {
+          "id": "13.0-sales-grid-entry",
+          "title": "Grid Entry"
+        },
+        {
+          "id": "13.0-sales-amazon-sync",
+          "title": "Amazon Sync"
+        },
+        {
+          "id": "13.0-sales-pricelists",
+          "title": "Pricelists"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "13.0-sign-no-email",
+          "title": "No email"
+        },
+        {
+          "id": "13.0-sign-refund",
+          "title": "Refund"
+        },
+        {
+          "id": "13.0-sign-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-sign-traceability",
+          "title": "Traceability"
+        }
+      ]
+    },
+    {
+      "app": "SMS Marketing",
+      "slug": "sms-marketing",
+      "file": "sms-marketing.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "13.0-sms-marketing-sms-marketing",
+          "title": "SMS Marketing"
+        }
+      ]
+    },
+    {
+      "app": "Social Marketing",
+      "slug": "social-marketing",
+      "file": "social-marketing.md",
+      "anchor": "",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "13.0-social-marketing-social-marketing",
+          "title": "Social Marketing"
+        },
+        {
+          "id": "13.0-social-marketing-push-notification",
+          "title": "Push Notification"
+        },
+        {
+          "id": "13.0-social-marketing-campaigns",
+          "title": "Campaigns"
+        },
+        {
+          "id": "13.0-social-marketing-feed",
+          "title": "Feed"
+        },
+        {
+          "id": "13.0-social-marketing-live-chat-request",
+          "title": "Live Chat Request"
+        },
+        {
+          "id": "13.0-social-marketing-online-visitors",
+          "title": "Online Visitors"
+        },
+        {
+          "id": "13.0-social-marketing-send-schedule-posts",
+          "title": "Send & Schedule Posts"
+        }
+      ]
+    },
+    {
+      "app": "Survey",
+      "slug": "survey",
+      "file": "survey.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-survey-access-rights",
+          "title": "Access Rights"
+        },
+        {
+          "id": "13.0-survey-certificates",
+          "title": "Certificates"
+        },
+        {
+          "id": "13.0-survey-usability",
+          "title": "Usability"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "13.0-studio-activity",
+          "title": "Activity"
+        },
+        {
+          "id": "13.0-studio-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-studio-widgets",
+          "title": "Widgets"
+        },
+        {
+          "id": "13.0-studio-fields",
+          "title": "Fields"
+        },
+        {
+          "id": "13.0-studio-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-studio-restore-default-view",
+          "title": "Restore Default View"
+        }
+      ]
+    },
+    {
+      "app": "Technical",
+      "slug": "technical",
+      "file": "technical.md",
+      "anchor": "",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "13.0-technical-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-technical-mass-mailing-campaign",
+          "title": "Mass Mailing Campaign"
+        },
+        {
+          "id": "13.0-technical-create-uid-heuristics-improvements",
+          "title": "Create_uid Heuristics Improvements"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-timesheets-start-stop",
+          "title": "Start/Stop"
+        },
+        {
+          "id": "13.0-timesheets-invoiced-timesheets-in-portal",
+          "title": "Invoiced Timesheets in Portal"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "13.0-time-off-approvals",
+          "title": "Approvals"
+        },
+        {
+          "id": "13.0-time-off-approvers",
+          "title": "Approvers"
+        },
+        {
+          "id": "13.0-time-off-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-time-off-notification",
+          "title": "Notification"
+        },
+        {
+          "id": "13.0-time-off-access-rights",
+          "title": "Access Rights"
+        }
+      ]
+    },
+    {
+      "app": "VoIP",
+      "slug": "voip",
+      "file": "voip.md",
+      "anchor": "",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "13.0-voip-call-queue",
+          "title": "Call Queue"
+        },
+        {
+          "id": "13.0-voip-phone-number",
+          "title": "Phone Number"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "13.0-website-theme",
+          "title": "Theme"
+        },
+        {
+          "id": "13.0-website-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-website-anchor",
+          "title": "Anchor"
+        },
+        {
+          "id": "13.0-website-blogs",
+          "title": "Blogs"
+        },
+        {
+          "id": "13.0-website-seo",
+          "title": "SEO"
+        },
+        {
+          "id": "13.0-website-performance",
+          "title": "Performance"
+        },
+        {
+          "id": "13.0-website-auto-configured-contact-forms",
+          "title": "Auto-Configured Contact Forms"
+        },
+        {
+          "id": "13.0-website-auto-configured-contact-forms-2",
+          "title": "Auto-Configured Contact Forms"
+        },
+        {
+          "id": "13.0-website-usability-2",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-website-usability-3",
+          "title": "Usability"
+        },
+        {
+          "id": "13.0-website-themes-snippets",
+          "title": "Themes & Snippets"
+        },
+        {
+          "id": "13.0-website-iso-code-language-in-url",
+          "title": "Iso code language in URL"
+        },
+        {
+          "id": "13.0-website-forum",
+          "title": "Forum"
+        },
+        {
+          "id": "13.0-website-identity",
+          "title": "Identity"
+        },
+        {
+          "id": "13.0-website-identity-2",
+          "title": "Identity"
+        },
+        {
+          "id": "13.0-website-error-handler",
+          "title": "Error handler"
+        },
+        {
+          "id": "13.0-website-newsletter",
+          "title": "Newsletter"
+        },
+        {
+          "id": "13.0-website-live-chat-transcript",
+          "title": "Live Chat Transcript"
+        },
+        {
+          "id": "13.0-website-portal",
+          "title": "Portal"
+        },
+        {
+          "id": "13.0-website-event",
+          "title": "Event"
+        }
+      ]
+    }
+  ],
+  "item_count": 310
+}

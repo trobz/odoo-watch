@@ -1,0 +1,3326 @@
+{
+  "version": "20.0",
+  "source_url": "https://www.odoo.com/odoo-20-release-notes",
+  "apps": [
+    {
+      "app": "General",
+      "slug": "general",
+      "file": "general.md",
+      "anchor": "table_of_content_heading_1_18",
+      "item_count": 41,
+      "notes": [
+        {
+          "id": "20.0-general-activities",
+          "title": "Activities"
+        },
+        {
+          "id": "20.0-general-calendar-view-side-panel",
+          "title": "Calendar view side panel"
+        },
+        {
+          "id": "20.0-general-cc-email-recipients",
+          "title": "CC email recipients"
+        },
+        {
+          "id": "20.0-general-chatter-filter",
+          "title": "Chatter filter"
+        },
+        {
+          "id": "20.0-general-currency-aggregates-date",
+          "title": "Currency aggregates: date"
+        },
+        {
+          "id": "20.0-general-decimal-separator",
+          "title": "Decimal separator"
+        },
+        {
+          "id": "20.0-general-dialog-design",
+          "title": "Dialog design"
+        },
+        {
+          "id": "20.0-general-digest-email-kpis",
+          "title": "Digest email KPIs"
+        },
+        {
+          "id": "20.0-general-download-attachments-in-bulk",
+          "title": "Download attachments in bulk"
+        },
+        {
+          "id": "20.0-general-email-template-preview",
+          "title": "Email template preview"
+        },
+        {
+          "id": "20.0-general-favorited-searches",
+          "title": "Favorited searches"
+        },
+        {
+          "id": "20.0-general-file-sharing-on-mobiles",
+          "title": "File sharing on mobiles"
+        },
+        {
+          "id": "20.0-general-gantt-view",
+          "title": "Gantt view"
+        },
+        {
+          "id": "20.0-general-import-product-variants",
+          "title": "Import product variants"
+        },
+        {
+          "id": "20.0-general-incremental-edits-on-duration-fields",
+          "title": "Incremental edits on duration fields"
+        },
+        {
+          "id": "20.0-general-label-design",
+          "title": "Label design"
+        },
+        {
+          "id": "20.0-general-link-previews",
+          "title": "Link previews"
+        },
+        {
+          "id": "20.0-general-link-to-current-search",
+          "title": "Link to current search"
+        },
+        {
+          "id": "20.0-general-list-view-expand-collapse-groups",
+          "title": "List view: expand/collapse groups"
+        },
+        {
+          "id": "20.0-general-mail-plugins",
+          "title": "Mail plugins"
+        },
+        {
+          "id": "20.0-general-map-view-unlocated-records",
+          "title": "Map view: unlocated records"
+        },
+        {
+          "id": "20.0-general-material-symbols",
+          "title": "Material Symbols"
+        },
+        {
+          "id": "20.0-general-mobile",
+          "title": "Mobile"
+        },
+        {
+          "id": "20.0-general-multi-record-drag-and-drop",
+          "title": "Multi-record drag and drop"
+        },
+        {
+          "id": "20.0-general-multiple-partner-identifiers",
+          "title": "Multiple partner identifiers"
+        },
+        {
+          "id": "20.0-general-my-subscription-page",
+          "title": "My Subscription page"
+        },
+        {
+          "id": "20.0-general-offline-mode",
+          "title": "Offline mode"
+        },
+        {
+          "id": "20.0-general-partner-autocomplete",
+          "title": "Partner autocomplete"
+        },
+        {
+          "id": "20.0-general-pin-messages-in-the-chatter",
+          "title": "Pin messages in the chatter"
+        },
+        {
+          "id": "20.0-general-portal-layout",
+          "title": "Portal layout"
+        },
+        {
+          "id": "20.0-general-record-deletion",
+          "title": "Record deletion"
+        },
+        {
+          "id": "20.0-general-relative-range-tooltip",
+          "title": "Relative range tooltip"
+        },
+        {
+          "id": "20.0-general-rich-text-editor",
+          "title": "Rich-text editor"
+        },
+        {
+          "id": "20.0-general-product-catalog-units-of-measure",
+          "title": "Product catalog: units of measure"
+        },
+        {
+          "id": "20.0-general-sendcloud-shipping-labels",
+          "title": "Sendcloud shipping labels"
+        },
+        {
+          "id": "20.0-general-simplified-access-rights",
+          "title": "Simplified access rights"
+        },
+        {
+          "id": "20.0-general-tablets-bottom-sheets",
+          "title": "Tablets: bottom sheets"
+        },
+        {
+          "id": "20.0-general-tax-included-excluded-on-orders-and-invoices",
+          "title": "Tax included/excluded on orders and invoices"
+        },
+        {
+          "id": "20.0-general-text-messages",
+          "title": "Text messages"
+        },
+        {
+          "id": "20.0-general-translation",
+          "title": "Translation"
+        },
+        {
+          "id": "20.0-general-translation-wizard",
+          "title": "Translation wizard"
+        }
+      ]
+    },
+    {
+      "app": "Technical",
+      "slug": "technical",
+      "file": "technical.md",
+      "anchor": "table_of_content_heading_1_77",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-technical-mail-in-body-tracking",
+          "title": "Mail: in-body tracking"
+        },
+        {
+          "id": "20.0-technical-many-to-one-field-improvements",
+          "title": "Many-to-one field improvements"
+        },
+        {
+          "id": "20.0-technical-push-notifications",
+          "title": "Push notifications"
+        },
+        {
+          "id": "20.0-technical-track-source-of-postings",
+          "title": "Track source of postings"
+        },
+        {
+          "id": "20.0-technical-tracking-user-group-changes",
+          "title": "Tracking user group changes"
+        }
+      ]
+    },
+    {
+      "app": "Industries",
+      "slug": "industries",
+      "file": "industries.md",
+      "anchor": "table_of_content_heading_1_78",
+      "item_count": 25,
+      "notes": [
+        {
+          "id": "20.0-industries-accounting-firm",
+          "title": "Accounting Firm"
+        },
+        {
+          "id": "20.0-industries-agri-equipment-rental",
+          "title": "Agri-Equipment Rental"
+        },
+        {
+          "id": "20.0-industries-beauty-parlor",
+          "title": "Beauty Parlor"
+        },
+        {
+          "id": "20.0-industries-catering",
+          "title": "Catering"
+        },
+        {
+          "id": "20.0-industries-community-care",
+          "title": "Community Care"
+        },
+        {
+          "id": "20.0-industries-construction-builder",
+          "title": "Construction Builder"
+        },
+        {
+          "id": "20.0-industries-construction-developer",
+          "title": "Construction Developer"
+        },
+        {
+          "id": "20.0-industries-custom-industrial-equipment",
+          "title": "Custom Industrial Equipment"
+        },
+        {
+          "id": "20.0-industries-deposit-module",
+          "title": "Deposit module"
+        },
+        {
+          "id": "20.0-industries-electronic-refurbishment",
+          "title": "Electronic Refurbishment"
+        },
+        {
+          "id": "20.0-industries-excise-module",
+          "title": "Excise module"
+        },
+        {
+          "id": "20.0-industries-hospitality-industries",
+          "title": "Hospitality industries"
+        },
+        {
+          "id": "20.0-industries-hotel",
+          "title": "Hotel"
+        },
+        {
+          "id": "20.0-industries-interior-design",
+          "title": "Interior Design"
+        },
+        {
+          "id": "20.0-industries-machine-and-tool-rental",
+          "title": "Machine and Tool Rental"
+        },
+        {
+          "id": "20.0-industries-mental-therapy",
+          "title": "Mental Therapy"
+        },
+        {
+          "id": "20.0-industries-nonprofit-organization",
+          "title": "Nonprofit Organization"
+        },
+        {
+          "id": "20.0-industries-pet-groomer",
+          "title": "Pet Groomer"
+        },
+        {
+          "id": "20.0-industries-physical-therapy",
+          "title": "Physical Therapy"
+        },
+        {
+          "id": "20.0-industries-property-management",
+          "title": "Property Management"
+        },
+        {
+          "id": "20.0-industries-property-owner-association",
+          "title": "Property Owner Association"
+        },
+        {
+          "id": "20.0-industries-public-institution",
+          "title": "Public Institution"
+        },
+        {
+          "id": "20.0-industries-real-estate",
+          "title": "Real Estate"
+        },
+        {
+          "id": "20.0-industries-talent-acquisition",
+          "title": "Talent Acquisition"
+        },
+        {
+          "id": "20.0-industries-vineyard",
+          "title": "Vineyard"
+        }
+      ]
+    },
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "table_of_content_heading_1_79",
+      "item_count": 45,
+      "notes": [
+        {
+          "id": "20.0-accounting-accounting-firms-mode-settings",
+          "title": "Accounting Firms mode settings"
+        },
+        {
+          "id": "20.0-accounting-analytic-distribution-for-write-offs",
+          "title": "Analytic distribution for write-offs"
+        },
+        {
+          "id": "20.0-accounting-annual-report-layout",
+          "title": "Annual report layout"
+        },
+        {
+          "id": "20.0-accounting-asset-depreciation",
+          "title": "Asset depreciation"
+        },
+        {
+          "id": "20.0-accounting-bank-consistency",
+          "title": "Bank consistency"
+        },
+        {
+          "id": "20.0-accounting-bank-reconciliation-summary-report",
+          "title": "Bank reconciliation summary report"
+        },
+        {
+          "id": "20.0-accounting-bank-synchronization-syncfy",
+          "title": "Bank synchronization: Syncfy"
+        },
+        {
+          "id": "20.0-accounting-bill-line-prediction",
+          "title": "Bill line prediction"
+        },
+        {
+          "id": "20.0-accounting-bill-options-display",
+          "title": "Bill options display"
+        },
+        {
+          "id": "20.0-accounting-bill-invoice-matching-rules",
+          "title": "Bill/invoice matching rules"
+        },
+        {
+          "id": "20.0-accounting-cash-journal-entry-hashing",
+          "title": "Cash journal entry hashing"
+        },
+        {
+          "id": "20.0-accounting-conversion-rates",
+          "title": "Conversion rates"
+        },
+        {
+          "id": "20.0-accounting-cumulative-translation-adjustment-cta",
+          "title": "Cumulative Translation Adjustment (CTA)"
+        },
+        {
+          "id": "20.0-accounting-currency-exchange-rate-providers",
+          "title": "Currency exchange rate providers"
+        },
+        {
+          "id": "20.0-accounting-customer-invoice-reminders",
+          "title": "Customer invoice reminders"
+        },
+        {
+          "id": "20.0-accounting-download-invoice-attachments",
+          "title": "Download invoice attachments"
+        },
+        {
+          "id": "20.0-accounting-employee-expenses-menu-item",
+          "title": "Employee Expenses menu item"
+        },
+        {
+          "id": "20.0-accounting-exchange-entries",
+          "title": "Exchange entries"
+        },
+        {
+          "id": "20.0-accounting-improved-duplicate-detection",
+          "title": "Improved duplicate detection"
+        },
+        {
+          "id": "20.0-accounting-intercompany-purchase-order-matching",
+          "title": "Intercompany purchase order matching"
+        },
+        {
+          "id": "20.0-accounting-intuitive-payment-status",
+          "title": "Intuitive payment status"
+        },
+        {
+          "id": "20.0-accounting-inventory-valuation",
+          "title": "Inventory valuation"
+        },
+        {
+          "id": "20.0-accounting-invoice-email-attachments",
+          "title": "Invoice email attachments"
+        },
+        {
+          "id": "20.0-accounting-manual-reconciliation",
+          "title": "Manual reconciliation"
+        },
+        {
+          "id": "20.0-accounting-multi-ledger-consolidation",
+          "title": "Multi-ledger consolidation"
+        },
+        {
+          "id": "20.0-accounting-multiple-invoice-details",
+          "title": "Multiple invoice details"
+        },
+        {
+          "id": "20.0-accounting-new-currency-caribbean-guilder",
+          "title": "New currency: Caribbean Guilder"
+        },
+        {
+          "id": "20.0-accounting-onboarding-improvements",
+          "title": "Onboarding improvements"
+        },
+        {
+          "id": "20.0-accounting-optimized-data-entry",
+          "title": "Optimized data entry"
+        },
+        {
+          "id": "20.0-accounting-pain-version-setting",
+          "title": "PAIN version setting"
+        },
+        {
+          "id": "20.0-accounting-parent-accounts",
+          "title": "Parent accounts"
+        },
+        {
+          "id": "20.0-accounting-pay-bills-from-odoo",
+          "title": "Pay bills from Odoo"
+        },
+        {
+          "id": "20.0-accounting-peppol-global-location-identifiers",
+          "title": "Peppol global location identifiers"
+        },
+        {
+          "id": "20.0-accounting-prevent-double-payments-in-the-payment-wizard",
+          "title": "Prevent double payments in the payment wizard"
+        },
+        {
+          "id": "20.0-accounting-professional-percentage-for-receipts",
+          "title": "Professional percentage for receipts"
+        },
+        {
+          "id": "20.0-accounting-purchase-order-matching",
+          "title": "Purchase order matching"
+        },
+        {
+          "id": "20.0-accounting-reconciliation-with-multiple-accounts",
+          "title": "Reconciliation with multiple accounts"
+        },
+        {
+          "id": "20.0-accounting-reminder-workflow",
+          "title": "Reminder workflow"
+        },
+        {
+          "id": "20.0-accounting-reset-to-draft-action-in-list-views",
+          "title": "Reset to Draft action in list views"
+        },
+        {
+          "id": "20.0-accounting-run-auto-reconciliation",
+          "title": "Run Auto Reconciliation"
+        },
+        {
+          "id": "20.0-accounting-simplification-of-asset-models",
+          "title": "Simplification of asset models"
+        },
+        {
+          "id": "20.0-accounting-split-items-on-invoices",
+          "title": "Split items on invoices"
+        },
+        {
+          "id": "20.0-accounting-taxes-in-fiscal-positions",
+          "title": "Taxes in fiscal positions"
+        },
+        {
+          "id": "20.0-accounting-valuation-without-inventory",
+          "title": "Valuation without Inventory"
+        },
+        {
+          "id": "20.0-accounting-withholding-tax-on-payment-improvements",
+          "title": "Withholding tax on payment improvements"
+        }
+      ]
+    },
+    {
+      "app": "Localizations",
+      "slug": "localizations",
+      "file": "localizations.md",
+      "anchor": "table_of_content_heading_1_80",
+      "item_count": 55,
+      "notes": [
+        {
+          "id": "20.0-localizations-argentina",
+          "title": "Argentina 🇦🇷"
+        },
+        {
+          "id": "20.0-localizations-armenia",
+          "title": "Armenia 🇦🇲"
+        },
+        {
+          "id": "20.0-localizations-australia",
+          "title": "Australia 🇦🇺"
+        },
+        {
+          "id": "20.0-localizations-azerbaijan",
+          "title": "Azerbaijan 🇦🇿"
+        },
+        {
+          "id": "20.0-localizations-bahrain",
+          "title": "Bahrain 🇧🇭"
+        },
+        {
+          "id": "20.0-localizations-bangladesh",
+          "title": "Bangladesh 🇧🇩"
+        },
+        {
+          "id": "20.0-localizations-belgium",
+          "title": "Belgium 🇧🇪"
+        },
+        {
+          "id": "20.0-localizations-brazil",
+          "title": "Brazil 🇧🇷"
+        },
+        {
+          "id": "20.0-localizations-canada",
+          "title": "Canada 🇨🇦"
+        },
+        {
+          "id": "20.0-localizations-chile",
+          "title": "Chile 🇨🇱"
+        },
+        {
+          "id": "20.0-localizations-china",
+          "title": "China 🇨🇳"
+        },
+        {
+          "id": "20.0-localizations-colombia",
+          "title": "Colombia 🇨🇴"
+        },
+        {
+          "id": "20.0-localizations-dominican-republic",
+          "title": "Dominican Republic 🇩🇴"
+        },
+        {
+          "id": "20.0-localizations-ecuador",
+          "title": "Ecuador 🇪🇨"
+        },
+        {
+          "id": "20.0-localizations-egypt",
+          "title": "Egypt 🇪🇬"
+        },
+        {
+          "id": "20.0-localizations-france",
+          "title": "France 🇫🇷"
+        },
+        {
+          "id": "20.0-localizations-georgia",
+          "title": "Georgia 🇬🇪"
+        },
+        {
+          "id": "20.0-localizations-guatemala",
+          "title": "Guatemala 🇬🇹"
+        },
+        {
+          "id": "20.0-localizations-hong-kong",
+          "title": "Hong Kong 🇭🇰"
+        },
+        {
+          "id": "20.0-localizations-hungary",
+          "title": "Hungary 🇭🇺"
+        },
+        {
+          "id": "20.0-localizations-india",
+          "title": "India 🇮🇳"
+        },
+        {
+          "id": "20.0-localizations-indonesia",
+          "title": "Indonesia 🇮🇩"
+        },
+        {
+          "id": "20.0-localizations-iraq",
+          "title": "Iraq 🇮🇶"
+        },
+        {
+          "id": "20.0-localizations-italy",
+          "title": "Italy 🇮🇹"
+        },
+        {
+          "id": "20.0-localizations-japan",
+          "title": "Japan 🇯🇵"
+        },
+        {
+          "id": "20.0-localizations-jordan",
+          "title": "Jordan 🇯🇴"
+        },
+        {
+          "id": "20.0-localizations-kazakhstan",
+          "title": "Kazakhstan 🇰🇿"
+        },
+        {
+          "id": "20.0-localizations-korea",
+          "title": "Korea 🇰🇷"
+        },
+        {
+          "id": "20.0-localizations-kuwait",
+          "title": "Kuwait 🇰🇼"
+        },
+        {
+          "id": "20.0-localizations-kyrgyzstan",
+          "title": "Kyrgyzstan 🇰🇬"
+        },
+        {
+          "id": "20.0-localizations-lebanon",
+          "title": "Lebanon 🇱🇧"
+        },
+        {
+          "id": "20.0-localizations-lithuania",
+          "title": "Lithuania 🇱🇹"
+        },
+        {
+          "id": "20.0-localizations-luxembourg",
+          "title": "Luxembourg 🇱🇺"
+        },
+        {
+          "id": "20.0-localizations-malaysia",
+          "title": "Malaysia 🇲🇾"
+        },
+        {
+          "id": "20.0-localizations-mexico",
+          "title": "Mexico 🇲🇽"
+        },
+        {
+          "id": "20.0-localizations-oman",
+          "title": "Oman 🇴🇲"
+        },
+        {
+          "id": "20.0-localizations-pakistan",
+          "title": "Pakistan 🇵🇰"
+        },
+        {
+          "id": "20.0-localizations-peru",
+          "title": "Peru 🇵🇪"
+        },
+        {
+          "id": "20.0-localizations-philippines",
+          "title": "Philippines 🇵🇭"
+        },
+        {
+          "id": "20.0-localizations-qatar",
+          "title": "Qatar 🇶🇦"
+        },
+        {
+          "id": "20.0-localizations-romania",
+          "title": "Romania 🇷🇴"
+        },
+        {
+          "id": "20.0-localizations-saudi-arabia",
+          "title": "Saudi Arabia 🇸🇦"
+        },
+        {
+          "id": "20.0-localizations-singapore",
+          "title": "Singapore 🇸🇬"
+        },
+        {
+          "id": "20.0-localizations-sri-lanka",
+          "title": "Sri Lanka 🇱🇰"
+        },
+        {
+          "id": "20.0-localizations-taiwan",
+          "title": "Taiwan 🇹🇼"
+        },
+        {
+          "id": "20.0-localizations-tajikistan",
+          "title": "Tajikistan 🇹🇯"
+        },
+        {
+          "id": "20.0-localizations-thailand",
+          "title": "Thailand 🇹🇭"
+        },
+        {
+          "id": "20.0-localizations-turkiye",
+          "title": "Türkiye 🇹🇷"
+        },
+        {
+          "id": "20.0-localizations-turkmenistan",
+          "title": "Turkmenistan 🇹🇲"
+        },
+        {
+          "id": "20.0-localizations-united-arab-emirates",
+          "title": "United Arab Emirates 🇦🇪"
+        },
+        {
+          "id": "20.0-localizations-united-kingdom",
+          "title": "United Kingdom 🇬🇧"
+        },
+        {
+          "id": "20.0-localizations-united-states-of-america",
+          "title": "United States of America 🇺🇸"
+        },
+        {
+          "id": "20.0-localizations-uruguay",
+          "title": "Uruguay 🇺🇾"
+        },
+        {
+          "id": "20.0-localizations-uzbekistan",
+          "title": "Uzbekistan 🇺🇿"
+        },
+        {
+          "id": "20.0-localizations-vietnam",
+          "title": "Vietnam 🇻🇳"
+        }
+      ]
+    },
+    {
+      "app": "AI",
+      "slug": "ai",
+      "file": "ai.md",
+      "anchor": "table_of_content_heading_1_81",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "20.0-ai-iap-credits-required",
+          "title": "IAP credits required"
+        },
+        {
+          "id": "20.0-ai-agentic-automation",
+          "title": "Agentic automation"
+        },
+        {
+          "id": "20.0-ai-ai-agents-ask-questions-about-a-file",
+          "title": "AI agents: ask questions about a file"
+        },
+        {
+          "id": "20.0-ai-ai-agents-create-records",
+          "title": "AI agents: create records"
+        },
+        {
+          "id": "20.0-ai-ai-agents-feedback",
+          "title": "AI agents: feedback"
+        },
+        {
+          "id": "20.0-ai-ai-agents-filter-by-time-period",
+          "title": "AI agents: filter by time period"
+        },
+        {
+          "id": "20.0-ai-ai-agents-image-generation",
+          "title": "AI agents: image generation"
+        },
+        {
+          "id": "20.0-ai-ai-agents-reprocess-sources",
+          "title": "AI agents: reprocess sources"
+        },
+        {
+          "id": "20.0-ai-ai-agents-send-files",
+          "title": "AI agents: send files"
+        },
+        {
+          "id": "20.0-ai-ai-agents-update-records",
+          "title": "AI agents: update records"
+        },
+        {
+          "id": "20.0-ai-ai-chat-request-options",
+          "title": "AI chat request options"
+        },
+        {
+          "id": "20.0-ai-automatic-ai-model-selection",
+          "title": "Automatic AI model selection"
+        },
+        {
+          "id": "20.0-ai-connect-odoo-to-anything",
+          "title": "Connect Odoo to anything"
+        },
+        {
+          "id": "20.0-ai-default-prompts",
+          "title": "Default prompts"
+        },
+        {
+          "id": "20.0-ai-interactive-agent-responses",
+          "title": "Interactive agent responses"
+        },
+        {
+          "id": "20.0-ai-preview-cards-in-live-chat",
+          "title": "Preview cards in live chat"
+        },
+        {
+          "id": "20.0-ai-stored-conversations",
+          "title": "Stored conversations"
+        },
+        {
+          "id": "20.0-ai-tool-call-limit-confirmation",
+          "title": "Tool call limit confirmation"
+        },
+        {
+          "id": "20.0-ai-topics-renamed-to-skills",
+          "title": "Topics renamed to skills"
+        },
+        {
+          "id": "20.0-ai-voice-interaction",
+          "title": "Voice interaction"
+        }
+      ]
+    },
+    {
+      "app": "Appointments",
+      "slug": "appointments",
+      "file": "appointments.md",
+      "anchor": "table_of_content_heading_1_82",
+      "item_count": 19,
+      "notes": [
+        {
+          "id": "20.0-appointments-accessory-products-for-appointments",
+          "title": "Accessory products for appointments"
+        },
+        {
+          "id": "20.0-appointments-appointment-booking-flow",
+          "title": "Appointment booking flow"
+        },
+        {
+          "id": "20.0-appointments-appointment-names",
+          "title": "Appointment names"
+        },
+        {
+          "id": "20.0-appointments-appointment-page-design",
+          "title": "Appointment page design"
+        },
+        {
+          "id": "20.0-appointments-appointment-rescheduling",
+          "title": "Appointment rescheduling"
+        },
+        {
+          "id": "20.0-appointments-appointments-calendar-view",
+          "title": "Appointments calendar view"
+        },
+        {
+          "id": "20.0-appointments-attendance-at-a-glance",
+          "title": "Attendance at a glance"
+        },
+        {
+          "id": "20.0-appointments-automatic-resource-assignment",
+          "title": "Automatic resource assignment"
+        },
+        {
+          "id": "20.0-appointments-availability-display",
+          "title": "Availability display"
+        },
+        {
+          "id": "20.0-appointments-booking-capacity-control",
+          "title": "Booking capacity control"
+        },
+        {
+          "id": "20.0-appointments-booking-shortcuts",
+          "title": "Booking shortcuts"
+        },
+        {
+          "id": "20.0-appointments-closed-days-management",
+          "title": "Closed days management"
+        },
+        {
+          "id": "20.0-appointments-consistent-booking-page-design",
+          "title": "Consistent booking page design"
+        },
+        {
+          "id": "20.0-appointments-customer-feedback",
+          "title": "Customer feedback"
+        },
+        {
+          "id": "20.0-appointments-default-party-size",
+          "title": "Default party size"
+        },
+        {
+          "id": "20.0-appointments-maximum-capacity-override",
+          "title": "Maximum capacity override"
+        },
+        {
+          "id": "20.0-appointments-performance-improvements",
+          "title": "Performance improvements"
+        },
+        {
+          "id": "20.0-appointments-web-page-redesign",
+          "title": "Web page redesign"
+        },
+        {
+          "id": "20.0-appointments-website-editor-blocks",
+          "title": "Website editor blocks"
+        }
+      ]
+    },
+    {
+      "app": "Appraisals",
+      "slug": "appraisals",
+      "file": "appraisals.md",
+      "anchor": "table_of_content_heading_1_83",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-appraisals-bulk-actions",
+          "title": "Bulk actions"
+        },
+        {
+          "id": "20.0-appraisals-external-360-feedbacks",
+          "title": "External 360 feedbacks"
+        },
+        {
+          "id": "20.0-appraisals-next-appraisal-date",
+          "title": "Next appraisal date"
+        },
+        {
+          "id": "20.0-appraisals-parent-goal-progression",
+          "title": "Parent goal progression"
+        },
+        {
+          "id": "20.0-appraisals-smart-template-selection",
+          "title": "Smart template selection"
+        }
+      ]
+    },
+    {
+      "app": "Attendances",
+      "slug": "attendances",
+      "file": "attendances.md",
+      "anchor": "table_of_content_heading_1_84",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "20.0-attendances-automatic-check-out-time",
+          "title": "Automatic check-out time"
+        },
+        {
+          "id": "20.0-attendances-color-coded-indicators-in-gantt-view",
+          "title": "Color-coded indicators in Gantt view"
+        },
+        {
+          "id": "20.0-attendances-essl-and-mantra-integration",
+          "title": "eSSL and Mantra integration"
+        },
+        {
+          "id": "20.0-attendances-overtime-analysis-report",
+          "title": "Overtime analysis report"
+        },
+        {
+          "id": "20.0-attendances-overtime-rulesets",
+          "title": "Overtime rulesets"
+        },
+        {
+          "id": "20.0-attendances-photo-at-check-in",
+          "title": "Photo at check-in"
+        },
+        {
+          "id": "20.0-attendances-prevent-app-use",
+          "title": "Prevent app use"
+        },
+        {
+          "id": "20.0-attendances-public-holiday-option-ruleset",
+          "title": "Public holiday option ruleset"
+        },
+        {
+          "id": "20.0-attendances-single-check-in-mode",
+          "title": "Single check-in mode"
+        },
+        {
+          "id": "20.0-attendances-time-based-filters",
+          "title": "Time-based filters"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "table_of_content_heading_1_85",
+      "item_count": 12,
+      "notes": [
+        {
+          "id": "20.0-barcode-backorders",
+          "title": "Backorders"
+        },
+        {
+          "id": "20.0-barcode-barcode-product-creation",
+          "title": "Barcode product creation"
+        },
+        {
+          "id": "20.0-barcode-batch-receipts",
+          "title": "Batch receipts"
+        },
+        {
+          "id": "20.0-barcode-bulk-lot-serial-number-generation",
+          "title": "Bulk lot/serial number generation"
+        },
+        {
+          "id": "20.0-barcode-fixed-button-positions",
+          "title": "Fixed button positions"
+        },
+        {
+          "id": "20.0-barcode-inventory-count",
+          "title": "Inventory count"
+        },
+        {
+          "id": "20.0-barcode-light-users",
+          "title": "Light users"
+        },
+        {
+          "id": "20.0-barcode-manual-entry",
+          "title": "Manual entry"
+        },
+        {
+          "id": "20.0-barcode-manufacturing-operations",
+          "title": "Manufacturing operations"
+        },
+        {
+          "id": "20.0-barcode-mobile-user-login-button",
+          "title": "Mobile: user login button"
+        },
+        {
+          "id": "20.0-barcode-packages-pre-encoded-contents",
+          "title": "Packages: pre-encoded contents"
+        },
+        {
+          "id": "20.0-barcode-packages-untracked-goods",
+          "title": "Packages: untracked goods"
+        }
+      ]
+    },
+    {
+      "app": "Blog",
+      "slug": "blog",
+      "file": "blog.md",
+      "anchor": "table_of_content_heading_1_86",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-blog-blog-module-redesign",
+          "title": "Blog module redesign"
+        },
+        {
+          "id": "20.0-blog-recommended-post",
+          "title": "Recommended post"
+        },
+        {
+          "id": "20.0-blog-scheduled-blog-posts",
+          "title": "Scheduled blog posts"
+        }
+      ]
+    },
+    {
+      "app": "Calendar",
+      "slug": "calendar",
+      "file": "calendar.md",
+      "anchor": "table_of_content_heading_1_87",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "20.0-calendar-booking-pages",
+          "title": "Booking Pages"
+        },
+        {
+          "id": "20.0-calendar-google-and-outlook-synchronization",
+          "title": "Google and Outlook synchronization"
+        },
+        {
+          "id": "20.0-calendar-google-calendar-sync",
+          "title": "Google Calendar sync"
+        },
+        {
+          "id": "20.0-calendar-linked-records",
+          "title": "Linked records"
+        },
+        {
+          "id": "20.0-calendar-manage-pending-activities",
+          "title": "Manage pending activities"
+        },
+        {
+          "id": "20.0-calendar-meeting-title-time-detection",
+          "title": "Meeting title time detection"
+        },
+        {
+          "id": "20.0-calendar-mobile-calendar-redesign",
+          "title": "Mobile calendar redesign"
+        },
+        {
+          "id": "20.0-calendar-multiple-calendars-in-one-place",
+          "title": "Multiple calendars in one place"
+        },
+        {
+          "id": "20.0-calendar-sync-multiple-google-calendars",
+          "title": "Sync multiple Google calendars"
+        },
+        {
+          "id": "20.0-calendar-view-other-people-s-calendars",
+          "title": "View other people's calendars"
+        }
+      ]
+    },
+    {
+      "app": "Contacts",
+      "slug": "contacts",
+      "file": "contacts.md",
+      "anchor": "table_of_content_heading_1_88",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "20.0-contacts-contact-enrichment",
+          "title": "Contact enrichment"
+        },
+        {
+          "id": "20.0-contacts-hierarchical-view",
+          "title": "Hierarchical view"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "table_of_content_heading_1_89",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-crm-hidden-address-info",
+          "title": "Hidden address info"
+        },
+        {
+          "id": "20.0-crm-lead-distribution",
+          "title": "Lead distribution"
+        },
+        {
+          "id": "20.0-crm-lead-generation",
+          "title": "Lead generation"
+        },
+        {
+          "id": "20.0-crm-pipeline-switcher",
+          "title": "Pipeline switcher"
+        },
+        {
+          "id": "20.0-crm-upsells-from-lead",
+          "title": "Upsells from lead"
+        }
+      ]
+    },
+    {
+      "app": "Dashboards",
+      "slug": "dashboards",
+      "file": "dashboards.md",
+      "anchor": "table_of_content_heading_1_90",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "20.0-dashboards-billing-targets-vs-billable-time",
+          "title": "Billing targets vs billable time"
+        },
+        {
+          "id": "20.0-dashboards-carousel-data-layer",
+          "title": "Carousel data layer"
+        },
+        {
+          "id": "20.0-dashboards-favorite-filters",
+          "title": "Favorite filters"
+        },
+        {
+          "id": "20.0-dashboards-fiscal-year-date-filter",
+          "title": "Fiscal year date filter"
+        },
+        {
+          "id": "20.0-dashboards-frozen-share-links",
+          "title": "Frozen share links"
+        },
+        {
+          "id": "20.0-dashboards-private-dashboards",
+          "title": "Private dashboards"
+        },
+        {
+          "id": "20.0-dashboards-region-selector-for-geo-charts",
+          "title": "Region selector for geo charts"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "table_of_content_heading_1_91",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "20.0-discuss-on-a-call-status",
+          "title": "\"On a call\" status"
+        },
+        {
+          "id": "20.0-discuss-call-transcripts",
+          "title": "Call transcripts"
+        },
+        {
+          "id": "20.0-discuss-channel-categories",
+          "title": "Channel categories"
+        },
+        {
+          "id": "20.0-discuss-favorite-channels",
+          "title": "Favorite channels"
+        },
+        {
+          "id": "20.0-discuss-mark-notifications-as-unread",
+          "title": "Mark notifications as unread"
+        },
+        {
+          "id": "20.0-discuss-polls",
+          "title": "Polls"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "table_of_content_heading_1_92",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "20.0-documents-access-right-management",
+          "title": "Access right management"
+        },
+        {
+          "id": "20.0-documents-auto-sort-fleet-documents",
+          "title": "Auto-sort fleet documents"
+        },
+        {
+          "id": "20.0-documents-bank-statement-attachments",
+          "title": "Bank statement attachments"
+        },
+        {
+          "id": "20.0-documents-branch-management",
+          "title": "Branch management"
+        },
+        {
+          "id": "20.0-documents-document-request-upload-notification",
+          "title": "Document request upload notification"
+        },
+        {
+          "id": "20.0-documents-employee-documents",
+          "title": "Employee documents"
+        },
+        {
+          "id": "20.0-documents-markdown-previews-and-thumbnails",
+          "title": "Markdown previews and thumbnails"
+        },
+        {
+          "id": "20.0-documents-multi-file-document-request",
+          "title": "Multi-file document request"
+        },
+        {
+          "id": "20.0-documents-rename-files-with-ai",
+          "title": "Rename files with AI"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "table_of_content_heading_1_93",
+      "item_count": 38,
+      "notes": [
+        {
+          "id": "20.0-ecommerce-ai-assisted-product-editing",
+          "title": "AI-assisted product editing"
+        },
+        {
+          "id": "20.0-ecommerce-attribute-filters",
+          "title": "Attribute filters"
+        },
+        {
+          "id": "20.0-ecommerce-automated-cross-sell-suggestions",
+          "title": "Automated cross-sell suggestions"
+        },
+        {
+          "id": "20.0-ecommerce-automated-review-requests",
+          "title": "Automated review requests"
+        },
+        {
+          "id": "20.0-ecommerce-default-journal-for-ecommerce-orders",
+          "title": "Default journal for eCommerce orders"
+        },
+        {
+          "id": "20.0-ecommerce-donations",
+          "title": "Donations"
+        },
+        {
+          "id": "20.0-ecommerce-dynamic-product-building-block",
+          "title": "Dynamic product building block"
+        },
+        {
+          "id": "20.0-ecommerce-email-gift-card-directly-to-recipient",
+          "title": "Email gift card directly to recipient"
+        },
+        {
+          "id": "20.0-ecommerce-external-identifiers",
+          "title": "External identifiers"
+        },
+        {
+          "id": "20.0-ecommerce-extra-step-granularity",
+          "title": "Extra step granularity"
+        },
+        {
+          "id": "20.0-ecommerce-gelato-variant-images",
+          "title": "Gelato: variant images"
+        },
+        {
+          "id": "20.0-ecommerce-google-analytics-events",
+          "title": "Google Analytics events"
+        },
+        {
+          "id": "20.0-ecommerce-guest-orders-contact-creation",
+          "title": "Guest orders: contact creation"
+        },
+        {
+          "id": "20.0-ecommerce-location-selector-country-filter",
+          "title": "Location selector: country filter"
+        },
+        {
+          "id": "20.0-ecommerce-loyalty-progress-bar",
+          "title": "Loyalty progress bar"
+        },
+        {
+          "id": "20.0-ecommerce-minimum-product-quantity",
+          "title": "Minimum product quantity"
+        },
+        {
+          "id": "20.0-ecommerce-mondial-relay-handled-via-sendcloud",
+          "title": "Mondial Relay handled via Sendcloud"
+        },
+        {
+          "id": "20.0-ecommerce-open-attribute-value-on-search",
+          "title": "Open attribute value on search"
+        },
+        {
+          "id": "20.0-ecommerce-order-dashboard",
+          "title": "Order dashboard"
+        },
+        {
+          "id": "20.0-ecommerce-pay-now-button",
+          "title": "Pay Now button"
+        },
+        {
+          "id": "20.0-ecommerce-preferred-delivery-date",
+          "title": "Preferred delivery date"
+        },
+        {
+          "id": "20.0-ecommerce-prevent-sales-by-category",
+          "title": "Prevent sales by category"
+        },
+        {
+          "id": "20.0-ecommerce-pricelist-selector",
+          "title": "Pricelist selector"
+        },
+        {
+          "id": "20.0-ecommerce-product-reference-price",
+          "title": "Product reference price"
+        },
+        {
+          "id": "20.0-ecommerce-product-features",
+          "title": "Product features"
+        },
+        {
+          "id": "20.0-ecommerce-product-variant-thumbnails",
+          "title": "Product variant thumbnails"
+        },
+        {
+          "id": "20.0-ecommerce-products-grid-building-block",
+          "title": "Products grid building block"
+        },
+        {
+          "id": "20.0-ecommerce-range-filter-for-attribute-values",
+          "title": "Range filter for attribute values"
+        },
+        {
+          "id": "20.0-ecommerce-restrict-packagings-per-website",
+          "title": "Restrict packagings per website"
+        },
+        {
+          "id": "20.0-ecommerce-return-management",
+          "title": "Return management"
+        },
+        {
+          "id": "20.0-ecommerce-ribbon-filters",
+          "title": "Ribbon filters"
+        },
+        {
+          "id": "20.0-ecommerce-simplified-inventory-management",
+          "title": "Simplified inventory management"
+        },
+        {
+          "id": "20.0-ecommerce-standalone-categories",
+          "title": "Standalone categories"
+        },
+        {
+          "id": "20.0-ecommerce-stock-based-product-publishing",
+          "title": "Stock-based product publishing"
+        },
+        {
+          "id": "20.0-ecommerce-taxes-included-excluded-price-display",
+          "title": "Taxes included/excluded price display"
+        },
+        {
+          "id": "20.0-ecommerce-variant-image-management",
+          "title": "Variant image management"
+        },
+        {
+          "id": "20.0-ecommerce-whatsapp-abandoned-cart-follow-up",
+          "title": "WhatsApp abandoned cart follow-up"
+        },
+        {
+          "id": "20.0-ecommerce-withdrawal-requests",
+          "title": "Withdrawal requests"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "table_of_content_heading_1_94",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-elearning-course-access-from-portal",
+          "title": "Course access from portal"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "table_of_content_heading_1_95",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "20.0-email-marketing-click-tracking",
+          "title": "Click tracking"
+        },
+        {
+          "id": "20.0-email-marketing-conditional-content",
+          "title": "Conditional content"
+        },
+        {
+          "id": "20.0-email-marketing-contact-management",
+          "title": "Contact management"
+        },
+        {
+          "id": "20.0-email-marketing-dynamic-mailing-lists",
+          "title": "Dynamic mailing lists"
+        },
+        {
+          "id": "20.0-email-marketing-employee-supplier-mailings",
+          "title": "Employee/supplier mailings"
+        },
+        {
+          "id": "20.0-email-marketing-favorite-blocks",
+          "title": "Favorite blocks"
+        },
+        {
+          "id": "20.0-email-marketing-full-screen-editing",
+          "title": "Full-screen editing"
+        },
+        {
+          "id": "20.0-email-marketing-link-tracking",
+          "title": "Link tracking"
+        },
+        {
+          "id": "20.0-email-marketing-mailing-template-library",
+          "title": "Mailing template library"
+        },
+        {
+          "id": "20.0-email-marketing-new-fonts",
+          "title": "New fonts"
+        },
+        {
+          "id": "20.0-email-marketing-new-templates-and-blocks",
+          "title": "New templates and blocks"
+        },
+        {
+          "id": "20.0-email-marketing-product-and-event-snippets",
+          "title": "Product and event snippets"
+        },
+        {
+          "id": "20.0-email-marketing-social-media-accounts",
+          "title": "Social media accounts"
+        },
+        {
+          "id": "20.0-email-marketing-utm-reference",
+          "title": "UTM reference"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "table_of_content_heading_1_96",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-employees-employee-directory",
+          "title": "Employee directory"
+        },
+        {
+          "id": "20.0-employees-salary-simulation",
+          "title": "Salary simulation"
+        },
+        {
+          "id": "20.0-employees-remote-work",
+          "title": "Remote Work"
+        },
+        {
+          "id": "20.0-employees-single-signer-hr-documents",
+          "title": "Single-signer HR documents"
+        },
+        {
+          "id": "20.0-employees-variable-working-schedule",
+          "title": "Variable working schedule"
+        }
+      ]
+    },
+    {
+      "app": "ESG",
+      "slug": "esg",
+      "file": "esg.md",
+      "anchor": "table_of_content_heading_1_97",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-esg-assign-emission-factors-with-ai",
+          "title": "Assign emission factors with AI"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "table_of_content_heading_1_98",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-events-event-combos",
+          "title": "Event combos"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "table_of_content_heading_1_99",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-expenses-consolidated-expenses-report",
+          "title": "Consolidated expenses report"
+        },
+        {
+          "id": "20.0-expenses-expense-limits-per-job-position",
+          "title": "Expense limits per job position"
+        },
+        {
+          "id": "20.0-expenses-salary-rules-for-expense-products",
+          "title": "Salary rules for expense products"
+        }
+      ]
+    },
+    {
+      "app": "Field Service",
+      "slug": "field-service",
+      "file": "field-service.md",
+      "anchor": "table_of_content_heading_1_100",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-field-service-field-service-merged-into-planning",
+          "title": "Field Service merged into Planning"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "table_of_content_heading_1_101",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-fleet-driver-assignment",
+          "title": "Driver assignment"
+        }
+      ]
+    },
+    {
+      "app": "Frontdesk",
+      "slug": "frontdesk",
+      "file": "frontdesk.md",
+      "anchor": "table_of_content_heading_1_102",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-frontdesk-member-entry-management",
+          "title": "Member entry management"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "table_of_content_heading_1_103",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-helpdesk-filter-unanswered-tickets",
+          "title": "Filter unanswered tickets"
+        },
+        {
+          "id": "20.0-helpdesk-reminder-email-before-auto-closing-tickets",
+          "title": "Reminder email before auto-closing tickets"
+        },
+        {
+          "id": "20.0-helpdesk-similar-ticket-detection",
+          "title": "Similar ticket detection"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "table_of_content_heading_1_104",
+      "item_count": 22,
+      "notes": [
+        {
+          "id": "20.0-inventory-allocation-report",
+          "title": "Allocation report"
+        },
+        {
+          "id": "20.0-inventory-cmr-document",
+          "title": "CMR document"
+        },
+        {
+          "id": "20.0-inventory-company-specific-customer-lead-times",
+          "title": "Company-specific customer lead times"
+        },
+        {
+          "id": "20.0-inventory-intercompany-flows",
+          "title": "Intercompany flows"
+        },
+        {
+          "id": "20.0-inventory-inventory-at-a-past-date",
+          "title": "Inventory at a past date"
+        },
+        {
+          "id": "20.0-inventory-inventory-valuation-cogs-update",
+          "title": "Inventory valuation: COGS update"
+        },
+        {
+          "id": "20.0-inventory-landed-costs-for-specific-products",
+          "title": "Landed costs for specific products"
+        },
+        {
+          "id": "20.0-inventory-location-specific-push-routes",
+          "title": "Location-specific push routes"
+        },
+        {
+          "id": "20.0-inventory-picking-notifications",
+          "title": "Picking notifications"
+        },
+        {
+          "id": "20.0-inventory-preview-barcode-instructions-in-operation-type",
+          "title": "Preview Barcode instructions in operation type"
+        },
+        {
+          "id": "20.0-inventory-product-packaging-barcodes",
+          "title": "Product packaging barcodes"
+        },
+        {
+          "id": "20.0-inventory-product-replenishment",
+          "title": "Product replenishment"
+        },
+        {
+          "id": "20.0-inventory-sendcloud-package-reference",
+          "title": "Sendcloud: package reference"
+        },
+        {
+          "id": "20.0-inventory-sendcloud-pickup-points",
+          "title": "Sendcloud: pickup points"
+        },
+        {
+          "id": "20.0-inventory-simplified-returns",
+          "title": "Simplified returns"
+        },
+        {
+          "id": "20.0-inventory-stock-aging-report",
+          "title": "Stock aging report"
+        },
+        {
+          "id": "20.0-inventory-suggested-stock-levels-for-reordering-rules",
+          "title": "Suggested stock levels for reordering rules"
+        },
+        {
+          "id": "20.0-inventory-traceability-report",
+          "title": "Traceability Report"
+        },
+        {
+          "id": "20.0-inventory-variant-specific-hs-codes",
+          "title": "Variant-specific HS codes"
+        },
+        {
+          "id": "20.0-inventory-variant-specific-packagings",
+          "title": "Variant-specific packagings"
+        },
+        {
+          "id": "20.0-inventory-vendor-purchase-reference",
+          "title": "Vendor purchase reference"
+        },
+        {
+          "id": "20.0-inventory-zpl-location-barcodes",
+          "title": "ZPL location barcodes"
+        }
+      ]
+    },
+    {
+      "app": "Knowledge",
+      "slug": "knowledge",
+      "file": "knowledge.md",
+      "anchor": "table_of_content_heading_1_105",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-knowledge-article-settings-quick-access",
+          "title": "Article settings quick access"
+        }
+      ]
+    },
+    {
+      "app": "Live Chat",
+      "slug": "live-chat",
+      "file": "live-chat.md",
+      "anchor": "table_of_content_heading_1_106",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-live-chat-connect-social-media-messaging",
+          "title": "Connect social media messaging"
+        }
+      ]
+    },
+    {
+      "app": "Maintenance",
+      "slug": "maintenance",
+      "file": "maintenance.md",
+      "anchor": "table_of_content_heading_1_107",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-maintenance-maintenance-requests-gantt-views",
+          "title": "Maintenance requests: Gantt views"
+        },
+        {
+          "id": "20.0-maintenance-maintenance-teams-on-stages",
+          "title": "Maintenance teams on stages"
+        },
+        {
+          "id": "20.0-maintenance-ux-improvements",
+          "title": "UX improvements"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "table_of_content_heading_1_108",
+      "item_count": 24,
+      "notes": [
+        {
+          "id": "20.0-manufacturing-backorder-planning",
+          "title": "Backorder planning"
+        },
+        {
+          "id": "20.0-manufacturing-bill-of-materials",
+          "title": "Bill of materials"
+        },
+        {
+          "id": "20.0-manufacturing-component-replacement",
+          "title": "Component replacement"
+        },
+        {
+          "id": "20.0-manufacturing-continuous-production",
+          "title": "Continuous production"
+        },
+        {
+          "id": "20.0-manufacturing-draft-versus-confirmed-manufacturing-orders",
+          "title": "Draft versus confirmed manufacturing orders"
+        },
+        {
+          "id": "20.0-manufacturing-flexible-consumption",
+          "title": "Flexible consumption"
+        },
+        {
+          "id": "20.0-manufacturing-generate-lots-and-serials-when-closing-manufacturing-orders",
+          "title": "Generate lots and serials when closing manufacturing orders"
+        },
+        {
+          "id": "20.0-manufacturing-lot-serial-number-transfers",
+          "title": "Lot/serial number transfers"
+        },
+        {
+          "id": "20.0-manufacturing-manufacturing-order-kanban-view",
+          "title": "Manufacturing order Kanban view"
+        },
+        {
+          "id": "20.0-manufacturing-manufacturing-orders-planned-asap",
+          "title": "Manufacturing orders planned ASAP"
+        },
+        {
+          "id": "20.0-manufacturing-mo-cost",
+          "title": "MO cost"
+        },
+        {
+          "id": "20.0-manufacturing-produce-button",
+          "title": "Produce button"
+        },
+        {
+          "id": "20.0-manufacturing-put-in-pack-from-mo",
+          "title": "Put in pack from MO"
+        },
+        {
+          "id": "20.0-manufacturing-reset-mo-to-draft",
+          "title": "Reset MO to draft"
+        },
+        {
+          "id": "20.0-manufacturing-shop-floor-demo-sheet",
+          "title": "Shop Floor demo sheet"
+        },
+        {
+          "id": "20.0-manufacturing-split-manufacturing-orders",
+          "title": "Split manufacturing orders"
+        },
+        {
+          "id": "20.0-manufacturing-subcontracting-reception-valuation",
+          "title": "Subcontracting reception valuation"
+        },
+        {
+          "id": "20.0-manufacturing-to-replenish-filter",
+          "title": "To Replenish filter"
+        },
+        {
+          "id": "20.0-manufacturing-traceability-report-expiration-dates",
+          "title": "Traceability report expiration dates"
+        },
+        {
+          "id": "20.0-manufacturing-visualize-and-confirm-work-orders",
+          "title": "Visualize and confirm work orders"
+        },
+        {
+          "id": "20.0-manufacturing-work-and-manufacturing-order-reporting",
+          "title": "Work and manufacturing order reporting"
+        },
+        {
+          "id": "20.0-manufacturing-work-order-views",
+          "title": "Work order views"
+        },
+        {
+          "id": "20.0-manufacturing-work-center-overview",
+          "title": "Work center overview"
+        },
+        {
+          "id": "20.0-manufacturing-work-orders-in-blocked-work-centers",
+          "title": "Work orders in blocked work centers"
+        }
+      ]
+    },
+    {
+      "app": "Marketing Automation",
+      "slug": "marketing-automation",
+      "file": "marketing-automation.md",
+      "anchor": "table_of_content_heading_1_109",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "20.0-marketing-automation-ai-assisted-campaign-creation",
+          "title": "AI-assisted campaign creation"
+        },
+        {
+          "id": "20.0-marketing-automation-event-based-triggers",
+          "title": "Event-based triggers"
+        },
+        {
+          "id": "20.0-marketing-automation-mailing-template-library",
+          "title": "Mailing template library"
+        },
+        {
+          "id": "20.0-marketing-automation-new-triggers-and-actions",
+          "title": "New triggers and actions"
+        },
+        {
+          "id": "20.0-marketing-automation-webhook-integration",
+          "title": "Webhook integration"
+        },
+        {
+          "id": "20.0-marketing-automation-workflow-builder",
+          "title": "Workflow builder"
+        }
+      ]
+    },
+    {
+      "app": "Marketing Card",
+      "slug": "marketing-card",
+      "file": "marketing-card.md",
+      "anchor": "table_of_content_heading_1_110",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-marketing-card-default-target-urls",
+          "title": "Default target URLs"
+        },
+        {
+          "id": "20.0-marketing-card-event-app-integration",
+          "title": "Event app integration"
+        },
+        {
+          "id": "20.0-marketing-card-language-support",
+          "title": "Language support"
+        }
+      ]
+    },
+    {
+      "app": "Online Payments",
+      "slug": "online-payments",
+      "file": "online-payments.md",
+      "anchor": "table_of_content_heading_1_111",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "20.0-online-payments-ach-payments",
+          "title": "ACH payments"
+        },
+        {
+          "id": "20.0-online-payments-authorize-net",
+          "title": "Authorize.net"
+        },
+        {
+          "id": "20.0-online-payments-ecpay",
+          "title": "ECPay"
+        },
+        {
+          "id": "20.0-online-payments-mollie",
+          "title": "Mollie"
+        },
+        {
+          "id": "20.0-online-payments-pay-on-invoice-provider",
+          "title": "Pay on Invoice provider"
+        },
+        {
+          "id": "20.0-online-payments-payment-provider-views",
+          "title": "Payment provider views"
+        },
+        {
+          "id": "20.0-online-payments-paypal",
+          "title": "PayPal"
+        },
+        {
+          "id": "20.0-online-payments-payu",
+          "title": "PayU"
+        },
+        {
+          "id": "20.0-online-payments-pricelist-and-amount-restriction",
+          "title": "Pricelist and amount restriction"
+        },
+        {
+          "id": "20.0-online-payments-redsys",
+          "title": "Redsys"
+        },
+        {
+          "id": "20.0-online-payments-sofort",
+          "title": "SOFORT"
+        },
+        {
+          "id": "20.0-online-payments-stripe",
+          "title": "Stripe"
+        },
+        {
+          "id": "20.0-online-payments-toss-payments",
+          "title": "Toss Payments"
+        },
+        {
+          "id": "20.0-online-payments-wero",
+          "title": "Wero"
+        },
+        {
+          "id": "20.0-online-payments-wire-transfers",
+          "title": "Wire transfers"
+        },
+        {
+          "id": "20.0-online-payments-xendit",
+          "title": "Xendit"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "table_of_content_heading_1_112",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "20.0-payroll-chatter-on-pay-runs",
+          "title": "Chatter on pay runs"
+        },
+        {
+          "id": "20.0-payroll-contract-date-modification",
+          "title": "Contract date modification"
+        },
+        {
+          "id": "20.0-payroll-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "20.0-payroll-driver-assignment",
+          "title": "Driver assignment"
+        },
+        {
+          "id": "20.0-payroll-employee-type-per-company-or-branch",
+          "title": "Employee type per company or branch"
+        },
+        {
+          "id": "20.0-payroll-net-to-gross-simulation",
+          "title": "Net to gross simulation"
+        },
+        {
+          "id": "20.0-payroll-pay-run-workflow",
+          "title": "Pay run workflow"
+        },
+        {
+          "id": "20.0-payroll-payslip-sending-options",
+          "title": "Payslip sending options"
+        },
+        {
+          "id": "20.0-payroll-payslip-ux",
+          "title": "Payslip UX"
+        },
+        {
+          "id": "20.0-payroll-salary-indexation",
+          "title": "Salary indexation"
+        },
+        {
+          "id": "20.0-payroll-salary-rules",
+          "title": "Salary rules"
+        },
+        {
+          "id": "20.0-payroll-test-print-pay-runs",
+          "title": "Test print pay runs"
+        },
+        {
+          "id": "20.0-payroll-time-entry-exports",
+          "title": "Time entry exports"
+        },
+        {
+          "id": "20.0-payroll-work-entries-removal",
+          "title": "Work entries removal"
+        },
+        {
+          "id": "20.0-payroll-working-schedules",
+          "title": "Working schedules"
+        }
+      ]
+    },
+    {
+      "app": "Phone",
+      "slug": "phone",
+      "file": "phone.md",
+      "anchor": "table_of_content_heading_1_113",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "20.0-phone-audio-settings-during-a-call",
+          "title": "Audio settings during a call"
+        },
+        {
+          "id": "20.0-phone-auto-fill-and-auto-log",
+          "title": "Auto-fill and auto-log"
+        },
+        {
+          "id": "20.0-phone-call-flow-designer",
+          "title": "Call flow designer"
+        },
+        {
+          "id": "20.0-phone-call-logging-in-chatter",
+          "title": "Call logging in chatter"
+        },
+        {
+          "id": "20.0-phone-call-transfer-to-another-device",
+          "title": "Call transfer to another device"
+        },
+        {
+          "id": "20.0-phone-choose-outgoing-number",
+          "title": "Choose outgoing number"
+        },
+        {
+          "id": "20.0-phone-floating-widget",
+          "title": "Floating widget"
+        },
+        {
+          "id": "20.0-phone-linphone",
+          "title": "Linphone"
+        },
+        {
+          "id": "20.0-phone-push-notifications",
+          "title": "Push notifications"
+        },
+        {
+          "id": "20.0-phone-simultaneous-calling",
+          "title": "Simultaneous calling"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "table_of_content_heading_1_114",
+      "item_count": 20,
+      "notes": [
+        {
+          "id": "20.0-planning-employee-specific-materials",
+          "title": "Employee-specific materials"
+        },
+        {
+          "id": "20.0-planning-field-service-auto-plan",
+          "title": "Field Service: auto plan"
+        },
+        {
+          "id": "20.0-planning-field-service-customer-equipment",
+          "title": "Field Service: customer equipment"
+        },
+        {
+          "id": "20.0-planning-field-service-customer-ratings",
+          "title": "Field Service: customer ratings"
+        },
+        {
+          "id": "20.0-planning-field-service-intervention-confirmation-email",
+          "title": "Field Service: intervention confirmation email"
+        },
+        {
+          "id": "20.0-planning-field-service-live-map",
+          "title": "Field Service: live map"
+        },
+        {
+          "id": "20.0-planning-field-service-map-view",
+          "title": "Field Service: map view"
+        },
+        {
+          "id": "20.0-planning-field-service-product-barcodes",
+          "title": "Field Service: product barcodes"
+        },
+        {
+          "id": "20.0-planning-field-service-report",
+          "title": "Field Service: report"
+        },
+        {
+          "id": "20.0-planning-field-service-routing-preferences",
+          "title": "Field Service: routing preferences"
+        },
+        {
+          "id": "20.0-planning-field-service-track-customer-history",
+          "title": "Field Service: track customer history"
+        },
+        {
+          "id": "20.0-planning-field-service-travel-fees",
+          "title": "Field Service: travel fees"
+        },
+        {
+          "id": "20.0-planning-field-service-website-form",
+          "title": "Field Service: website form"
+        },
+        {
+          "id": "20.0-planning-field-service-worksheets",
+          "title": "Field Service: worksheets"
+        },
+        {
+          "id": "20.0-planning-gantt-view-travel-times",
+          "title": "Gantt view: travel times"
+        },
+        {
+          "id": "20.0-planning-link-shifts-to-tasks",
+          "title": "Link shifts to tasks"
+        },
+        {
+          "id": "20.0-planning-multiple-resource-assignment",
+          "title": "Multiple resource assignment"
+        },
+        {
+          "id": "20.0-planning-priority-shifts",
+          "title": "Priority shifts"
+        },
+        {
+          "id": "20.0-planning-schedule-shifts-from-side-panel",
+          "title": "Schedule shifts from side panel"
+        },
+        {
+          "id": "20.0-planning-send-shifts-via-whatsapp",
+          "title": "Send shifts via WhatsApp"
+        }
+      ]
+    },
+    {
+      "app": "PLM",
+      "slug": "plm",
+      "file": "plm.md",
+      "anchor": "table_of_content_heading_1_115",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "20.0-plm-bom-comparison",
+          "title": "BoM comparison"
+        },
+        {
+          "id": "20.0-plm-optional-eco-version-update",
+          "title": "Optional ECO version update"
+        },
+        {
+          "id": "20.0-plm-product-updates",
+          "title": "Product updates"
+        },
+        {
+          "id": "20.0-plm-universal-eco-report",
+          "title": "Universal ECO report"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "table_of_content_heading_1_116",
+      "item_count": 24,
+      "notes": [
+        {
+          "id": "20.0-point-of-sale-base-unit-price-on-product-label",
+          "title": "Base unit price on product label"
+        },
+        {
+          "id": "20.0-point-of-sale-booking-kanban-and-pivot-views",
+          "title": "Booking Kanban and pivot views"
+        },
+        {
+          "id": "20.0-point-of-sale-convert-order-lines-into-a-combo",
+          "title": "Convert order lines into a combo"
+        },
+        {
+          "id": "20.0-point-of-sale-employee-access-levels",
+          "title": "Employee access levels"
+        },
+        {
+          "id": "20.0-point-of-sale-end-of-session",
+          "title": "End of session"
+        },
+        {
+          "id": "20.0-point-of-sale-expired-product-notification",
+          "title": "Expired product notification"
+        },
+        {
+          "id": "20.0-point-of-sale-gofood-delivery-integration",
+          "title": "GoFood delivery integration"
+        },
+        {
+          "id": "20.0-point-of-sale-grabfood-delivery-integration",
+          "title": "GrabFood delivery integration"
+        },
+        {
+          "id": "20.0-point-of-sale-label-printing",
+          "title": "Label printing"
+        },
+        {
+          "id": "20.0-point-of-sale-mercado-pago-terminal",
+          "title": "Mercado Pago terminal"
+        },
+        {
+          "id": "20.0-point-of-sale-multiple-currencies",
+          "title": "Multiple currencies"
+        },
+        {
+          "id": "20.0-point-of-sale-order-search",
+          "title": "Order search"
+        },
+        {
+          "id": "20.0-point-of-sale-print-preparation-tickets-per-product",
+          "title": "Print preparation tickets per product"
+        },
+        {
+          "id": "20.0-point-of-sale-printer-management",
+          "title": "Printer management"
+        },
+        {
+          "id": "20.0-point-of-sale-receipt-printing",
+          "title": "Receipt printing"
+        },
+        {
+          "id": "20.0-point-of-sale-reorganizing-products-in-pos-interface",
+          "title": "Reorganizing products in POS interface"
+        },
+        {
+          "id": "20.0-point-of-sale-self-ordering",
+          "title": "Self-ordering"
+        },
+        {
+          "id": "20.0-point-of-sale-service-fees",
+          "title": "Service fees"
+        },
+        {
+          "id": "20.0-point-of-sale-simplified-inventory-management",
+          "title": "Simplified inventory management"
+        },
+        {
+          "id": "20.0-point-of-sale-simplified-receipts",
+          "title": "Simplified receipts"
+        },
+        {
+          "id": "20.0-point-of-sale-snooze-products",
+          "title": "Snooze products"
+        },
+        {
+          "id": "20.0-point-of-sale-static-qr-code-payment",
+          "title": "Static QR code payment"
+        },
+        {
+          "id": "20.0-point-of-sale-urbanpiper-integration",
+          "title": "UrbanPiper integration"
+        },
+        {
+          "id": "20.0-point-of-sale-whatsapp-and-sms-self-order-receipt",
+          "title": "WhatsApp and SMS self-order receipt"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "table_of_content_heading_1_117",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "20.0-project-assign-project-roles",
+          "title": "Assign project roles"
+        },
+        {
+          "id": "20.0-project-assign-tasks-to-portal-users",
+          "title": "Assign tasks to portal users"
+        },
+        {
+          "id": "20.0-project-collaborators-separated-from-followers",
+          "title": "Collaborators separated from followers"
+        },
+        {
+          "id": "20.0-project-mobile-improved-task-header-design",
+          "title": "Mobile: improved task header design"
+        },
+        {
+          "id": "20.0-project-printable-task-schedule",
+          "title": "Printable task schedule"
+        },
+        {
+          "id": "20.0-project-profitability-report",
+          "title": "Profitability report"
+        },
+        {
+          "id": "20.0-project-projects-from-opportunities",
+          "title": "Projects from opportunities"
+        },
+        {
+          "id": "20.0-project-task-tracking-in-user-portal",
+          "title": "Task tracking in user portal"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "table_of_content_heading_1_118",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "20.0-purchase-alternatives-comparison",
+          "title": "Alternatives comparison"
+        },
+        {
+          "id": "20.0-purchase-default-incoterm-per-vendor",
+          "title": "Default Incoterm per vendor"
+        },
+        {
+          "id": "20.0-purchase-end-customer-address-in-portal",
+          "title": "End-customer address in portal"
+        },
+        {
+          "id": "20.0-purchase-expected-arrival-date",
+          "title": "Expected arrival date"
+        },
+        {
+          "id": "20.0-purchase-product-unit-cost-versus-purchase-unit-cost",
+          "title": "Product unit cost versus purchase unit cost"
+        },
+        {
+          "id": "20.0-purchase-purchase-agreement-structure",
+          "title": "Purchase agreement structure"
+        },
+        {
+          "id": "20.0-purchase-recompute-expected-arrival-when-deadline-is-in-the-past",
+          "title": "Recompute Expected Arrival when deadline is in the past"
+        },
+        {
+          "id": "20.0-purchase-total-amounts-on-purchase-order-sections",
+          "title": "Total amounts on purchase order sections"
+        },
+        {
+          "id": "20.0-purchase-vendor-quality-rate",
+          "title": "Vendor quality rate"
+        }
+      ]
+    },
+    {
+      "app": "Quality",
+      "slug": "quality",
+      "file": "quality.md",
+      "anchor": "table_of_content_heading_1_119",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "20.0-quality-bypass-quality-checks",
+          "title": "Bypass quality checks"
+        },
+        {
+          "id": "20.0-quality-failure-location",
+          "title": "Failure location"
+        }
+      ]
+    },
+    {
+      "app": "Recruitment",
+      "slug": "recruitment",
+      "file": "recruitment.md",
+      "anchor": "table_of_content_heading_1_120",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "20.0-recruitment-improved-integration",
+          "title": "Improved integration"
+        },
+        {
+          "id": "20.0-recruitment-job-form-visibility-conditions",
+          "title": "Job form visibility conditions"
+        },
+        {
+          "id": "20.0-recruitment-matching-score-filter",
+          "title": "Matching score filter"
+        },
+        {
+          "id": "20.0-recruitment-view-talents-from-job-position",
+          "title": "View talents from job position"
+        }
+      ]
+    },
+    {
+      "app": "Referrals",
+      "slug": "referrals",
+      "file": "referrals.md",
+      "anchor": "table_of_content_heading_1_121",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-referrals-contact-outreach-tracking",
+          "title": "Contact outreach tracking"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "table_of_content_heading_1_122",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "20.0-rental-automatic-price-update",
+          "title": "Automatic price update"
+        },
+        {
+          "id": "20.0-rental-rental-order-creation",
+          "title": "Rental order creation"
+        },
+        {
+          "id": "20.0-rental-rental-orders-dashboard",
+          "title": "Rental orders dashboard"
+        },
+        {
+          "id": "20.0-rental-simplified-and-unified-pricelists",
+          "title": "Simplified and unified pricelists"
+        },
+        {
+          "id": "20.0-rental-strikethrough-pricing",
+          "title": "Strikethrough pricing"
+        },
+        {
+          "id": "20.0-rental-working-schedules",
+          "title": "Working schedules"
+        }
+      ]
+    },
+    {
+      "app": "Repairs",
+      "slug": "repairs",
+      "file": "repairs.md",
+      "anchor": "table_of_content_heading_1_123",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-repairs-invoice-creation",
+          "title": "Invoice creation"
+        },
+        {
+          "id": "20.0-repairs-repair-order-status",
+          "title": "Repair order status"
+        },
+        {
+          "id": "20.0-repairs-repair-related-services",
+          "title": "Repair-related services"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "table_of_content_heading_1_124",
+      "item_count": 27,
+      "notes": [
+        {
+          "id": "20.0-sales-payment-based-commissions",
+          "title": "Payment-based commissions"
+        },
+        {
+          "id": "20.0-sales-charge-overages",
+          "title": "Charge overages"
+        },
+        {
+          "id": "20.0-sales-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "20.0-sales-description-only-sales-order-lines",
+          "title": "Description-only sales order lines"
+        },
+        {
+          "id": "20.0-sales-editable-product-variant-price",
+          "title": "Editable product variant price"
+        },
+        {
+          "id": "20.0-sales-editable-margins",
+          "title": "Editable margins"
+        },
+        {
+          "id": "20.0-sales-fixed-prepayment-amounts",
+          "title": "Fixed prepayment amounts"
+        },
+        {
+          "id": "20.0-sales-fixed-price-pricelists",
+          "title": "Fixed Price pricelists"
+        },
+        {
+          "id": "20.0-sales-lazada",
+          "title": "Lazada"
+        },
+        {
+          "id": "20.0-sales-loyalty-point-expiration",
+          "title": "Loyalty point expiration"
+        },
+        {
+          "id": "20.0-sales-manager-commissions",
+          "title": "Manager commissions"
+        },
+        {
+          "id": "20.0-sales-mark-orders-as-fully-invoiced",
+          "title": "Mark orders as fully invoiced"
+        },
+        {
+          "id": "20.0-sales-periodic-pricing",
+          "title": "Periodic pricing"
+        },
+        {
+          "id": "20.0-sales-price-rules-per-packaging-type",
+          "title": "Price rules per packaging type"
+        },
+        {
+          "id": "20.0-sales-pricelist-report-improvements",
+          "title": "Pricelist report improvements"
+        },
+        {
+          "id": "20.0-sales-product-images",
+          "title": "Product images"
+        },
+        {
+          "id": "20.0-sales-quotation-sections",
+          "title": "Quotation sections"
+        },
+        {
+          "id": "20.0-sales-quotation-templates",
+          "title": "Quotation templates"
+        },
+        {
+          "id": "20.0-sales-sales-order-creation-from-purchase-orders",
+          "title": "Sales order creation from purchase orders"
+        },
+        {
+          "id": "20.0-sales-sales-order-email-template",
+          "title": "Sales order email template"
+        },
+        {
+          "id": "20.0-sales-sales-order-line-numbering",
+          "title": "Sales order line numbering"
+        },
+        {
+          "id": "20.0-sales-sales-order-portal-page",
+          "title": "Sales order portal page"
+        },
+        {
+          "id": "20.0-sales-services-material",
+          "title": "Services & Material"
+        },
+        {
+          "id": "20.0-sales-ship-orders-without-inventory",
+          "title": "Ship orders without Inventory"
+        },
+        {
+          "id": "20.0-sales-single-use-discount-codes",
+          "title": "Single-use discount codes"
+        },
+        {
+          "id": "20.0-sales-stacked-fields-on-sales-order-lines",
+          "title": "Stacked fields on sales order lines"
+        },
+        {
+          "id": "20.0-sales-tiktok",
+          "title": "TikTok"
+        }
+      ]
+    },
+    {
+      "app": "Shop Floor",
+      "slug": "shop-floor",
+      "file": "shop-floor.md",
+      "anchor": "table_of_content_heading_1_125",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "20.0-shop-floor-html-note-field",
+          "title": "HTML note field"
+        },
+        {
+          "id": "20.0-shop-floor-instruction-updates",
+          "title": "Instruction updates"
+        },
+        {
+          "id": "20.0-shop-floor-work-center-barcode",
+          "title": "Work center barcode"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "table_of_content_heading_1_126",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "20.0-sign-automated-signature-requests",
+          "title": "Automated signature requests"
+        },
+        {
+          "id": "20.0-sign-create-new-fields-on-the-go",
+          "title": "Create new fields on the go"
+        },
+        {
+          "id": "20.0-sign-easier-tag-management",
+          "title": "Easier tag management"
+        },
+        {
+          "id": "20.0-sign-identity-verification-via-itsme",
+          "title": "Identity verification via itsme®"
+        },
+        {
+          "id": "20.0-sign-improved-progress-tracking",
+          "title": "Improved progress tracking"
+        },
+        {
+          "id": "20.0-sign-mobile-and-touchscreen-support",
+          "title": "Mobile and touchscreen support"
+        },
+        {
+          "id": "20.0-sign-non-latin-alphabets",
+          "title": "Non-latin alphabets"
+        },
+        {
+          "id": "20.0-sign-qualified-electronic-signature-via-itsme",
+          "title": "Qualified Electronic Signature via itsme®"
+        },
+        {
+          "id": "20.0-sign-record-updates",
+          "title": "Record updates"
+        },
+        {
+          "id": "20.0-sign-reorder-signers",
+          "title": "Reorder signers"
+        },
+        {
+          "id": "20.0-sign-send-signature-requests-from-activities",
+          "title": "Send signature requests from activities"
+        },
+        {
+          "id": "20.0-sign-sign-mode-options-menu",
+          "title": "Sign mode options menu"
+        },
+        {
+          "id": "20.0-sign-sign-templates",
+          "title": "Sign templates"
+        },
+        {
+          "id": "20.0-sign-signed-pdfs-bookmarks-and-settings",
+          "title": "Signed PDFs: bookmarks and settings"
+        },
+        {
+          "id": "20.0-sign-touchscreen-support",
+          "title": "Touchscreen support"
+        }
+      ]
+    },
+    {
+      "app": "Social Marketing",
+      "slug": "social-marketing",
+      "file": "social-marketing.md",
+      "anchor": "table_of_content_heading_1_127",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "20.0-social-marketing-add-mentions-in-social-media-posts",
+          "title": "Add mentions in social media posts"
+        },
+        {
+          "id": "20.0-social-marketing-ai-assistant",
+          "title": "AI assistant"
+        },
+        {
+          "id": "20.0-social-marketing-facebook-and-instagram-stories",
+          "title": "Facebook and Instagram stories"
+        },
+        {
+          "id": "20.0-social-marketing-image-display-order",
+          "title": "Image display order"
+        },
+        {
+          "id": "20.0-social-marketing-personal-linkedin-account",
+          "title": "Personal LinkedIn account"
+        },
+        {
+          "id": "20.0-social-marketing-platform-specific-post-scheduling",
+          "title": "Platform-specific post scheduling"
+        },
+        {
+          "id": "20.0-social-marketing-schedule-first-comment",
+          "title": "Schedule first comment"
+        }
+      ]
+    },
+    {
+      "app": "Spreadsheet",
+      "slug": "spreadsheet",
+      "file": "spreadsheet.md",
+      "anchor": "table_of_content_heading_1_128",
+      "item_count": 30,
+      "notes": [
+        {
+          "id": "20.0-spreadsheet-bubble-charts",
+          "title": "Bubble charts"
+        },
+        {
+          "id": "20.0-spreadsheet-calculated-columns",
+          "title": "Calculated columns"
+        },
+        {
+          "id": "20.0-spreadsheet-calendar-charts",
+          "title": "Calendar charts"
+        },
+        {
+          "id": "20.0-spreadsheet-cell-value-orientation",
+          "title": "Cell value orientation"
+        },
+        {
+          "id": "20.0-spreadsheet-charts",
+          "title": "Charts"
+        },
+        {
+          "id": "20.0-spreadsheet-column-statistics",
+          "title": "Column statistics"
+        },
+        {
+          "id": "20.0-spreadsheet-conditional-formatting-by-date",
+          "title": "Conditional formatting by date"
+        },
+        {
+          "id": "20.0-spreadsheet-curly-brackets",
+          "title": "Curly brackets"
+        },
+        {
+          "id": "20.0-spreadsheet-custom-format",
+          "title": "Custom format"
+        },
+        {
+          "id": "20.0-spreadsheet-data-cleanup",
+          "title": "Data cleanup"
+        },
+        {
+          "id": "20.0-spreadsheet-disable-automatic-recalculation",
+          "title": "Disable automatic recalculation"
+        },
+        {
+          "id": "20.0-spreadsheet-global-filters",
+          "title": "Global filters"
+        },
+        {
+          "id": "20.0-spreadsheet-list-insertion",
+          "title": "List insertion"
+        },
+        {
+          "id": "20.0-spreadsheet-lock-sheets",
+          "title": "Lock sheets"
+        },
+        {
+          "id": "20.0-spreadsheet-mobile-pinch-to-zoom",
+          "title": "Mobile: pinch to zoom"
+        },
+        {
+          "id": "20.0-spreadsheet-multiple-selection-on-figures",
+          "title": "Multiple selection on figures"
+        },
+        {
+          "id": "20.0-spreadsheet-named-range",
+          "title": "Named range"
+        },
+        {
+          "id": "20.0-spreadsheet-new-functions",
+          "title": "New functions"
+        },
+        {
+          "id": "20.0-spreadsheet-pivot-tables",
+          "title": "Pivot tables"
+        },
+        {
+          "id": "20.0-spreadsheet-print-settings",
+          "title": "Print settings"
+        },
+        {
+          "id": "20.0-spreadsheet-property-fields-in-inserted-lists",
+          "title": "Property fields in inserted lists"
+        },
+        {
+          "id": "20.0-spreadsheet-reduced-json-file-size",
+          "title": "Reduced JSON file size"
+        },
+        {
+          "id": "20.0-spreadsheet-regex-formulas",
+          "title": "Regex formulas"
+        },
+        {
+          "id": "20.0-spreadsheet-scientific-notation",
+          "title": "Scientific notation"
+        },
+        {
+          "id": "20.0-spreadsheet-sheet-background-colors",
+          "title": "Sheet background colors"
+        },
+        {
+          "id": "20.0-spreadsheet-spill-range-operator",
+          "title": "Spill range operator"
+        },
+        {
+          "id": "20.0-spreadsheet-template-access",
+          "title": "Template access"
+        },
+        {
+          "id": "20.0-spreadsheet-top-menu-navigation",
+          "title": "Top menu navigation"
+        },
+        {
+          "id": "20.0-spreadsheet-top-bottom-ranking-conditional-formatting",
+          "title": "Top/bottom ranking conditional formatting"
+        },
+        {
+          "id": "20.0-spreadsheet-zoom-in-out",
+          "title": "Zoom in/out"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "table_of_content_heading_1_129",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "20.0-studio-automation-rules-activity-plans",
+          "title": "Automation rules: activity plans"
+        },
+        {
+          "id": "20.0-studio-form-view-customization",
+          "title": "Form view customization"
+        },
+        {
+          "id": "20.0-studio-kanban-stage-cutomization",
+          "title": "Kanban stage cutomization"
+        },
+        {
+          "id": "20.0-studio-list-view-column-width",
+          "title": "List view column width"
+        },
+        {
+          "id": "20.0-studio-many2many-fields-in-pdf-reports",
+          "title": "Many2Many fields in PDF reports"
+        },
+        {
+          "id": "20.0-studio-report-editor",
+          "title": "Report editor"
+        },
+        {
+          "id": "20.0-studio-report-translations",
+          "title": "Report translations"
+        },
+        {
+          "id": "20.0-studio-user-friendly-technical-names",
+          "title": "User-friendly technical names"
+        },
+        {
+          "id": "20.0-studio-warning-for-past-or-future-dates",
+          "title": "Warning for past or future dates"
+        }
+      ]
+    },
+    {
+      "app": "Subscriptions",
+      "slug": "subscriptions",
+      "file": "subscriptions.md",
+      "anchor": "table_of_content_heading_1_130",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "20.0-subscriptions-loyalty-programs",
+          "title": "Loyalty programs"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "table_of_content_heading_1_131",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-time-off-calendar-day-vs-working-day-deductions",
+          "title": "Calendar day vs working day deductions"
+        },
+        {
+          "id": "20.0-time-off-minimal-amount-for-time-off-requests",
+          "title": "Minimal amount for time-off requests"
+        },
+        {
+          "id": "20.0-time-off-overview-all-employees",
+          "title": "Overview: all employees"
+        },
+        {
+          "id": "20.0-time-off-prevent-app-use",
+          "title": "Prevent app use"
+        },
+        {
+          "id": "20.0-time-off-public-holidays",
+          "title": "Public holidays"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "table_of_content_heading_1_132",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-timesheets-activitywatch-integration",
+          "title": "ActivityWatch integration"
+        },
+        {
+          "id": "20.0-timesheets-log-timesheets-from-anywhere",
+          "title": "Log timesheets from anywhere"
+        },
+        {
+          "id": "20.0-timesheets-timesheet-assistant-sharing-rules",
+          "title": "Timesheet assistant: sharing rules"
+        },
+        {
+          "id": "20.0-timesheets-timesheet-assistant-side-activities",
+          "title": "Timesheet assistant: side activities"
+        },
+        {
+          "id": "20.0-timesheets-timesheet-assistant-time-thresholds",
+          "title": "Timesheet assistant: time thresholds"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "table_of_content_heading_1_133",
+      "item_count": 60,
+      "notes": [
+        {
+          "id": "20.0-website-accented-characters-in-urls",
+          "title": "Accented characters in URLs"
+        },
+        {
+          "id": "20.0-website-age-verification-popup",
+          "title": "Age verification popup"
+        },
+        {
+          "id": "20.0-website-ai-website-assistant",
+          "title": "AI Website Assistant"
+        },
+        {
+          "id": "20.0-website-ai-generated-content-indicator",
+          "title": "AI-generated content indicator"
+        },
+        {
+          "id": "20.0-website-animated-number-building-block",
+          "title": "Animated number building block"
+        },
+        {
+          "id": "20.0-website-appointment-page-layout",
+          "title": "Appointment page layout"
+        },
+        {
+          "id": "20.0-website-banners",
+          "title": "Banners"
+        },
+        {
+          "id": "20.0-website-blurred-headers",
+          "title": "Blurred headers"
+        },
+        {
+          "id": "20.0-website-breadcrumbs-on-static-pages",
+          "title": "Breadcrumbs on static pages"
+        },
+        {
+          "id": "20.0-website-card-and-column-anchors",
+          "title": "Card and column anchors"
+        },
+        {
+          "id": "20.0-website-card-enhancements",
+          "title": "Card enhancements"
+        },
+        {
+          "id": "20.0-website-carousel-transition",
+          "title": "Carousel transition"
+        },
+        {
+          "id": "20.0-website-color-palette-preview",
+          "title": "Color palette preview"
+        },
+        {
+          "id": "20.0-website-column-content-selection",
+          "title": "Column content selection"
+        },
+        {
+          "id": "20.0-website-connection-shape-color",
+          "title": "Connection shape color"
+        },
+        {
+          "id": "20.0-website-cookies",
+          "title": "Cookies"
+        },
+        {
+          "id": "20.0-website-countdown-snippets",
+          "title": "Countdown snippets"
+        },
+        {
+          "id": "20.0-website-customizable-portal-cards",
+          "title": "Customizable portal cards"
+        },
+        {
+          "id": "20.0-website-dom-elements",
+          "title": "DOM elements"
+        },
+        {
+          "id": "20.0-website-donation-snippet-customization",
+          "title": "Donation snippet customization"
+        },
+        {
+          "id": "20.0-website-dropzones-and-overlays",
+          "title": "Dropzones and overlays"
+        },
+        {
+          "id": "20.0-website-dynamic-today-value",
+          "title": "Dynamic \"Today\" value"
+        },
+        {
+          "id": "20.0-website-dynamic-carousels",
+          "title": "Dynamic carousels"
+        },
+        {
+          "id": "20.0-website-events-jobs-and-blog-pages",
+          "title": "Events, Jobs, and Blog pages"
+        },
+        {
+          "id": "20.0-website-font-weight-selector",
+          "title": "Font weight selector"
+        },
+        {
+          "id": "20.0-website-form-enhancements",
+          "title": "Form enhancements"
+        },
+        {
+          "id": "20.0-website-forum-notifications",
+          "title": "Forum notifications"
+        },
+        {
+          "id": "20.0-website-fullscreen-images",
+          "title": "Fullscreen images"
+        },
+        {
+          "id": "20.0-website-general-shadow-options",
+          "title": "General shadow options"
+        },
+        {
+          "id": "20.0-website-google-tag-manager-gtm",
+          "title": "Google Tag Manager (GTM)"
+        },
+        {
+          "id": "20.0-website-inner-content-blocks-icons-and-instagram",
+          "title": "Inner content blocks: icons and Instagram"
+        },
+        {
+          "id": "20.0-website-job-and-elearning-course-building-blocks",
+          "title": "Job and eLearning course building blocks"
+        },
+        {
+          "id": "20.0-website-link-and-button-styling",
+          "title": "Link and button styling"
+        },
+        {
+          "id": "20.0-website-link-tracker-qr-codes",
+          "title": "Link tracker: QR codes"
+        },
+        {
+          "id": "20.0-website-llms-txt",
+          "title": "llms.txt"
+        },
+        {
+          "id": "20.0-website-mega-menu",
+          "title": "Mega menu"
+        },
+        {
+          "id": "20.0-website-module-specific-search",
+          "title": "Module-specific search"
+        },
+        {
+          "id": "20.0-website-multiple-websites-change-default-site",
+          "title": "Multiple websites: change default site"
+        },
+        {
+          "id": "20.0-website-new-icon-list-inner-content-block",
+          "title": "New Icon List inner content block"
+        },
+        {
+          "id": "20.0-website-partners-page",
+          "title": "Partners page"
+        },
+        {
+          "id": "20.0-website-portal-users-profile-picture",
+          "title": "Portal users: profile picture"
+        },
+        {
+          "id": "20.0-website-property-fields-supported-in-website-forms",
+          "title": "Property fields supported in website forms"
+        },
+        {
+          "id": "20.0-website-publish-unpublish-partners",
+          "title": "Publish/unpublish partners"
+        },
+        {
+          "id": "20.0-website-redirections",
+          "title": "Redirections"
+        },
+        {
+          "id": "20.0-website-repositioning-text-over-cover-image",
+          "title": "Repositioning text over cover image"
+        },
+        {
+          "id": "20.0-website-search-results",
+          "title": "Search results"
+        },
+        {
+          "id": "20.0-website-seo",
+          "title": "SEO"
+        },
+        {
+          "id": "20.0-website-sidebar-revamp",
+          "title": "Sidebar revamp"
+        },
+        {
+          "id": "20.0-website-simplified-inner-content-blocks",
+          "title": "Simplified inner content blocks"
+        },
+        {
+          "id": "20.0-website-social-media-links",
+          "title": "Social media links"
+        },
+        {
+          "id": "20.0-website-sitemap-enhancements",
+          "title": "Sitemap enhancements"
+        },
+        {
+          "id": "20.0-website-block-preview-for-mobile-devices",
+          "title": "Block preview for mobile devices"
+        },
+        {
+          "id": "20.0-website-structured-data",
+          "title": "Structured data"
+        },
+        {
+          "id": "20.0-website-theme-layout-and-background-options",
+          "title": "Theme layout and background options"
+        },
+        {
+          "id": "20.0-website-translation",
+          "title": "Translation"
+        },
+        {
+          "id": "20.0-website-vertical-video-format",
+          "title": "Vertical video format"
+        },
+        {
+          "id": "20.0-website-visitor-tracking",
+          "title": "Visitor tracking"
+        },
+        {
+          "id": "20.0-website-website-configuration-wizard",
+          "title": "Website configuration wizard"
+        },
+        {
+          "id": "20.0-website-website-editor-ui-ux",
+          "title": "Website editor UI/UX"
+        },
+        {
+          "id": "20.0-website-whatsapp-widget-snippet",
+          "title": "WhatsApp widget snippet"
+        }
+      ]
+    },
+    {
+      "app": "WhatsApp",
+      "slug": "whatsapp",
+      "file": "whatsapp.md",
+      "anchor": "table_of_content_heading_1_134",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "20.0-whatsapp-default-recipents-on-templates",
+          "title": "Default recipents on templates"
+        },
+        {
+          "id": "20.0-whatsapp-interactive-message-templates",
+          "title": "Interactive message templates"
+        },
+        {
+          "id": "20.0-whatsapp-named-parameters-in-templates",
+          "title": "Named parameters in templates"
+        },
+        {
+          "id": "20.0-whatsapp-number-blocking",
+          "title": "Number blocking"
+        },
+        {
+          "id": "20.0-whatsapp-simplified-authentication-process",
+          "title": "Simplified authentication process"
+        }
+      ]
+    }
+  ],
+  "item_count": 697
+}

@@ -31,8 +31,14 @@ jobs:
           git add data/
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "analyzer=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            if git diff --cached --name-only | grep -qE '^data/(release-notes|orm-changelog)/'; then
+              echo "analyzer=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "analyzer=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Create branch and commit
@@ -69,6 +75,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr merge --merge "$BRANCH"
+
+      - name: Dispatch to analyzer
+        if: steps.check.outputs.analyzer == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANALYZER_TOKEN: ${{ secrets.ANALYZER_DISPATCH_TOKEN }}
+        run: |
+          STATE=$(gh pr view "$BRANCH" --json state --jq .state)
+          if [[ "$STATE" != "MERGED" ]]; then
+            echo "ERROR: PR $BRANCH is not merged (state=$STATE)" >&2
+            exit 1
+          fi
+          GH_TOKEN="$ANALYZER_TOKEN" gh api repos/trobz/odoo-changes-analyzor/dispatches \
+            -f event_type=odoo_watch_updated
 
       - name: Delete branch
         if: steps.check.outputs.changed == 'true'

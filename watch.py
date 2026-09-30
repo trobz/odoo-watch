@@ -3,6 +3,7 @@
 
 import argparse
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -10,6 +11,16 @@ import time
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+
+from orm_changelog import parse as parse_orm_changelog
+from release_notes import (
+    ARCHIVED_PINS,
+    ARCHIVED_SNAPSHOT_URL,
+    ReleaseNotesError,
+    parse as parse_release_notes,
+    parse_multi as parse_release_notes_multi,
+)
+from utils import fold_version
 
 WATCHES = [
     {
@@ -39,11 +50,36 @@ WATCHES = [
         "path": "data/odoo_status.html",
         "url": "https://status.odoo.com",
     },
+    {
+        "outdir": "data/release-notes",
+        "url": "https://www.odoo.com/page/release-notes",
+        "extract": "release_notes",
+    },
+    {
+        "outdir": "data/orm-changelog",
+        "url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+        "extract": "orm_changelog",
+    },
 ]
 
 HEADERS = {"User-Agent": "odoo-watch/1.0 (https://github.com/trobz/odoo-watch)"}
 
-_UNIQUE_RE = re.compile(r"\?unique=[a-zA-Z0-9]+")
+ROOT = Path(__file__).resolve().parent
+RELEASE_NOTES_ROOT = ROOT / "data/release-notes"
+RELEASE_NOTES_INDEX_URL = "https://www.odoo.com/page/release-notes"
+VERSION_HREF_RE = re.compile(r"^/odoo-(\d+)(?:-(\d+))?-release-notes$")
+
+
+def version_key(version: str) -> tuple:
+    """Numeric ordering for `"16.0"`-style versions (string order breaks at 9 vs 10)."""
+    return tuple(int(part) for part in version.split("."))
+
+
+# start at odoo 12.0
+RELEASE_NOTES_FLOOR = min(ARCHIVED_PINS, key=version_key)
+
+UNIQUE_RE = re.compile(r"\?unique=[a-zA-Z0-9]+")
+RELEASE_NOTE_HREF_RE = re.compile(r"^/odoo-[\d-]+-release-notes$")
 
 
 def clean_html(html: str) -> str:
@@ -57,14 +93,16 @@ def clean_html(html: str) -> str:
     # Blank out csrf_token values in inline scripts
     for tag in soup.find_all("script"):
         if tag.string and "csrf_token" in tag.string:
-            tag.string.replace_with(re.sub(r'csrf_token:\s*"[^"]*"', 'csrf_token: ""', tag.string))
+            tag.string.replace_with(
+                re.sub(r'csrf_token:\s*"[^"]*"', 'csrf_token: ""', tag.string)
+            )
 
     # Strip ?unique=... from href/src/content/action attributes
     for tag in soup.find_all(True):
         for attr in ("href", "src", "content", "action"):
             val = tag.get(attr)
             if val and "unique=" in val:
-                tag[attr] = _UNIQUE_RE.sub("", val)
+                tag[attr] = UNIQUE_RE.sub("", val)
 
     return str(soup)
 
@@ -79,7 +117,7 @@ def extract_selector(html: str, selector: str) -> str:
         for attr in ("href", "src", "content", "action"):
             val = tag.get(attr)
             if val and "unique=" in val:
-                tag[attr] = _UNIQUE_RE.sub("", val)
+                tag[attr] = UNIQUE_RE.sub("", val)
     return el.prettify()
 
 
@@ -112,6 +150,74 @@ def check_expected(content: str, expect: str) -> None:
     if bad:
         msg = f"{len(bad)} line(s) missing {expect!r}, first: {bad[0]!r}"
         raise ValueError(msg)
+
+
+def release_note_hrefs(html: str) -> set[str]:
+    """The `/odoo-*-release-notes` paths linked from the index page's `#wrap`.
+
+    Sole parser of the index markup: `upstream_index` derives the
+    fetch scope from this.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    links = {
+        a["href"]
+        for a in soup.select("#wrap a[href]")
+        if RELEASE_NOTE_HREF_RE.match(a["href"])
+    }
+    if not links:
+        raise ValueError("No /odoo-*-release-notes links found under #wrap")
+    return links
+
+
+def resolve_urls(version: str, index: dict | None = None) -> list[str]:
+    major = version.split(".")[0]
+    # Wayback machine snapshot for old version
+    if version in ARCHIVED_PINS:
+        return [ARCHIVED_SNAPSHOT_URL.format(ts=ARCHIVED_PINS[version], major=major)]
+    if index and version in index:
+        return sorted(index[version])
+    # best-effort guess
+    _, _, minor = version.partition(".")
+    path = major if minor in ("", "0") else f"{major}-{minor}"
+    return [f"https://www.odoo.com/odoo-{path}-release-notes"]
+
+
+def committed_versions() -> list[str]:
+    """Versions already present under `data/release-notes/`."""
+    if not RELEASE_NOTES_ROOT.is_dir():
+        return []
+    return sorted(p.name for p in RELEASE_NOTES_ROOT.iterdir() if p.is_dir())
+
+
+def upstream_index(html: str | None = None) -> dict[str, list[str]]:
+    if html is None:
+        html = fetch_with_retry(RELEASE_NOTES_INDEX_URL).decode("utf-8")
+    index: dict[str, list[str]] = {}
+    for href in sorted(release_note_hrefs(html)):
+        match = VERSION_HREF_RE.match(href)
+        if not match:
+            continue
+        major, minor = match.groups()
+        version = fold_version(int(major), int(minor or 0))
+        if version_key(version) < version_key(RELEASE_NOTES_FLOOR):
+            continue
+        index.setdefault(version, []).append(f"https://www.odoo.com{href}")
+    if not index:
+        raise ValueError(
+            "index page listed release-note links but no parsable versions"
+        )
+    return index
+
+
+# NOTE: if odoo edits old release note page, odoo-watch won't catch it, it is presumably intentional -> old version immutable
+def versions_to_fetch(index: dict, committed: list[str]) -> list[str]:
+    """Newest version always; older ones only when their directory is absent."""
+    if not index:
+        return []
+    committed_set = set(committed)
+    newest = max(index, key=version_key)
+    fetch = {v for v in index if v == newest or v not in committed_set}
+    return sorted(fetch, key=version_key)
 
 
 def is_retryable(status_code: int) -> bool:
@@ -182,17 +288,127 @@ def fetch_with_retry(url: str, retries: int = 3, backoff: float = 10.0) -> bytes
             if last:
                 raise FetchError(url, reason)
         wait = backoff * (2**attempt)
-        print(f"  -> {reason}, retrying in {wait:.0f}s (attempt {attempt + 1}/{retries})...")
+        print(
+            f"  -> {reason}, retrying in {wait:.0f}s (attempt {attempt + 1}/{retries})..."
+        )
         time.sleep(wait)
     raise AssertionError("unreachable")
 
 
-def main():
+def write_outputs(outputs: dict[Path, str], prune_roots: list[Path]) -> None:
+    """Write files to disk
+
+    "Disk" here is the local git working tree that CI already checked out
+
+    Steps:
+    1. For each root, pick a hidden sibling folder to use as a scratch
+       copy (e.g. root `20.0` gets scratch folder `.20.0.new`), and delete
+       that scratch folder if one is already there from a previous failed
+       run.
+    2. Write every file into its root's scratch folder, not into the real
+       root. Nothing under the real root is touched yet.
+    3. If any write fails partway through, delete all scratch folders and
+       stop. The real roots are untouched, so the previous good files are
+       still there.
+    4. If every file was written successfully, then for each root: delete
+       the real root's current contents and rename the scratch folder to
+       take its place.
+    """
+    shadow_by_root = {root: root.parent / f".{root.name}.new" for root in prune_roots}
+    for shadow in shadow_by_root.values():
+        shutil.rmtree(shadow, ignore_errors=True)
+
+    try:
+        for path, content in sorted(outputs.items()):
+            root = None
+            for candidate in prune_roots:
+                if path == candidate or candidate in path.parents:
+                    root = candidate
+                    break
+            target = shadow_by_root[root] / path.relative_to(root) if root else path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(content, encoding="utf-8")
+    except BaseException:
+        for shadow in shadow_by_root.values():
+            shutil.rmtree(shadow, ignore_errors=True)
+        raise
+
+    for root, shadow in shadow_by_root.items():
+        shutil.rmtree(root, ignore_errors=True)
+        shadow.rename(root)
+
+
+def watch_key(watch: dict) -> str:
+    """Identifier used by `--only` and error messages."""
+    return watch.get("path") or watch["outdir"]
+
+
+def render_orm_changelog(watch: dict) -> tuple[dict[Path, str], list[Path]]:
+    url = watch["url"]
+    response = fetch_with_retry(url)
+    html = response.decode("utf-8")
+    outdir = ROOT / watch["outdir"]
+    rendered = parse_orm_changelog(html, url)
+    stray = sorted(
+        rel for rel in rendered if rel.startswith("/") or ".." in Path(rel).parts
+    )
+    if stray:
+        raise ValueError(f"parsed output escapes its outdir: {stray}")
+    outputs = {outdir / rel: content for rel, content in rendered.items()}
+    prune_roots = [outdir]
+    for root in prune_roots:
+        if root in outputs:
+            raise ValueError(f"prune root {root} must not equal an output path")
+    return outputs, prune_roots
+
+
+def render_release_notes(watch: dict) -> tuple[dict[Path, str], list[Path]]:
+    """Fetch scope comes from the live index page: the newest version every
+    run, older ones only when their artifact directory is absent
+    (`versions_to_fetch`).
+
+    Prune roots are one per fetched version, never the whole release-notes
+    root -- otherwise a run that skips an older version would delete its artifacts.
+    """
+    index = upstream_index(fetch_with_retry(watch["url"]).decode("utf-8"))
+    fetch_versions = versions_to_fetch(index, committed_versions())
+    outdir = ROOT / watch["outdir"]
+    outputs: dict[Path, str] = {}
+    prune_roots: list[Path] = []
+    for i, version in enumerate(fetch_versions):
+        urls = resolve_urls(version, index)
+        print(f"  -> fetching release notes {version} ({len(urls)} page(s)) ...")
+        pages = []
+        for j, page_url in enumerate(urls):
+            pages.append((fetch_with_retry(page_url).decode("utf-8"), page_url))
+            if j < len(urls) - 1:
+                time.sleep(1)  # be polite between an alpha-fold target's pages
+        rendered = (
+            parse_release_notes(pages[0][0], version, pages[0][1])
+            if len(pages) == 1
+            else parse_release_notes_multi(pages, version)
+        )
+        prefix = f"{version}/"
+        version_root = outdir / version
+        for rel, content in rendered.items():
+            outputs[version_root / rel[len(prefix) :]] = content
+        prune_roots.append(version_root)
+        if i < len(fetch_versions) - 1:
+            # archive.org rate-limits harder than odoo.com's politeness gap.
+            time.sleep(2 if version in ARCHIVED_PINS else 1)
+    return outputs, prune_roots
+
+
+def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", metavar="PATH", help="Run only the watch matching this file path")
+    parser.add_argument(
+        "--only",
+        metavar="PATH",
+        help="Run only the watch matching this file path or outdir",
+    )
     args = parser.parse_args()
 
-    watches = [w for w in WATCHES if not args.only or w["path"] == args.only]
+    watches = [w for w in WATCHES if not args.only or watch_key(w) == args.only]
     if args.only and not watches:
         print(f"ERROR: no watch found for path {args.only!r}", file=sys.stderr)
         sys.exit(1)
@@ -201,13 +417,22 @@ def main():
     errors = []
     for watch in watches:
         url = watch["url"]
-        path = Path(watch["path"])
+        extract = watch.get("extract")
         print(f"Fetching {url} ...")
         try:
+            # Multi-file watches render a whole directory tree.
+            if extract == "orm_changelog":
+                write_outputs(*render_orm_changelog(watch))
+                continue
+            if extract == "release_notes":
+                write_outputs(*render_release_notes(watch))
+                continue
+
+            path = Path(watch["path"])
             html = fetch_with_retry(url).decode("utf-8")
             if watch.get("raw"):
                 content = html
-            elif watch.get("extract") == "partners":
+            elif extract == "partners":
                 content = extract_partners(html)
                 if watch.get("paginate"):
                     seen_lines = set(content.strip().splitlines())
@@ -216,21 +441,29 @@ def main():
                     while page <= max_pages:
                         paged_url = f"{url}/page/{page}"
                         print(f"  -> fetching page {page}/{max_pages} ...")
-                        more = extract_partners(fetch_with_retry(paged_url).decode("utf-8"))
+                        more = extract_partners(
+                            fetch_with_retry(paged_url).decode("utf-8")
+                        )
                         if not more.strip():
                             print(f"  -> no more results at page {page}, stopping.")
                             break
-                        new_lines = [l for l in more.strip().splitlines() if l not in seen_lines]
+                        new_lines = [
+                            l for l in more.strip().splitlines() if l not in seen_lines
+                        ]
                         if not new_lines:
-                            print(f"  -> page {page} returned duplicate data, stopping.")
+                            print(
+                                f"  -> page {page} returned duplicate data, stopping."
+                            )
                             break
                         seen_lines.update(new_lines)
-                        content = content.rstrip("\n") + "\n" + "\n".join(new_lines) + "\n"
+                        content = (
+                            content.rstrip("\n") + "\n" + "\n".join(new_lines) + "\n"
+                        )
                         page += 1
                         time.sleep(1)  # be polite between page fetches
                     else:
                         print(f"  -> reached max_pages={max_pages}, stopping.")
-            elif watch.get("extract") == "selector":
+            elif extract == "selector":
                 content = extract_selector(html, watch["selector"])
             else:
                 content = clean_html(html)
@@ -238,7 +471,13 @@ def main():
                 check_expected(content, watch["expect"])
             path.write_text(content, encoding="utf-8")
             print(f"  -> saved to {path}")
-        except (FetchError, ValueError) as e:
+        except (
+            FetchError,
+            ReleaseNotesError,
+            ValueError,
+            OSError,
+            NotImplementedError,
+        ) as e:
             print(f"  -> ERROR: {e}", file=sys.stderr)
             errors.append(url)
 
