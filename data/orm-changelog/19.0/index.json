@@ -1,0 +1,76 @@
+{
+  "version": "19.0",
+  "source_url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+  "apps": [
+    {
+      "app": "ORM API",
+      "slug": "orm-api",
+      "file": "orm-api.md",
+      "anchor": "",
+      "item_count": 15,
+      "notes": [
+        {
+          "id": "19.0-orm-api-add-support-for-grouping-sets-for-pivot-views",
+          "title": "Add support for `GROUPING SETS` for pivot views"
+        },
+        {
+          "id": "19.0-orm-api-adding-support-for-dynamic-dates-in-domains",
+          "title": "Adding support for dynamic dates in domains"
+        },
+        {
+          "id": "19.0-orm-api-deprecated-odoo-osv-in-217708-https-github-com-odoo-odoo-pull-217708",
+          "title": "Deprecated `odoo.osv` in [#217708](https://github.com/odoo/odoo/pull/217708)"
+        },
+        {
+          "id": "19.0-orm-api-deprecated-record-cr-record-context-record-uid-in-193636-https-github-com-odoo-odoo-pull-193636",
+          "title": "Deprecated `record._cr`, `record._context`, `record._uid` in [#193636](https://github.com/odoo/odoo/pull/193636)"
+        },
+        {
+          "id": "19.0-orm-api-the-reinit-option-is-added-to-the-cli-to-reinitialize-modules",
+          "title": "The `reinit` option is added to the CLI to reinitialize modules"
+        },
+        {
+          "id": "19.0-orm-api-possibility-to-write-and-combine-custom-domains-for-injecting-arbitrary-sql",
+          "title": "Possibility to write and combine custom domains for injecting arbitrary SQL"
+        },
+        {
+          "id": "19.0-orm-api-domain-optimization-is-applied-before-executing-fields-search-methods",
+          "title": "Domain optimization is applied before executing `Fields.search` methods"
+        },
+        {
+          "id": "19.0-orm-api-new-cron-api-for-notifying-progress-with-batch-commits",
+          "title": "New cron API for notifying progress with batch commits"
+        },
+        {
+          "id": "19.0-orm-api-demo-data-no-longer-loaded-by-default",
+          "title": "Demo data no longer loaded by default"
+        },
+        {
+          "id": "19.0-orm-api-read-group-has-been-deprecated-in-favor-of-read-group-for-backend-usage-and-of-formatted-read-group-as-formatted-public-api",
+          "title": "`read_group` has been deprecated in favor of `_read_group` for backend usage and of `formatted_read_group` as formatted public API"
+        },
+        {
+          "id": "19.0-orm-api-api-private-is-added-to-distinguish-public-python-methods-from-methods-exposed-for-rpc-calls",
+          "title": "`@api.private` is added to distinguish public Python methods from methods exposed for RPC calls"
+        },
+        {
+          "id": "19.0-orm-api-native-namespaces-for-odoo-module-pep-420-https-peps-python-org-pep-0420",
+          "title": "Native namespaces for `odoo` module [PEP-420](https://peps.python.org/pep-0420/)"
+        },
+        {
+          "id": "19.0-orm-api-new-odoo-domain-and-odoo-domain-api-for-domain-manipulation",
+          "title": "New `odoo.domain` and `odoo.Domain` API for domain manipulation"
+        },
+        {
+          "id": "19.0-orm-api-declare-constraints-and-indexes-as-model-attributes-with-175783-https-github-com-odoo-odoo-pull-175783",
+          "title": "Declare constraints and indexes as model attributes with [#175783](https://github.com/odoo/odoo/pull/175783)"
+        },
+        {
+          "id": "19.0-orm-api-the-json-controllers-have-been-renamed-to-jsonrpc",
+          "title": "The `json` controllers have been renamed to `jsonrpc`"
+        }
+      ]
+    }
+  ],
+  "item_count": 15
+}

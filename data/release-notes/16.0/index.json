@@ -1,0 +1,2416 @@
+{
+  "version": "16.0",
+  "source_url": "https://www.odoo.com/odoo-16-release-notes",
+  "apps": [
+    {
+      "app": "General",
+      "slug": "general",
+      "file": "general.md",
+      "anchor": "table_of_content_heading_1713360697706_7",
+      "item_count": 29,
+      "notes": [
+        {
+          "id": "16.0-general-performance",
+          "title": "Performance"
+        },
+        {
+          "id": "16.0-general-new-dashboards",
+          "title": "New Dashboards"
+        },
+        {
+          "id": "16.0-general-context-based-custom-fields",
+          "title": "Context-based Custom Fields"
+        },
+        {
+          "id": "16.0-general-access-rights-and-group-inheritance",
+          "title": "Access Rights and Group Inheritance"
+        },
+        {
+          "id": "16.0-general-archive-mail-servers",
+          "title": "Archive Mail Servers"
+        },
+        {
+          "id": "16.0-general-command-palette",
+          "title": "Command Palette"
+        },
+        {
+          "id": "16.0-general-editor",
+          "title": "Editor"
+        },
+        {
+          "id": "16.0-general-editor-command-bar",
+          "title": "Editor: Command Bar"
+        },
+        {
+          "id": "16.0-general-editor-table-edition",
+          "title": "Editor: Table Edition"
+        },
+        {
+          "id": "16.0-general-editor-tabs",
+          "title": "Editor: Tabs"
+        },
+        {
+          "id": "16.0-general-editor-user-icons",
+          "title": "Editor: User Icons"
+        },
+        {
+          "id": "16.0-general-email-digest",
+          "title": "Email Digest"
+        },
+        {
+          "id": "16.0-general-email-notifications",
+          "title": "Email Notifications"
+        },
+        {
+          "id": "16.0-general-email-templates-customization",
+          "title": "Email Templates: Customization"
+        },
+        {
+          "id": "16.0-general-email-templates-reset",
+          "title": "Email Templates: Reset"
+        },
+        {
+          "id": "16.0-general-gantt-view-dependencies",
+          "title": "Gantt View: Dependencies"
+        },
+        {
+          "id": "16.0-general-gdpr-module",
+          "title": "GDPR Module"
+        },
+        {
+          "id": "16.0-general-google-drive-spreadsheet-depreciated-modules",
+          "title": "Google Drive/Spreadsheet: Depreciated Modules"
+        },
+        {
+          "id": "16.0-general-hr-apps-access-rights-labelling-uniformization",
+          "title": "HR Apps Access Rights Labelling Uniformization"
+        },
+        {
+          "id": "16.0-general-http-routing-stack",
+          "title": "HTTP Routing Stack"
+        },
+        {
+          "id": "16.0-general-mobile-preview",
+          "title": "Mobile Preview"
+        },
+        {
+          "id": "16.0-general-multiple-languages",
+          "title": "Multiple Languages"
+        },
+        {
+          "id": "16.0-general-outlook-oauth",
+          "title": "Outlook OAuth"
+        },
+        {
+          "id": "16.0-general-pdf-preview-links",
+          "title": "PDF Preview: Links"
+        },
+        {
+          "id": "16.0-general-pdf-reports-spacing",
+          "title": "PDF Reports Spacing"
+        },
+        {
+          "id": "16.0-general-pdf-reports-arabic-font",
+          "title": "PDF Reports: Arabic Font"
+        },
+        {
+          "id": "16.0-general-portal-account-deactivation",
+          "title": "Portal Account Deactivation"
+        },
+        {
+          "id": "16.0-general-sms-credits",
+          "title": "SMS Credits"
+        },
+        {
+          "id": "16.0-general-utm-parameters",
+          "title": "UTM Parameters"
+        }
+      ]
+    },
+    {
+      "app": "Accounting",
+      "slug": "accounting",
+      "file": "accounting.md",
+      "anchor": "table_of_content_heading_1713360697707_8",
+      "item_count": 50,
+      "notes": [
+        {
+          "id": "16.0-accounting-analytics",
+          "title": "Analytics"
+        },
+        {
+          "id": "16.0-accounting-bank-reconciliation-widget",
+          "title": "Bank Reconciliation Widget"
+        },
+        {
+          "id": "16.0-accounting-usability-and-navigation",
+          "title": "Usability and Navigation"
+        },
+        {
+          "id": "16.0-accounting-journal-audits",
+          "title": "Journal Audits"
+        },
+        {
+          "id": "16.0-accounting-account-reports",
+          "title": "Account Reports"
+        },
+        {
+          "id": "16.0-accounting-accounting-firms-mode",
+          "title": "Accounting Firms Mode"
+        },
+        {
+          "id": "16.0-accounting-accounting-menu",
+          "title": "Accounting Menu"
+        },
+        {
+          "id": "16.0-accounting-asset-cancellation",
+          "title": "Asset Cancellation"
+        },
+        {
+          "id": "16.0-accounting-asset-models",
+          "title": "Asset Models"
+        },
+        {
+          "id": "16.0-accounting-asset-wizards",
+          "title": "Asset Wizards"
+        },
+        {
+          "id": "16.0-accounting-assets-negative-and-depreciation",
+          "title": "Assets: Negative and Depreciation"
+        },
+        {
+          "id": "16.0-accounting-assets-non-deductible-tax",
+          "title": "Assets: Non-Deductible Tax"
+        },
+        {
+          "id": "16.0-accounting-batch-payments-chatter-and-activities",
+          "title": "Batch Payments: Chatter and Activities"
+        },
+        {
+          "id": "16.0-accounting-batch-payments-rejection-management",
+          "title": "Batch Payments: Rejection Management"
+        },
+        {
+          "id": "16.0-accounting-cash-discounts",
+          "title": "Cash Discounts"
+        },
+        {
+          "id": "16.0-accounting-credit-limit-by-partner",
+          "title": "Credit Limit by Partner"
+        },
+        {
+          "id": "16.0-accounting-currencies",
+          "title": "Currencies"
+        },
+        {
+          "id": "16.0-accounting-currency-conversion-rate-invoice-bill-date",
+          "title": "Currency Conversion Rate: Invoice/Bill Date"
+        },
+        {
+          "id": "16.0-accounting-cut-off-entries-label",
+          "title": "Cut-off Entries Label"
+        },
+        {
+          "id": "16.0-accounting-data-import",
+          "title": "Data Import"
+        },
+        {
+          "id": "16.0-accounting-disallowed-expenses-categories",
+          "title": "Disallowed Expenses Categories"
+        },
+        {
+          "id": "16.0-accounting-drag-and-drop-upload",
+          "title": "Drag and Drop Upload"
+        },
+        {
+          "id": "16.0-accounting-financial-reports-debug",
+          "title": "Financial Reports Debug"
+        },
+        {
+          "id": "16.0-accounting-follow-up-reports",
+          "title": "Follow-up Reports"
+        },
+        {
+          "id": "16.0-accounting-intrastat-commodity-codes-renewal",
+          "title": "Intrastat Commodity Codes Renewal"
+        },
+        {
+          "id": "16.0-accounting-invoices-and-bills-payment-widget",
+          "title": "Invoices and Bills Payment Widget"
+        },
+        {
+          "id": "16.0-accounting-journal-entries-and-items-quick-search",
+          "title": "Journal Entries and Items Quick Search"
+        },
+        {
+          "id": "16.0-accounting-journal-groups-naming",
+          "title": "Journal Groups Naming"
+        },
+        {
+          "id": "16.0-accounting-journals-audit-report",
+          "title": "Journals Audit Report"
+        },
+        {
+          "id": "16.0-accounting-lock-dates-tracking",
+          "title": "Lock Dates Tracking"
+        },
+        {
+          "id": "16.0-accounting-non-trade-accounts-entries",
+          "title": "Non Trade Accounts Entries"
+        },
+        {
+          "id": "16.0-accounting-non-continuous-sequence-alert",
+          "title": "Non-continuous Sequence Alert"
+        },
+        {
+          "id": "16.0-accounting-ocr-background-validation",
+          "title": "OCR Background Validation"
+        },
+        {
+          "id": "16.0-accounting-ocr-field-mapping",
+          "title": "OCR Field Mapping"
+        },
+        {
+          "id": "16.0-accounting-ocr-bills-and-invoices-settings",
+          "title": "OCR: Bills and Invoices Settings"
+        },
+        {
+          "id": "16.0-accounting-ocr-partner-identification",
+          "title": "OCR: Partner Identification"
+        },
+        {
+          "id": "16.0-accounting-optional-bank-statements",
+          "title": "Optional Bank Statements"
+        },
+        {
+          "id": "16.0-accounting-partners-bank-account-management",
+          "title": "Partners Bank Account Management"
+        },
+        {
+          "id": "16.0-accounting-partners-bank-account-numbers",
+          "title": "Partners Bank Account Numbers"
+        },
+        {
+          "id": "16.0-accounting-payment-terms",
+          "title": "Payment Terms"
+        },
+        {
+          "id": "16.0-accounting-payments-total-amounts",
+          "title": "Payments: Total Amounts"
+        },
+        {
+          "id": "16.0-accounting-reconciliation-foreign-currency",
+          "title": "Reconciliation: Foreign Currency"
+        },
+        {
+          "id": "16.0-accounting-recurring-account-moves-management",
+          "title": "Recurring Account Moves Management"
+        },
+        {
+          "id": "16.0-accounting-reports-readability",
+          "title": "Reports Readability"
+        },
+        {
+          "id": "16.0-accounting-reports-foldable-records",
+          "title": "Reports: Foldable Records"
+        },
+        {
+          "id": "16.0-accounting-sales-and-purchase-journals-alerts",
+          "title": "Sales and Purchase Journals Alerts"
+        },
+        {
+          "id": "16.0-accounting-sepa-rejection-management",
+          "title": "SEPA Rejection Management"
+        },
+        {
+          "id": "16.0-accounting-sepa-non-latin-characters-mapping",
+          "title": "SEPA: Non-Latin Characters Mapping"
+        },
+        {
+          "id": "16.0-accounting-storno-accounting",
+          "title": "Storno Accounting"
+        },
+        {
+          "id": "16.0-accounting-vehicle-assets",
+          "title": "Vehicle Assets"
+        }
+      ]
+    },
+    {
+      "app": "Accounting - Localization",
+      "slug": "accounting-localization",
+      "file": "accounting-localization.md",
+      "anchor": "table_of_content_heading_1713360697708_9",
+      "item_count": 24,
+      "notes": [
+        {
+          "id": "16.0-accounting-localization-austria",
+          "title": "Austria"
+        },
+        {
+          "id": "16.0-accounting-localization-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "16.0-accounting-localization-brazil",
+          "title": "Brazil"
+        },
+        {
+          "id": "16.0-accounting-localization-bulgaria",
+          "title": "Bulgaria"
+        },
+        {
+          "id": "16.0-accounting-localization-chile",
+          "title": "Chile"
+        },
+        {
+          "id": "16.0-accounting-localization-denmark",
+          "title": "Denmark"
+        },
+        {
+          "id": "16.0-accounting-localization-ecuador",
+          "title": "Ecuador"
+        },
+        {
+          "id": "16.0-accounting-localization-egypt",
+          "title": "Egypt"
+        },
+        {
+          "id": "16.0-accounting-localization-france",
+          "title": "France"
+        },
+        {
+          "id": "16.0-accounting-localization-germany",
+          "title": "Germany"
+        },
+        {
+          "id": "16.0-accounting-localization-hungary",
+          "title": "Hungary"
+        },
+        {
+          "id": "16.0-accounting-localization-indonesia",
+          "title": "Indonesia"
+        },
+        {
+          "id": "16.0-accounting-localization-italy",
+          "title": "Italy"
+        },
+        {
+          "id": "16.0-accounting-localization-lithuania",
+          "title": "Lithuania"
+        },
+        {
+          "id": "16.0-accounting-localization-luxemburg",
+          "title": "Luxemburg"
+        },
+        {
+          "id": "16.0-accounting-localization-mexico",
+          "title": "Mexico"
+        },
+        {
+          "id": "16.0-accounting-localization-pakistan",
+          "title": "Pakistan"
+        },
+        {
+          "id": "16.0-accounting-localization-peru",
+          "title": "Peru"
+        },
+        {
+          "id": "16.0-accounting-localization-saudi-arabia",
+          "title": "Saudi Arabia"
+        },
+        {
+          "id": "16.0-accounting-localization-serbia",
+          "title": "Serbia"
+        },
+        {
+          "id": "16.0-accounting-localization-slovenia",
+          "title": "Slovenia"
+        },
+        {
+          "id": "16.0-accounting-localization-spain",
+          "title": "Spain"
+        },
+        {
+          "id": "16.0-accounting-localization-sweden",
+          "title": "Sweden"
+        },
+        {
+          "id": "16.0-accounting-localization-switzerland",
+          "title": "Switzerland"
+        }
+      ]
+    },
+    {
+      "app": "Appraisals",
+      "slug": "appraisals",
+      "file": "appraisals.md",
+      "anchor": "table_of_content_heading_1713360697709_10",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "16.0-appraisals-360-feedback-template",
+          "title": "360 Feedback Template"
+        },
+        {
+          "id": "16.0-appraisals-appraisal-date",
+          "title": "Appraisal Date"
+        },
+        {
+          "id": "16.0-appraisals-employee-skills",
+          "title": "Employee Skills"
+        },
+        {
+          "id": "16.0-appraisals-reporting-skills-evolution",
+          "title": "Reporting: Skills Evolution"
+        }
+      ]
+    },
+    {
+      "app": "Approvals",
+      "slug": "approvals",
+      "file": "approvals.md",
+      "anchor": "table_of_content_heading_1713360697710_11",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "16.0-approvals-approvers",
+          "title": "Approvers"
+        },
+        {
+          "id": "16.0-approvals-inherited-rights",
+          "title": "Inherited Rights"
+        }
+      ]
+    },
+    {
+      "app": "Attendances",
+      "slug": "attendances",
+      "file": "attendances.md",
+      "anchor": "table_of_content_heading_1713360697710_12",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "16.0-attendances-extra-hours",
+          "title": "Extra Hours"
+        },
+        {
+          "id": "16.0-attendances-kiosk-mode-authentication",
+          "title": "Kiosk Mode Authentication"
+        }
+      ]
+    },
+    {
+      "app": "Barcode",
+      "slug": "barcode",
+      "file": "barcode.md",
+      "anchor": "table_of_content_heading_1713360697712_13",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "16.0-barcode-operations",
+          "title": "Operations"
+        },
+        {
+          "id": "16.0-barcode-packagings-stock-moves",
+          "title": "Packagings: Stock Moves"
+        },
+        {
+          "id": "16.0-barcode-pickings-deletion",
+          "title": "Pickings Deletion"
+        },
+        {
+          "id": "16.0-barcode-receipts",
+          "title": "Receipts"
+        },
+        {
+          "id": "16.0-barcode-scanning-packages",
+          "title": "Scanning Packages"
+        },
+        {
+          "id": "16.0-barcode-scanning-per-operation-type",
+          "title": "Scanning per Operation Type"
+        },
+        {
+          "id": "16.0-barcode-serials-and-lots",
+          "title": "Serials and Lots"
+        },
+        {
+          "id": "16.0-barcode-transfers-chatter-and-kanban",
+          "title": "Transfers: Chatter and Kanban"
+        },
+        {
+          "id": "16.0-barcode-user-assignation-on-picking",
+          "title": "User Assignation on Picking"
+        }
+      ]
+    },
+    {
+      "app": "Calendar",
+      "slug": "calendar",
+      "file": "calendar.md",
+      "anchor": "table_of_content_heading_1713360697712_14",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "16.0-calendar-readability",
+          "title": "Readability"
+        },
+        {
+          "id": "16.0-calendar-video-calls",
+          "title": "Video Calls"
+        }
+      ]
+    },
+    {
+      "app": "Consolidation",
+      "slug": "consolidation",
+      "file": "consolidation.md",
+      "anchor": "table_of_content_heading_1713360697713_15",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-consolidation-profit-and-loss",
+          "title": "Profit and Loss"
+        }
+      ]
+    },
+    {
+      "app": "CRM",
+      "slug": "crm",
+      "file": "crm.md",
+      "anchor": "table_of_content_heading_1713360697713_16",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "16.0-crm-archiving-partner-activation-levels",
+          "title": "Archiving Partner Activation Levels"
+        },
+        {
+          "id": "16.0-crm-languages-installation",
+          "title": "Languages Installation"
+        },
+        {
+          "id": "16.0-crm-lead-analysis",
+          "title": "Lead Analysis"
+        },
+        {
+          "id": "16.0-crm-lead-language",
+          "title": "Lead Language"
+        },
+        {
+          "id": "16.0-crm-link-opportunity",
+          "title": "Link Opportunity"
+        },
+        {
+          "id": "16.0-crm-lost-reason",
+          "title": "Lost Reason"
+        },
+        {
+          "id": "16.0-crm-merging-leads",
+          "title": "Merging Leads"
+        },
+        {
+          "id": "16.0-crm-merging-leads-2",
+          "title": "Merging Leads"
+        },
+        {
+          "id": "16.0-crm-recurring-revenue",
+          "title": "Recurring Revenue"
+        },
+        {
+          "id": "16.0-crm-reseller-tracking",
+          "title": "Reseller Tracking"
+        },
+        {
+          "id": "16.0-crm-similar-lead-detection",
+          "title": "Similar Lead Detection"
+        }
+      ]
+    },
+    {
+      "app": "Discuss",
+      "slug": "discuss",
+      "file": "discuss.md",
+      "anchor": "table_of_content_heading_1713360697715_17",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "16.0-discuss-conversations-dropdown-readability",
+          "title": "Conversations Dropdown Readability"
+        },
+        {
+          "id": "16.0-discuss-copy-invitation-link",
+          "title": "Copy Invitation Link"
+        },
+        {
+          "id": "16.0-discuss-download-images-button",
+          "title": "Download Images Button"
+        },
+        {
+          "id": "16.0-discuss-emojis",
+          "title": "Emojis"
+        },
+        {
+          "id": "16.0-discuss-join-leave-notifications",
+          "title": "Join/Leave Notifications"
+        },
+        {
+          "id": "16.0-discuss-link-previews",
+          "title": "Link Previews"
+        },
+        {
+          "id": "16.0-discuss-message-actions-list",
+          "title": "Message Actions List"
+        },
+        {
+          "id": "16.0-discuss-notifications",
+          "title": "Notifications"
+        },
+        {
+          "id": "16.0-discuss-open-dm-chat-on-mention-member-name",
+          "title": "Open DM Chat on Mention/Member Name"
+        },
+        {
+          "id": "16.0-discuss-search-current-user",
+          "title": "Search Current User"
+        },
+        {
+          "id": "16.0-discuss-show-guests",
+          "title": "Show Guests"
+        },
+        {
+          "id": "16.0-discuss-video-background-blur",
+          "title": "Video Background Blur"
+        },
+        {
+          "id": "16.0-discuss-video-calls-ui",
+          "title": "Video Calls UI"
+        }
+      ]
+    },
+    {
+      "app": "Documents",
+      "slug": "documents",
+      "file": "documents.md",
+      "anchor": "table_of_content_heading_1713360697715_18",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-documents-disabled-buttons",
+          "title": "Disabled Buttons"
+        },
+        {
+          "id": "16.0-documents-list-view-group-by",
+          "title": "List View: Group By"
+        },
+        {
+          "id": "16.0-documents-maximum-file-size",
+          "title": "Maximum File Size"
+        },
+        {
+          "id": "16.0-documents-navigation-panel",
+          "title": "Navigation Panel"
+        },
+        {
+          "id": "16.0-documents-ocr-search",
+          "title": "OCR Search"
+        },
+        {
+          "id": "16.0-documents-sharing",
+          "title": "Sharing"
+        },
+        {
+          "id": "16.0-documents-split-tool-cancel-and-archive",
+          "title": "Split Tool: Cancel and Archive"
+        },
+        {
+          "id": "16.0-documents-thumbnails-and-previews",
+          "title": "Thumbnails and Previews"
+        }
+      ]
+    },
+    {
+      "app": "eCommerce",
+      "slug": "ecommerce",
+      "file": "ecommerce.md",
+      "anchor": "table_of_content_heading_1713360697716_19",
+      "item_count": 22,
+      "notes": [
+        {
+          "id": "16.0-ecommerce-abandoned-carts-reminders",
+          "title": "Abandoned Carts Reminders"
+        },
+        {
+          "id": "16.0-ecommerce-alternative-products-building-block",
+          "title": "Alternative Products Building Block"
+        },
+        {
+          "id": "16.0-ecommerce-archived-product-variants",
+          "title": "Archived Product Variants"
+        },
+        {
+          "id": "16.0-ecommerce-attribute-display-type",
+          "title": "Attribute Display Type"
+        },
+        {
+          "id": "16.0-ecommerce-back-in-stock-notification",
+          "title": "Back in Stock Notification"
+        },
+        {
+          "id": "16.0-ecommerce-cart-items-number",
+          "title": "Cart Items Number"
+        },
+        {
+          "id": "16.0-ecommerce-coupons-loyalty-cards-and-ewallets",
+          "title": "Coupons, Loyalty Cards and eWallets"
+        },
+        {
+          "id": "16.0-ecommerce-customer-address-autocomplete-and-validation",
+          "title": "Customer Address Autocomplete and Validation"
+        },
+        {
+          "id": "16.0-ecommerce-mandatory-sign-in",
+          "title": "Mandatory Sign-in"
+        },
+        {
+          "id": "16.0-ecommerce-mondial-relay-delivery",
+          "title": "Mondial Relay Delivery"
+        },
+        {
+          "id": "16.0-ecommerce-page-options",
+          "title": "Page Options"
+        },
+        {
+          "id": "16.0-ecommerce-picking-and-pay-on-site",
+          "title": "Picking and Pay on Site"
+        },
+        {
+          "id": "16.0-ecommerce-prevent-sale-of-products",
+          "title": "Prevent Sale of Products"
+        },
+        {
+          "id": "16.0-ecommerce-product-pictures",
+          "title": "Product Pictures"
+        },
+        {
+          "id": "16.0-ecommerce-product-snippet",
+          "title": "Product Snippet"
+        },
+        {
+          "id": "16.0-ecommerce-product-tags",
+          "title": "Product Tags"
+        },
+        {
+          "id": "16.0-ecommerce-products-default-sorting",
+          "title": "Products Default Sorting"
+        },
+        {
+          "id": "16.0-ecommerce-re-order-from-portal",
+          "title": "Re-order from Portal"
+        },
+        {
+          "id": "16.0-ecommerce-rental",
+          "title": "Rental"
+        },
+        {
+          "id": "16.0-ecommerce-shop-page",
+          "title": "Shop Page"
+        },
+        {
+          "id": "16.0-ecommerce-sidebar-filters",
+          "title": "Sidebar Filters"
+        },
+        {
+          "id": "16.0-ecommerce-snippet-add-product-to-cart",
+          "title": "Snippet: Add product to Cart"
+        }
+      ]
+    },
+    {
+      "app": "eLearning",
+      "slug": "elearning",
+      "file": "elearning.md",
+      "anchor": "table_of_content_heading_1713360697717_20",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "16.0-elearning-banner-header",
+          "title": "Banner Header"
+        },
+        {
+          "id": "16.0-elearning-bought-courses",
+          "title": "Bought Courses"
+        },
+        {
+          "id": "16.0-elearning-course-duplication",
+          "title": "Course Duplication"
+        },
+        {
+          "id": "16.0-elearning-done-undone-content",
+          "title": "Done/Undone Content"
+        },
+        {
+          "id": "16.0-elearning-onboarding",
+          "title": "Onboarding"
+        },
+        {
+          "id": "16.0-elearning-publication-tracking",
+          "title": "Publication Tracking"
+        },
+        {
+          "id": "16.0-elearning-registration-prompt",
+          "title": "Registration Prompt"
+        },
+        {
+          "id": "16.0-elearning-test-history",
+          "title": "Test History"
+        },
+        {
+          "id": "16.0-elearning-vimeo",
+          "title": "Vimeo"
+        }
+      ]
+    },
+    {
+      "app": "Email Marketing",
+      "slug": "email-marketing",
+      "file": "email-marketing.md",
+      "anchor": "table_of_content_heading_1713360697719_21",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-email-marketing-contacts-mass-edit",
+          "title": "Contacts Mass Edit"
+        },
+        {
+          "id": "16.0-email-marketing-image-shapes",
+          "title": "Image Shapes"
+        },
+        {
+          "id": "16.0-email-marketing-list-view",
+          "title": "List View"
+        },
+        {
+          "id": "16.0-email-marketing-mailing-contacts-import",
+          "title": "Mailing Contacts Import"
+        },
+        {
+          "id": "16.0-email-marketing-mailing-reports",
+          "title": "Mailing Reports"
+        },
+        {
+          "id": "16.0-email-marketing-newsletter-snippets",
+          "title": "Newsletter Snippets"
+        },
+        {
+          "id": "16.0-email-marketing-save-filters",
+          "title": "Save Filters"
+        },
+        {
+          "id": "16.0-email-marketing-template-management",
+          "title": "Template Management"
+        }
+      ]
+    },
+    {
+      "app": "Employees",
+      "slug": "employees",
+      "file": "employees.md",
+      "anchor": "table_of_content_heading_1713360697720_22",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "16.0-employees-departments",
+          "title": "Departments"
+        },
+        {
+          "id": "16.0-employees-elearning-smart-button",
+          "title": "eLearning Smart Button"
+        },
+        {
+          "id": "16.0-employees-employee-tags",
+          "title": "Employee Tags"
+        },
+        {
+          "id": "16.0-employees-filters-and-search",
+          "title": "Filters and Search"
+        },
+        {
+          "id": "16.0-employees-fleet",
+          "title": "Fleet"
+        },
+        {
+          "id": "16.0-employees-mexico",
+          "title": "Mexico"
+        },
+        {
+          "id": "16.0-employees-multiple-plans",
+          "title": "Multiple Plans"
+        },
+        {
+          "id": "16.0-employees-new-user-employee-creation",
+          "title": "New User: Employee Creation"
+        },
+        {
+          "id": "16.0-employees-plans-by-department",
+          "title": "Plans by Department"
+        },
+        {
+          "id": "16.0-employees-plans-request-signature",
+          "title": "Plans: Request Signature"
+        },
+        {
+          "id": "16.0-employees-signature-request-wizard",
+          "title": "Signature Request Wizard"
+        },
+        {
+          "id": "16.0-employees-skills-report",
+          "title": "Skills Report"
+        },
+        {
+          "id": "16.0-employees-skills-wizard",
+          "title": "Skills Wizard"
+        }
+      ]
+    },
+    {
+      "app": "Events",
+      "slug": "events",
+      "file": "events.md",
+      "anchor": "table_of_content_heading_1713360697720_23",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "16.0-events-locations-order",
+          "title": "Locations Order"
+        },
+        {
+          "id": "16.0-events-mandatory-questions",
+          "title": "Mandatory Questions"
+        },
+        {
+          "id": "16.0-events-registration-statistics",
+          "title": "Registration Statistics"
+        },
+        {
+          "id": "16.0-events-revenue-reporting",
+          "title": "Revenue Reporting"
+        },
+        {
+          "id": "16.0-events-tag-order",
+          "title": "Tag Order"
+        },
+        {
+          "id": "16.0-events-website-theme",
+          "title": "Website Theme"
+        },
+        {
+          "id": "16.0-events-website-timezones",
+          "title": "Website: Timezones"
+        }
+      ]
+    },
+    {
+      "app": "Expenses",
+      "slug": "expenses",
+      "file": "expenses.md",
+      "anchor": "table_of_content_heading_1713360697722_24",
+      "item_count": 5,
+      "notes": [
+        {
+          "id": "16.0-expenses-default-journals",
+          "title": "Default Journals"
+        },
+        {
+          "id": "16.0-expenses-link-to-sales-orders",
+          "title": "Link to Sales Orders"
+        },
+        {
+          "id": "16.0-expenses-re-invoicing-expenses",
+          "title": "Re-invoicing Expenses"
+        },
+        {
+          "id": "16.0-expenses-taxes-compatibility",
+          "title": "Taxes Compatibility"
+        },
+        {
+          "id": "16.0-expenses-ux-improvements",
+          "title": "UX Improvements"
+        }
+      ]
+    },
+    {
+      "app": "Field Service",
+      "slug": "field-service",
+      "file": "field-service.md",
+      "anchor": "table_of_content_heading_1713360697722_25",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-field-service-open-reporting",
+          "title": "Open Reporting"
+        }
+      ]
+    },
+    {
+      "app": "Fleet",
+      "slug": "fleet",
+      "file": "fleet.md",
+      "anchor": "table_of_content_heading_1713360697723_26",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "16.0-fleet-chatter-tracking",
+          "title": "Chatter Tracking"
+        },
+        {
+          "id": "16.0-fleet-license-plate",
+          "title": "License Plate"
+        },
+        {
+          "id": "16.0-fleet-ux-improvements",
+          "title": "UX Improvements"
+        }
+      ]
+    },
+    {
+      "app": "Helpdesk",
+      "slug": "helpdesk",
+      "file": "helpdesk.md",
+      "anchor": "table_of_content_heading_1713360697724_27",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-helpdesk-help-center-and-knowledge-integration",
+          "title": "Help Center and Knowledge Integration"
+        },
+        {
+          "id": "16.0-helpdesk-open-reporting",
+          "title": "Open Reporting"
+        },
+        {
+          "id": "16.0-helpdesk-sms-templates-on-stages",
+          "title": "SMS Templates on Stages"
+        },
+        {
+          "id": "16.0-helpdesk-ticket-assignment-time-off",
+          "title": "Ticket Assignment: Time Off"
+        },
+        {
+          "id": "16.0-helpdesk-tickets-analysis",
+          "title": "Tickets Analysis"
+        },
+        {
+          "id": "16.0-helpdesk-tickets-sequence",
+          "title": "Tickets Sequence"
+        },
+        {
+          "id": "16.0-helpdesk-tickets-to-tasks-conversion",
+          "title": "Tickets to Tasks Conversion"
+        },
+        {
+          "id": "16.0-helpdesk-utm-parameters",
+          "title": "UTM Parameters"
+        }
+      ]
+    },
+    {
+      "app": "Inventory",
+      "slug": "inventory",
+      "file": "inventory.md",
+      "anchor": "table_of_content_heading_1713360697724_28",
+      "item_count": 10,
+      "notes": [
+        {
+          "id": "16.0-inventory-automatic-batch-transfers",
+          "title": "Automatic Batch Transfers"
+        },
+        {
+          "id": "16.0-inventory-force-backorders",
+          "title": "Force Backorders"
+        },
+        {
+          "id": "16.0-inventory-inventory-adjustements",
+          "title": "Inventory Adjustements"
+        },
+        {
+          "id": "16.0-inventory-lots-and-packages-gs1-128-barcodes",
+          "title": "Lots and Packages: GS1-128 Barcodes"
+        },
+        {
+          "id": "16.0-inventory-reception-report",
+          "title": "Reception Report"
+        },
+        {
+          "id": "16.0-inventory-replenishment-locations",
+          "title": "Replenishment Locations"
+        },
+        {
+          "id": "16.0-inventory-replenishment-warehouse-levels",
+          "title": "Replenishment: Warehouse Levels"
+        },
+        {
+          "id": "16.0-inventory-reporting-and-menus",
+          "title": "Reporting and Menus"
+        },
+        {
+          "id": "16.0-inventory-transfers-done-quantity",
+          "title": "Transfers: Done Quantity"
+        },
+        {
+          "id": "16.0-inventory-visibility-days",
+          "title": "Visibility Days"
+        }
+      ]
+    },
+    {
+      "app": "Knowledge",
+      "slug": "knowledge",
+      "file": "knowledge.md",
+      "anchor": "table_of_content_heading_1713360697725_29",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-knowledge-manage-knowledge",
+          "title": "Manage Knowledge"
+        },
+        {
+          "id": "16.0-knowledge-copying-and-duplicating",
+          "title": "Copying and Duplicating"
+        },
+        {
+          "id": "16.0-knowledge-cover-picker",
+          "title": "Cover Picker"
+        },
+        {
+          "id": "16.0-knowledge-embedded-views-and-owlification",
+          "title": "Embedded Views and Owlification"
+        },
+        {
+          "id": "16.0-knowledge-nested-articles",
+          "title": "Nested Articles"
+        },
+        {
+          "id": "16.0-knowledge-outline-and-index",
+          "title": "Outline and Index"
+        },
+        {
+          "id": "16.0-knowledge-table-of-contents",
+          "title": "Table of Contents"
+        },
+        {
+          "id": "16.0-knowledge-trash-management",
+          "title": "Trash Management"
+        }
+      ]
+    },
+    {
+      "app": "Live Chat",
+      "slug": "live-chat",
+      "file": "live-chat.md",
+      "anchor": "table_of_content_heading_1713360697727_30",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "16.0-live-chat-chatbot",
+          "title": "Chatbot"
+        },
+        {
+          "id": "16.0-live-chat-live-chat-button",
+          "title": "Live Chat Button"
+        }
+      ]
+    },
+    {
+      "app": "Lunch",
+      "slug": "lunch",
+      "file": "lunch.md",
+      "anchor": "table_of_content_heading_1713360697728_31",
+      "item_count": 2,
+      "notes": [
+        {
+          "id": "16.0-lunch-delivery-notification",
+          "title": "Delivery Notification"
+        },
+        {
+          "id": "16.0-lunch-order-sent-stage",
+          "title": "Order Sent Stage"
+        }
+      ]
+    },
+    {
+      "app": "Manufacturing",
+      "slug": "manufacturing",
+      "file": "manufacturing.md",
+      "anchor": "table_of_content_heading_1713360697729_32",
+      "item_count": 16,
+      "notes": [
+        {
+          "id": "16.0-manufacturing-allocation-reports",
+          "title": "Allocation Reports"
+        },
+        {
+          "id": "16.0-manufacturing-continuous-production",
+          "title": "Continuous Production"
+        },
+        {
+          "id": "16.0-manufacturing-expired-lots-notifications",
+          "title": "Expired Lots Notifications"
+        },
+        {
+          "id": "16.0-manufacturing-kit-valuation",
+          "title": "Kit Valuation"
+        },
+        {
+          "id": "16.0-manufacturing-manual-mo-consumption",
+          "title": "Manual MO Consumption"
+        },
+        {
+          "id": "16.0-manufacturing-mes",
+          "title": "MES"
+        },
+        {
+          "id": "16.0-manufacturing-mo-bom-overview",
+          "title": "MO/BOM Overview"
+        },
+        {
+          "id": "16.0-manufacturing-mps",
+          "title": "MPS"
+        },
+        {
+          "id": "16.0-manufacturing-operation-dependencies",
+          "title": "Operation Dependencies"
+        },
+        {
+          "id": "16.0-manufacturing-products-and-forecasts-import-export",
+          "title": "Products and Forecasts Import/Export"
+        },
+        {
+          "id": "16.0-manufacturing-return-and-repair",
+          "title": "Return and Repair"
+        },
+        {
+          "id": "16.0-manufacturing-split-and-merge-mos",
+          "title": "Split and Merge MOs"
+        },
+        {
+          "id": "16.0-manufacturing-subcontracting-portal",
+          "title": "Subcontracting Portal"
+        },
+        {
+          "id": "16.0-manufacturing-usability",
+          "title": "Usability"
+        },
+        {
+          "id": "16.0-manufacturing-work-centers-capacities",
+          "title": "Work Centers Capacities"
+        },
+        {
+          "id": "16.0-manufacturing-work-orders-product-search",
+          "title": "Work Orders: Product Search"
+        }
+      ]
+    },
+    {
+      "app": "Online Appointments",
+      "slug": "online-appointments",
+      "file": "online-appointments.md",
+      "anchor": "table_of_content_heading_1713360697730_33",
+      "item_count": 17,
+      "notes": [
+        {
+          "id": "16.0-online-appointments-auto-publish-and-redirection",
+          "title": "Auto-publish and Redirection"
+        },
+        {
+          "id": "16.0-online-appointments-booking-calendar",
+          "title": "Booking Calendar"
+        },
+        {
+          "id": "16.0-online-appointments-default-reminders-and-schedules",
+          "title": "Default Reminders and Schedules"
+        },
+        {
+          "id": "16.0-online-appointments-design-and-flexibility-adjustments",
+          "title": "Design and Flexibility Adjustments"
+        },
+        {
+          "id": "16.0-online-appointments-front-end-creation",
+          "title": "Front-End Creation"
+        },
+        {
+          "id": "16.0-online-appointments-link-types",
+          "title": "Link Types"
+        },
+        {
+          "id": "16.0-online-appointments-location",
+          "title": "Location"
+        },
+        {
+          "id": "16.0-online-appointments-meeting-links",
+          "title": "Meeting Links"
+        },
+        {
+          "id": "16.0-online-appointments-midnight",
+          "title": "Midnight"
+        },
+        {
+          "id": "16.0-online-appointments-onboarding",
+          "title": "Onboarding"
+        },
+        {
+          "id": "16.0-online-appointments-operator-selection",
+          "title": "Operator Selection"
+        },
+        {
+          "id": "16.0-online-appointments-private-access",
+          "title": "Private Access"
+        },
+        {
+          "id": "16.0-online-appointments-questions-reporting",
+          "title": "Questions Reporting"
+        },
+        {
+          "id": "16.0-online-appointments-users-and-time-slots",
+          "title": "Users and Time Slots"
+        },
+        {
+          "id": "16.0-online-appointments-visitor-and-lead-link",
+          "title": "Visitor and Lead Link"
+        },
+        {
+          "id": "16.0-online-appointments-visitor-tips",
+          "title": "Visitor Tips"
+        },
+        {
+          "id": "16.0-online-appointments-work-hours-restrictions",
+          "title": "Work Hours Restrictions"
+        }
+      ]
+    },
+    {
+      "app": "Online Payments",
+      "slug": "online-payments",
+      "file": "online-payments.md",
+      "anchor": "table_of_content_heading_1713360697731_34",
+      "item_count": 19,
+      "notes": [
+        {
+          "id": "16.0-online-payments-adyen-manual-capture",
+          "title": "Adyen: Manual Capture"
+        },
+        {
+          "id": "16.0-online-payments-alipay-ogone-payumoney-payu-latam-deprecated",
+          "title": "Alipay/Ogone/PayUmoney/PayU Latam Deprecated"
+        },
+        {
+          "id": "16.0-online-payments-amazon-payment-services",
+          "title": "Amazon Payment Services"
+        },
+        {
+          "id": "16.0-online-payments-asiapay",
+          "title": "AsiaPay"
+        },
+        {
+          "id": "16.0-online-payments-authorize-net-refunds",
+          "title": "Authorize.net: Refunds"
+        },
+        {
+          "id": "16.0-online-payments-customer-portal",
+          "title": "Customer Portal"
+        },
+        {
+          "id": "16.0-online-payments-demo-provider",
+          "title": "Demo Provider"
+        },
+        {
+          "id": "16.0-online-payments-express-checkout",
+          "title": "Express Checkout"
+        },
+        {
+          "id": "16.0-online-payments-filter-providers",
+          "title": "Filter Providers"
+        },
+        {
+          "id": "16.0-online-payments-flutterwave",
+          "title": "Flutterwave"
+        },
+        {
+          "id": "16.0-online-payments-invoicing-accounting",
+          "title": "Invoicing/Accounting"
+        },
+        {
+          "id": "16.0-online-payments-mercado-pago",
+          "title": "Mercado Pago"
+        },
+        {
+          "id": "16.0-online-payments-payment-tokens-display",
+          "title": "Payment Tokens Display"
+        },
+        {
+          "id": "16.0-online-payments-razorpay",
+          "title": "Razorpay"
+        },
+        {
+          "id": "16.0-online-payments-sepa-instant-confirmation",
+          "title": "SEPA: Instant Confirmation"
+        },
+        {
+          "id": "16.0-online-payments-stripe-manual-capture",
+          "title": "Stripe: Manual Capture"
+        },
+        {
+          "id": "16.0-online-payments-stripe-refunds",
+          "title": "Stripe: Refunds"
+        },
+        {
+          "id": "16.0-online-payments-stripe-country-restriction",
+          "title": "Stripe: Country Restriction"
+        },
+        {
+          "id": "16.0-online-payments-unpublish-providers",
+          "title": "Unpublish Providers"
+        }
+      ]
+    },
+    {
+      "app": "Payroll",
+      "slug": "payroll",
+      "file": "payroll.md",
+      "anchor": "table_of_content_heading_1713360697732_35",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "16.0-payroll-belgium",
+          "title": "Belgium"
+        },
+        {
+          "id": "16.0-payroll-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "16.0-payroll-document-folder-for-ex-employees",
+          "title": "Document Folder for Ex-employees"
+        },
+        {
+          "id": "16.0-payroll-entries-from-planning-and-attendances",
+          "title": "Entries from Planning and Attendances"
+        },
+        {
+          "id": "16.0-payroll-kenya",
+          "title": "Kenya"
+        },
+        {
+          "id": "16.0-payroll-luxembourg",
+          "title": "Luxembourg"
+        },
+        {
+          "id": "16.0-payroll-manager-access-rights",
+          "title": "Manager Access Rights"
+        },
+        {
+          "id": "16.0-payroll-payslip-pdf-name",
+          "title": "Payslip PDF Name"
+        },
+        {
+          "id": "16.0-payroll-salary-configurator",
+          "title": "Salary Configurator"
+        },
+        {
+          "id": "16.0-payroll-sign",
+          "title": "Sign"
+        },
+        {
+          "id": "16.0-payroll-tour",
+          "title": "Tour"
+        }
+      ]
+    },
+    {
+      "app": "Planning",
+      "slug": "planning",
+      "file": "planning.md",
+      "anchor": "table_of_content_heading_1713360697733_36",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "16.0-planning-flexible-hours-management",
+          "title": "Flexible Hours Management"
+        },
+        {
+          "id": "16.0-planning-material-resources-role",
+          "title": "Material Resources Role"
+        },
+        {
+          "id": "16.0-planning-open-reporting",
+          "title": "Open Reporting"
+        },
+        {
+          "id": "16.0-planning-print",
+          "title": "Print"
+        }
+      ]
+    },
+    {
+      "app": "PLM",
+      "slug": "plm",
+      "file": "plm.md",
+      "anchor": "table_of_content_heading_1713360697733_37",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-plm-bom-ecos-creation",
+          "title": "BOM ECOs Creation"
+        }
+      ]
+    },
+    {
+      "app": "Point of Sale",
+      "slug": "point-of-sale",
+      "file": "point-of-sale.md",
+      "anchor": "table_of_content_heading_1713360697734_38",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "16.0-point-of-sale-coupons-and-loyalty-cards",
+          "title": "Coupons and Loyalty Cards"
+        },
+        {
+          "id": "16.0-point-of-sale-ewallets",
+          "title": "eWallets"
+        },
+        {
+          "id": "16.0-point-of-sale-france-price-restriction",
+          "title": "France: Price Restriction"
+        },
+        {
+          "id": "16.0-point-of-sale-general-settings",
+          "title": "General Settings"
+        },
+        {
+          "id": "16.0-point-of-sale-global-barcode-nomenclature",
+          "title": "Global Barcode Nomenclature"
+        },
+        {
+          "id": "16.0-point-of-sale-invoices-closed-session-and-client-portal-request",
+          "title": "Invoices: Closed Session and Client Portal Request"
+        },
+        {
+          "id": "16.0-point-of-sale-loyalty-model",
+          "title": "Loyalty Model"
+        },
+        {
+          "id": "16.0-point-of-sale-margins-and-costs-visibility",
+          "title": "Margins and Costs Visibility"
+        },
+        {
+          "id": "16.0-point-of-sale-order-auto-confirmation",
+          "title": "Order Auto-confirmation"
+        },
+        {
+          "id": "16.0-point-of-sale-quotations-orders-total",
+          "title": "Quotations/Orders Total"
+        },
+        {
+          "id": "16.0-point-of-sale-simplified-interface",
+          "title": "Simplified Interface"
+        }
+      ]
+    },
+    {
+      "app": "Project",
+      "slug": "project",
+      "file": "project.md",
+      "anchor": "table_of_content_heading_1713360697735_39",
+      "item_count": 11,
+      "notes": [
+        {
+          "id": "16.0-project-documents-management",
+          "title": "Documents Management"
+        },
+        {
+          "id": "16.0-project-documents-workspace",
+          "title": "Documents Workspace"
+        },
+        {
+          "id": "16.0-project-gantt-view",
+          "title": "Gantt View"
+        },
+        {
+          "id": "16.0-project-milestones-on-tasks",
+          "title": "Milestones on Tasks"
+        },
+        {
+          "id": "16.0-project-open-reporting",
+          "title": "Open Reporting"
+        },
+        {
+          "id": "16.0-project-recurring-tasks-planning",
+          "title": "Recurring Tasks Planning"
+        },
+        {
+          "id": "16.0-project-reporting-project-updates",
+          "title": "Reporting: Project Updates"
+        },
+        {
+          "id": "16.0-project-services-invoicing-policies-milestones-and-manual",
+          "title": "Services Invoicing Policies: Milestones and Manual"
+        },
+        {
+          "id": "16.0-project-smart-task-scheduling",
+          "title": "Smart Task Scheduling"
+        },
+        {
+          "id": "16.0-project-sms-templates-on-stages",
+          "title": "SMS Templates on Stages"
+        },
+        {
+          "id": "16.0-project-tags-management",
+          "title": "Tags Management"
+        }
+      ]
+    },
+    {
+      "app": "Purchase",
+      "slug": "purchase",
+      "file": "purchase.md",
+      "anchor": "table_of_content_heading_1713360697735_40",
+      "item_count": 4,
+      "notes": [
+        {
+          "id": "16.0-purchase-bill-price-matching",
+          "title": "Bill Price Matching"
+        },
+        {
+          "id": "16.0-purchase-call-for-tenders",
+          "title": "Call for Tenders"
+        },
+        {
+          "id": "16.0-purchase-purchase-history",
+          "title": "Purchase History"
+        },
+        {
+          "id": "16.0-purchase-receipt-status",
+          "title": "Receipt Status"
+        }
+      ]
+    },
+    {
+      "app": "Quality",
+      "slug": "quality",
+      "file": "quality.md",
+      "anchor": "table_of_content_heading_1713360697736_41",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-quality-operations-quality-checks",
+          "title": "Operations: Quality Checks"
+        }
+      ]
+    },
+    {
+      "app": "Recruitment",
+      "slug": "recruitment",
+      "file": "recruitment.md",
+      "anchor": "table_of_content_heading_1713360697737_42",
+      "item_count": 9,
+      "notes": [
+        {
+          "id": "16.0-recruitment-skills-on-applicant",
+          "title": "Skills on Applicant"
+        },
+        {
+          "id": "16.0-recruitment-applicant-duplicates",
+          "title": "Applicant Duplicates"
+        },
+        {
+          "id": "16.0-recruitment-cv-digitization",
+          "title": "CV Digitization"
+        },
+        {
+          "id": "16.0-recruitment-improved-views",
+          "title": "Improved Views"
+        },
+        {
+          "id": "16.0-recruitment-interviewer-access",
+          "title": "Interviewer Access"
+        },
+        {
+          "id": "16.0-recruitment-job-application",
+          "title": "Job Application"
+        },
+        {
+          "id": "16.0-recruitment-new-reports",
+          "title": "New Reports"
+        },
+        {
+          "id": "16.0-recruitment-signature-requests",
+          "title": "Signature Requests"
+        },
+        {
+          "id": "16.0-recruitment-team-performance-report",
+          "title": "Team Performance Report"
+        }
+      ]
+    },
+    {
+      "app": "Referrals",
+      "slug": "referrals",
+      "file": "referrals.md",
+      "anchor": "table_of_content_heading_1713360697737_43",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-referrals-background-image",
+          "title": "Background Image"
+        }
+      ]
+    },
+    {
+      "app": "Rental",
+      "slug": "rental",
+      "file": "rental.md",
+      "anchor": "table_of_content_heading_1713360697738_44",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-rental-schedule-quantities",
+          "title": "Schedule: Quantities"
+        }
+      ]
+    },
+    {
+      "app": "Sales",
+      "slug": "sales",
+      "file": "sales.md",
+      "anchor": "table_of_content_heading_1713360697739_45",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-sales-amazon-account-onboarding",
+          "title": "Amazon Account Onboarding"
+        },
+        {
+          "id": "16.0-sales-amazon-marketplaces",
+          "title": "Amazon Marketplaces"
+        },
+        {
+          "id": "16.0-sales-canceled-so-confirmation",
+          "title": "Canceled SO Confirmation"
+        },
+        {
+          "id": "16.0-sales-canceled-so-invoice-payment",
+          "title": "Canceled SO/Invoice Payment"
+        },
+        {
+          "id": "16.0-sales-coupons-loyalty-cards-and-ewallets",
+          "title": "Coupons, Loyalty Cards and eWallets"
+        },
+        {
+          "id": "16.0-sales-delivery-status",
+          "title": "Delivery Status"
+        },
+        {
+          "id": "16.0-sales-down-payments-readability",
+          "title": "Down Payments Readability"
+        },
+        {
+          "id": "16.0-sales-partner-pricelists",
+          "title": "Partner Pricelists"
+        }
+      ]
+    },
+    {
+      "app": "Shipping Connectors",
+      "slug": "shipping-connectors",
+      "file": "shipping-connectors.md",
+      "anchor": "table_of_content_heading_1713360697740_46",
+      "item_count": 6,
+      "notes": [
+        {
+          "id": "16.0-shipping-connectors-dhl-and-ups-commercial-invoices",
+          "title": "DHL and UPS: Commercial Invoices"
+        },
+        {
+          "id": "16.0-shipping-connectors-fedex-collect-points",
+          "title": "FedEx Collect Points"
+        },
+        {
+          "id": "16.0-shipping-connectors-insurance-ups-fedex-dhl-and-easypost",
+          "title": "Insurance: UPS, FedEx, DHL and EasyPost"
+        },
+        {
+          "id": "16.0-shipping-connectors-sendcloud",
+          "title": "Sendcloud"
+        },
+        {
+          "id": "16.0-shipping-connectors-shipping-methods",
+          "title": "Shipping Methods"
+        },
+        {
+          "id": "16.0-shipping-connectors-weight-limit",
+          "title": "Weight Limit"
+        }
+      ]
+    },
+    {
+      "app": "Sign",
+      "slug": "sign",
+      "file": "sign.md",
+      "anchor": "table_of_content_heading_1713360697740_47",
+      "item_count": 13,
+      "notes": [
+        {
+          "id": "16.0-sign-auto-by-default",
+          "title": "Auto by Default"
+        },
+        {
+          "id": "16.0-sign-extra-authentication-credits",
+          "title": "Extra-Authentication Credits"
+        },
+        {
+          "id": "16.0-sign-itsme-integration",
+          "title": "itsme® Integration"
+        },
+        {
+          "id": "16.0-sign-mobile-layout",
+          "title": "Mobile Layout"
+        },
+        {
+          "id": "16.0-sign-multi-company",
+          "title": "Multi-company"
+        },
+        {
+          "id": "16.0-sign-reassign-signatory",
+          "title": "Reassign Signatory"
+        },
+        {
+          "id": "16.0-sign-refusal",
+          "title": "Refusal"
+        },
+        {
+          "id": "16.0-sign-reply-to-signature-request",
+          "title": "Reply-to Signature Request"
+        },
+        {
+          "id": "16.0-sign-reporting",
+          "title": "Reporting"
+        },
+        {
+          "id": "16.0-sign-share-document",
+          "title": "Share Document"
+        },
+        {
+          "id": "16.0-sign-signing-order",
+          "title": "Signing Order"
+        },
+        {
+          "id": "16.0-sign-signature-frame",
+          "title": "Signature Frame"
+        },
+        {
+          "id": "16.0-sign-ux-improvements",
+          "title": "UX Improvements"
+        }
+      ]
+    },
+    {
+      "app": "Social Marketing",
+      "slug": "social-marketing",
+      "file": "social-marketing.md",
+      "anchor": "table_of_content_heading_1713360697741_48",
+      "item_count": 3,
+      "notes": [
+        {
+          "id": "16.0-social-marketing-account-owners",
+          "title": "Account Owners"
+        },
+        {
+          "id": "16.0-social-marketing-leads",
+          "title": "Leads"
+        },
+        {
+          "id": "16.0-social-marketing-twitter",
+          "title": "Twitter"
+        }
+      ]
+    },
+    {
+      "app": "Spreadsheet",
+      "slug": "spreadsheet",
+      "file": "spreadsheet.md",
+      "anchor": "table_of_content_heading_1713360697742_49",
+      "item_count": 50,
+      "notes": [
+        {
+          "id": "16.0-spreadsheet-open-source",
+          "title": "Open Source"
+        },
+        {
+          "id": "16.0-spreadsheet-xlsx-files-conversion",
+          "title": "XLSX Files Conversion"
+        },
+        {
+          "id": "16.0-spreadsheet-freeze-panes",
+          "title": "Freeze Panes"
+        },
+        {
+          "id": "16.0-spreadsheet-records-on-list",
+          "title": "Records on List()"
+        },
+        {
+          "id": "16.0-spreadsheet-absolute-cell-references-keyboard-shortcut",
+          "title": "Absolute Cell References Keyboard Shortcut"
+        },
+        {
+          "id": "16.0-spreadsheet-accounting-functions",
+          "title": "Accounting Functions"
+        },
+        {
+          "id": "16.0-spreadsheet-auto-expanding-leaf-groupbys-removal",
+          "title": "Auto-expanding Leaf Groupbys Removal"
+        },
+        {
+          "id": "16.0-spreadsheet-automatic-currency-formatting",
+          "title": "Automatic Currency Formatting"
+        },
+        {
+          "id": "16.0-spreadsheet-charts",
+          "title": "Charts"
+        },
+        {
+          "id": "16.0-spreadsheet-charts-figures-context-menu",
+          "title": "Charts/Figures Context Menu"
+        },
+        {
+          "id": "16.0-spreadsheet-clear-formatting",
+          "title": "Clear Formatting"
+        },
+        {
+          "id": "16.0-spreadsheet-color-picker",
+          "title": "Color Picker"
+        },
+        {
+          "id": "16.0-spreadsheet-conditional-formatting-rules-priority",
+          "title": "Conditional Formatting Rules Priority"
+        },
+        {
+          "id": "16.0-spreadsheet-copy-cut-paste-charts",
+          "title": "Copy, Cut, Paste Charts"
+        },
+        {
+          "id": "16.0-spreadsheet-ctrl-a-shortcut",
+          "title": "Ctrl+A Shortcut"
+        },
+        {
+          "id": "16.0-spreadsheet-currency-conversion-function",
+          "title": "Currency Conversion Function"
+        },
+        {
+          "id": "16.0-spreadsheet-custom-currency-formats",
+          "title": "Custom Currency Formats"
+        },
+        {
+          "id": "16.0-spreadsheet-dashboard-mode",
+          "title": "Dashboard Mode"
+        },
+        {
+          "id": "16.0-spreadsheet-data-filters",
+          "title": "Data Filters"
+        },
+        {
+          "id": "16.0-spreadsheet-data-source-insertion",
+          "title": "Data Source Insertion"
+        },
+        {
+          "id": "16.0-spreadsheet-date-filter-offset",
+          "title": "Date Filter Offset"
+        },
+        {
+          "id": "16.0-spreadsheet-date-formatting",
+          "title": "Date Formatting"
+        },
+        {
+          "id": "16.0-spreadsheet-date-global-filters",
+          "title": "Date Global Filters"
+        },
+        {
+          "id": "16.0-spreadsheet-default-date-filter",
+          "title": "Default Date Filter"
+        },
+        {
+          "id": "16.0-spreadsheet-delete-lists-pivots",
+          "title": "Delete Lists/Pivots"
+        },
+        {
+          "id": "16.0-spreadsheet-dynamic-formula-format",
+          "title": "Dynamic Formula Format"
+        },
+        {
+          "id": "16.0-spreadsheet-end-content-keyboard-shortcuts",
+          "title": "End Content Keyboard Shortcuts"
+        },
+        {
+          "id": "16.0-spreadsheet-financial-functions",
+          "title": "Financial Functions"
+        },
+        {
+          "id": "16.0-spreadsheet-formula-brackets-strings-readability",
+          "title": "Formula Brackets/Strings Readability"
+        },
+        {
+          "id": "16.0-spreadsheet-full-column-row-range",
+          "title": "Full Column/Row Range"
+        },
+        {
+          "id": "16.0-spreadsheet-gauge-chart",
+          "title": "Gauge Chart"
+        },
+        {
+          "id": "16.0-spreadsheet-global-filters-from-pivot-header",
+          "title": "Global Filters from Pivot Header"
+        },
+        {
+          "id": "16.0-spreadsheet-hide-sheet",
+          "title": "Hide Sheet"
+        },
+        {
+          "id": "16.0-spreadsheet-insert-graphs",
+          "title": "Insert Graphs"
+        },
+        {
+          "id": "16.0-spreadsheet-large-numbers-format",
+          "title": "Large Numbers Format"
+        },
+        {
+          "id": "16.0-spreadsheet-legend-none-option",
+          "title": "Legend: None Option"
+        },
+        {
+          "id": "16.0-spreadsheet-link-charts-to-odoo-menus",
+          "title": "Link Charts to Odoo Menus"
+        },
+        {
+          "id": "16.0-spreadsheet-link-popover-on-mouseover",
+          "title": "Link Popover on Mouseover"
+        },
+        {
+          "id": "16.0-spreadsheet-na-iserr-and-isna-functions",
+          "title": "NA(), ISERR() and ISNA() Functions"
+        },
+        {
+          "id": "16.0-spreadsheet-odoo-functions-prefix",
+          "title": "Odoo Functions Prefix"
+        },
+        {
+          "id": "16.0-spreadsheet-percent-symbol-handling",
+          "title": "Percent Symbol Handling"
+        },
+        {
+          "id": "16.0-spreadsheet-pivot-domain-edition",
+          "title": "Pivot Domain Edition"
+        },
+        {
+          "id": "16.0-spreadsheet-pivot-insertion-sorting",
+          "title": "Pivot Insertion Sorting"
+        },
+        {
+          "id": "16.0-spreadsheet-pivot-names",
+          "title": "Pivot Names"
+        },
+        {
+          "id": "16.0-spreadsheet-pivot-position-function",
+          "title": "Pivot Position Function"
+        },
+        {
+          "id": "16.0-spreadsheet-pivot-list-contextual-information",
+          "title": "Pivot/List Contextual Information"
+        },
+        {
+          "id": "16.0-spreadsheet-relative-date-filter",
+          "title": "Relative Date Filter"
+        },
+        {
+          "id": "16.0-spreadsheet-return-date-format",
+          "title": "Return Date Format"
+        },
+        {
+          "id": "16.0-spreadsheet-scale-charts-on-time-series-numbers",
+          "title": "Scale Charts on Time Series/Numbers"
+        },
+        {
+          "id": "16.0-spreadsheet-scorecard-chart",
+          "title": "Scorecard Chart"
+        }
+      ]
+    },
+    {
+      "app": "Studio",
+      "slug": "studio",
+      "file": "studio.md",
+      "anchor": "table_of_content_heading_1713360697743_50",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-studio-approvals-flows",
+          "title": "Approvals Flows"
+        }
+      ]
+    },
+    {
+      "app": "Subscriptions",
+      "slug": "subscriptions",
+      "file": "subscriptions.md",
+      "anchor": "table_of_content_heading_1713360697743_51",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "16.0-subscriptions-sales-order-object",
+          "title": "Sales Order Object"
+        }
+      ]
+    },
+    {
+      "app": "Surveys",
+      "slug": "surveys",
+      "file": "surveys.md",
+      "anchor": "table_of_content_heading_1713360697744_52",
+      "item_count": 8,
+      "notes": [
+        {
+          "id": "16.0-surveys-action-helper",
+          "title": "Action Helper"
+        },
+        {
+          "id": "16.0-surveys-backgrounds",
+          "title": "Backgrounds"
+        },
+        {
+          "id": "16.0-surveys-conditional-display-rules-propagation",
+          "title": "Conditional Display Rules Propagation"
+        },
+        {
+          "id": "16.0-surveys-image-zoom",
+          "title": "Image Zoom"
+        },
+        {
+          "id": "16.0-surveys-kanban-view",
+          "title": "Kanban View"
+        },
+        {
+          "id": "16.0-surveys-live-sessions",
+          "title": "Live Sessions"
+        },
+        {
+          "id": "16.0-surveys-question-layout",
+          "title": "Question Layout"
+        },
+        {
+          "id": "16.0-surveys-user-input-promenade",
+          "title": "User Input Promenade"
+        }
+      ]
+    },
+    {
+      "app": "Time Off",
+      "slug": "time-off",
+      "file": "time-off.md",
+      "anchor": "table_of_content_heading_1713360697745_53",
+      "item_count": 14,
+      "notes": [
+        {
+          "id": "16.0-time-off-accrual-plans-transfers",
+          "title": "Accrual Plans: Transfers"
+        },
+        {
+          "id": "16.0-time-off-approvals",
+          "title": "Approvals"
+        },
+        {
+          "id": "16.0-time-off-avatars",
+          "title": "Avatars"
+        },
+        {
+          "id": "16.0-time-off-cancellation",
+          "title": "Cancellation"
+        },
+        {
+          "id": "16.0-time-off-dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "id": "16.0-time-off-default-time-off",
+          "title": "Default Time Off"
+        },
+        {
+          "id": "16.0-time-off-department-filter",
+          "title": "Department Filter"
+        },
+        {
+          "id": "16.0-time-off-public-day-off",
+          "title": "Public Day Off"
+        },
+        {
+          "id": "16.0-time-off-start-tour",
+          "title": "Start Tour"
+        },
+        {
+          "id": "16.0-time-off-stress-days",
+          "title": "Stress Days"
+        },
+        {
+          "id": "16.0-time-off-stress-days-by-department",
+          "title": "Stress Days by Department"
+        },
+        {
+          "id": "16.0-time-off-time-off-types",
+          "title": "Time Off Types"
+        },
+        {
+          "id": "16.0-time-off-validation",
+          "title": "Validation"
+        },
+        {
+          "id": "16.0-time-off-validity-date",
+          "title": "Validity Date"
+        }
+      ]
+    },
+    {
+      "app": "Timesheets",
+      "slug": "timesheets",
+      "file": "timesheets.md",
+      "anchor": "table_of_content_heading_1713360697745_54",
+      "item_count": 7,
+      "notes": [
+        {
+          "id": "16.0-timesheets-time-off-block",
+          "title": "Time Off Block"
+        },
+        {
+          "id": "16.0-timesheets-grid-view",
+          "title": "Grid View"
+        },
+        {
+          "id": "16.0-timesheets-lock-dates",
+          "title": "Lock Dates"
+        },
+        {
+          "id": "16.0-timesheets-open-reporting",
+          "title": "Open Reporting"
+        },
+        {
+          "id": "16.0-timesheets-overtime-contracts",
+          "title": "Overtime: Contracts"
+        },
+        {
+          "id": "16.0-timesheets-reports-from-so-invoice-ticket",
+          "title": "Reports from SO/Invoice/Ticket"
+        },
+        {
+          "id": "16.0-timesheets-tickets",
+          "title": "Tickets"
+        }
+      ]
+    },
+    {
+      "app": "Website",
+      "slug": "website",
+      "file": "website.md",
+      "anchor": "table_of_content_heading_1713360697746_55",
+      "item_count": 22,
+      "notes": [
+        {
+          "id": "16.0-website-analytics-tool-plausible-io",
+          "title": "Analytics Tool: Plausible.io"
+        },
+        {
+          "id": "16.0-website-backend-view",
+          "title": "Backend View"
+        },
+        {
+          "id": "16.0-website-controller-as-homepage",
+          "title": "Controller as Homepage"
+        },
+        {
+          "id": "16.0-website-cookie-consent",
+          "title": "Cookie Consent"
+        },
+        {
+          "id": "16.0-website-dynamic-events",
+          "title": "Dynamic Events"
+        },
+        {
+          "id": "16.0-website-gif-shapes",
+          "title": "GIF Shapes"
+        },
+        {
+          "id": "16.0-website-grid-layout",
+          "title": "Grid Layout"
+        },
+        {
+          "id": "16.0-website-helpdesk",
+          "title": "Helpdesk"
+        },
+        {
+          "id": "16.0-website-image-hyperlinks",
+          "title": "Image Hyperlinks"
+        },
+        {
+          "id": "16.0-website-image-shapes-devices",
+          "title": "Image Shapes: Devices"
+        },
+        {
+          "id": "16.0-website-live-chat-icon",
+          "title": "Live Chat Icon"
+        },
+        {
+          "id": "16.0-website-mega-menu-transparency",
+          "title": "Mega Menu Transparency"
+        },
+        {
+          "id": "16.0-website-mobile-view-edition",
+          "title": "Mobile View Edition"
+        },
+        {
+          "id": "16.0-website-preset-phone-country-code",
+          "title": "Preset Phone Country Code"
+        },
+        {
+          "id": "16.0-website-propagate-language",
+          "title": "Propagate Language"
+        },
+        {
+          "id": "16.0-website-scroll-animations",
+          "title": "Scroll Animations"
+        },
+        {
+          "id": "16.0-website-settings",
+          "title": "Settings"
+        },
+        {
+          "id": "16.0-website-site-menu-restructure",
+          "title": "Site Menu Restructure"
+        },
+        {
+          "id": "16.0-website-social-media-building-block",
+          "title": "Social Media Building Block"
+        },
+        {
+          "id": "16.0-website-steps-snippet",
+          "title": "Steps Snippet"
+        },
+        {
+          "id": "16.0-website-visibility-mobile-and-or-desktop",
+          "title": "Visibility: Mobile and/or Desktop"
+        },
+        {
+          "id": "16.0-website-website-menu",
+          "title": "Website Menu"
+        }
+      ]
+    }
+  ],
+  "item_count": 492
+}
