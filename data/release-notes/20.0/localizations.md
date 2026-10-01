@@ -652,14 +652,14 @@ item_count: 55
 
 - Each pre-configured asset model now has dedicated depreciation and expense accounts, replacing the previous use of shared generic accounts.
 - A new integration method for AvaTax is available: "Avalara Included." This integration offers a more affordable option for small and medium-sized businesses, while maintaining full tax computation capabilities for the United States and Canada.
+- Avalara tax parameters are now automatically added while calculating taxes to support state-specific tax calculation requirements.
 - The US Sales Tax Report has been redesigned to include multi-jurisdiction breakdowns, state summary rollups, and enhanced support for exemptions and non-taxable goods.
 
 **Payroll:**
 
 - Local taxes for New York City and Yonkers were added to the US Payroll localization.
 - Support has been added for qualified overtime deduction rules under the "One Big Beautiful Bill," including a new salary rule and parameters to display capped overtime deduction information on employee payslips (available from 19.0).
-- Support for Tennessee, Iowa, Georgia, Mississippi, and New Jersey has been added, including state-specific tax rules and payroll configurations.
-- Salary rules and year-to-date (YTD) calculations are now based on the payment date instead of the payroll period.
+- Support for Georgia, Iowa, Kansas, Kentucky, Michigan, Mississippi, Missouri, New Jersey, South Carolina, Tennessee, and Utah has been added, including state, county, and city tax rules and payroll configurations.
 
 **Time Off:**The default US leave types have been expanded and improved to better align with standard workplace policies.
 

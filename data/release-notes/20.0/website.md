@@ -27,6 +27,7 @@ Multiple improvements have been made to the AI Website Assistant:
 - Ask the AI Website Assistant to make changes to your menu, such as creating, renaming, moving/nesting, reordering, or deleting menu items.
 - Use the "Select Elements" option to tell the AI Website Assistant which block you are commenting on.
 - The AI Website assistant is now better at creating original designs and uses a more diverse range of blocks.
+- Provide a URL to the AI Website Assistant and ask it to replicate that page on your website.
 
 ## AI-generated content indicator
 
