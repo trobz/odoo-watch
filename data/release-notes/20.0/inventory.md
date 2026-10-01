@@ -3,7 +3,7 @@ version: "20.0"
 app: "Inventory"
 app_slug: "inventory"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_104"
-item_count: 22
+item_count: 23
 ---
 
 # Inventory — Odoo 20.0
@@ -68,6 +68,10 @@ The package reference from Odoo is now sent to Sendcloud so it can be displayed 
 ## Sendcloud: pickup points
 
 Pickup points proposed by Sendcloud carriers can now be selected directly from a sales order or a transfer. These can also be corrected after an eCommerce order has been placed.
+
+## ShipStation shipping connector
+
+An integration with shipping and fulfillment platform ShipStation has been added, allowing shipping costs to be calculated and shipping labels and tracking numbers to be retrieved directly through Odoo.
 
 ## Simplified returns
 
