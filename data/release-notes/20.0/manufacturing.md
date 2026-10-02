@@ -3,7 +3,7 @@ version: "20.0"
 app: "Manufacturing"
 app_slug: "manufacturing"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_108"
-item_count: 24
+item_count: 25
 ---
 
 # Manufacturing — Odoo 20.0
@@ -53,7 +53,7 @@ Manufacturing orders are now planned as soon as possible by default. When multip
 
 ## MO cost
 
-- The "MO Cost" field on an MO Overview now shows the provisional cost when the manufacturing order is in progress and real cost when the manufacturing order is complete.
+- The "MO Cost" field on an MO overview now shows the provisional cost when the manufacturing order is in progress and real cost when the manufacturing order is complete.
 - The cost of subcontracted product replenishments in the MO overview takes into account component costs.
 
 ## Produce button
@@ -75,6 +75,10 @@ Download a Shop Floor demo sheet to quickly test the app's barcode capabilities.
 ## Split manufacturing orders
 
 Split ongoing manufacturing orders to produce the remaining amount later.
+
+## Subcontracting MO
+
+The "Component Status" and MO overview are now also available for subcontracting production. Check what components are missing and order them directly.
 
 ## Subcontracting reception valuation
 
