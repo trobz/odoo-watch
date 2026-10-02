@@ -50,7 +50,7 @@ Mercado Pago terminal-based QR payments, refunds, and cancellations are now supp
 
 ## Multiple currencies
 
-Multiple currencies are now be supported at checkout in the same point of sale.
+Multiple currencies can now be supported at checkout in the same point of sale.
 
 ## Order search
 

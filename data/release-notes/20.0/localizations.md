@@ -593,7 +593,7 @@ item_count: 55
 - Support has beed added for issuing e-invoices to customers through government-approved dummy Tax IDs and to e-invoice customers for export invoices.
 - Support has beed added for cancelling e-Archive invoices directly from Odoo.
 - Support has beed added for website sales channel on e-Archive invoices.
-- Automatically derive the 3-character e-Dispatch prefix from the delivery order sequence (available from 19.2).
+- Automatically derive the 3-character e-Dispatch prefix from the delivery order sequence.
 - The withholding tax configuration has been simplified by moving the withholding reason selection to the invoice level and reducing the number of predefined taxes.
 
 **Inventory:**

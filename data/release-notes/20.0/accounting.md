@@ -35,7 +35,7 @@ The bank reconciliation summary report provides a detailed view of reconciled an
 
 ## Bank synchronization: Syncfy
 
-Syncfy is supported as a third-party provider for bank synchronization in LatinAmerica.
+Syncfy is supported as a third-party provider for bank synchronization in Latin America.
 
 ## Bill line prediction
 
@@ -65,7 +65,7 @@ An auditable "Cumulative Translation Adjustment (CTA)" line has been added to th
 
 New currency exchange rate providers are available:
 
-- The Central Bank of Azerbaijan(available from 19.0)
+- The Central Bank of Azerbaijan (available from 19.0)
 - The National Bank of Georgia (available from 19.0)
 - The National Bank of Kazakhstan (available from 19.0)
 - The Saudi Central Bank

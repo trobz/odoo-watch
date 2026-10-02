@@ -1799,7 +1799,7 @@
       "slug": "manufacturing",
       "file": "manufacturing.md",
       "anchor": "table_of_content_heading_1_108",
-      "item_count": 24,
+      "item_count": 25,
       "notes": [
         {
           "id": "20.0-manufacturing-backorder-planning",
@@ -1864,6 +1864,10 @@
         {
           "id": "20.0-manufacturing-split-manufacturing-orders",
           "title": "Split manufacturing orders"
+        },
+        {
+          "id": "20.0-manufacturing-subcontracting-mo",
+          "title": "Subcontracting MO"
         },
         {
           "id": "20.0-manufacturing-subcontracting-reception-valuation",
@@ -3326,5 +3330,5 @@
       ]
     }
   ],
-  "item_count": 698
+  "item_count": 699
 }
