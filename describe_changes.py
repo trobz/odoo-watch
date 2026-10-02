@@ -18,7 +18,7 @@ change the meaning; formatting; item counts; reordering.
 One line per bullet, at most 8 bullets, no headings, no closing sentence.
 If nothing meaningful changed, output exactly: No notable changes."""
 
-MAX_DIFF_CHARS = 12_000
+MAX_DIFF_CHARS = 30_000
 MODEL = os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
 # Commit to describe; overridable to replay past runs.
 REF = os.environ.get("DESCRIBE_REF", "HEAD")
