@@ -136,6 +136,26 @@ def extract_partners(html: str) -> str:
     return "\n".join(lines) + "\n"
 
 
+TIER_ORDER = {"Gold": 0, "Silver": 1, "Ready": 2}
+PARTNER_LINE_RE = re.compile(r"^(?P<name>.*) \[(?P<grade>[^\]]*)\] ")
+
+
+def sort_partners(content: str) -> str:
+    """Sort partner lines by tier then name.
+
+    odoo.com's listing order is unstable between runs; sorting keeps pure
+    reorders from showing up as diffs.
+    """
+
+    def key(line: str) -> tuple:
+        match = PARTNER_LINE_RE.match(line)
+        name, grade = (match["name"], match["grade"]) if match else (line, "")
+        return (TIER_ORDER.get(grade, len(TIER_ORDER)), name.casefold(), line)
+
+    lines = sorted(content.strip().splitlines(), key=key)
+    return "\n".join(lines) + "\n"
+
+
 class FetchError(Exception):
     """A URL could not be fetched."""
 
@@ -463,6 +483,7 @@ def main() -> None:
                         time.sleep(1)  # be polite between page fetches
                     else:
                         print(f"  -> reached max_pages={max_pages}, stopping.")
+                content = sort_partners(content)
             elif extract == "selector":
                 content = extract_selector(html, watch["selector"])
             else:
