@@ -3,7 +3,7 @@ version: "20.0"
 app: "General"
 app_slug: "general"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_18"
-item_count: 41
+item_count: 42
 ---
 
 # General — Odoo 20.0
@@ -144,9 +144,13 @@ Reorder the cards in the user portal.
 
 If a record cannot be deleted, the option to archive it is offered instead.
 
-## Relative range tooltip
+## Search: relative date range tooltip
 
-In a search, a tooltip indicates the resulting dates used when selecting a relative range (e.g., "Last 30 days").
+In a custom filter, when a relative date range is selected (e.g., "Last 30 days"), a tooltip indicates the start and end dates of the range.
+
+## Search: relative date range navigation
+
+When using a preconfigured filter to filter by a relative date range (e.g., "Today," "This Week," "This Month"), click the navigational arrows in the search bar to go backward or forward by one time period.
 
 ## Rich-text editor
 
