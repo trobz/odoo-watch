@@ -7,7 +7,7 @@
       "slug": "general",
       "file": "general.md",
       "anchor": "table_of_content_heading_1_18",
-      "item_count": 41,
+      "item_count": 42,
       "notes": [
         {
           "id": "20.0-general-activities",
@@ -134,8 +134,12 @@
           "title": "Record deletion"
         },
         {
-          "id": "20.0-general-relative-range-tooltip",
-          "title": "Relative range tooltip"
+          "id": "20.0-general-search-relative-date-range-tooltip",
+          "title": "Search: relative date range tooltip"
+        },
+        {
+          "id": "20.0-general-search-relative-date-range-navigation",
+          "title": "Search: relative date range navigation"
         },
         {
           "id": "20.0-general-rich-text-editor",
@@ -3330,5 +3334,5 @@
       ]
     }
   ],
-  "item_count": 699
+  "item_count": 700
 }
