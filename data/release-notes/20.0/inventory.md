@@ -33,10 +33,6 @@ Intercompany flows have been improved:
 
 Use the new date picker in the stock report to consult an improved overview of inventory at a past date that preserves any filters and allows a precise timestamp.
 
-## Inventory valuation: COGS update
-
-When a product's cost changes after it has been delivered/used (for example, via a landed cost, because the bill price was different from the purchase price), the delivery's value (and the invoice cost, when using perpetual accounting) is updated retroactively.
-
 ## Landed costs for specific products
 
 Add landed costs to individual products of a transfer.
@@ -61,21 +57,25 @@ Access and manage product packaging barcodes more easily from the product form.
 
 The "Order" and "Order to max" buttons have been consolidated into a single "Order" button in the replenishment dashboard. When reordering products in advance (i.e., selecting products without the "To reorder" filter), the order quantity is calculated as the max quantity minus the forecast quantity.
 
-## Sendcloud: package reference
+## Inventory valuation adjustments
 
-The package reference from Odoo is now sent to Sendcloud so it can be displayed on the labels of carriers that support package references.
+Product cost adjustments and their impact on inventory valuation are now clearly listed in a new "Valuation Adjustments" menu, available in debug mode. In perpetual accounting, journal entries are automatically created.
 
 ## Sendcloud: pickup points
 
 Pickup points proposed by Sendcloud carriers can now be selected directly from a sales order or a transfer. These can also be corrected after an eCommerce order has been placed.
 
-## ShipStation shipping connector
-
-An integration with shipping and fulfillment platform ShipStation has been added, allowing shipping costs to be calculated and shipping labels and tracking numbers to be retrieved directly through Odoo.
-
 ## Simplified returns
 
 The return wizard has been removed, and the returns process has been simplified.
+
+## Sendcloud: package reference
+
+The package reference from Odoo is now sent to Sendcloud so it can be displayed on the labels of carriers that support package references.
+
+## ShipStation shipping connector
+
+An integration with shipping and fulfillment platform ShipStation has been added, allowing shipping costs to be calculated and shipping labels and tracking numbers to be retrieved directly through Odoo.
 
 ## Stock aging report
 
@@ -85,13 +85,13 @@ Access a stock aging report from the "Moves Analysis" pivot view.
 
 Minimum and maximum stock levels for reordering rules are now suggested based on demand history, desired minimum days of coverage, and order frequency.
 
-## Traceability Report
-
-The Traceability Report has been improved to display upstream and downstream lot/serial numbers in a single report. Final lot locations are highlighted, while intermediary locations are dimmed.
-
 ## Variant-specific HS codes
 
 HS (harmonized system) codes are now set at the level of product variants.
+
+## Traceability Report
+
+The Traceability Report has been improved to display upstream and downstream lot/serial numbers in a single report. Final lot locations are highlighted, while intermediary locations are dimmed.
 
 ## Variant-specific packagings
 
