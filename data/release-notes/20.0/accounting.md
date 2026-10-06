@@ -3,7 +3,7 @@ version: "20.0"
 app: "Accounting"
 app_slug: "accounting"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_79"
-item_count: 45
+item_count: 47
 ---
 
 # Accounting — Odoo 20.0
@@ -11,6 +11,10 @@ item_count: 45
 ## Accounting Firms mode settings
 
 The "Accounting Firms mode" settings have been updated to increase their flexibility.
+
+## AI-powered financial insights
+
+Ask the AI assistant for insights into your company's finances based solely on the accounting data in your database.
 
 ## Analytic distribution for write-offs
 
@@ -101,7 +105,11 @@ Payment statuses have been renamed from "In Process" to "Paid" and from "Paid" t
 
 ## Inventory valuation
 
-In perpetual accounting, accrual entries that impact inventory valuation can be madedirectly from the inventory valuation closing report: Bills To Receive, Billed Not Received, Invoices To Be Issued, and Invoiced Not Delivered. The generated journal entry directly impacts the inventory valuation account instead of transiting through the stock variation account.
+In perpetual accounting, accrual entries that impact inventory valuation can be made directly from the inventory valuation closing report: Bills To Receive, Billed Not Received, Invoices To Be Issued, and Invoiced Not Delivered. The generated journal entry directly impacts the inventory valuation account instead of transiting through the stock variation account.
+
+## Inventory valuation: COGS update
+
+When a product's cost changes after it has been delivered/used (for example, via a landed cost, because the bill price was different from the purchase price), the delivery's value (and the invoice cost, when using perpetual accounting) is updated retroactively.
 
 ## Invoice email attachments
 

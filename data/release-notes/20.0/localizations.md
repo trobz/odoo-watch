@@ -268,6 +268,9 @@ item_count: 55
 - Apply TDS more flexibly with support for TDS & Payment, TDS Only, or Payment Only, giving you more control over tax deduction and payment processing.
 - GST compliance has been extended to Composition Taxpayers, with dedicated support for the Composition Scheme and its statutory returns, CMP-08 and GSTR-4.
 - Prepare financial statements with the prescribed presentation, classification, and disclosures as required under Schedule III, Division I of the Companies Act.
+- GST-compliant self-invoices can now be generated and printed for transactions where the recipient is required to issue a self-invoice under the Reverse Charge Mechanism (RCM). The self-invoice includes the required tax details and provides a dedicated document format for statutory compliance.
+- The number of invoices pending for e-invoicing is now displayed on the Accounting Dashboard. Clicking the link displays an overview of the pending items, from where they can be sent individually or in bulk.
+- Support for the Quarterly Return Monthly Payment scheme (QRMP) scheme had been added, with quarterly GSTR-1 filing and IFF for the first and second months of the quarter.
 
 **Payroll:**
 
