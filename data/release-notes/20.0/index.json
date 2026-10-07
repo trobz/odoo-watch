@@ -322,7 +322,7 @@
       "slug": "accounting",
       "file": "accounting.md",
       "anchor": "table_of_content_heading_1_79",
-      "item_count": 47,
+      "item_count": 46,
       "notes": [
         {
           "id": "20.0-accounting-accounting-firms-mode-settings",
@@ -475,10 +475,6 @@
         {
           "id": "20.0-accounting-purchase-order-matching",
           "title": "Purchase order matching"
-        },
-        {
-          "id": "20.0-accounting-reconciliation-with-multiple-accounts",
-          "title": "Reconciliation with multiple accounts"
         },
         {
           "id": "20.0-accounting-reminder-workflow",
@@ -748,7 +744,7 @@
       "slug": "ai",
       "file": "ai.md",
       "anchor": "table_of_content_heading_1_81",
-      "item_count": 20,
+      "item_count": 21,
       "notes": [
         {
           "id": "20.0-ai-iap-credits-required",
@@ -809,6 +805,10 @@
         {
           "id": "20.0-ai-interactive-agent-responses",
           "title": "Interactive agent responses"
+        },
+        {
+          "id": "20.0-ai-model-bound-agents",
+          "title": "Model-bound agents"
         },
         {
           "id": "20.0-ai-preview-cards-in-live-chat",

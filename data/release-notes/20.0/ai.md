@@ -3,7 +3,7 @@ version: "20.0"
 app: "AI"
 app_slug: "ai"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_81"
-item_count: 20
+item_count: 21
 ---
 
 # AI — Odoo 20.0
@@ -70,6 +70,10 @@ Add context and dynamic values in default prompts.
 ## Interactive agent responses
 
 Respond to AI Agents' questions, permission requests, and suggestions by clicking buttons.
+
+## Model-bound agents
+
+When an agent is asked to interact with a specific model, it suggests being the default agent of that model.
 
 ## Preview cards in live chat
 

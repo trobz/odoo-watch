@@ -3,7 +3,7 @@ version: "20.0"
 app: "Accounting"
 app_slug: "accounting"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_79"
-item_count: 47
+item_count: 46
 ---
 
 # Accounting — Odoo 20.0
@@ -166,10 +166,6 @@ The "Professional" percentage column that was available for vendor bills is now 
 ## Purchase order matching
 
 Vendor bill and purchase order matching has been improved, including the "Auto-Complete" option checking for matching bill lines before creating new ones; a clear summary of what has been matched and a warning if the price and quantity are different than expected; and the possibility to unmatch a vendor bill and purchase order.
-
-## Reconciliation with multiple accounts
-
-Split a bank transaction's amount across multiple accounts more easily during bank reconciliation.
 
 ## Reminder workflow
 
