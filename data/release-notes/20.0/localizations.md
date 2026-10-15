@@ -128,7 +128,7 @@ item_count: 55
 - Parent accounts have been updated for maintaining parent-child account hierarchy.
 - The voucher template has been improved, and batch printing is now supported.
 - The handling of value-added tax has been improved, and the VAT and Surcharges Return for General Taxpayers is now available.
-- When applying VAT differential taxation, deductible amounts cannow be entered directly on invoice lines, and output VAT offset entries are automatically posted.
+- When applying VAT differential taxation, deductible amounts can now be entered directly on invoice lines, and output VAT offset entries are automatically posted.
 
 ## Colombia 🇨🇴
 
