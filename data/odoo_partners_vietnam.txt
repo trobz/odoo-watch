@@ -3,6 +3,7 @@ GLOBAL PSM COMPANY LIMITED [Silver] /partners/global-psm-company-limited-1391295
 Magenest ., JSC [Silver] /partners/magenest-jsc-1716168?country_id=232
 ORIS SOLUTIONS JOINT STOCK COMPANY [Silver] /partners/oris-solutions-joint-stock-company-11452881?country_id=232
 Portcities Vietnam [Silver] /partners/portcities-vietnam-1613121?country_id=232
+VDX DIGITAL TRANSFORMATION SOLUTIONS COMPANY LIMITED [Silver] /partners/vdx-digital-transformation-solutions-company-limited-15194346?country_id=232
 VTI Joint Stock Company [Silver] /partners/vti-joint-stock-company-5391928?country_id=232
 ATT Vietnam [Ready] /partners/att-vietnam-23646330?country_id=232
 Bac Ha Software Limited Company (BHSoft) [Ready] /partners/bac-ha-software-limited-company-bhsoft-7348147?country_id=232
@@ -30,5 +31,4 @@ PHALANX SERVICES COMPANY LIMITED [Ready] /partners/phalanx-services-company-limi
 SAOBACDAU TECHNOLOGIES CORPORATION [Ready] /partners/saobacdau-technologies-corporation-4022063?country_id=232
 SGH Asia Ltd [Ready] /partners/sgh-asia-ltd-7991493?country_id=232
 Trobz [Ready] /partners/trobz-16709?country_id=232
-VDX DIGITAL TRANSFORMATION SOLUTIONS COMPANY LIMITED [Ready] /partners/vdx-digital-transformation-solutions-company-limited-15194346?country_id=232
 VIETNAMOBILE TELECOMMUNICATIONS JOINT STOCK COMPANY [Ready] /partners/vietnamobile-telecommunications-joint-stock-company-29906382?country_id=232
