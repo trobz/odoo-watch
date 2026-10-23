@@ -30,5 +30,4 @@ PAK ENTITY CO LIMITED [Ready] /partners/pak-entity-co-limited-34649033?country_i
 PHALANX SERVICES COMPANY LIMITED [Ready] /partners/phalanx-services-company-limited-23373483?country_id=232
 SAOBACDAU TECHNOLOGIES CORPORATION [Ready] /partners/saobacdau-technologies-corporation-4022063?country_id=232
 SGH Asia Ltd [Ready] /partners/sgh-asia-ltd-7991493?country_id=232
-Trobz [Ready] /partners/trobz-16709?country_id=232
 VIETNAMOBILE TELECOMMUNICATIONS JOINT STOCK COMPANY [Ready] /partners/vietnamobile-telecommunications-joint-stock-company-29906382?country_id=232
