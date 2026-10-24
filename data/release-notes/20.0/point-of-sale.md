@@ -34,7 +34,7 @@ Users are notified when they select expired products on the POS.
 
 ## GoFood delivery integration
 
-Support has been added for GoFood orders and menu sync for Indonesia and Vietnam (available from 19.0).
+Support has been added for GoFood orders and menu sync for Indonesia (available from 19.0).
 
 ## GrabFood delivery integration
 
