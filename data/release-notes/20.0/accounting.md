@@ -129,7 +129,7 @@ When sending multiple invoices at once, the popup window identifies how each inv
 
 ## New currency: Caribbean Guilder
 
-The Caribbean Guilder (XCG) has been added to the list of supported currencies and is set as the default currency for Curaçao and Sint-Maarten (available from 18.0).
+The Caribbean Guilder (XCG) has been added to the list of supported currencies and is set as the default currency for Curaçao and Sint Maarten (available from 18.0).
 
 ## Onboarding improvements
 

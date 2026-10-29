@@ -2963,8 +2963,8 @@
           "title": "Form view customization"
         },
         {
-          "id": "20.0-studio-kanban-stage-cutomization",
-          "title": "Kanban stage cutomization"
+          "id": "20.0-studio-kanban-stage-customization",
+          "title": "Kanban stage customization"
         },
         {
           "id": "20.0-studio-list-view-column-width",
@@ -3017,8 +3017,8 @@
           "title": "Calendar day vs working day deductions"
         },
         {
-          "id": "20.0-time-off-minimal-amount-for-time-off-requests",
-          "title": "Minimal amount for time-off requests"
+          "id": "20.0-time-off-minimum-amount-for-time-off-requests",
+          "title": "Minimum amount for time-off requests"
         },
         {
           "id": "20.0-time-off-overview-all-employees",
@@ -3320,8 +3320,8 @@
       "item_count": 5,
       "notes": [
         {
-          "id": "20.0-whatsapp-default-recipents-on-templates",
-          "title": "Default recipents on templates"
+          "id": "20.0-whatsapp-default-recipients-on-templates",
+          "title": "Default recipients on templates"
         },
         {
           "id": "20.0-whatsapp-interactive-message-templates",

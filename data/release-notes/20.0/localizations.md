@@ -115,7 +115,7 @@ item_count: 55
 - Chilean commune data has been added, reducing manual entry errors when configuring addresses in the Contacts and eCommerce flows.
 - The DTE email server and XML reader now support non-billable amounts on invoices.
 - Configure branches to share CAF files, assign them to specific branches, and redirect vendor bills using internal codes.
-- The F29 tax report now uses Odoo's tax calculations account tags and follows Chilean standards for easier recording in the SII portal.
+- The F29 tax report now uses Odoo's tax calculations and account tags, and follows Chilean standards for easier recording in the SII portal.
 
 **Inventory:** Copies of the delivery guide for yielding purposes are now supported, complying with the SII layout requirements.
 
@@ -139,7 +139,7 @@ item_count: 55
 - The layout of fiscal PDF documents has been improved, and the QR code is visible on all pages.
 - Electronic invoicing is now exclusively handled via the free DIAN connection; Carvajal is no longer supported.
 - Type 3 Contingency invoicing is now supported, enabling fiscal document generation during extended DIAN service outages.
-- Withholding certification reports no longer displays the DIAN compliance message to reduce confusion.
+- Withholding certification reports no longer display the DIAN compliance message to reduce confusion.
 - The user interface has been improved for a smoother experience and better error handling. Demo data has also been updated.
 - Duplicate detection for vendor bills is now based on detecting CUFE duplicates.
 - An example of the most common self-withholding tax and tax group has been added to the Colombian localization module. The default configuration now complies with DIAN requirements.
@@ -202,14 +202,14 @@ item_count: 55
 
 **Accounting:**
 
-- Pre-configured annual report templates (plaquettes) compliant with official PCG standards have been added, featuring auto-populated financial sections, customizable layouts, and help textto simplify mandatory financial disclosures.
+- Pre-configured annual report templates (plaquettes) compliant with official PCG standards have been added, featuring auto-populated financial sections, customizable layouts, and help text to simplify mandatory financial disclosures.
 - The endpoints in the annuaire that match the SIREN entered in the FRCTC field are now detected automatically and are available for selection if multiple ones exist.
 
 ## Georgia 🇬🇪
 
 **Accounting:**
 
-- The base localization package has been added, including a localized chart of accounts, taxes, and VATreport (available from 19.0).
+- The base localization package has been added, including a localized chart of accounts, taxes, and VAT report (available from 19.0).
 - State names and codes for Georgia have been added in compliance with the ISO 3166-2 standard (available from 19.0).
 
 ## Guatemala 🇬🇹
@@ -238,7 +238,7 @@ item_count: 55
 - Define the month for end-of-year payments. Calculations are based on the number of previously generated payslips.
 - Generate IR56B/E/F/G tax forms in XML and PDF format in compliance with the Inland Revenue Department (IRD) technical specifications.
 - HSBC Autopay has been integrated directly into the standard reporting workflow. Select it as an export format and configure any Autopay account for any report.
-- A new "Rentals" system has been introduced to manage the end-to-end rental process. Employees can submit rental requests and monthly proofs of payment directly via the Employees app, replacing manual forms and external spreadsheets. The system supports various Hong-Kong specific scenarios, including direct employer payments and employee-led contributions, while centralizing all compliance documentation for HR review.
+- A new "Rentals" system has been introduced to manage the end-to-end rental process. Employees can submit rental requests and monthly proofs of payment directly via the Employees app, replacing manual forms and external spreadsheets. The system supports various Hong Kong-specific scenarios, including direct employer payments and employee-led contributions, while centralizing all compliance documentation for HR review.
 - Define a minimum duration of consecutive leave (e.g., 4 days for paid sick leave) to automate eligibility for the 80% ADW leave types and prevent invalid requests.
 - Daily, weekly, bi-weekly, and semi-monthly pay schedules have been added. Salary rules for MPF and fixed allowances automatically scale to the selected period, ensuring compliance with Hong Kong statutory thresholds for non-monthly earners.
 - A new salary structure is available for casual employees in the catering and construction industries, supporting specific MPF Industry Scheme rates.
@@ -270,7 +270,7 @@ item_count: 55
 - Prepare financial statements with the prescribed presentation, classification, and disclosures as required under Schedule III, Division I of the Companies Act.
 - GST-compliant self-invoices can now be generated and printed for transactions where the recipient is required to issue a self-invoice under the Reverse Charge Mechanism (RCM). The self-invoice includes the required tax details and provides a dedicated document format for statutory compliance.
 - The number of invoices pending for e-invoicing is now displayed on the Accounting Dashboard. Clicking the link displays an overview of the pending items, from where they can be sent individually or in bulk.
-- Support for the Quarterly Return Monthly Payment scheme (QRMP) scheme had been added, with quarterly GSTR-1 filing and IFF for the first and second months of the quarter.
+- Support for the Quarterly Return Monthly Payment (QRMP) scheme has been added, with quarterly GSTR-1 filing and IFF for the first and second months of the quarter.
 
 **Payroll:**
 
@@ -593,9 +593,9 @@ item_count: 55
 - Support has been added for fetching buying and selling rates and the option to choose rates per transaction.
 - Rounding issues affecting foreign currency amounts in words on e-invoices have been fixed (available from 17.0).
 - The Nilvera e-Invoicing integration is now only available with Odoo Enterprise.
-- Support has beed added for issuing e-invoices to customers through government-approved dummy Tax IDs and to e-invoice customers for export invoices.
-- Support has beed added for cancelling e-Archive invoices directly from Odoo.
-- Support has beed added for website sales channel on e-Archive invoices.
+- Support has been added for issuing e-invoices to customers through government-approved dummy Tax IDs and to e-invoice customers for export invoices.
+- Support has been added for cancelling e-Archive invoices directly from Odoo.
+- Support has been added for website sales channel on e-Archive invoices.
 - Automatically derive the 3-character e-Dispatch prefix from the delivery order sequence.
 - The withholding tax configuration has been simplified by moving the withholding reason selection to the invoice level and reducing the number of predefined taxes.
 
@@ -634,7 +634,7 @@ item_count: 55
 - The employee benefit contributions have been revised to better align with GPSSA & ADPF's regulations. Sick leaves are managed through a single salary rule and a single leave type.
 - Treatment of DIFC Employee Workplace Savings (DEWS) contributions has been adapted to align with Dubai International Financial Centre (DIFC) regulations.
 - A new "Emiratization Compliance" report has been introduced to track Emiratization percentages in line with MoHRE regulations.
-- Non‑salary employer cost items (e.g., insurance, work permits, visa processing fees) are now supported, improving labour cost visibility.
+- Non‑salary employer cost items (e.g., insurance, work permits, visa processing fees) are now supported, improving labor cost visibility.
 - The WPS export has been enhanced to better align with MoHRE regulations (available from 19.0).
 - Calculations for annual leave and end-of-service provisions have been improved (available from 19.0).
 - Calculations for overtime have been improved.
@@ -671,7 +671,7 @@ item_count: 55
 **Accounting:**
 
 - A DGI lookup action has been added for Uruguayan partners, allowing users to fetch and update official taxpayer data from Uruware directly from the identification number.
-- Products and services can now be configured as non-billable, allowing them to be included onelectronic invoices.
+- Products and services can now be configured as non-billable, allowing them to be included on electronic invoices.
 
 **Point of Sale:**
 

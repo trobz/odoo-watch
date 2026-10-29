@@ -12,7 +12,7 @@ item_count: 5
 
 The amount of time off taken can now be calculated based on either working days or calendar days.
 
-## Minimal amount for time-off requests
+## Minimum amount for time-off requests
 
 Define a minimum amount of time when a time off is requested.
 

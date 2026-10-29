@@ -8,7 +8,7 @@ item_count: 5
 
 # WhatsApp — Odoo 20.0
 
-## Default recipents on templates
+## Default recipients on templates
 
 Add default recipients on WhatsApp templates.
 
