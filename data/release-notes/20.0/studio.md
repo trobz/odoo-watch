@@ -17,7 +17,7 @@ Trigger activity plans through automations.
 - Reorder a form view's buttons and smart buttons.
 - Reorder tabs in a form view by dragging and dropping them.
 
-## Kanban stage cutomization
+## Kanban stage customization
 
 Customize Kanban stages (i.e., the status bar) from the form view using Studio.
 
@@ -40,7 +40,7 @@ The report code can be translated in a single block that also displays the techn
 
 ## User-friendly technical names
 
-The technical name of the fields created with Studio are now more readable.
+The technical names of the fields created with Studio are now more readable.
 
 ## Warning for past or future dates
 

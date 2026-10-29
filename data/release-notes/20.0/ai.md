@@ -16,7 +16,7 @@ All AI features now need credits, which can be bought via IAP.
 
 - Agents can now update themselves to best serve their use cases.
 - Agents can be summoned by automated and scheduled actions.
-- Check automation chats to see how agents handled them, and ask for changes based on the errors it faced.
+- Check automation chats to see how agents handled them, and ask for changes based on the errors faced.
 - Agents get avatars based on their assigned role.
 
 ## AI agents: ask questions about a file

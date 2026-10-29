@@ -10,7 +10,7 @@ item_count: 3
 
 ## HTML note field
 
-The note field on manufacturing orders is now an HTML field in the Manufacturing backend and in Shop Floor to allow to share instructions more flexibly.
+The note field on manufacturing orders is now an HTML field in the Manufacturing backend and in Shop Floor to allow instructions to be shared more flexibly.
 
 ## Instruction updates
 

@@ -38,7 +38,7 @@ Editing mailing designs is now always done in full screen.
 
 ## Link tracking
 
-Disable link tracking directly in the html editor.
+Disable link tracking directly in the HTML editor.
 
 ## Mailing template library
 

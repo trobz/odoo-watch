@@ -80,7 +80,7 @@ A new industry package is available for interior design companies, including web
 
 ## Machine and Tool Rental
 
-A new industry package is available for machine and tool rental business managing rental contracts, quarantine on returns, consolidated down payments based on consumption, machine run-time monitoring, and maintenance planning (available from 19.0).
+A new industry package is available for machine and tool rental businesses managing rental contracts, quarantine on returns, consolidated down payments based on consumption, machine run-time monitoring, and maintenance planning (available from 19.0).
 
 ## Mental Therapy
 

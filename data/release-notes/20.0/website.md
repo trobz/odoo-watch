@@ -101,11 +101,11 @@ Customize the "Donation" snippet to collect legally required information if need
 
 ## Dropzones and overlays
 
-Dropzones and overlays in the Website builder have been updated to be more modern and discrete.
+Dropzones and overlays in the Website builder have been updated to be more modern and discreet.
 
 ## Dynamic "Today" value
 
-Date and datetime fields on Website forms now include adynamic "Today" value.
+Date and datetime fields on Website forms now include a dynamic "Today" value.
 
 ## Dynamic carousels
 

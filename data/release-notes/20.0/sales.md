@@ -119,4 +119,4 @@ Allow discount codes to be used only once per customer.
 
 ## TikTok
 
-A marketplace integration with Tiktok has been implemented to fetch orders and delivery slips, and to synchronize inventory (available from 19.0).
+A marketplace integration with TikTok has been implemented to fetch orders and delivery slips, and to synchronize inventory (available from 19.0).
