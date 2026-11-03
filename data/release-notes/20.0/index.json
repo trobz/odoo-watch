@@ -744,7 +744,7 @@
       "slug": "ai",
       "file": "ai.md",
       "anchor": "table_of_content_heading_1_81",
-      "item_count": 21,
+      "item_count": 20,
       "notes": [
         {
           "id": "20.0-ai-iap-credits-required",
@@ -789,10 +789,6 @@
         {
           "id": "20.0-ai-ai-chat-request-options",
           "title": "AI chat request options"
-        },
-        {
-          "id": "20.0-ai-automatic-ai-model-selection",
-          "title": "Automatic AI model selection"
         },
         {
           "id": "20.0-ai-connect-odoo-to-anything",
@@ -3342,5 +3338,5 @@
       ]
     }
   ],
-  "item_count": 702
+  "item_count": 701
 }

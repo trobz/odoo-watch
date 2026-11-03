@@ -3,7 +3,7 @@ version: "20.0"
 app: "AI"
 app_slug: "ai"
 source_url: "https://www.odoo.com/odoo-20-release-notes#table_of_content_heading_1_81"
-item_count: 21
+item_count: 20
 ---
 
 # AI — Odoo 20.0
@@ -54,10 +54,6 @@ Ask an AI agent to update records.
 ## AI chat request options
 
 Use the + menu to add extra options to a request before sending it in an AI chat.
-
-## Automatic AI model selection
-
-Select an AI provider and Odoo automatically uses the best AI model for the task at hand.
 
 ## Connect Odoo to anything
 
