@@ -1,0 +1,20 @@
+{
+  "version": "21.0",
+  "source_url": "https://www.odoo.com/documentation/master/developer/reference/backend/orm/changelog.html",
+  "apps": [
+    {
+      "app": "ORM API",
+      "slug": "orm-api",
+      "file": "orm-api.md",
+      "anchor": "",
+      "item_count": 1,
+      "notes": [
+        {
+          "id": "21.0-orm-api-unlink-processes-ondelete-cascades-in-the-orm-api-ondelete-methods-are-called-on-cascade-deleted-records-too-the-new-delete-extra-method-returns-additional-records-to-delete-and-only-the-fields-referring-to-the-deleted-records-are-flushed",
+          "title": "`unlink()` processes `ondelete` cascades in the ORM: `@api.ondelete` methods are called on cascade-deleted records too, the new `_delete_extra()` method returns additional records to delete, and only the fields referring to the deleted records are flushed"
+        }
+      ]
+    }
+  ],
+  "item_count": 1
+}
