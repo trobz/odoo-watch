@@ -7,14 +7,30 @@
       "slug": "orm-api",
       "file": "orm-api.md",
       "anchor": "",
-      "item_count": 1,
+      "item_count": 5,
       "notes": [
         {
           "id": "21.0-orm-api-unlink-processes-ondelete-cascades-in-the-orm-api-ondelete-methods-are-called-on-cascade-deleted-records-too-the-new-delete-extra-method-returns-additional-records-to-delete-and-only-the-fields-referring-to-the-deleted-records-are-flushed",
           "title": "`unlink()` processes `ondelete` cascades in the ORM: `@api.ondelete` methods are called on cascade-deleted records too, the new `_delete_extra()` method returns additional records to delete, and only the fields referring to the deleted records are flushed"
+        },
+        {
+          "id": "21.0-orm-api-new-model-partitioned-to-split-a-recordset-by-predicates",
+          "title": "New `Model.partitioned()` to split a recordset by predicates"
+        },
+        {
+          "id": "21.0-orm-api-new-field-attributes-ui-readonly-ui-required-and-ui-domain",
+          "title": "New field attributes `ui_readonly`, `ui_required` and `ui_domain`"
+        },
+        {
+          "id": "21.0-orm-api-shared-test-data-companies-and-users-with-test-data",
+          "title": "Shared test data companies and users (`--with-test-data`)"
+        },
+        {
+          "id": "21.0-orm-api-persistent-signed-file-cache-of-compiled-qweb-code",
+          "title": "Persistent signed file cache of compiled QWeb code"
         }
       ]
     }
   ],
-  "item_count": 1
+  "item_count": 5
 }
